@@ -1,0 +1,8 @@
+loader:
+  data-path: /home/linuxbox/tgcs/projects/sandbox/src/demo-docker-shared-vol/datasets/src/main/resources
+  datasets: [base-eu, qa-demo, qa]
+
+logging:
+  level:
+    root: error
+    com.example.demodockersharedvol: INFO
