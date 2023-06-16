@@ -23,7 +23,7 @@ fun fileScanInputFlow(
                     .scanner(RecursiveDirectoryScanner().apply {
 
                         val filterRegex = props.dataSets
-                                .joinToString("|", ".*/(", ")/*.json")
+                                .joinToString("|", ".*/(", ")/.+.json")
                                 .toRegex()
 
                         setFilter { it.filter { f -> filterRegex.matches(f.absolutePath) } }
@@ -33,10 +33,7 @@ fun fileScanInputFlow(
             ) { s -> s.poller { it.fixedDelay(1000) } }
             .transform(Transformers.objectToString())
             .log()
-//                .split()
-//                .filter<File> { f -> f.isFile && f.extension == "json" }
-                .handle(service, "loadFile")
-//                .aggregate()
+            .handle(service, "loadFile")
             .get()
 }
 
