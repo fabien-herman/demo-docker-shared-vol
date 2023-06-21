@@ -46,17 +46,13 @@ class FlowConfig {
         }
     }
 
-
-    @Autowired
-    lateinit var template: MongoTemplate
-
     @Bean
-    fun dataSeedsDeleteHandlingFlow(): IntegrationFlow = integrationFlow("delete") {
+    fun dataSeedsDeleteHandlingFlow(template: MongoTemplate): IntegrationFlow = integrationFlow("delete") {
         log(LoggingHandler.Level.INFO, "app.Delete", "payload.filter")
     }
 
     @Bean
-    fun dataSeedsHandlingFlow(): IntegrationFlow = integrationFlow("updateOne") {
+    fun dataSeedsHandlingFlow(template: MongoTemplate): IntegrationFlow = integrationFlow("updateOne") {
           log(LoggingHandler.Level.INFO, "app.updateOne", "payload")
 //            .handle(
 //                    MongoDb.outboundGateway(template)
