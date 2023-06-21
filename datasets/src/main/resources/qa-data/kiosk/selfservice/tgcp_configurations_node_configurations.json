@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Update WEBPOS_THEME_LIST",
+    "filter": {
+      "name": "SYSTEM"
+    },
+    "update": {
+      "$push": {
+        "configurations.WEBPOS_THEME_LIST.value": {
+          "$each": [
+            {
+              "order": 42,
+              "value": "tgcpSelfService"
+            },
+            {
+              "order": 43,
+              "value": "tgcpSelfServiceMock"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

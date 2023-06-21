@@ -1,0 +1,13 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG"
+    }
+  },
+  {
+    "name": "GROUP_1",
+    "catalogName": "CATALOG"
+  }
+]

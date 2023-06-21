@@ -1,0 +1,62 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_TEST"
+    }
+  },
+  {
+    "name": "GROUP_1",
+    "catalogName": "CATALOG_TEST"
+  },
+  {
+    "name": "EGGS_DEPT_GROUP",
+    "displayName": {
+      "default": "EGGS_DEPT_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_TEST",
+    "attributes": {
+      "Department": "EGGS_DEPT_GROUP"
+    }
+  },
+  {
+    "name": "BACON_DEPT_GROUP",
+    "displayName": {
+      "default": "BACON_DEPT_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_TEST",
+    "attributes": {
+      "Department": "BACON_DEPT_GROUP"
+    }
+  },
+  {
+    "name": "GROUP_1_TAX_EXEMPT",
+    "catalogName": "CATALOG_TEST",
+    "parentName": "GROUP_1",
+    "namedAttributes": {
+      "itemTaxability": "NON_TAXABLE"
+    }
+  },
+  {
+    "name": "ACTIVATION_REQUIRED_GROUP",
+    "catalogName": "CATALOG_TEST",
+    "parentName": "GROUP_1_TAX_EXEMPT",
+    "namedAttributes": {
+      "preActivationRequired": true,
+      "activationRequired": true
+    }
+  },
+  {
+    "name": "CLIENT_BASED_ACTIVATION_GROUP",
+    "catalogName": "CATALOG_TEST",
+    "parentName": "ACTIVATION_REQUIRED_GROUP",
+    "namedAttributes": {
+      "clientBasedActivation": true
+    }
+  }
+]

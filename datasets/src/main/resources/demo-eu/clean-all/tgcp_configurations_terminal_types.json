@@ -1,0 +1,11 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {
+        "$ne": "DEFAULT"
+      }
+    }
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {"name": "EUROPE"}
+  },
+  {
+    "name" : "EUROPE"
+  }
+]

@@ -1,0 +1,6397 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "catalogName": {
+            "$regex": "CATALOG_QA"
+          }
+        },
+        {
+          "catalogName": "CATALOG_EU_HVR"
+        }
+      ]
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test item for price embedded"
+    },
+    "skuId": "73413",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for price embedded"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "207341300000",
+        "type": "EAN-13"
+      },
+      {
+        "value": "217341300000",
+        "type": "EAN-13"
+      },
+      {
+        "value": "227341300000",
+        "type": "EAN-13"
+      },
+      {
+        "value": "247341300000",
+        "type": "EAN-13"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/kXb4FPP/sandwich.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "priceRequired": false,
+    "priceOverrideAllowed": true,
+    "quantityAllowed": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "namedAttributes": {
+      "layoutLocationMap": {
+        "layout1": "CLEARANCE",
+        "layout2": "CLEARANCE"
+      }
+    }
+  },
+  {
+    "displayName": {
+      "default": "{};'\":,.<>/?\\|`~!@#$%^&*()_+-=[]"
+    },
+    "skuId": "foo",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item foo"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "223456789019",
+        "type": "UPC-A"
+      },
+      {
+        "value": "1234567890012",
+        "type": "EAN-13"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "namedAttributes": {
+      "layoutLocationMap": {
+        "layout1": "CLEARANCE",
+        "layout2": "CLEARANCE"
+      }
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 1"
+    },
+    "skuId": "1",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item 1"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789012",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000065",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/BsrMPTF/Coca-Cola-glass-bottle.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 2"
+    },
+    "skuId": "2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 2,
+    "description": {
+      "default": "This is test item 2"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789029",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/jR3hWPp/cookies.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 77,
+      "companyPrefix": "222222",
+      "familyCode": "333",
+      "PSE-tablet-count": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 3"
+    },
+    "skuId": "3",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 4,
+    "description": {
+      "default": "This is test item 3"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789036",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/DrkS3kW/coffee-pads.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "attributes": {
+      "companyPrefix": "333333",
+      "familyCode": "444",
+      "requiredAttr": "X"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 4"
+    },
+    "skuId": "4",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 4"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789043",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/hd6SVrX/butter.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {
+      "companyPrefix": "111111",
+      "familyCode": "555"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 5"
+    },
+    "skuId": "5",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 5"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789050",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/RzkNqhw/twix.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {
+      "companyPrefix": "111111",
+      "familyCode": "666"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 6"
+    },
+    "skuId": "6",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 6"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789067",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/4sw6HjR/sparkling-water.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 7"
+    },
+    "skuId": "7",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 7"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789074",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/3T6rB5q/snack.png",
+        "sizeCategory": "SMALL"
+      },
+      {
+        "url": "https://i.ibb.co/3T6rB5q/snack.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 8"
+    },
+    "skuId": "8",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 8"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789081",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/n8QTFX3/nutella.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 9"
+    },
+    "skuId": "9",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 9"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789098",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 10"
+    },
+    "skuId": "10",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_4",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 10"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789104",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/fQNGRbw/milk.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 11"
+    },
+    "skuId": "11",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 11"
+    },
+    "priceRequired": true,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789111",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/Xp5fydJ/knife.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Quantity and Price Required Item 112"
+    },
+    "skuId": "112",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "QUANTITY_ALLOWED_GROUP",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is quantity and price required item 112"
+    },
+    "images": [
+      {
+        "url": "https://i.ibb.co/gdFQxYt/toy-car-mini-cooper.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "priceRequired": true,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 22"
+    },
+    "skuId": "22",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "QUANTITY_REQUIRED_GROUP",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 22"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789227",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 23"
+    },
+    "skuId": "23",
+    "quantityRequired": true,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 23"
+    },
+    "priceRequired": true,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789228",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/vmsjQ6S/wine.png",
+        "sizeCategory": "MEDIUM"
+      },
+      {
+        "url": "https://i.ibb.co/vmsjQ6S/wine.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 24"
+    },
+    "skuId": "24",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 24"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789229",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 33"
+    },
+    "skuId": "33",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_SERIAL_REQUIRED",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 33"
+    },
+    "priceRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789333",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item 55"
+    },
+    "skuId": "55",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item 55"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789555",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Fried and Pickled"
+    },
+    "skuId": "monthlyfriedpickles",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "Daily Fried pickles"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456788763",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item that can't be returned"
+    },
+    "skuId": "CANNOT_BE_RETURNED",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item with canBeReturned false"
+    },
+    "canBeReturned": false,
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456788999",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Meat of the Day"
+    },
+    "skuId": "dailymeat",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "Fresh Meat of the Day"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456788770",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Bread of the Year"
+    },
+    "skuId": "yearlybread",
+    "quantityRequired": false,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "Bread of the Year"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456788787",
+        "type": "UPC-A"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/58Cs6YW/bread.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Item which has no price and has price required"
+    },
+    "skuId": "NO_PRICE_RECORD_SKU",
+    "description": {
+      "default": "This is a test item without price"
+    },
+    "UOM": "EACH",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1_NO_PRICE_OVERRIDE",
+    "quantityRequired": false,
+    "serialRequired": false,
+    "extends": false,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "000000000109",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "BANANAS"
+    },
+    "skuId": "4011",
+    "description": {
+      "default": "This is test item 4011"
+    },
+    "extends": false,
+    "UOM": "KG",
+    "tareId": "TARE_001",
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "QUANTITY_REQUIRED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "040110000002",
+        "type": "UPC-A"
+      },
+      {
+        "value": "20401100000",
+        "type": "POSItemID"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "GRAPES"
+    },
+    "skuId": "5011",
+    "description": {
+      "default": "This is test item 5011"
+    },
+    "extends": false,
+    "UOM": "KG",
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "QUANTITY_REQUIRED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "050110000001",
+        "type": "UPC-A"
+      },
+      {
+        "value": "20501100000",
+        "type": "POSItemID"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Item 211"
+    },
+    "skuId": "211",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Item 211 - 1 @ 1.99, 2 @ 1.49 EACH, 6 @ 0.99 EACH"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456782112",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Item 212"
+    },
+    "skuId": "212",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Item 212 - 1 @ 1.99, 2+ @ 1.49 EACH, 6+ @ 0.99 @ EACH"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456782129",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Item 213"
+    },
+    "skuId": "213",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Item 213 - 1 @ 2.99, 3 @ 1.99 TOTAL, 5 @ 0.99 TOTAL"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456782136",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Item 214"
+    },
+    "skuId": "214",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Item 214 - 1 @ 0.98, 3+ @ 1.47 TOTAL, 5+ @ 1.98 TOTAL"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456782143",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Basketball shoes BLACK  "
+    },
+    "skuId": "bb001",
+    "description": {
+      "default": "Basketball shoes - 1 @ $199, 2 @ $175"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "pricingAlias": "basketballshoes",
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456440012",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Basketball shoes GRAY  "
+    },
+    "skuId": "bb002",
+    "description": {
+      "default": "Basketball shoes - 1 @ $199, 2 @ $175"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "pricingAlias": "basketballshoes",
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456440029",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Pack of Gum"
+    },
+    "skuId": "gum",
+    "description": {
+      "default": "Pack of Gum - 3 for $1 , 7 for $2"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "pricingAlias": "packofgum_3for1",
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456788220",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Bogo Item 1"
+    },
+    "skuId": "BOGO",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Buy 1, Get 1"
+    },
+    "notForSale": false,
+    "attributes": {
+      "BOGO": true
+    },
+    "aliases": [
+      {
+        "value": "BOGO",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Bogo Item 2"
+    },
+    "skuId": "BOGO2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Buy 1, Get 1"
+    },
+    "notForSale": false,
+    "attributes": {
+      "BOGO": true
+    },
+    "aliases": [
+      {
+        "value": "BOGO2",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Bogo Item 3"
+    },
+    "skuId": "BOGO3",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Buy 1, Get 1"
+    },
+    "notForSale": false,
+    "attributes": {
+      "BOGO": true
+    },
+    "aliases": [
+      {
+        "value": "BOGO3",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Bogo Item 4"
+    },
+    "skuId": "BOGO4",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Buy 1, Get 1"
+    },
+    "notForSale": false,
+    "attributes": {
+      "BOGO": true
+    },
+    "aliases": [
+      {
+        "value": "BOGO4",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "12\" Cheese Pizza"
+    },
+    "skuId": "pizza",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "12\" Cheese Pizza"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "pizza",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Soda"
+    },
+    "skuId": "soda",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Large Soda"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "soda",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/ZgFVF6J/soda.png",
+        "sizeCategory": "LARGE"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Pepsi"
+    },
+    "skuId": "PEPSI",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "SOFT_DRINKS",
+    "UOM": "EACH",
+    "description": {
+      "default": "12 Oz. Can of Soda"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "Pepsi",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Coca-Cola"
+    },
+    "skuId": "COCACOLA",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "SOFT_DRINKS",
+    "UOM": "EACH",
+    "description": {
+      "default": "12 Oz. Can of Soda"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "Cocacola",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/sKn0bQh/Coca-Cola.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Sprite"
+    },
+    "skuId": "SPRITE",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "SOFT_DRINKS",
+    "UOM": "EACH",
+    "description": {
+      "default": "12 Oz. Can of Soda"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "Sprite",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Pasta"
+    },
+    "skuId": "pasta",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Thin Pasta"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "pasta",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Parmesan Cheese"
+    },
+    "skuId": "cheese",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "12 oz Parmesan Cheese"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "cheese",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Wheat Deli"
+    },
+    "skuId": "bread",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Whole Wheat Loaf"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "bread",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/58Cs6YW/bread.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "12 oz Spaghetti Sauce"
+    },
+    "skuId": "sauce",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Best Brand Spaghetti Sauce"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "sauce",
+        "type": "SKU"
+      }
+    ],
+
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Ground Beef"
+    },
+    "skuId": "MEAT",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "80/20 Ground Beef"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "beef",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Adult Beverage 6 pack"
+    },
+    "skuId": "BEER",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "6 pack of adult beverages"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "beer",
+        "type": "SKU"
+      }
+    ],
+    "ageToSell": 18,
+    "ageToBuy": 21,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "1234VTEST Item"
+    },
+    "skuId": "1234VTEST",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "serialRequired": true,
+    "description": {
+      "default": "none"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "1234vtest",
+        "type": "SKU"
+      }
+    ],
+    "ageToBuy": 21,
+    "managerRequired": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Packet of Cigarettes"
+    },
+    "skuId": "CIGARETTES",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Packet of Cigarettes"
+    },
+    "notForSale": false,
+    "ageToSell": 18,
+    "ageToBuy": 21,
+    "ageGrandfatherDate": "2000-12-31",
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Marlboro Red"
+    },
+    "skuId": "MARLBORO_RED",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "TOBACCO",
+    "UOM": "EACH",
+    "description": {
+      "default": "Packet of Cigarettes"
+    },
+    "notForSale": false,
+    "ageToSell": 18,
+    "ageToBuy": 21,
+    "ageGrandfatherDate": "2000-12-31",
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {
+      "grouping": "marlboro"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Marlboro Black"
+    },
+    "skuId": "MARLBORO_BLACK",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "TOBACCO",
+    "UOM": "EACH",
+    "description": {
+      "default": "Packet of Cigarettes"
+    },
+    "notForSale": false,
+    "ageToSell": 18,
+    "ageToBuy": 21,
+    "ageGrandfatherDate": "2000-12-31",
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {
+      "grouping": "marlboro"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Marlboro Silver"
+    },
+    "skuId": "MARLBORO_SILVER",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "TOBACCO",
+    "UOM": "EACH",
+    "description": {
+      "default": "Packet of Cigarettes"
+    },
+    "notForSale": false,
+    "ageToSell": 18,
+    "ageToBuy": 21,
+    "ageGrandfatherDate": "2000-12-31",
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {
+      "grouping": "marlboro"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Adult feline catnip"
+    },
+    "skuId": "CATNIP",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Catnip for felines"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "catnip",
+        "type": "SKU"
+      }
+    ],
+    "attributes": {
+      "AGE": 21,
+      "SPECIES": "Cat"
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Allergy Pills"
+    },
+    "skuId": "PILLS",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "24 Pack Controlled Substance Pills"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "pills",
+        "type": "SKU"
+      }
+    ],
+    "ageToSell": 18,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Lottery Ticket"
+    },
+    "skuId": "LOTTO",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "RESTRICTED_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Low win percentage lottery game ticket"
+    },
+    "notForSale": false,
+    "nonMerchandise": true,
+    "aliases": [
+      {
+        "value": "lotto",
+        "type": "SKU"
+      }
+    ],
+    "paymentRestrictions": {
+      "paymentExclusions": [
+        {
+          "paymentTypeGroup": "CREDIT",
+          "amount": {
+            "value": 0,
+            "currencyCode": "EUR",
+            "currencyValue": {
+              "value": 0,
+              "currencyCode": "EUR"
+            }
+          }
+        }
+      ]
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Lottery Ticket"
+    },
+    "skuId": "lotteryTicket",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "nonMerchandiseAccount": {
+      "accountCode": "LOTTERY",
+      "payinPayout": "PAYIN"
+    },
+    "notForSale": false,
+    "description": {
+      "default": "Non-merchandise item belonging to account \"LOTTERY\""
+    }
+  },
+  {
+    "displayName": {
+      "default": "Book of Stamps"
+    },
+    "skuId": "bookOfStamps",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "nonMerchandiseAccount": {
+      "accountCode": "STAMPS",
+      "payinPayout": "PAYIN"
+    },
+    "notForSale": false,
+    "description": {
+      "default": "Non-merchandise item belonging to account \"STAMPS\""
+    }
+  },
+  {
+    "displayName": {
+      "default": "lotteryWinnings"
+    },
+    "skuId": "lotteryWinnings",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1_TAX_EXEMPT",
+    "UOM": "EACH",
+    "priceRequired": true,
+    "nonMerchandiseAccount": {
+      "accountCode": "LOTTERY_WINNINGS",
+      "payinPayout": "PAYOUT"
+    },
+    "description": {
+      "default": "Payout item belonging to account \"LOTTERY_WINNINGS\""
+    }
+  },
+  {
+    "displayName": {
+      "default": "Credit Restriction"
+    },
+    "skuId": "CreditRestriction",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "RESTRICTED_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test item for credit restrictions"
+    },
+    "notForSale": false,
+    "nonMerchandise": true,
+    "aliases": [
+      {
+        "value": "creditRestriction",
+        "type": "SKU"
+      }
+    ],
+    "paymentRestrictions": {
+      "paymentExclusions": [
+        {
+          "paymentTypeGroup": "CREDIT",
+          "amount": {
+            "value": 5.0,
+            "currencyCode": "EUR",
+            "currencyValue": {
+              "value": 5.0,
+              "currencyCode": "EUR"
+            }
+          }
+        }
+      ]
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Cash Restriction"
+    },
+    "skuId": "CashRestriction",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "RESTRICTED_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test item for cash restrictions"
+    },
+    "notForSale": false,
+    "nonMerchandise": true,
+    "aliases": [
+      {
+        "value": "cashRestriction",
+        "type": "SKU"
+      }
+    ],
+    "paymentRestrictions": {
+      "paymentExclusions": [
+        {
+          "paymentTypeGroup": "CASH",
+          "amount": {
+            "value": 5.0,
+            "currencyCode": "EUR",
+            "currencyValue": {
+              "value": 5.0,
+              "currencyCode": "EUR"
+            }
+          }
+        }
+      ]
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Gift Card"
+    },
+    "skuId": "GIFTCARD",
+    "extends": true,
+    "catalogName": "CATALOG_QA",
+    "groupName": "RESTRICTED_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Private Label Gift Card"
+    },
+    "notForSale": false,
+    "itemTaxability": "NON_TAXABLE",
+    "aliases": [
+      {
+        "value": "giftcard",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Restricted Item"
+    },
+    "skuId": "44",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Manager Required Item"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "44",
+        "type": "SKU"
+      },
+      {
+        "value": "123456789449",
+        "type": "UPC-A"
+      }
+    ],
+    "managerRequired": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Template Item"
+    },
+    "skuId": "DEFAULT_TEMPLATE_ITEM",
+    "extends": false,
+    "isNotOnFileItem": true,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Default Template Item"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "DEFAULT_TEMPLATE_ITEM",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Triggers a UI and Receipt Message"
+    },
+    "description": {
+      "default": "Message Example"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "msg",
+    "priceOverrideAllowed": true,
+    "pricingAlias": "1",
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "aliases": [],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "link",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Parent"
+    },
+    "displayName": {
+      "default": "Link Parent"
+    },
+    "childItemIds": [
+      "link_child_1",
+      "link_child_2"
+    ]
+  },
+  {
+    "skuId": "link_child_1",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 1"
+    },
+    "displayName": {
+      "default": "Link 1"
+    },
+    "isBundle": false,
+    "voidWithParent": false,
+    "attributes": {},
+    "childItemIds": [
+      "link_child_1-1"
+    ]
+  },
+  {
+    "skuId": "link_child_1-1",
+    "catalogName": "CATALOG_QA",
+    "groupName": "VOID_WITH_PARENT_GROUP",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 1-1"
+    },
+    "displayName": {
+      "default": "Link 1-1"
+    },
+    "attributes": {},
+    "childItemIds": []
+  },
+  {
+    "skuId": "link_child_2",
+    "catalogName": "CATALOG_QA",
+    "groupName": "RETURN_WITH_PARENT_GROUP",
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 2"
+    },
+    "displayName": {
+      "default": "Link 2"
+    },
+    "isBundle": true,
+    "attributes": {}
+  },
+  {
+    "skuId": "link_3",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link 3"
+    },
+    "displayName": {
+      "default": "Link 3"
+    },
+    "isBundle": false,
+    "childItemIds": [
+      "link_child_4-1",
+      "link_child_4-2"
+    ]
+  },
+  {
+    "skuId": "link_child_4-1",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 4-1"
+    },
+    "displayName": {
+      "default": "Link Child 4-1"
+    },
+    "isBundle": false,
+    "childItemIds": [
+      "link_child_2"
+    ],
+    "linkedItemReturnPolicy": "WITHOUT_PARENT",
+    "attributes": {}
+  },
+  {
+    "skuId": "link_child_4-2",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": false,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 4-2"
+    },
+    "displayName": {
+      "default": "Link Child 4-2"
+    }
+  },
+  {
+    "skuId": "BAD_LOOP_LINK",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Parent"
+    },
+    "displayName": {
+      "default": "Link Parent"
+    },
+    "isBundle": false,
+    "childItemIds": [
+      "BAD_LOOP_LINK"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Bundle 1 and 2"
+    },
+    "skuId": "12-bundle",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "UOM": "EACH",
+    "description": {
+      "default": "Bundle of items 1 and 2"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemInventoryMethod": "REQUIRED",
+    "isBundle": true,
+    "childItemIds": [
+      "1",
+      "2",
+      "bundle-child",
+      "link"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Bundle Child"
+    },
+    "skuId": "bundle-child",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "UOM": "EACH",
+    "description": {
+      "default": "Bundle child"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": false,
+    "itemInventoryMethod": "REQUIRED"
+  },
+  {
+    "skuId": "1-lowTax",
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "extends": false,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU Item 1 Name"
+    },
+    "description": {
+      "default": "EU Item 1 Description"
+    }
+  },
+  {
+    "skuId": "2-lowTax",
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "extends": false,
+    "UOM": "EACH",
+    "description": {
+      "default": "EU 2 Description"
+    },
+    "displayName": {
+      "default": "EU 2 Name"
+    }
+  },
+  {
+    "skuId": "3-lowTax",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 3 Name"
+    },
+    "description": {
+      "default": "EU 3 Description"
+    },
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "extends": false
+  },
+  {
+    "skuId": "4-lowTax",
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "extends": false,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 4 Name"
+    },
+    "description": {
+      "default": "EU 4 Description"
+    }
+  },
+  {
+    "skuId": "5LowTax",
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "extends": false,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 5 Name"
+    },
+    "description": {
+      "default": "EU 5 Description"
+    }
+  },
+  {
+    "skuId": "6_HighTax",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 6 Name"
+    },
+    "description": {
+      "default": "EU 6 Description"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "7-high",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "EU 7 Description"
+    },
+    "displayName": {
+      "default": "EU 7 Name"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "8-high",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "EU 8 Description"
+    },
+    "displayName": {
+      "default": "EU 8 Name"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "9-high",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 9 Name"
+    },
+    "description": {
+      "default": "EU 9 Description"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "10high",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_4",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 10 Name"
+    },
+    "description": {
+      "default": "EU 10 Description"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "11-high",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU 11 Name"
+    },
+    "description": {
+      "default": "EU 11 Description"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "foo-low",
+    "catalogName": "CATALOG_QA",
+    "groupName": "EBT_FOOD_GROUP_1",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "EU foo Name"
+    },
+    "description": {
+      "default": "EU foo  Description"
+    },
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "skuId": "10-low",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_4",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "BE 10 Name"
+    },
+    "description": {
+      "default": "BE 10 description"
+    },
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "skuId": "11-high-be",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "BE 11 description"
+    },
+    "displayName": {
+      "default": "BE 11 Name"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "low6",
+    "UOM": "EACH",
+    "description": {
+      "default": "FR 6 description"
+    },
+    "displayName": {
+      "default": "FR 6 Name"
+    },
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "skuId": "7-none",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "FR 7 Description"
+    },
+    "displayName": {
+      "default": "FR 7 Name"
+    },
+    "productTaxCodes": [
+      "NONE"
+    ]
+  },
+  {
+    "skuId": "8-none",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "FR 8 Description"
+    },
+    "displayName": {
+      "default": "FR 8 Name"
+    },
+    "productTaxCodes": [
+      "NONE"
+    ]
+  },
+  {
+    "skuId": "9-low",
+    "UOM": "EACH",
+    "description": {
+      "default": "9"
+    },
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_3",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "skuId": "10-high",
+    "UOM": "EACH",
+    "description": {
+      "default": "FR 10 Description"
+    },
+    "displayName": {
+      "default": "FR 10 Name"
+    },
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_4",
+    "extends": true,
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "11-high-fr",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "FR 11 Description"
+    },
+    "displayName": {
+      "default": "FR 11 Name"
+    },
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "skuId": "foo-low-fr",
+    "UOM": "EACH",
+    "description": {
+      "default": "FR foo"
+    },
+    "displayName": {
+      "default": "FR foo Name"
+    },
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Gift Card"
+    },
+    "description": {
+      "default": "Gift Card"
+    },
+    "UOM": "EACH",
+    "skuId": "svc",
+    "catalogName": "CATALOG_QA",
+    "groupName": "ACTIVATION_REQUIRED_GROUP",
+    "priceRequired": true,
+    "quantityRequired": false,
+    "quantityAllowed": false,
+    "serialRequired": true,
+    "priceOverrideAllowed": true,
+    "extends": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_TRACKED",
+    "aliases": [
+      {
+        "value": "076700000091",
+        "type": "UPC-A"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Gift Card"
+    },
+    "description": {
+      "default": "Gift Card"
+    },
+    "UOM": "EACH",
+    "skuId": "svc_client",
+    "pricingAlias": "svc",
+    "catalogName": "CATALOG_QA",
+    "groupName": "CLIENT_BASED_ACTIVATION_GROUP",
+    "priceRequired": true,
+    "quantityRequired": false,
+    "quantityAllowed": false,
+    "serialRequired": true,
+    "priceOverrideAllowed": true,
+    "extends": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_TRACKED"
+  },
+  {
+    "displayName": {
+      "default": "Tomato Sauce"
+    },
+    "description": {
+      "default": "Organic Tomato Sauce 15oz, No Salt Added"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "WG_SAUCE",
+    "priceRequired": false,
+    "serialRequired": false,
+    "quantityRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "077700000098",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Sweet Peas"
+    },
+    "description": {
+      "default": "Sweet Peas 15oz, No Salt Added"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "WG_PEAS",
+    "priceRequired": false,
+    "serialRequired": false,
+    "quantityRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "078700000095",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Ketchup"
+    },
+    "description": {
+      "default": "Tomato Ketchup 19.5oz, 50% Less Sugar"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "WG_KETCHUP",
+    "priceRequired": false,
+    "serialRequired": false,
+    "quantityRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "079700000092",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Pasta"
+    },
+    "description": {
+      "default": "Elbows Pasta 16oz"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "WG_PASTA",
+    "priceRequired": false,
+    "serialRequired": false,
+    "quantityRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "071800000095",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Old El Paso Taco Sauce"
+    },
+    "description": {
+      "default": "Old El Paso Mild Sauce 16oz"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "skuId": "TACO_SAUCE",
+    "priceRequired": false,
+    "serialRequired": false,
+    "quantityRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "046850000029",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Eat-in or take-out food"
+    },
+    "skuId": "EITO",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "UOM": "EACH",
+    "description": {
+      "default": "Sample of eat-in or take-out"
+    },
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "eito",
+        "type": "SKU"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "EAT_IN_TAKE_OUT": {
+        "EAT_IN": {
+          "productTaxCodes": [
+            "LOW"
+          ]
+        },
+        "TAKE_OUT": {
+          "productTaxCodes": [
+            "HIGH"
+          ]
+        }
+      }
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "10000",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "PET Bottle > 0,5L"
+    },
+    "description": {
+      "default": "PET Bottle > 0,5L"
+    },
+    "aliases": [
+      {
+        "value": "10000",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "isDepositItem": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "10001",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Crate"
+    },
+    "description": {
+      "default": "Crate"
+    },
+    "aliases": [
+      {
+        "value": "10001",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "10002",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Empty Crate"
+    },
+    "description": {
+      "default": "Empty Crate"
+    },
+    "aliases": [
+      {
+        "value": "10002",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "10003",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Glass Bottle > 0,5L"
+    },
+    "description": {
+      "default": "Glass Bottle > 0,5L"
+    },
+    "aliases": [
+      {
+        "value": "10003",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "10004",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Glass Bottle <= 0,5L"
+    },
+    "description": {
+      "default": "Glass Bottle <= 0,5L"
+    },
+    "aliases": [
+      {
+        "value": "10004",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "300",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Beer 8.45fl oz"
+    },
+    "description": {
+      "default": "Beer 8.45fl oz"
+    },
+    "aliases": [
+      {
+        "value": "300",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/kHbNfVW/heineken.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "referenceItemIds": [
+      "301",
+      "302"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "301",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Beer crate 10x8.45fl oz"
+    },
+    "description": {
+      "default": "Beer crate 10x8.45fl oz"
+    },
+    "aliases": [
+      {
+        "value": "301",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/kHbNfVW/heineken.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "302",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Beer crate 24x8.45fl oz"
+    },
+    "description": {
+      "default": "Beer crate 24x8.45fl oz"
+    },
+    "aliases": [
+      {
+        "value": "302",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/kHbNfVW/heineken.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "LinkedDeposit1",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit1"
+    },
+    "description": {
+      "default": "Item with linked deposit 1"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit1",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "isDepositItem": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit1"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit2",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit2"
+    },
+    "description": {
+      "default": "Item with linked deposit 2"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit2",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "isDepositItem": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit2"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit3",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit3"
+    },
+    "description": {
+      "default": "Item with linked deposit 3"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit3",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit1",
+      "Deposit3"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit4",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit4"
+    },
+    "description": {
+      "default": "Item with linked deposit 4"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit4",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "isDepositItem": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "NonDeposit1",
+      "Deposit4"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit5",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit5"
+    },
+    "description": {
+      "default": "Item with linked deposit 5"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit5",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit4"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit6",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit6"
+    },
+    "description": {
+      "default": "Item with linked deposit 6"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit6",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "isDepositItem": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "NonDeposit1",
+      "NonDeposit2"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit7",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit7"
+    },
+    "description": {
+      "default": "Item with linked deposit 7"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit7",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit5"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit8",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit8"
+    },
+    "description": {
+      "default": "Deposit 1 + nested LinkedDeposit9"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit8",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "LinkedDeposit9",
+      "Deposit1"
+    ]
+  },
+  {
+    "skuId": "LinkedDeposit9",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "LinkedDeposit9"
+    },
+    "description": {
+      "default": "Deposit2 as child"
+    },
+    "aliases": [
+      {
+        "value": "LinkedDeposit9",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "isDepositItem": true,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "Deposit2"
+    ]
+  },
+  {
+    "skuId": "NonDeposit1",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "NonDeposit1"
+    },
+    "description": {
+      "default": "Item not deposit 1"
+    },
+    "aliases": [
+      {
+        "value": "NonDeposit1",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "NonDeposit2",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "NonDeposit2"
+    },
+    "description": {
+      "default": "Item not deposit 2"
+    },
+    "aliases": [
+      {
+        "value": "NonDeposit2",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "GROUP_2",
+    "extends": true,
+    "isDepositItem": false,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "childItemIds": [
+      "NonDeposit1",
+      "Deposit1",
+      "Deposit3"
+    ]
+  },
+  {
+    "skuId": "Deposit1",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit1"
+    },
+    "description": {
+      "default": "Deposit Item 1"
+    },
+    "aliases": [
+      {
+        "value": "Deposit1",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "Deposit2",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit2"
+    },
+    "description": {
+      "default": "Deposit Item 2"
+    },
+    "aliases": [
+      {
+        "value": "Deposit2",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "Deposit3",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit3"
+    },
+    "description": {
+      "default": "Deposit Item 3"
+    },
+    "aliases": [
+      {
+        "value": "Deposit3",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "Deposit4",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit4"
+    },
+    "description": {
+      "default": "Deposit Item 4"
+    },
+    "aliases": [
+      {
+        "value": "Deposit4",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "Deposit5",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit5"
+    },
+    "description": {
+      "default": "Deposit Item 5"
+    },
+    "aliases": [
+      {
+        "value": "Deposit5",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "notForSale": false,
+    "groupName": "NOT_DISCOUNTABLE_GROUP_1",
+    "extends": true,
+    "isBundle": true,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "NotForSale",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Not for sale"
+    },
+    "description": {
+      "default": "Not for sale item 1"
+    },
+    "aliases": [
+      {
+        "value": "NotForSale",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "groupName": "NOT_FOR_SALE_GROUP_1",
+    "extends": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "link_2",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Parent"
+    },
+    "displayName": {
+      "default": "Link Parent"
+    },
+    "childItemIds": [
+      "link_child_1",
+      "link_child_3"
+    ]
+  },
+  {
+    "skuId": "link_child_3",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 3"
+    },
+    "displayName": {
+      "default": "Link 3"
+    },
+    "childItemIds": [
+      "link_child_3-1"
+    ]
+  },
+  {
+    "skuId": "link_child_3-1",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Link Child 3-1"
+    },
+    "displayName": {
+      "default": "Link 3-1"
+    },
+    "childItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Deposit refund voucher"
+    },
+    "quantityRequired": false,
+    "skuId": "depositrefund",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a deposit refund item"
+    },
+    "priceRequired": true,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "depositrefund-none",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Deposit refund voucher EU"
+    },
+    "description": {
+      "default": "This is an EU Deposit refund voucher"
+    },
+    "productTaxCodes": [
+      "NONE"
+    ]
+  },
+  {
+    "skuId": "depositrefund-low-be",
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_BE",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a BE Deposit refund voucher with LOW tax code"
+    },
+    "displayName": {
+      "default": "BE Deposit refund voucher"
+    }
+  },
+  {
+    "skuId": "depositrefund-none-nl",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "extends": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a NL Deposit refund voucher with NONE tax code"
+    },
+    "displayName": {
+      "default": "NL Deposit refund voucher"
+    },
+    "productTaxCodes": [
+      "NONE"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Zero Price Item"
+    },
+    "skuId": "0",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a zero price item"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456780002",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000058",
+        "type": "UPC-A"
+      }
+    ],
+    "itemInventoryMethod": "REQUIRED",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Bundle 0 and 2"
+    },
+    "skuId": "02-bundle",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LOW_TAX_CODE_EU",
+    "UOM": "EACH",
+    "description": {
+      "default": "Bundle of items 0 and 2"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemInventoryMethod": "REQUIRED",
+    "isBundle": true,
+    "childItemIds": [
+      "0",
+      "2",
+      "bundle-child",
+      "link"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Group 5: Item 1"
+    },
+    "skuId": "501",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_5",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test item for Group 5"
+    },
+    "notForSale": false,
+    "attributes": {}
+  },
+  {
+    "displayName": {
+      "default": "Group 5: Item 2"
+    },
+    "skuId": "502",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_5",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test item for Group 5"
+    },
+    "notForSale": false,
+    "attributes": {}
+  },
+  {
+    "skuId": "STAMP",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Stamp"
+    },
+    "description": {
+      "default": "Stamp"
+    },
+    "aliases": [
+      {
+        "value": "stamp",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "groupName": "OPEN_CASH_DRAWER_GROUP",
+    "nonMerchandise": true,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "LOTTERY",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Lottery"
+    },
+    "description": {
+      "default": "Lottery"
+    },
+    "aliases": [
+      {
+        "value": "lottery",
+        "type": "SKU"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "groupName": "OPEN_CASH_DRAWER_GROUP",
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "ageRestrictedItem",
+    "UOM": "EACH",
+    "displayName": {
+      "default": "Age Restricted Item"
+    },
+    "description": {
+      "default": "Age Restricted Item"
+    },
+    "aliases": [
+      {
+        "value": "ageRestrictedItem",
+        "type": "SKU"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/sszYdLF/johny-walker.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_6"
+  },
+  {
+    "displayName": {
+      "default": "Corona Light"
+    },
+    "skuId": "21",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_6",
+    "UOM": "EACH",
+    "quantityRequired": false,
+    "description": {
+      "default": "6 Pack Beer"
+    },
+    "ageToSell": 21,
+    "ageToBuy": 21,
+    "ageGrandfatherDate": "1999-12-31",
+    "managerRequired": false
+  },
+  {
+    "displayName": {
+      "default": "Test Item Reason Code Required"
+    },
+    "skuId": "40461",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item 40461"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "040000004615",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "REQUIRED",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item MO Required"
+    },
+    "skuId": "40462",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item 40462"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "040000004622",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "REQUIRED",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item Missing Field Required"
+    },
+    "skuId": "40463",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item 40463"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "040000004639",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "itemInventoryMethod": "REQUIRED",
+    "attributes": {
+      "BREED": "Koolie",
+      "COAT": "Merle"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Return with fee item"
+    },
+    "skuId": "1998",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Return with fee item"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "521771",
+    "displayName": {
+      "default": "Test Item 521771"
+    },
+    "description": {
+      "default": "This is a test item that cannot be sold until year 3000"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "ALLOWABLE_TIME_SALES_GROUP",
+    "UOM": "EACH",
+    "quantityRequired": false,
+    "allowableTimeOfSale": {
+      "startDate": "3000-01-01T00:00:00.000Z",
+      "endDate": "3001-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "skuId": "521772",
+    "displayName": {
+      "default": "Test Item 521772"
+    },
+    "description": {
+      "default": "This is a test item that cannot be sold after year 2000"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "ALLOWABLE_TIME_SALES_GROUP",
+    "UOM": "EACH",
+    "quantityRequired": false,
+    "allowableTimeOfSale": {
+      "startDate": "1998-01-01T00:00:00.000Z",
+      "endDate": "2000-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Test Item 1, 1 Off First 5 Dept Purchase"
+    },
+    "skuId": "100500_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "ONE_OFF_FIRST_FIVE_DEPARTMENT",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test Item 1, 1 Off First 5 Dept Purchase"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {}
+  },
+  {
+    "displayName": {
+      "default": "Test Item 2, 1 Off First 5 Dept Purchase"
+    },
+    "skuId": "100500_2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "ONE_OFF_FIRST_FIVE_DEPARTMENT",
+    "UOM": "EACH",
+    "description": {
+      "default": "Test Item 2, Off First 5 Dept Purchase"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "attributes": {}
+  },
+  {
+    "catalogName": "CATALOG_QA",
+    "skuId": "NPD0001",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Item 1: No Promotions Department"
+    },
+    "displayName": {
+      "default": "Item 1: No Promotions Department"
+    },
+    "extends": false,
+    "groupName": "NO_PROMOTIONS_DEPARTMENT",
+    "isBundle": false
+  },
+  {
+    "catalogName": "CATALOG_QA",
+    "skuId": "NPD0002",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Item 2: No Promotions Department"
+    },
+    "displayName": {
+      "default": "Item 2: No Promotions Department"
+    },
+    "extends": false,
+    "groupName": "NO_PROMOTIONS_DEPARTMENT",
+    "isBundle": false
+  },
+  {
+    "catalogName": "CATALOG_QA",
+    "skuId": "NPD0003",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Item 3: No Promotions Department"
+    },
+    "displayName": {
+      "default": "Item 3: No Promotions Department"
+    },
+    "extends": false,
+    "groupName": "NO_PROMOTIONS_DEPARTMENT",
+    "isBundle": false
+  },
+  {
+    "displayName": {
+      "default": "Lemon Juice Powder"
+    },
+    "skuId": "2003",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "JUICE_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Lemon Juice Powder"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "attributes": {}
+  },
+  {
+    "displayName": {
+      "default": "Orange Juice Bottle 64 oz"
+    },
+    "skuId": "2004",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "JUICE_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Orange Juice"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "attributes": {
+      "bottle": true
+    }
+  },
+  {
+    "displayName": {
+      "default": "Grape Juice Bottle 64 oz"
+    },
+    "skuId": "2005",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "JUICE_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Grape Juice"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "attributes": {
+      "bottle": true
+    }
+  },
+  {
+    "displayName": {
+      "default": "Soy Sauce Bottle 64 oz"
+    },
+    "skuId": "2006",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "UOM": "EACH",
+    "description": {
+      "default": "Soy Sauce Bottle 64 oz"
+    },
+    "notForSale": false,
+    "attributes": {
+      "bottle": true
+    },
+    "groupName": "GROUP_1",
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Price embedded item 1"
+    },
+    "skuId": "priceEmbedded1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is price embedded item 1"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "020001000000",
+        "type": "POSItemID"
+      }
+    ]
+  },
+  {
+    "skuId": "1568",
+    "catalogName": "CATALOG_QA",
+    "groupName": "DEPARTMENT_A",
+    "displayName": {
+      "default": "DEPARTMENT_A item"
+    },
+    "description": {
+      "default": "sku for sample order creation"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789013",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000066",
+        "type": "UPC-A"
+      }
+    ]
+  },
+  {
+    "skuId": "1703",
+    "catalogName": "CATALOG_QA",
+    "groupName": "DEPARTMENT_B",
+    "displayName": {
+      "default": "DEPARTMENT_B item"
+    },
+    "description": {
+      "default": "sku for sample order creation"
+    },
+    "extends": false,
+    "UOM": "EACH",
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789014",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000067",
+        "type": "UPC-A"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Bacon department: Item 1"
+    },
+    "skuId": "2001",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "BACON_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "1 off in eggs dept with a bacon dept item purchased"
+    },
+    "notForSale": false,
+    "attributes": {}
+  },
+  {
+    "displayName": {
+      "default": "Eggs department: Item 1"
+    },
+    "skuId": "2002",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "EGGS_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "1 off in eggs dept with a bacon dept item purchased"
+    },
+    "notForSale": false,
+    "attributes": {}
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 1"
+    },
+    "skuId": "WICItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "0271040"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 2"
+    },
+    "skuId": "WICItem2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "0250182"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 3"
+    },
+    "skuId": "WICItem3",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "03308"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 4"
+    },
+    "skuId": "WICItem4",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "03283"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 5"
+    },
+    "skuId": "WICItem5",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "03610"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 6"
+    },
+    "skuId": "WICItem6",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "859033903761"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 7"
+    },
+    "skuId": "WICItem7",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "01009610048"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 8"
+    },
+    "skuId": "WICItem8",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "03029"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 9"
+    },
+    "skuId": "WICItem9",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "04800"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 10"
+    },
+    "skuId": "WICItem10",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "04770"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item broadband"
+    },
+    "skuId": "WICBroadBand1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "8691573009310"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item broadband"
+    },
+    "skuId": "WICBroadBand2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "048800173487"
+  },
+  {
+    "displayName": {
+      "default": "QHP eligible Item"
+    },
+    "skuId": "QHPItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "QHP_GROUP",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item for QHP"
+    },
+    "notForSale": false,
+    "productId": "1"
+  },
+  {
+    "displayName": {
+      "default": "WIC eligible Item 13"
+    },
+    "skuId": "WICItem13",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC"
+    },
+    "notForSale": false,
+    "productId": "03680090618"
+  },
+  {
+    "displayName": {
+      "default": "WIC CVB eligible Item 1"
+    },
+    "skuId": "WICCVBItem1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC CVB"
+    },
+    "notForSale": false,
+    "productId": "04012"
+  },
+  {
+    "displayName": {
+      "default": "WIC CVB eligible Item 2"
+    },
+    "skuId": "WICCVBItem2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC CVB"
+    },
+    "notForSale": false,
+    "productId": "04011"
+  },
+  {
+    "displayName": {
+      "default": "WIC CVB eligible Item 3 - mixed produce item"
+    },
+    "skuId": "WICCVBItem3",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for WIC CVB - mixed produce item"
+    },
+    "notForSale": false,
+    "productId": "04469"
+  },
+  {
+    "displayName": {
+      "default": "Surcharge eligible Item"
+    },
+    "skuId": "SurchargeItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "SURCHARGE_GROUP",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item for surcharge"
+    },
+    "notForSale": false
+  },
+  {
+    "displayName": {
+      "default": "Not Surcharge eligible Item"
+    },
+    "skuId": "NotSurchargeItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "inventoryMinimumThreshold": 3,
+    "description": {
+      "default": "This is test item for validate not surcharge"
+    },
+    "notForSale": false,
+    "isSurchargeEligible": false
+  },
+  {
+    "displayName": {
+      "default": "TEST_B item"
+    },
+    "skuId": "TEST_B",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator B"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789101",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000101",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_D item"
+    },
+    "skuId": "TEST_D",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator D"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": true,
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "TEST_A item"
+    },
+    "skuId": "TEST_A",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator A"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": true,
+    "isEBTFoodAllowed": false,
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "TEST_C item"
+    },
+    "skuId": "TEST_C",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator C"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": false,
+    "productTaxCodes": [
+      "LOW"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "TEST_T item with taxes"
+    },
+    "skuId": "TEST_T",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator T"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": true,
+    "isEBTFoodAllowed": false,
+    "aliases": [
+      {
+        "value": "123456789102",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000102",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_M item"
+    },
+    "skuId": "TEST_M",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator M"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": false,
+    "aliases": [
+      {
+        "value": "123456789103",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000103",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_F item"
+    },
+    "skuId": "TEST_F",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator F"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "123456789105",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000104",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_S item"
+    },
+    "skuId": "TEST_S",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator S"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isSurchargeEligible": true,
+    "isEBTFoodAllowed": false,
+    "aliases": [
+      {
+        "value": "123456789106",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000105",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_N item"
+    },
+    "skuId": "TEST_N",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator N"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": false,
+    "aliases": [
+      {
+        "value": "123456789107",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000106",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_Q item"
+    },
+    "skuId": "TEST_Q",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator Q"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isSurchargeEligible": false,
+    "isEBTFoodAllowed": false,
+    "isQHPEligible": false,
+    "aliases": [
+      {
+        "value": "123456789110",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000107",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_X item"
+    },
+    "skuId": "TEST_X",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator X"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isEBTFoodAllowed": false,
+    "isSurchargeEligible": true,
+    "isQHPEligible": true,
+    "aliases": [
+      {
+        "value": "123456789108",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000108",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "NONE"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_R item"
+    },
+    "skuId": "TEST_R",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator R"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "NON_TAXABLE",
+    "isEBTFoodAllowed": false,
+    "isSurchargeEligible": true,
+    "isQHPEligible": true,
+    "aliases": [
+      {
+        "value": "123456789109",
+        "type": "UPC-A"
+      },
+      {
+        "value": "012345000109",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TEST_T item without taxes"
+    },
+    "skuId": "TEST_T0",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2_REQUIRED_INVENTORY",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for tax line indicator T"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isSurchargeEligible": true,
+    "isEBTFoodAllowed": false,
+    "productTaxCodes": [
+      "NONE"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Test Category Item"
+    },
+    "skuId": "prohibitionItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "PROHIBITION_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for categories inherited from parent"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Test Category Item2"
+    },
+    "skuId": "prohibitionItem2",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "PROHIBITION_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is test item for having categories directly applied to an item"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "categories": [
+      "Prohibition2"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Item Taxability Test Item"
+    },
+    "skuId": "alwaysTaxedItem",
+    "inventoryMinimumThreshold": 3,
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1_ALWAYS_TAXED",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is an always taxed test item"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "itemTaxability": "ALWAYS_TAXED",
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "425465168",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30,
+      "companyPrefix": "111111",
+      "familyCode": "222",
+      "PSE-grams": "5"
+    }
+  },
+  {
+    "displayName": {
+      "default": "DepositRefundItem"
+    },
+    "skuId": "depositRefundItemSKU",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1_TAX_EXEMPT",
+    "UOM": "EACH",
+    "nonMerchandise": true,
+    "quantityRequired": false,
+    "priceRequired": true,
+    "isDepositRefundItem": true,
+    "discountable": false,
+    "description": {
+      "default": "An item that will be used for deposit refunds"
+    }
+  },
+  {
+    "displayName": {
+      "default": "TaxHolidayAllExempt"
+    },
+    "skuId": "taxHolidayAllExempt",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_9",
+    "UOM": "EACH",
+    "description": {
+      "default": "A tax holiday item with all tax rate types exempt"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "TaxHolidayStateExempt"
+    },
+    "skuId": "taxHolidayItem",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "A tax holiday item with only the STATE TAX exempt"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "taxHolidayIds": [
+      "schoolSuppliesId"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "TaxHolidayExpired"
+    },
+    "skuId": "taxHolidayExpired",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "A tax holiday item with the COUNTY TAX exempt, but the holiday has passed"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "taxHolidayIds": [
+      "schoolClothesId"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Diamond Necklace"
+    },
+    "skuId": "diamondNecklace",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LUXURY_DEPT",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a luxurious diamond necklace"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "425475168",
+        "type": "UPC-A"
+      }
+    ],
+    "_inherits_tax_codes_from_group": "",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30
+    }
+  },
+  {
+    "displayName": {
+      "default": "Diamond Ring"
+    },
+    "skuId": "diamondRing",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LUXURY_DEPT",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a luxurious diamond ring"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "425475167",
+        "type": "UPC-A"
+      }
+    ],
+    "_inherits_tax_codes_from_group": "",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30
+    }
+  },
+  {
+    "displayName": {
+      "default": "Diamond Bracelet"
+    },
+    "skuId": "diamondBracelet",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "LUXURY_DEPT",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a luxurious diamond bracelet"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "425475166",
+        "type": "UPC-A"
+      }
+    ],
+    "_inherits_tax_codes_from_group": "",
+    "attributes": {
+      "RETURN_LIMIT_DAYS": 30
+    }
+  },
+  {
+    "displayName": {
+      "default": "Large bag refund"
+    },
+    "skuId": "largeBagRefund",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Large bag refund"
+    },
+    "nonMerchandise": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "aliases": [
+      {
+        "value": "194930759094",
+        "type": "UPC-A"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Small bag refund"
+    },
+    "skuId": "smallBagRefund",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Small bag refund"
+    },
+    "nonMerchandise": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "aliases": [
+      {
+        "value": "807145844944",
+        "type": "UPC-A"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "EAN-24 Test KG Banana"
+    },
+    "skuId": "000000004011",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "EAN-24 Test KG Banana"
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "EAN-24 Test KG Banana"
+    },
+    "skuId": "000000005011",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "KG",
+    "description": {
+      "default": "EAN-24 Test KG Banana"
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "EAN-24 Test Quantity Lemon"
+    },
+    "skuId": "000000004033",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "EAN-24 Test Quantity Lemon"
+    },
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "item_addon_sofa",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Item Add-on Sofa"
+    },
+    "displayName": {
+      "default": "Sofa with add-ons on the catalog item"
+    },
+    "addOnSetName": "FURNITURE_ADDONS"
+  },
+  {
+    "skuId": "group_addon_sofa",
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "extends": true,
+    "UOM": "EACH",
+    "priceOverrideAllowed": true,
+    "description": {
+      "default": "Group add-on Sofa"
+    },
+    "displayName": {
+      "default": "Sofa with its add-ons in a group"
+    },
+    "addOnSetName": "FURNITURE_ADDONS"
+  },
+  {
+    "skuId": "category_addon_sofa",
+    "displayName": {
+      "default": "Couch with add-ons in a category"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is a couch with its add-ons in category"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "categories": [
+      "FurnitureAddOns"
+    ]
+  },
+  {
+    "skuId": "1YrWarranty",
+    "displayName": {
+      "default": "1 Year Warranty"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "1 Year Warranty for item_addon_sofa"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "3YrWarranty",
+    "displayName": {
+      "default": "3 Year Warranty"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "3 Year Warranty for item_addon_sofa"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "Delivery",
+    "displayName": {
+      "default": "Furniture Delivery"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "This is an add-on item for Furniture Delivery"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Butterball Turkey, Frozen"
+    },
+    "skuId": "turkey",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_2",
+    "UOM": "EACH",
+    "description": {
+      "default": "Butterball All Natural Young Turkey, Frozen"
+    },
+    "notForSale": false,
+    "isEBTFoodAllowed": true,
+    "aliases": [
+      {
+        "value": "turkey",
+        "type": "SKU"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "genericAutomobile",
+    "displayName": {
+      "default": "Generic Car"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "A generic automobile with no particular make or model"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "addOnSetName": "AUTO_ADDONS"
+  },
+  {
+    "skuId": "allSeasonFloorMats",
+    "displayName": {
+      "default": "All-Season Floor Mats"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Interior Add-on for Automobiles"
+    },
+    "linkedItemReturnPolicy": "WITHOUT_PARENT",
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "rearSeatEntertainmentSystem",
+    "displayName": {
+      "default": "Rear-Seat Entertainment System"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Interior Add-on for Automobiles"
+    },
+    "linkedItemReturnPolicy": "WITH_PARENT",
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "rearWindowTint",
+    "displayName": {
+      "default": "Rear Window Tint"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Exterior Add-on for Automobiles"
+    },
+    "linkedItemReturnPolicy": "WITH_PARENT",
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "paintProtectionFilm",
+    "displayName": {
+      "default": "Paint Protection"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Exterior Add-on for Automobiles"
+    },
+    "canBeReturned": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "antiTheftWindowEtching",
+    "displayName": {
+      "default": "Anti-Theft Window Etching"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Exterior Add-on for Automobiles"
+    },
+    "canBeReturned": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "skuId": "extraKeyFob",
+    "displayName": {
+      "default": "An Additional Key Fob"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Interior Add-on for Automobiles"
+    },
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED"
+  },
+  {
+    "displayName": {
+      "default": "Non-Merchandise Item"
+    },
+    "skuId": "271011",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "UOM": "EACH",
+    "groupName": "GROUP_2",
+    "priceRequired": true,
+    "quantityAllowed": true,
+    "nonMerchandiseAccount": {
+      "accountCode": "550",
+      "payinPayout": "PAYOUT"
+    },
+    "aliases": [],
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "itemTaxability": "NON_TAXABLE",
+    "attributes": {
+      "discountable": false
+    },
+    "description": {
+      "default": "Non-merchandise item"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Variable Gift Card $10-$20"
+    },
+    "aliases": [
+      {
+        "value": "VGC1020",
+        "type": "SKU"
+      }
+    ],
+    "skuId": "vgc1020",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "VARIABLE_GIFT_CARDS",
+    "UOM": "EACH",
+    "description": {
+      "default": "Variable Gift Card with minimum of $10 and maximum of $20 value"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "attributes": {
+      "MAX_GIFT_CARD_VALUE": 20,
+      "MIN_GIFT_CARD_VALUE": 10
+    }
+  },
+  {
+    "displayName": {
+      "default": "Variable Gift Card max $50"
+    },
+    "aliases": [
+      {
+        "value": "VGCMAX50",
+        "type": "SKU"
+      }
+    ],
+    "skuId": "vgcmax50",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "VARIABLE_GIFT_CARDS",
+    "UOM": "EACH",
+    "description": {
+      "default": "Variable Gift Card with maximum of $50 value"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "attributes": {
+      "MAX_GIFT_CARD_VALUE": 50
+    }
+  },
+  {
+    "displayName": {
+      "default": "Variable Gift Card min $50"
+    },
+    "aliases": [
+      {
+        "value": "VGCMIN50",
+        "type": "SKU"
+      }
+    ],
+    "skuId": "vgcmin50",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "VARIABLE_GIFT_CARDS",
+    "UOM": "EACH",
+    "description": {
+      "default": "Variable Gift Card with minimum of $50 value"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "attributes": {
+      "MIN_GIFT_CARD_VALUE": 50
+    }
+  },
+  {
+    "displayName": {
+      "default": "Variable Gift Card"
+    },
+    "aliases": [
+      {
+        "value": "VGC",
+        "type": "SKU"
+      }
+    ],
+    "skuId": "vgc",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "groupName": "VARIABLE_GIFT_CARDS_CLIENT_ACTIVATED",
+    "UOM": "EACH",
+    "description": {
+      "default": "Variable Gift Card with no limits"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "5000112547726",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "description": {
+      "default": "Coca Cola 1.5 Lt"
+    },
+    "displayName": {
+      "default": "Coca Cola 1.5 Liter"
+    },
+    "extends": false,
+    "groupName": "SODA",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "Test101"
+      },
+      {
+        "type": "EAN-13",
+        "value": "1"
+      }
+    ],
+    "childItemIds": [
+      "100001"
+    ],
+    "allowableTimesOfSale": [],
+    "images": [
+      {
+        "url": "https://i.ibb.co/LvTKZJr/Coca-Cola.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "100001",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "displayName": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "extends": false,
+    "groupName": "BOTTLEDEPOSIT",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://i.ibb.co/2cQh1xc/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Wine"
+    },
+    "displayName": {
+      "default": "Wine"
+    },
+    "extends": false,
+    "groupName": "LIKOR",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "8437003223068",
+    "images": [
+      {
+        "url": "https://i.ibb.co/9c82GzZ/wine.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "2.3",
+      "climate": "B",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Johny Walker"
+    },
+    "displayName": {
+      "default": "Johny Walker"
+    },
+    "extends": false,
+    "groupName": "BEER",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "2",
+    "images": [
+      {
+        "url": "https://i.ibb.co/wQVC0fw/johny-walker.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "1.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Milk",
+      "nl-BE": "Melk",
+      "sv-SE": "Mjölk"
+    },
+    "displayName": {
+      "default": "Milk",
+      "nl-BE": "Melk",
+      "sv-SE": "Mjölk"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "referenceItemIds": [],
+    "skuId": "101",
+    "images": [
+      {
+        "url": "https://i.ibb.co/3vtpzFx/milk.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "canBeReturned": false,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Cookies",
+      "nl-BE": "Koekjes",
+      "sv-SE": "Kakor"
+    },
+    "displayName": {
+      "default": "Cookies",
+      "nl-BE": "Koekjes",
+      "sv-SE": "Kakor"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "102",
+    "images": [
+      {
+        "url": "https://i.ibb.co/3yXGvg4/cookies.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Bread",
+      "nl-BE": "Brood",
+      "sv-SE": "Bröd"
+    },
+    "displayName": {
+      "default": "Bread",
+      "nl-BE": "Brood",
+      "sv-SE": "Bröd"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": false,
+    "referenceItemIds": [],
+    "skuId": "103",
+    "images": [
+      {
+        "url": "https://i.ibb.co/yqZqgz2/bread.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Nutella"
+    },
+    "displayName": {
+      "default": "Nutella"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "104",
+    "images": [
+      {
+        "url": "https://i.ibb.co/59cL8VC/nutella.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Coffee pads",
+      "nl-BE": "Koffie pads",
+      "sv-SE": "Kaffekapslar"
+    },
+    "displayName": {
+      "default": "Coffee pads",
+      "nl-BE": "Koffie pads",
+      "sv-SE": "Kaffekapslar"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": true,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "105",
+    "images": [
+      {
+        "url": "https://i.ibb.co/64RrYRY/coffee-pads.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Item 106"
+    },
+    "displayName": {
+      "default": "Item 106"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityRequired": true,
+    "referenceItemIds": [],
+    "skuId": "106"
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Twix"
+    },
+    "displayName": {
+      "default": "Twix"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceRequired": true,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "107",
+    "images": [
+      {
+        "url": "https://i.ibb.co/ZXfqMvm/twix.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Knife"
+    },
+    "displayName": {
+      "default": "Knife"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "managerRequired": true,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "108",
+    "images": [
+      {
+        "url": "https://i.ibb.co/7RN5684/knife.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "150",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "description": {
+      "default": "Heineken Regular 6x0.25"
+    },
+    "displayName": {
+      "default": "Heineken Regular 6x0.25"
+    },
+    "extends": false,
+    "groupName": "BEER",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "151",
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Single Malt 0,75"
+    },
+    "displayName": {
+      "default": "Single Malt 0,75"
+    },
+    "extends": false,
+    "groupName": "LIKOR",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "152",
+    "UOM": "EACH",
+    "ageToSell": 18,
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Item 152"
+    },
+    "displayName": {
+      "default": "item 152"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "5400141415971",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Sparkling water 50 cl",
+      "nl-BE": "Spuitwater 50 cl",
+      "sv-SE": "Kolsyrat Vatten 50 cl"
+    },
+    "displayName": {
+      "default": "Sparkling water 50 cl",
+      "nl-BE": "Spuitwater 50 cl",
+      "sv-SE": "Kolsyrat Vatten 50 cl"
+    },
+    "extends": false,
+    "groupName": "DRINKS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/SmKfqXJ/sparkling-water.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "200",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 200"
+    },
+    "displayName": {
+      "default": "Item 200"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "201",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 201"
+    },
+    "displayName": {
+      "default": "Item 201"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "202",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 202"
+    },
+    "displayName": {
+      "default": "Item 202"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Toy car",
+      "nl-BE": "Speelgoed auto",
+      "sv-SE": "Leksaksbil"
+    },
+    "displayName": {
+      "default": "Toy car",
+      "nl-BE": "Speelgoed auto",
+      "sv-SE": "Leksaksbil"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/M13FGKB/toy-car-mini-cooper.png"
+      }
+    ],
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "203"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "204",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Soda"
+    },
+    "displayName": {
+      "default": "Soda"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/WtXTmzZ/soda.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "205",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Sandwich"
+    },
+    "displayName": {
+      "default": "Sandwich"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/QbdqNZq/sandwich.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "206",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Snack"
+    },
+    "displayName": {
+      "default": "Snack"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/pKBF8v8/snack.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "207",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Itme 207"
+    },
+    "displayName": {
+      "default": "Item 207"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "208",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 208"
+    },
+    "displayName": {
+      "default": "Item 208"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "209",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 209"
+    },
+    "displayName": {
+      "default": "Item 209"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Butter",
+      "nl-BE": "Boter",
+      "sv-SE": "Smör"
+    },
+    "displayName": {
+      "default": "Butter",
+      "nl-BE": "Boter",
+      "sv-SE": "Smör"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "109",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/yVdYkJ0/butter.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Banana"
+    },
+    "displayName": {
+      "default": "Banana"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "500",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/YD5dXBX/banana.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Apples"
+    },
+    "displayName": {
+      "default": "Apples"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "501",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/k9t7Vmb/apples.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Grapes"
+    },
+    "displayName": {
+      "default": "Grapes"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "502",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/Bn44BTb/grapes.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Oranges"
+    },
+    "displayName": {
+      "default": "Oranges"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "503",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/QMLfzTR/oranges.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "TUC Original"
+    },
+    "displayName": {
+      "default": "TUC Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "5410041001204",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/hBXxPtm/tuc-original.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pringles Original"
+    },
+    "displayName": {
+      "default": "Pringles Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "5053990138722",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/QjvxL52/pringles.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pasta"
+    },
+    "displayName": {
+      "default": "Pasta"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "8076809523509",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/0Vk5tZD/spaghetti.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Butterkeks"
+    },
+    "displayName": {
+      "default": "Butterkeks"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4017100114717",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/Jm9hYLB/butterkeks.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Babybel"
+    },
+    "displayName": {
+      "default": "Babybel"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "3073781106336",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/8rcxYGY/Babybel.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Kokosmilch"
+    },
+    "displayName": {
+      "default": "Kokosmilch"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4023900545507",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/PMxG0qc/kokos-milk.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Himbeer"
+    },
+    "displayName": {
+      "default": "Himbeer"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "40737393",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/k3n1TTP/himbeer.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Killepitsch"
+    },
+    "displayName": {
+      "default": "Killepitsch"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4022269201352",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/hmxMH4S/killepitsch.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Napkins"
+    },
+    "displayName": {
+      "default": "Napkins"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4304218128416",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/k1L3Dbh/napkins.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Organic Hummus Nature"
+    },
+    "displayName": {
+      "default": "Organic Hummus Nature"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "250",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/FJVzV3H/hummus.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Chicken Nuggets"
+    },
+    "displayName": {
+      "default": "Chicken Nuggets"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "251",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/P5RnnwW/chicken-nuggets.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Oceanic Organic Cod Filets"
+    },
+    "displayName": {
+      "default": "Oceanic Organic Cod Filets"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "252",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/C17mWYb/white-fish.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "description": "Set at least tax = NONE",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "productTaxCodes": null
+        },
+        {
+          "productTaxCodes": []
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "productTaxCodes": [
+          "NONE"
+        ]
+      }
+    }
+  },
+  {
+    "description": "Set notForSale=false",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "notForSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "notForSale": false
+      }
+    }
+  },
+  {
+    "description": "Set allowableTimesOfSale=[]",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "allowableTimesOfSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "allowableTimesOfSale": []
+      }
+    }
+  }
+]

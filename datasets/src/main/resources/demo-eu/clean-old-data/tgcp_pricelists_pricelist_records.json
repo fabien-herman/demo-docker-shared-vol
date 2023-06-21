@@ -1,0 +1,9 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICE_LIST"
+    }
+  }
+]

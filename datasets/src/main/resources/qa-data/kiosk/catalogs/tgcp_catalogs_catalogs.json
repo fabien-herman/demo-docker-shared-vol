@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "CATALOG_KIOSK"
+    }
+  },
+  {
+    "name": "CATALOG_KIOSK",
+    "displayName": {
+      "default": "Catalog for kiosk items"
+    }
+  }
+]

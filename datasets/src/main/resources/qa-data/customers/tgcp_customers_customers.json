@@ -1,0 +1,168 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "emails.email": {
+        "$regex": ".*@demo.com"
+      }
+    }
+  },
+  {
+    "active": true,
+    "name": {
+      "firstName": "Eddy",
+      "lastName": "Demo"
+    },
+    "emails": [
+      {
+        "email": "eddy@demo.com",
+        "primary": true
+      }
+    ],
+    "phoneNumbers": [
+      {
+        "nationalNumber": "4903949441",
+        "countryCode": "+32",
+        "primary": true
+      }
+    ],
+    "loyalties": [
+      {
+        "loyaltyId": "2612345678905",
+        "loyaltyType": "LOYALTY_ID",
+        "active": true,
+        "primary": true,
+        "loyaltyPointBuckets": {
+          "LOYALTY_REWARDS": 0,
+          "PREMIUM_REWARDS": 0
+        }
+      }
+    ],
+    "pricingGroups": [
+      {
+        "name": "MEMBER",
+        "displayName": "MEMBER_PRICING",
+        "description": "Member pricing group"
+      }
+    ],
+    "addresses": [
+      {
+        "name": "Eddy Demo",
+        "address1": "Populierenstraat 404",
+        "city": "Aalter",
+        "state": "",
+        "type": "CARRY",
+        "primary": true
+      }
+    ],
+    "segments": [
+      "33d85ef0-cbbd-4343-85bf-846e09206729"
+    ]
+  },
+  {
+    "active": true,
+    "name": {
+      "firstName": "Pierre",
+      "lastName": "Demo"
+    },
+    "emails": [
+      {
+        "email": "pierre@demo.com",
+        "primary": true
+      }
+    ],
+    "phoneNumbers": [
+      {
+        "nationalNumber": "931899145",
+        "countryCode": "+33",
+        "primary": true
+      }
+    ],
+    "loyalties": [
+      {
+        "loyaltyId": "2612345678912",
+        "loyaltyType": "LOYALTY_ID",
+        "active": true,
+        "primary": true,
+        "loyaltyPointBuckets": {
+          "LOYALTY_REWARDS": 0,
+          "PREMIUM_REWARDS": 0
+        }
+      }
+    ],
+    "pricingGroups": [
+      {
+        "name": "MEMBER",
+        "displayName": "MEMBER_PRICING",
+        "description": "Member pricing group"
+      }
+    ],
+    "addresses": [
+      {
+        "name": "Piere Demo",
+        "address1": "88 Avenue du Maine",
+        "city": "Paris",
+        "state": "",
+        "type": "CARRY",
+        "primary": true
+      }
+    ],
+    "segments": [
+      "33d85ef0-cbbd-4343-85bf-846e09206729",
+      "8cfe84a1-f0c7-4013-bdd0-1999e6c8bda6"
+    ]
+  },
+  {
+    "active": true,
+    "name": {
+      "firstName": "Henri",
+      "lastName": "Demo"
+    },
+    "emails": [
+      {
+        "email": "henri@demo.com",
+        "primary": true
+      }
+    ],
+    "phoneNumbers": [
+      {
+        "nationalNumber": "710533085",
+        "countryCode": "+31",
+        "primary": true
+      }
+    ],
+    "loyalties": [
+      {
+        "loyaltyId": "2612345678929",
+        "loyaltyType": "LOYALTY_ID",
+        "active": true,
+        "primary": true,
+        "loyaltyPointBuckets": {
+          "LOYALTY_REWARDS": 0,
+          "PREMIUM_REWARDS": 0
+        }
+      }
+    ],
+    "pricingGroups": [
+      {
+        "name": "MEMBER",
+        "displayName": "MEMBER_PRICING",
+        "description": "Member pricing group"
+      }
+    ],
+    "addresses": [
+      {
+        "name": "Henri Demo",
+        "address1": "Mulderstraat 6",
+        "city": "Nijmegen",
+        "state": "",
+        "type": "CARRY",
+        "primary": true
+      }
+    ],
+    "segments": [
+      "358e1c19-fe88-43f2-955e-8144abd3c088"
+    ]
+  }
+]

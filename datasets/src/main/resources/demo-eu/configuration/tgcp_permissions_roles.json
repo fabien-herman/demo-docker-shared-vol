@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "SYSTEM_QUERY"
+    }
+  },
+  {
+    "name": "SYSTEM_QUERY",
+    "permissions": [
+      {
+        "name": "CONFIGURATIONS_QUERY"
+      },
+      {
+        "name": "RECEIPTS_IMAGES_QUERY"
+      }
+    ]
+  }
+]

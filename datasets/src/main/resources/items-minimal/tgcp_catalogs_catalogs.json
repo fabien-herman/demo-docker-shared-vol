@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "CATALOG"
+    }
+  },
+  {
+    "name": "CATALOG",
+    "displayName": {
+      "default": "Catalog"
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "6f27d3c8-9139-4789-99e5-a9cee682069d"
+        },
+        {
+          "name": "d85ebcbb-0efc-45ae-92c7-c9ee07a75bc3"
+        },
+        {
+          "name": "132edbfe-a533-4e84-9d2b-cdd98b577889"
+        },
+        {
+          "name": "51ae2e05-2b88-4e79-a371-f47936497196"
+        },
+        {
+          "name": "16ab5c35-2904-4ccd-b5c9-d6f9ecfd46e1"
+        },
+        {
+          "name": "2683c27c-201e-4f9f-a09f-9a071d4e1ba6"
+        },
+        {
+          "name": "92e09462-ffe2-4430-a3ea-8542dc4a4886"
+        },
+        {
+          "name": "f6a122ae-ba6a-498f-b661-f5b83fbcf28a"
+        }
+      ]
+    }
+  },
+  {
+    "displayName": {
+      "default": "Promotions NL"
+    },
+    "name": "6f27d3c8-9139-4789-99e5-a9cee682069d"
+  },
+  {
+    "displayName": {
+      "default": "Promotions DE"
+    },
+    "name": "d85ebcbb-0efc-45ae-92c7-c9ee07a75bc3"
+  },
+  {
+    "displayName": {
+      "default": "Promotions UK"
+    },
+    "name": "132edbfe-a533-4e84-9d2b-cdd98b577889"
+  },
+  {
+    "displayName": {
+      "default": "Promotions BE"
+    },
+    "name": "51ae2e05-2b88-4e79-a371-f47936497196"
+  },
+  {
+    "displayName": {
+      "default": "Promotions FR"
+    },
+    "name": "16ab5c35-2904-4ccd-b5c9-d6f9ecfd46e1"
+  },
+  {
+    "displayName": {
+      "default": "Promotions IT"
+    },
+    "name": "2683c27c-201e-4f9f-a09f-9a071d4e1ba6"
+  }
+]

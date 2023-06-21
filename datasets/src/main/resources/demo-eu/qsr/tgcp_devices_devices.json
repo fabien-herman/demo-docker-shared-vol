@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {
+        "$regex": "^POS_EU_4_[2-3]+"
+      }
+    }
+  },
+  {
+    "nodeId": "STORE_EU_4",
+    "endpointId": "1041",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "name": "POS_EU_4_1"
+  }
+]

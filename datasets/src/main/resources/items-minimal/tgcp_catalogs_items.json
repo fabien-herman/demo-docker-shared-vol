@@ -1,0 +1,49 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Coca Cola"
+    },
+    "skuId": "1",
+    "catalogName": "CATALOG",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Coca Cola"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "5449000000996",
+        "type": "EAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://i.ibb.co/vzrJFb8/Coca-Cola-glass-bottle.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  }
+]

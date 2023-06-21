@@ -1,0 +1,35 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "SELF_SERVICE_USER"
+    }
+  },
+  {
+    "name": "SELF_SERVICE_USER",
+    "permissions": [
+      {
+        "name": "ENDPOINT_STATUS_CREATE"
+      },
+      {
+        "name": "ENDPOINT_STATUS_MODIFY"
+      },
+      {
+        "name": "ENDPOINT_STATUS_QUERY"
+      },
+      {
+        "name": "CONFIGURATIONS_QUERY"
+      },
+      {
+        "name": "RECEIPTS_IMAGES_QUERY"
+      },
+      {
+        "name": "WEBPOS_ACTIONS_totals"
+      },
+      {
+        "name": "WEBPOS_ACTIONS_voidTransaction"
+      }
+    ]
+  }
+]

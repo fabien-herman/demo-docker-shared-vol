@@ -1,0 +1,218 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": {
+        "$regex": "CATALOG_EU_HVR"
+      }
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "DRINKS",
+    "attributes": {},
+    "displayName": {
+      "default": "Drinks"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "SODA",
+    "attributes": {},
+    "displayName": {
+      "default": "Soda"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "nonMerchandiseAccount": {},
+      "allowableTimeOfSale": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BEER",
+    "attributes": {},
+    "displayName": {
+      "default": "Beers"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "ageToBuy": 18,
+      "managerRequired": false,
+      "nonMerchandise": false,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "isDepositItem": false,
+      "discountable": true,
+      "notForSale": false,
+      "priceRequired": false,
+      "quantityRequired": false,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "FOOD",
+    "attributes": {},
+    "displayName": {
+      "default": "Food"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "NONFOOD",
+    "attributes": {},
+    "displayName": {
+      "default": "Non Food"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BOTTLEDEPOSIT",
+    "attributes": {},
+    "displayName": {
+      "default": "Bottle Deposit"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": false,
+      "nonMerchandise": true,
+      "allowableTimeOfSale": {},
+      "isDepositItem": true,
+      "discountable": false,
+      "notForSale": false,
+      "priceOverrideAllowed": false,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "WINE",
+    "attributes": {},
+    "displayName": {
+      "default": "Wine"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "ageToBuy": 18,
+      "allowableTimeOfSale": {},
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "OTHERS",
+    "attributes": {},
+    "displayName": {
+      "default": "OTHER PRODUCTS"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "canBeReturned": true,
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "priceOverrideAllowed": true,
+      "discountable": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BOTTLERETURN",
+    "attributes": {},
+    "displayName": {
+      "default": "Bottle Return"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "preActivationRequired": false,
+      "activationRequired": false,
+      "clientBasedActivation": false,
+      "quantityAllowed": false,
+      "openCashDrawer": false,
+      "managerRequired": false,
+      "allowableTimeOfSale": {},
+      "isNotOnFileItem": false,
+      "isQHPEligible": false,
+      "isSurchargeEligible": false,
+      "isDepositItem": false,
+      "discountable": false,
+      "notForSale": false,
+      "priceRequired": false,
+      "serialRequired": false,
+      "quantityRequired": false,
+      "priceOverrideAllowed": false,
+      "nonMerchandiseAccount": {},
+      "isEBTFoodAllowed": false,
+      "voidWithParent": false
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "LIKOR",
+    "attributes": {},
+    "displayName": {
+      "default": "Likor"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "DISCOUNTS_PROMOTIONS",
+    "attributes": {},
+    "displayName": {},
+    "extends": false,
+    "namedAttributes": {
+      "allowableTimesOfSale": [],
+      "nonMerchandiseAccount": {}
+    }
+  }
+]

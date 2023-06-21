@@ -1,0 +1,48 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": "TGCP_VUE_FIXED_LANE_DESKTOP_EU"},
+        {"name": "TGCP_VUE_FIXED_LANE_DESKTOP_EU_MOCK"}
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_FIXED_LANE_DESKTOP_EU",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktopEu"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopEu"
+      },
+      {
+        "name": "POS_STYLE_NAME",
+        "value": "Modern"
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_LANDSCAPE",
+        "value": "Modern"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_FIXED_LANE_DESKTOP_EU_MOCK",
+    "parentName": "TGCP_VUE_FIXED_LANE_EU_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktopEuMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopEuMock"
+      }
+    ]
+  }
+]

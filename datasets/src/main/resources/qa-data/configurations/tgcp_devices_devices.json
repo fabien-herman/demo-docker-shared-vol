@@ -1,0 +1,87 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": "POS_QA_1_1"},
+        {
+          "name": {
+            "$regex": "^POS_QA_1_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^POS_QA_MOBILE_[A-Z]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "nodeId": "STORE_QA_1",
+    "name": "POS_QA_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7007"
+  },
+  {
+    "nodeId": "STORE_QA_RALUCA",
+    "name": "POS_QA_1_RALUCA",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7008"
+  },
+  {
+    "nodeId": "STORE_QA_RALUCA",
+    "name": "POS_QA_MOBILE_RALUCA",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "5008"
+  },
+  {
+    "nodeId": "STORE_QA_JO",
+    "name": "POS_QA_1_JO",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7009"
+  },
+  {
+    "nodeId": "STORE_QA_JO",
+    "name": "POS_QA_MOBILE_JO",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "5009"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREI",
+    "name": "POS_QA_1_ANDREI",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7010"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREI",
+    "name": "POS_QA_MOBILE_ANDREI",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "5010"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREEA",
+    "name": "POS_QA_1_ANDREEA",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7011"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREEA",
+    "name": "POS_QA_MOBILE_ANDREEA",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "5011"
+  },
+  {
+    "nodeId": "STORE_QA",
+    "name": "TEST_TERMINAL_WITH_VUE_MOBILE_WEBVIEW_TYPE",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "5002"
+  },
+  {
+    "nodeId": "STORE_QA",
+    "name": "DEV_TABLET",
+    "terminalType": "TGCP_VUE_TABLET_WEBVIEW",
+    "endpointId": "5001"
+  }
+]

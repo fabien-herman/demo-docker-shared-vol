@@ -1,0 +1,1159 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "username": {
+            "$regex": "admin[A-Z]{2}"
+          }
+        },
+        {
+          "username": {
+            "$regex": "[0-9]{4}"
+          }
+        },
+        {
+          "username": "testDev"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "632da5f0d4720c4f79201e52",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminEU",
+    "lastName": "EU Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminEU",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935984316,
+    "passwordResetRequired": false,
+    "usernameLowercase": "admineu"
+  },
+  {
+    "_id": "632da5f0d4720c4f79201e58",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 1001",
+    "lastName": "EU POS user",
+    "birthdate": "1970-01-01",
+    "username": "1001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935984519,
+    "passwordResetRequired": false,
+    "usernameLowercase": "1001"
+  },
+  {
+    "_id": "632da5f0d4720c4f79201e5c",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 1002",
+    "lastName": "EU POS User",
+    "birthdate": "1970-01-01",
+    "username": "1002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935984662,
+    "passwordResetRequired": false,
+    "usernameLowercase": "1002"
+  },
+  {
+    "_id": "633d6b871ef85c189ca31125",
+    "address": {
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      },
+      "state": {
+        "default": ""
+      }
+    },
+    "authorities": {
+      "*": "rw"
+    },
+    "birthdate": "2022-04-30",
+    "firstName": "User 1003",
+    "inactive": false,
+    "isOauth2Login": false,
+    "lastName": "EU POS User",
+    "password": "$2a$10$whfQzO014r0Gf.Qkn34jUutcnrIxIXdHdiWFGxf3/DbkAWlgI0bVu",
+    "passwordExpirationDays": 365,
+    "passwordResetRequired": false,
+    "passwordSetTS": 1664969606945,
+    "rightHanded": true,
+    "sessionTimeout": 300,
+    "username": "1003",
+    "usernameLowercase": "1003",
+    "usingSystemTimeout": true
+  },
+  {
+    "_id": "633d6bf11ef85c189ca3112f",
+    "address": {
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      },
+      "state": {
+        "default": ""
+      }
+    },
+    "authorities": {
+      "*": "rw"
+    },
+    "birthdate": "2022-10-04",
+    "firstName": "User 1004",
+    "inactive": false,
+    "isOauth2Login": false,
+    "lastName": "EU POS User",
+    "password": "$2a$10$G7XSUmGCtRMt4qD8vIdo0e3HuHgF7yliBkP.DWL9.0904UDC7GsBu",
+    "passwordExpirationDays": 365,
+    "passwordResetRequired": false,
+    "passwordSetTS": 1664969713669,
+    "rightHanded": true,
+    "sessionTimeout": 300,
+    "username": "1004",
+    "usernameLowercase": "1004",
+    "usingSystemTimeout": true
+  },
+  {
+    "_id": "633d6bbd1ef85c189ca3112a",
+    "address": {
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      },
+      "state": {
+        "default": ""
+      }
+    },
+    "authorities": {
+      "*": "rw"
+    },
+    "birthdate": "2022-10-04",
+    "firstName": "User 1999",
+    "inactive": false,
+    "isOauth2Login": false,
+    "lastName": "EU POS Manager",
+    "password": "$2a$10$pc96.f3i8udJ74NtucgtS.tTDHtP4bCvip52jI055iY6JFhK7sD7q",
+    "passwordExpirationDays": 365,
+    "passwordResetRequired": false,
+    "passwordSetTS": 1664969661015,
+    "rightHanded": true,
+    "sessionTimeout": 300,
+    "username": "1999",
+    "usernameLowercase": "1999",
+    "usingSystemTimeout": true
+  },
+  {
+    "_id": "632da5f1d4720c4f79201e60",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminBE",
+    "lastName": "BE Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminBE",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935985171,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminbe"
+  },
+  {
+    "_id": "632da5f1d4720c4f79201e66",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 2001",
+    "lastName": "BE POS user",
+    "birthdate": "1970-01-01",
+    "username": "2001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935985410,
+    "passwordResetRequired": false,
+    "usernameLowercase": "2001"
+  },
+  {
+    "_id": "632da5f1d4720c4f79201e6a",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 2002",
+    "lastName": "BE POS manager",
+    "birthdate": "1970-01-01",
+    "username": "2002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935985662,
+    "passwordResetRequired": false,
+    "usernameLowercase": "2002"
+  },
+  {
+    "_id": "632da5f2d4720c4f79201e6e",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminFR",
+    "lastName": "FR Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminFR",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935986130,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminfr"
+  },
+  {
+    "_id": "632da5f2d4720c4f79201e74",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 3001",
+    "lastName": "FR POS user",
+    "birthdate": "1970-01-01",
+    "username": "3001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935986334,
+    "passwordResetRequired": false,
+    "usernameLowercase": "3001"
+  },
+  {
+    "_id": "632da5f2d4720c4f79201e78",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 3002",
+    "lastName": "FR POS manager",
+    "birthdate": "1970-01-01",
+    "username": "3002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935986490,
+    "passwordResetRequired": false,
+    "usernameLowercase": "3002"
+  },
+  {
+    "_id": "632da5f3d4720c4f79201e7c",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminDE",
+    "lastName": "DE Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminDE",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935986948,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminde"
+  },
+  {
+    "_id": "632da5f3d4720c4f79201e82",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 4001",
+    "lastName": "DE POS user",
+    "birthdate": "1970-01-01",
+    "username": "4001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935987131,
+    "passwordResetRequired": false,
+    "usernameLowercase": "4001"
+  },
+  {
+    "_id": "632da5f3d4720c4f79201e86",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 4002",
+    "lastName": "DE POS manager",
+    "birthdate": "1970-01-01",
+    "username": "4002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935987311,
+    "passwordResetRequired": false,
+    "usernameLowercase": "4002"
+  },
+  {
+    "_id": "632da5f3d4720c4f79201e8a",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminNL",
+    "lastName": "NL Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminNL",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935987754,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminnl"
+  },
+  {
+    "_id": "632da5f4d4720c4f79201e90",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 5001",
+    "lastName": "NL POS user",
+    "birthdate": "1970-01-01",
+    "username": "5001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935987958,
+    "passwordResetRequired": false,
+    "usernameLowercase": "5001"
+  },
+  {
+    "_id": "632da5f4d4720c4f79201e94",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 5002",
+    "lastName": "NL POS manager",
+    "birthdate": "1970-01-01",
+    "username": "5002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935988094,
+    "passwordResetRequired": false,
+    "usernameLowercase": "5002"
+  },
+  {
+    "_id": "632da5f4d4720c4f79201e98",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminIT",
+    "lastName": "IT Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminIT",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935988549,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminit"
+  },
+  {
+    "_id": "632da5f4d4720c4f79201e9e",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 6001",
+    "lastName": "IT POS user",
+    "birthdate": "1970-01-01",
+    "username": "6001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935988741,
+    "passwordResetRequired": false,
+    "usernameLowercase": "6001"
+  },
+  {
+    "_id": "632da5f4d4720c4f79201ea2",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 6002",
+    "lastName": "IT POS manager",
+    "birthdate": "1970-01-01",
+    "username": "6002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935988899,
+    "passwordResetRequired": false,
+    "usernameLowercase": "6002"
+  },
+  {
+    "_id": "632da5f5d4720c4f79201ea6",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminUK",
+    "lastName": "UK Admin user",
+    "birthdate": "1970-01-01",
+    "username": "adminUK",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935989342,
+    "passwordResetRequired": false,
+    "usernameLowercase": "adminuk"
+  },
+  {
+    "_id": "632da5f5d4720c4f79201eac",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 7001",
+    "lastName": "UK POS user",
+    "birthdate": "1970-01-01",
+    "username": "7001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935989579,
+    "passwordResetRequired": false,
+    "usernameLowercase": "7001"
+  },
+  {
+    "_id": "632da5f5d4720c4f79201eb0",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 7002",
+    "lastName": "UK POS manager",
+    "birthdate": "1970-01-01",
+    "username": "7002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1663935989768,
+    "passwordResetRequired": false,
+    "usernameLowercase": "7002"
+  },
+  {
+    "_id": "6332b6bd4b709c29a7b547f5",
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "adminSE",
+    "lastName": "SE Admin user",
+    "birthdate": "1970-01-01",
+    "locale": "en",
+    "username": "adminSE",
+    "password": "$2a$12$ZRwi0oBDCfCRmZBiVqfhGO/ebwBgTJlJL6MoZjZRL5xIVT9Oe93KK",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1664267965268,
+    "passwordResetRequired": false,
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "usernameLowercase": "adminse"
+  },
+  {
+    "_id": "6332b6bd4b709c29a7b547fb",
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 8001",
+    "lastName": "SE POS user",
+    "birthdate": "1970-01-01",
+    "locale": "en",
+    "username": "8001",
+    "password": "$2a$12$vPeJSLsS/S85yevzrq2BGOzhTX8uIoVpJ0caGc0VVKSKKSDi0UvXm",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1664267965513,
+    "passwordResetRequired": false,
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "usernameLowercase": "8001"
+  },
+  {
+    "_id": "6332b6bd4b709c29a7b54801",
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "User 8002",
+    "lastName": "SE POS manager",
+    "birthdate": "1970-01-01",
+    "locale": "en",
+    "username": "8002",
+    "password": "$2a$12$Ts.b8Nx7bVtolvVki3Eqr.1BHhRSOTgx4Z/vVmFG5cGfxzZxhawOy",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1664267965770,
+    "passwordResetRequired": false,
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "usernameLowercase": "8002"
+  },
+  {
+    "description": "Set sessionTimeout=300",
+    "operation": "updateMany",
+    "filter": {
+      "$or": [
+        {
+          "sessionTimeout": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "sessionTimeout": 300
+      }
+    }
+  },
+  {
+    "_id": "63aab44a5175b0712b78e494",
+    "locale": "en",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "isOauth2Login": false,
+    "rightHanded": true,
+    "usingSystemTimeout": true,
+    "passwordExpirationDays": 365,
+    "firstName": "testDev",
+    "lastName": "testDev",
+    "birthdate": "1970-01-01",
+    "username": "testDev",
+    "password": "$2a$10$OmNw8bzAtuSArLeXZukWAeox3mJsU7YJR6Nd4c70wkdcqe7PPszVG",
+    "authorities": {
+      "*": "rw"
+    },
+    "inactive": false,
+    "passwordSetTS": 1672131658691,
+    "passwordResetRequired": false,
+    "usernameLowercase": "testDev"
+  }
+]

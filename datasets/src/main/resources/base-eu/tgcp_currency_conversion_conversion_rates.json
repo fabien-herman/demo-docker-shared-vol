@@ -1,0 +1,83 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {}
+  },
+  {
+    "name" : "CURRENCY_CONVERSION_RATES",
+    "startDate" : {
+      "$date" : "2000-01-01T00:00:00Z"
+    },
+    "endDate" : {
+      "$date" : "2199-12-31T23:59:59Z"
+    },
+    "rates" : [
+      {
+        "fromCurrencyCode" : "USD",
+        "toCurrencyCode" : "GBP",
+        "value" : 0.80
+      },
+      {
+        "fromCurrencyCode" : "GBP",
+        "toCurrencyCode" : "USD",
+        "value" : 1.26
+      },
+      {
+        "fromCurrencyCode" : "USD",
+        "toCurrencyCode" : "EUR",
+        "value" : 0.93
+      },
+      {
+        "fromCurrencyCode" : "EUR",
+        "toCurrencyCode" : "USD",
+        "value" : 1.07
+      },
+      {
+        "fromCurrencyCode" : "GBP",
+        "toCurrencyCode" : "EUR",
+        "value" : 1.17
+      },
+      {
+        "fromCurrencyCode" : "EUR",
+        "toCurrencyCode" : "GBP",
+        "value" : 0.86
+      },
+      {
+        "fromCurrencyCode" : "SEK",
+        "toCurrencyCode" : "GBP",
+        "value" : 0.082
+      },
+      {
+        "fromCurrencyCode" : "GBP",
+        "toCurrencyCode" : "SEK",
+        "value" : 12.19
+      },
+      {
+        "fromCurrencyCode" : "SEK",
+        "toCurrencyCode" : "USD",
+        "value" : 0.089
+      },
+      {
+        "fromCurrencyCode" : "USD",
+        "toCurrencyCode" : "SEK",
+        "value" : 11.30
+      },
+      {
+        "fromCurrencyCode" : "SEK",
+        "toCurrencyCode" : "EUR",
+        "value" : 0.092
+      },
+      {
+        "fromCurrencyCode" : "EUR",
+        "toCurrencyCode" : "SEK",
+        "value" : 10.87
+      },
+      {
+        "fromCurrencyCode" : "FRF",
+        "toCurrencyCode" : "EUR",
+        "value" : 0.15244901723
+      }
+    ]
+  }
+]

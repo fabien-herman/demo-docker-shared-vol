@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PRICELIST_EU_QSR"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_QSR",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU QSR"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  }
+]

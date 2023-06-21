@@ -1,0 +1,31 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "username": {
+            "$regex": "TGCP_SYSTEM_.*"
+          }
+        },
+        {
+          "username": {
+            "$ne": "admin"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "username": "admin"
+    },
+    "update": {
+      "$set": {
+        "password": "$2a$12$4Dcnz5931JsjQFAs8n6DPeuT0AqaLwsh2dr4SgiORaFiCDj0y9cLG"
+      }
+    }
+  }
+]

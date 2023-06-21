@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PROMOTION_SET_EU_PHARMACY"
+    }
+  },
+  {
+    "name": "PROMOTION_SET_EU_PHARMACY",
+    "displayName": {
+      "default": "EU Promotions Pharmacy"
+    }
+  }
+]

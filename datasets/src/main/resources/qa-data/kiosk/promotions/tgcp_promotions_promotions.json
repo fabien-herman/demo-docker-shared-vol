@@ -1,0 +1,309 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "promotionSet": "PROMOTION_SET_KIOSK"
+    }
+  },
+  {
+    "name": "PROMO_KIOSK_01",
+    "promotionsSet": "PROMOTION_SET_KIOSK",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2099-12-31T23:59:59.198Z"
+    },
+    "intervalEndDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-08-29T00:00:00.000Z"
+    },
+    "modification": {
+      "type": "FINAL_PRICE",
+      "customerMessage": {
+        "default": "Promotion price"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "discountAllocation": "DISCOUNTS_PROMOTIONS",
+      "description": "Item New Price",
+      "adjustmentAmount": 2.50,
+      "offerId": "PROMO_KIOSK_01",
+      "distributed": false,
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-08-29T00:00:00.198Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "4023900545507"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROMO_KIOSK_02",
+    "promotionsSet": "PROMOTION_SET_KIOSK",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalEndDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-08-30T00:00:00.000Z"
+    },
+    "modification": {
+      "type": "PERCENT_OFF",
+      "customerMessage": {
+        "default": "Percentage discount"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "description": "Item Percentage Discount",
+      "adjustmentAmount": 15,
+      "offerId": "PROMO_KIOSK_02",
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-08-30T00:00:00.482Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "8076800315097"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROMO_KIOSK_03",
+    "promotionsSet": "PROMOTION_SET_KIOSK",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalEndDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-08-30T00:00:00.000Z"
+    },
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "customerMessage": {
+        "default": "Amount discount"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "description": "Item Amount Discount",
+      "adjustmentAmount": 0.5,
+      "offerId": "PROMO_KIOSK_03",
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-08-30T00:00:00.377Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "4002239422604"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROMO_KIOSK_04",
+    "promotionsSet": "PROMOTION_SET_KIOSK",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalEndDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-08-30T00:00:00.000Z"
+    },
+    "modification": {
+      "type": "PERCENT_OFF",
+      "customerMessage": {
+        "default": "Buy 3 get 1 free"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "description": "Buy 3 get one free (4=3)",
+      "adjustmentAmount": 25,
+      "offerId": "PROMO_KIOSK_04",
+      "tiers": [],
+      "distributed": true,
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-08-30T00:00:00.008Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 4
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 4,
+        "skuId": [
+          "5000112547726"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROMO_KIOSK_05",
+    "promotionsSet": "PROMOTION_SET_KIOSK",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalEndDate": {
+      "$date": "2099-12-31T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-08-30T00:00:00.000Z"
+    },
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "customerMessage": {
+        "default": "Meal deal"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "description": "Set price / Meal Deal ",
+      "adjustmentAmount": 9,
+      "offerId": "PROMO_KIOSK_05",
+      "tiers": [],
+      "distributed": true,
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-08-30T00:00:00.064Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "8437003223068"
+        ]
+      },
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "5410041001204"
+        ]
+      },
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "5053990138722"
+        ]
+      }
+    ]
+  }
+]

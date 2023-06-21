@@ -1,0 +1,118 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"terminalType": "TGCP_VUE_DESKTOP"},
+        {"terminalType": "TGCP_VUE_DESKTOP_MOCK"},
+        {"terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP"},
+        {"terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK"},
+        {"terminalType": "TGCP_VUE_SPECIALTY_DESKTOP"},
+        {"terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK"}
+      ]
+    }
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "endpointId": "1011",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "name": "POS_EU_1_1"
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "endpointId": "1012",
+    "terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK",
+    "name": "POS_EU_1_2"
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "endpointId": "1013",
+    "terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK",
+    "name": "POS_EU_1_3"
+  },
+  {
+    "nodeId": "STORE_EU_2",
+    "endpointId": "1021",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "name": "POS_EU_2_1"
+  },
+  {
+    "endpointId": "1022",
+    "name": "POS_EU_2_2",
+    "nodeId": "STORE_EU_2",
+    "terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK"
+  },  
+  {
+    "endpointId": "1029",
+    "name": "EU_Demokit_POS_9",
+    "nodeId": "STORE_EU_2",
+    "terminalType": "TGCP_VUE_DESKTOP"
+  },
+  {
+    "nodeId": "STORE_BE_1",
+    "name": "POS_BE_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "2011"
+  },
+  {
+    "nodeId": "STORE_BE_1",
+    "name": "POS_BE_1_2",
+    "terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK",
+    "endpointId": "2012"
+  },
+  {
+    "nodeId": "STORE_BE_1",
+    "name": "POS_BE_1_3",
+    "terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK",
+    "endpointId": "2013"
+  },
+  {
+    "nodeId": "STORE_FR_1",
+    "name": "POS_FR_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "3011"
+  },
+  {
+    "nodeId": "STORE_DE_1",
+    "name": "POS_DE_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "4011"
+  },
+  {
+    "nodeId": "STORE_NL_1",
+    "name": "POS_NL_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "5011"
+  },
+  {
+    "nodeId": "STORE_IT_1",
+    "name": "POS_IT_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "6011"
+  },
+  {
+    "nodeId": "STORE_UK_1",
+    "name": "POS_UK_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "7011"
+  },
+  {
+    "nodeId": "STORE_SE_1",
+    "endpointId": "8011",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "name": "POS_SE_1_1"
+  },
+  {
+    "nodeId": "STORE_SE_1",
+    "endpointId": "8012",
+    "terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK",
+    "name": "POS_SE_1_2"
+  },
+  {
+    "nodeId": "STORE_SE_1",
+    "endpointId": "8013",
+    "terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK",
+    "name": "POS_SE_1_3"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_SELF_SERVICE[A-Z,_]+_EU$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_SELF_SERVICE_DESKTOP_EU",
+    "parentName": "TGCP_VUE_SELF_SERVICE_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpSelfServiceEu"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK_EU",
+    "parentName": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpSelfServiceMockEu"
+      }
+    ]
+  }
+]

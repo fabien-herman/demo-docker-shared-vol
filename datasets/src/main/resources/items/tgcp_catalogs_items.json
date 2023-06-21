@@ -1,0 +1,1229 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR"
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "5000112547726",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "description": {
+      "default": "Coca Cola 1.5 Lt"
+    },
+    "displayName": {
+      "default": "Coca Cola 1.5 Liter"
+    },
+    "extends": false,
+    "groupName": "SODA",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "Test101"
+      },
+      {
+        "type": "EAN-13",
+        "value": "1"
+      }
+    ],
+    "childItemIds": [
+      "100001"
+    ],
+    "allowableTimesOfSale": [],
+    "images": [
+      {
+        "url": "https://i.ibb.co/sKn0bQh/Coca-Cola.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "100001",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "displayName": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "extends": false,
+    "groupName": "BOTTLEDEPOSIT",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://i.ibb.co/9qcgZD5/bottle-deposit.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Wine"
+    },
+    "displayName": {
+      "default": "Wine"
+    },
+    "extends": false,
+    "groupName": "LIKOR",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "8437003223068",
+    "images": [
+      {
+        "url": "https://i.ibb.co/vmsjQ6S/wine.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "2.3",
+      "climate": "B",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Johny Walker"
+    },
+    "displayName": {
+      "default": "Johny Walker"
+    },
+    "extends": false,
+    "groupName": "BEER",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "2",
+    "images": [
+      {
+        "url": "https://i.ibb.co/sszYdLF/johny-walker.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "1.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Milk",
+      "nl-BE": "Melk",
+      "sv-SE": "Mjölk"
+    },
+    "displayName": {
+      "default": "Milk",
+      "nl-BE": "Melk",
+      "sv-SE": "Mjölk"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "referenceItemIds": [],
+    "skuId": "101",
+    "aliases": [
+      {
+        "type": "Code128",
+        "value": "0101234567890128TEC-IT"
+      },
+      {
+        "type": "UPC-E",
+        "value": "01234565"
+      },
+      {
+        "type": "EAN-13",
+        "value": "2073413123459"
+      },
+      {
+        "type": "UPC-A",
+        "value": "725272730706"
+      },
+      {
+        "type": "EAN-8",
+        "value": "9031101"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/fQNGRbw/milk.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "canBeReturned": false,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Cookies",
+      "nl-BE": "Koekjes",
+      "sv-SE": "Kakor"
+    },
+    "displayName": {
+      "default": "Cookies",
+      "nl-BE": "Koekjes",
+      "sv-SE": "Kakor"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "102",
+    "images": [
+      {
+        "url": "https://i.ibb.co/jR3hWPp/cookies.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Bread",
+      "nl-BE": "Brood",
+      "sv-SE": "Bröd"
+    },
+    "displayName": {
+      "default": "Bread",
+      "nl-BE": "Brood",
+      "sv-SE": "Bröd"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": false,
+    "referenceItemIds": [],
+    "skuId": "103",
+    "images": [
+      {
+        "url": "https://i.ibb.co/58Cs6YW/bread.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Nutella"
+    },
+    "displayName": {
+      "default": "Nutella"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "104",
+    "images": [
+      {
+        "url": "https://i.ibb.co/n8QTFX3/nutella.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Coffee pads",
+      "nl-BE": "Koffie pads",
+      "sv-SE": "Kaffekapslar"
+    },
+    "displayName": {
+      "default": "Coffee pads",
+      "nl-BE": "Koffie pads",
+      "sv-SE": "Kaffekapslar"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": true,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "105",
+    "images": [
+      {
+        "url": "https://i.ibb.co/5Kvfqv4/coffee-pads.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Item 106"
+    },
+    "displayName": {
+      "default": "Item 106"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityRequired": true,
+    "referenceItemIds": [],
+    "skuId": "106"
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Twix"
+    },
+    "displayName": {
+      "default": "Twix"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceRequired": true,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "107",
+    "images": [
+      {
+        "url": "https://i.ibb.co/RzkNqhw/twix.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {
+    },
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Knife"
+    },
+    "displayName": {
+      "default": "Knife"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "managerRequired": true,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "108",
+    "images": [
+      {
+        "url": "https://i.ibb.co/Xp5fydJ/knife.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "150",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {
+      "co2": "0.6",
+      "climate": "A",
+      "nature": "A",
+      "animalWelfare": "B",
+      "health": "C"
+    },
+    "description": {
+      "default": "Heineken Regular 6x0.25"
+    },
+    "displayName": {
+      "default": "Heineken Regular 6x0.25"
+    },
+    "extends": false,
+    "groupName": "BEER",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+   },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "151",
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Single Malt 0,75"
+    },
+    "displayName": {
+      "default": "Single Malt 0,75"
+    },
+    "extends": false,
+    "groupName": "LIKOR",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "152",
+    "UOM": "EACH",
+    "ageToSell": 18,
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Item 152"
+    },
+    "displayName": {
+      "default": "item 152"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "5400141415971",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Sparkling water 50 cl",
+      "nl-BE": "Spuitwater 50 cl",
+      "sv-SE": "Kolsyrat Vatten 50 cl"
+    },
+    "displayName": {
+      "default": "Sparkling water 50 cl",
+      "nl-BE": "Spuitwater 50 cl",
+      "sv-SE": "Kolsyrat Vatten 50 cl"
+    },
+    "extends": false,
+    "groupName": "DRINKS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/4sw6HjR/sparkling-water.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "200",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 200"
+    },
+    "displayName": {
+      "default": "Item 200"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "201",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 201"
+    },
+    "displayName": {
+      "default": "Item 201"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "202",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 202"
+    },
+    "displayName": {
+      "default": "Item 202"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Toy car",
+      "nl-BE": "Speelgoed auto",
+      "sv-SE": "Leksaksbil"
+    },
+    "displayName": {
+      "default": "Toy car",
+      "nl-BE": "Speelgoed auto",
+      "sv-SE": "Leksaksbil"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/gdFQxYt/toy-car-mini-cooper.png"
+      }
+    ],
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "referenceItemIds": [],
+    "skuId": "203"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "204",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Soda"
+    },
+    "displayName": {
+      "default": "Soda"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/ZgFVF6J/soda.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "205",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Sandwich"
+    },
+    "displayName": {
+      "default": "Sandwich"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/kXb4FPP/sandwich.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "206",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Snack"
+    },
+    "displayName": {
+      "default": "Snack"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/3T6rB5q/snack.png"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "207",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Itme 207"
+    },
+    "displayName": {
+      "default": "Item 207"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "208",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 208"
+    },
+    "displayName": {
+      "default": "Item 208"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "209",
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "description": {
+      "default": "Item 209"
+    },
+    "displayName": {
+      "default": "Item 209"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Butter",
+      "nl-BE": "Boter",
+      "sv-SE": "Smör"
+    },
+    "displayName": {
+      "default": "Butter",
+      "nl-BE": "Boter",
+      "sv-SE": "Smör"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "109",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/hd6SVrX/butter.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Banana"
+    },
+    "displayName": {
+      "default": "Banana"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "500",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Apples"
+    },
+    "displayName": {
+      "default": "Apples"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "501",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Grapes"
+    },
+    "displayName": {
+      "default": "Grapes"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "502",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "KG",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Oranges"
+    },
+    "displayName": {
+      "default": "Oranges"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "503",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "TUC Original"
+    },
+    "displayName": {
+      "default": "TUC Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "5410041001204",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pringles Original"
+    },
+    "displayName": {
+      "default": "Pringles Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "5053990138722",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pasta"
+    },
+    "displayName": {
+      "default": "Pasta"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "8076809523509",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Butterkeks"
+    },
+    "displayName": {
+      "default": "Butterkeks"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4017100114717",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Babybel"
+    },
+    "displayName": {
+      "default": "Babybel"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "3073781106336",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Kokosmilch"
+    },
+    "displayName": {
+      "default": "Kokosmilch"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4023900545507",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Himbeer"
+    },
+    "displayName": {
+      "default": "Himbeer"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "40737393",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Killepitsch"
+    },
+    "displayName": {
+      "default": "Killepitsch"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4022269201352",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Napkins"
+    },
+    "displayName": {
+      "default": "Napkins"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4304218128416",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "url": "https://i.ibb.co/7v0Dn34/perrier.png",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "description": "Set at least tax = NONE",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "productTaxCodes": null
+        },
+        {
+          "productTaxCodes": []
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "productTaxCodes": [
+          "NONE"
+        ]
+      }
+    }
+  },
+  {
+    "description": "Set notForSale=false",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "notForSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "notForSale": false
+      }
+    }
+  },
+  {
+    "description": "Set allowableTimesOfSale=[]",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "$or": [
+        {
+          "allowableTimesOfSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "allowableTimesOfSale": []
+      }
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+    "$or": [
+        {
+          "name": "VALIDATION_APPROVAL_VOID_ITEM"
+        },
+        {
+          "name": "VALIDATION_APPROVAL_ORDER_VOID"
+        }
+        
+      ]
+    }
+  },
+  {
+    "name": "VALIDATION_APPROVAL_VOID_ITEM",
+    "group": "VALIDATION",
+    "subGroup": "APPROVALS",
+    "description": {
+      "default": "Permission required to approve the void of an item"
+    }
+  },
+  {
+    "name": "VALIDATION_APPROVAL_ORDER_VOID",
+    "group": "VALIDATION",
+    "subGroup": "APPROVALS",
+    "description": {
+      "default": "Permission required to void order."
+  }
+  }
+]

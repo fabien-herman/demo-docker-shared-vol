@@ -1,0 +1,74 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "STORE_EU_4"
+    }
+  },
+  {
+    "name": "STORE_EU_4",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    },
+    "phone": "01/234.56.78",
+    "configurations": [
+      {
+        "name": "CATALOG",
+        "value": [
+          {
+            "order": 1,
+            "value": "CATALOG_EU_QSR"
+          }
+        ]
+      },
+      {
+        "name": "PRICE_LISTS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "priceListName": "PRICELIST_EU_QSR",
+              "order": 0
+            }
+          ]
+        }
+      },
+      {
+        "name": "PROMOTION_SETS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "promotionSetName": "PROMOTION_SET_EU_QSR",
+              "order": 1
+            }
+          ]
+        }
+      }
+    ],
+    "displayName": {
+      "default": "EU Store 4"
+    },
+    "isSystemNode": false,
+    "parentName": "STORES_EU",
+    "notFirstClass": false
+  }
+]

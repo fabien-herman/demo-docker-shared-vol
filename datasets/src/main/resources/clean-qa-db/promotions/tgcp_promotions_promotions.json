@@ -1,0 +1,31 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "promotionsSet": {
+            "$regex": "PROMOTION_SET_EU_HVR.*"
+          }
+        },
+        {
+          "promotionsSet": {
+            "$regex": "PROMOTION_SET_EU_PHARMACY.*"
+          }
+        },
+        {
+          "promotionsSet": {
+            "$regex": "PROMOTION_SET_EU_*"
+          }
+        },
+        {
+          "promotionsSet": "PROMOTION_SET_TEST"
+        },
+        {
+          "promotionsSet": "PROMOTION_SET_KIOSK"
+        }
+      ]
+    }
+  }
+]

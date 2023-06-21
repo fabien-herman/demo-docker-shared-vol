@@ -1,0 +1,129 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "userId": "5c1017a0f02de94df9150ac1"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac2"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac3"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac4"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac5"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac6"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac7"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ac8"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ad0"
+        },
+        {
+          "userId": "5c1017a0f02de94df9150ad1"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac3",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac2",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac1",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac4",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac5",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac6",
+    "nodeId": "STORE_DEV",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac7",
+    "nodeId": "STORE_DEV",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ac8",
+    "nodeId": "STORE_DEV",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ad0",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER",
+      "POS_MANAGER"
+    ]
+  },
+  {
+    "userId": "5c1017a0f02de94df9150ad1",
+    "nodeId": "STORES_QA",
+    "homeStore": true,
+    "roles": [
+      "POS_CASHIER"
+    ]
+  }
+]

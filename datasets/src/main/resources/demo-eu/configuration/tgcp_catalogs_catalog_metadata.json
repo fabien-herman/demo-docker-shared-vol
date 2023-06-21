@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {"$regex": "ITEM_UOM_TYPES"}
+    }
+  },
+  {
+    "valueType": "List",
+    "name": "ITEM_UOM_TYPES",
+    "value": [
+      "EACH",
+      "KG"
+    ]
+  }
+]

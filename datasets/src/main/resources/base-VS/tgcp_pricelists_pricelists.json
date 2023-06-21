@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^PRICELIST_[A-Z]+_[0-9]+$"
+          }
+        }
+      ]
+    }
+  }
+]

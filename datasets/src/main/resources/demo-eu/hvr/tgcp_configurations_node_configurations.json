@@ -1,0 +1,75 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.CATALOG": {
+          "name": "CATALOG",
+          "value": [
+            {
+              "order": 1,
+              "value": "CATALOG_EU_HVR"
+            }
+          ]
+        },
+        "configurations.PRICE_LISTS": {
+          "name": "PRICE_LISTS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "priceListName": "PRICELIST_EU_HVR",
+                "order": 0
+              }
+            ]
+          }
+        },
+        "configurations.PROMOTION_SETS": {
+          "name": "PROMOTION_SETS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "promotionSetName": "PROMOTION_SET_EU_HVR",
+                "order": 1
+              },
+              {
+                "promotionSetName": "PROMOTION_SET_EU_HVR_2",
+                "order": 2
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORES_SE"
+    },
+    "update": {
+      "$set": {
+        "configurations.PRICE_LISTS": {
+          "name": "PRICE_LISTS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "priceListName": "PRICELIST_EU_HVR_SEK",
+                "order": 0
+              },
+              {
+                "priceListName": "PRICELIST_EU_HVR",
+                "order": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

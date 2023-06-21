@@ -1,0 +1,35 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_MOBILE_WEBVIEW[A-Z,_]*$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_MOBILE_WEBVIEW",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueMobileWebView"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_MOBILE_WEBVIEW_MOCK",
+    "parentName": "TGCP_VUE_MOBILE_WEBVIEW",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueMobileWebViewMock"
+      }
+    ]
+  }
+]

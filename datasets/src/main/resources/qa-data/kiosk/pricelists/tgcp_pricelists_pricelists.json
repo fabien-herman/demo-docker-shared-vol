@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PRICE_LIST_KIOSK"
+    }
+  },
+  {
+    "name": "PRICE_LIST_KIOSK",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price list for kiosk items"
+    },
+    "startDate": {
+      "$date": "2022-07-31T22:00:00.000Z"
+    }
+  }
+]

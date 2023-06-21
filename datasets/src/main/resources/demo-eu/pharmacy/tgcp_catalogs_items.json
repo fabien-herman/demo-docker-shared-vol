@@ -1,0 +1,778 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_EU_PHARMACY"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Toothpaste",
+      "sv-SE": "Tandkräm"
+    },
+    "skuId": "1",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Toothpaste",
+      "sv-SE": "Tandkräm"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1036830_6.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Lotion"
+    },
+    "skuId": "2",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Moisturizing Lotion",
+      "sv-SE": "Mjukgörande hudkräm"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": false,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": false,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": false,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1007505_c1n0.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Face cream",
+      "sv-SE": "Ansiktskräm"
+    },
+    "skuId": "3",
+    "priceRequired": true,
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Face cream",
+      "sv-SE": "Ansiktskräm"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1009655.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Aspirin"
+    },
+    "skuId": "4",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Aspirin"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "ageToSell": 18,
+    "ageToBuy": 18,
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/6780_c1l1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Vitamin C"
+    },
+    "skuId": "5",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Vitamin C"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/94925_front_noplunge.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Vitamin D"
+    },
+    "skuId": "6",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Vitamin D"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "managerRequired": true,
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/94912_front_noplunge.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Nasal spray",
+      "sv-SE": "Nässpray"
+    },
+    "skuId": "7",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Nasal spray",
+      "sv-SE": "Nässpray"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "ageToSell": 18,
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/16226_1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Mosquito spray",
+      "sv-SE": "Myggspray"
+    },
+    "skuId": "8",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Mosquito spray",
+      "sv-SE": "Myggspray"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "allowableTimeOfSale": {
+      "intervalType": "DAILY",
+      "intervalStartDate": "2022-05-04T17:00:00.000Z",
+      "intervalEndDate": "2022-05-04T19:59:59.000Z"
+    },
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/82157_3.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Allergy pills",
+      "sv-SE": "Allergitablett"
+    },
+    "skuId": "9",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Allergy pills",
+      "sv-SE": "Allergitablett"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/38273_c1l1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Shampoo",
+      "sv-SE": "Schampo"
+    },
+    "skuId": "10",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Shampoo",
+      "sv-SE": "Schampo"
+    },
+    "notForSale": true,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/13910_5.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Hair coloring",
+      "sv-SE": "Hårfärg"
+    },
+    "skuId": "11",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Hair coloring",
+      "sv-SE": "Hårfärg"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "openCashDrawer": true,
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1040954_c1r1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Hair ties",
+      "sv-SE": "Hårband"
+    },
+    "skuId": "12",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Hair ties",
+      "sv-SE": "Hårband"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "childItemIds": [
+      "13"
+    ],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1023653.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Hair pins",
+      "sv-SE": "Hårnålar"
+    },
+    "skuId": "13",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Hair pins",
+      "sv-SE": "Hårnålar"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "isDepositItem": true,
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/1023654.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Hand cream",
+      "sv-SE": "Handkräm"
+    },
+    "skuId": "14",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Hand cream",
+      "sv-SE": "Handkräm"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/76461_c1n1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Band aids",
+      "sv-SE": "Plåster"
+    },
+    "skuId": "15",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Band aids",
+      "sv-SE": "Plåster"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/29442_c1n1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Ointment",
+      "sv-SE": "Salva"
+    },
+    "skuId": "16",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Ointment",
+      "sv-SE": "Salva"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/76621_front_noplunge.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Contact lens solution",
+      "sv-SE": "Lösning för kontaktlinser"
+    },
+    "skuId": "17",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Contact lens solution",
+      "sv-SE": "Lösning för kontaktlinser"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/29720_5.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Reading glasses",
+      "sv-SE": "Läsglasögon"
+    },
+    "skuId": "18",
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Reading glasses",
+      "sv-SE": "Läsglasögon"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/93108_c1l0.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Eye drops",
+      "sv-SE": "Ögondroppar"
+    },
+    "skuId": "19",
+    "extends": false,
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Eye drops",
+      "sv-SE": "Ögondroppar"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/95035_c1n0.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_EU_PHARMACY",
+    "skuId": "20",
+    "UOM": "EACH",
+    "aliases": [
+    ],
+    "allowableTimeOfSale": {},
+    "description": {
+      "default": "Ear plugs",
+      "sv-SE": "Öronproppar"
+    },
+    "displayName": {
+      "default": "Ear plugs",
+      "sv-SE": "Öronproppar"
+    },
+    "extends": false,
+    "groupName": "GROUP_1",
+    "isBundle": false,
+    "lastModifiedUserId": "admin",
+    "nonMerchandiseAccount": {},
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "referenceItemIds": [],
+    "images": [
+      {
+        "url": "https://www.apotekhjartat.se/globalassets/inriver/resources/63286_c1n1.jpg",
+        "sizeCategory": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "description": "Set at least tax = NONE",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_PHARMACY",
+      "$or": [
+        {
+          "productTaxCodes": null
+        },
+        {
+          "productTaxCodes": []
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "productTaxCodes": [
+          "NONE"
+        ]
+      }
+    }
+  },
+  {
+    "description": "Set notForSale=false",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_PHARMACY",
+      "$or": [
+        {
+          "notForSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "notForSale": false
+      }
+    }
+  },
+  {
+    "description": "Set allowableTimesOfSale=[]",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_PHARMACY",
+      "$or": [
+        {
+          "allowableTimesOfSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "allowableTimesOfSale": []
+      }
+    }
+  }
+]

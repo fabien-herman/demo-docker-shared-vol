@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name" : "ELERA_VALIDATIONS_EU"
+    }
+  },
+  {
+    "name" : "ELERA_VALIDATIONS_EU"
+  }
+]

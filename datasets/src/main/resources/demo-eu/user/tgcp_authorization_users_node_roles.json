@@ -1,0 +1,466 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "userId": {
+            "$regex": "632da5f.d4720c4f79201e.."
+          }
+        },
+        {
+          "userId": {
+            "$regex": "6332b6bd4b709c29a7b54..."
+          }
+        },
+        {
+          "userId": {
+            "$regex": "633d6b..1ef85c189ca3112."
+          }
+        },
+        {
+          "userId": "63aab44a5175b0712b78e494"
+        }
+      ]
+    }
+  },
+  {
+    "nodeId": "ENTERPRISE_EU",
+    "userId": "63aab44a5175b0712b78e494",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "STORES_EU",
+    "userId": "632da5f0d4720c4f79201e52",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f0d4720c4f79201e52",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_EU",
+    "userId": "632da5f0d4720c4f79201e58",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f0d4720c4f79201e58",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_EU",
+    "userId": "632da5f0d4720c4f79201e5c",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f0d4720c4f79201e5c",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "homeStore": true,
+    "nodeId": "STORES_EU",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "userId": "633d6b871ef85c189ca31125"
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "633d6b871ef85c189ca31125",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "homeStore": true,
+    "nodeId": "STORES_EU",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "userId": "633d6bbd1ef85c189ca3112a"
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "633d6bbd1ef85c189ca3112a",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "homeStore": true,
+    "nodeId": "STORES_EU",
+    "roles": [],
+    "userId": "633d6bf11ef85c189ca3112f"
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "633d6bf11ef85c189ca3112f",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_BE",
+    "userId": "632da5f1d4720c4f79201e60",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f1d4720c4f79201e60",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_BE",
+    "userId": "632da5f1d4720c4f79201e66",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f1d4720c4f79201e66",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_BE",
+    "userId": "632da5f1d4720c4f79201e6a",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f1d4720c4f79201e6a",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_FR",
+    "userId": "632da5f2d4720c4f79201e6e",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f2d4720c4f79201e6e",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_FR",
+    "userId": "632da5f2d4720c4f79201e74",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f2d4720c4f79201e74",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_FR",
+    "userId": "632da5f2d4720c4f79201e78",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f2d4720c4f79201e78",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_DE",
+    "userId": "632da5f3d4720c4f79201e7c",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f3d4720c4f79201e7c",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_DE",
+    "userId": "632da5f3d4720c4f79201e82",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f3d4720c4f79201e82",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_DE",
+    "userId": "632da5f3d4720c4f79201e86",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f3d4720c4f79201e86",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_NL",
+    "userId": "632da5f3d4720c4f79201e8a",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f3d4720c4f79201e8a",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_NL",
+    "userId": "632da5f4d4720c4f79201e90",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f4d4720c4f79201e90",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_NL",
+    "userId": "632da5f4d4720c4f79201e94",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f4d4720c4f79201e94",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_IT",
+    "userId": "632da5f4d4720c4f79201e98",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f4d4720c4f79201e98",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_IT",
+    "userId": "632da5f4d4720c4f79201e9e",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f4d4720c4f79201e9e",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_IT",
+    "userId": "632da5f4d4720c4f79201ea2",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f4d4720c4f79201ea2",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_UK",
+    "userId": "632da5f5d4720c4f79201ea6",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f5d4720c4f79201ea6",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_UK",
+    "userId": "632da5f5d4720c4f79201eac",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f5d4720c4f79201eac",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_UK",
+    "userId": "632da5f5d4720c4f79201eb0",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "632da5f5d4720c4f79201eb0 ",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_SE",
+    "userId": "6332b6bd4b709c29a7b547f5",
+    "roles": [
+      "ADMIN"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "6332b6bd4b709c29a7b547f5",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_SE",
+    "userId": "6332b6bd4b709c29a7b547fb",
+    "roles": [
+      "POS_CASHIER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "6332b6bd4b709c29a7b547fb",
+    "roles": [
+      "ADMIN_VIEW"
+    ],
+    "homeStore": false
+  },
+  {
+    "nodeId": "STORES_SE",
+    "userId": "6332b6bd4b709c29a7b54801",
+    "roles": [
+      "POS_MANAGER"
+    ],
+    "homeStore": true
+  },
+  {
+    "nodeId": "SYSTEM",
+    "userId": "6332b6bd4b709c29a7b54801",
+    "roles": [
+      "SYSTEM_QUERY"
+    ],
+    "homeStore": false
+  }
+]

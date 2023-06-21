@@ -1,0 +1,42 @@
+[
+
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": {"$regex": "CATALOG_QA"}},
+        {"name": {"$regex": "PRICE_LISTS_QA"}}
+      ]
+    }
+  },
+
+  {
+    "name" : "CATALOG_QA",
+    "type" : "List",
+    "entryType" : "Text",
+    "group" : "STORE_OPERATIONS",
+    "subGroup" : "CONFIG",
+    "description": {
+      "default": "Defines the list of Catalog for QA Identifiers to be used by the node."
+    }
+  },
+  {
+    "name" : "PRICE_LISTS_QA",
+    "type" : "Map",
+    "group" : "STORE_OPERATIONS",
+    "subGroup" : "CONFIG",
+    "description": {
+      "default": "Defines the price lists identifiers for the node."
+    }
+  },
+  {
+    "name" : "TARE_001",
+    "type" : "Map",
+    "group" : "STORE_OPERATIONS",
+    "subGroup" : "CONFIG",
+    "description": {
+      "default": "Defines the a preset tare value"
+    }
+  }
+]

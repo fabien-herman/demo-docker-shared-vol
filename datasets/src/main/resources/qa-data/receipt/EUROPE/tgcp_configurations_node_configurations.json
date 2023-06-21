@@ -1,0 +1,167 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_TEMPLATES": {
+          "name": "RECEIPT_TEMPLATES",
+          "value": {
+            "headers": [
+              {
+                "name": "TEMPLATE_SET",
+                "type": "Text",
+                "description": "The Template Name"
+              }
+            ],
+            "rows": {
+              "templateEurope": {
+                "row": [
+                  "EUROPE"
+                ],
+                "order": 10
+              },
+              "templateDefaultRI": {
+                "row": [
+                  "RI"
+                ],
+                "order": 20
+              }
+            }
+          }
+        },
+        "configurations.RECEIPT_NLS.value.SALE_itemsHeader": {
+          "default": "    Description          P.pc/kg   Amount ",
+          "nl-NL": "    Omschrijving         P.st/kg   Bedrag ",
+          "nl-BE": "    Omschrijving         P.st/kg   Bedrag ",
+          "sv-SE": "    Beskrivning          P.st/kg   Belopp "
+        },
+        "configurations.RECEIPT_NLS.value.SALE_subtotal": {
+          "default": "Subtotal",
+          "fr-FR": "Subtotal",
+          "nl-BE": "Subtotaal",
+          "nl-NL": "Subtotaal",
+          "Sv-SE": "Delsumma"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_discounts": {
+          "default": "Discounts",
+          "fr-FR": "Ristournes",
+          "nl-BE": "Kortingen",
+          "nl-NL": "Kortingen",
+          "sv-SE": "Rabatter"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_balance": {
+          "default": "Total",
+          "fr-FR": "Total",
+          "nl-BE": "Totaal",
+          "nl-NL": "Totaal",
+          "sv-SE": "Total"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_totalSavings": {
+          "default": "YOUR TOTAL DISCOUNT IS",
+          "fr-FR": "VOTRE RÉDUCTION TOTALE EST",
+          "nl-BE": "UW TOTALE KORTING IS",
+          "nl-NL": "UW TOTALE KORTING IS",
+          "sv-SE": "DIN TOTALA RABATT ÄR"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_change": {
+          "default": "Change due",
+          "fr-FR": "Rendu",
+          "nl-BE": "Terug",
+          "nl-NL": "Wisselgeld",
+          "sv-SE": "Återbetalning"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_totalItems": {
+          "default": "Items",
+          "fr-FR": "Articles",
+          "nl-BE": "Artikelen",
+          "nl-NL": "Artikelen",
+          "sv-SE": "Artiklar"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_loyaltyPointsBalance": {
+          "default": "Points balance",
+          "nl-NL": "Punten saldo",
+          "nl-BE": "Punten saldo",
+          "sv-SE": "Poängsaldo"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_loyaltyPointsAwarded": {
+          "default": "Points awarded",
+          "nl-NL": "Punten verdiend",
+          "nl-BE": "Punten verdiend",
+          "sv-SE": "Poäng tjänat"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_loyaltyPointsUsed": {
+          "default": "Points used",
+          "nl-NL": "Punten gebruikt",
+          "nl-BE": "Punten gebruikt",
+          "sv-SE": "Poäng som används"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_loyaltyPointsNewBalance": {
+          "default": "New balance",
+          "nl-NL": "Nieuw saldo",
+          "nl-BE": "Nieuw saldo",
+          "sv-SE": "Nytt saldo"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_associate": {
+          "default": "Associate:",
+          "nl-NL": "U bent geholpen door",
+          "nl-BE": "U bent geholpen door",
+          "fr-FR": "Utilisateur:",
+          "sv-SE": "kassör:"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_pos": {
+          "default": "pos",
+          "nl-NL": "kassa",
+          "nl-BE": "kassa",
+          "fr-FR": "caisse",
+          "sv-SE": "kassa"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_receipt": {
+          "default": "receipt",
+          "nl-NL": "bonnr",
+          "nl-BE": "ticket",
+          "fr-FR": "ticket",
+          "sv-SE": "biljett"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_orderTaxes": {
+          "default": "VAT group",
+          "fr-FR": "groupe TVA",
+          "nl-BE": "BTW groep",
+          "nl-NL": "BTW groep",
+          "sv-SE": "VAT gruppe"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_taxRate": {
+          "default": "Rate",
+          "fr-FR": "Taux",
+          "nl-BE": "Tarief",
+          "nl-NL": "Tarief",
+          "sv-SE": "Betygsätta"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_taxGross": {
+          "default": "Incl.",
+          "sv-SE": "Inkl."
+        },
+        "configurations.RECEIPT_NLS.value.SALE_taxAmount": {
+          "default": "Tax",
+          "fr-FR": "TVA",
+          "nl-BE": "BTW",
+          "nl-NL": "BTW",
+          "sv-SE": "VAT"
+        },
+        "configurations.RECEIPT_NLS.value.SALE_taxNet": {
+          "default": "Excl.",
+          "sv-SE": "Exkl."
+        },
+        "configurations.RECEIPT_NLS.value.SALE_receiptFooter": {
+          "default": "Thank you for shopping with us.",
+          "fr-FR": "Merci et au revoir.",
+          "nl-NL": "Bedankt voor uw bezoek en graag tot ziens.",
+          "nl-BE": "Bedankt voor uw bezoek en graag tot ziens.",
+          "sv-SE": "Tack för ditt besök."
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 1
+        },
+        "configurations.RECEIPT_IMAGE_LIST": {
+          "name": "RECEIPT_IMAGE_LIST",
+          "value": [
+            {
+              "id": "toshiba",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/toshiba_300.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 1,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 1
+            },
+            {
+              "id": "casa",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/casa_300.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 2,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 2
+            },
+            {
+              "id": "hm",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/hm_150.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 3,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 3
+            },
+            {
+              "id": "carrefour",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/carrefour.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 4,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 4
+            },
+            {
+              "id": "plus",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/plus_300.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 5,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 5
+            },
+            {
+              "id": "dunnes",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/dunnes.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 6,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 6
+            },
+            {
+              "id": "morrisons",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/morrisons.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 7,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 7
+            },
+            {
+              "id": "apotek_hjartat",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/Apotek_Hjärtat_ICA_300.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 8,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 8
+            },
+            {
+              "id": "willys",
+              "active": true,
+              "sourcePath": "/receipts/images/ENTERPRISE_EU/Willys_300.png",
+              "printMethod": "PRELOAD",
+              "printerConfig": {
+                "slotNumber": 9,
+                "alignment": "PTR_BM_CENTER",
+                "station": "PTR_S_RECEIPT",
+                "width": "PTR_BM_ASIS"
+              },
+              "order": 9
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORE_BE_1"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 2
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORE_FR_1"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 4
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORE_NL_1"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 5
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORE_UK_1"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 6
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORE_SE_1"
+    },
+    "update": {
+      "$set": {
+        "configurations.RECEIPT_HEADER_IMAGE": {
+          "name": "RECEIPT_HEADER_IMAGE",
+          "value": 9
+        }
+      }
+    }
+  }
+]

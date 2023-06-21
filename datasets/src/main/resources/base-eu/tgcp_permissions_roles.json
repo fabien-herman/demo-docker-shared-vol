@@ -1,0 +1,25 @@
+[
+  {
+    "description": "Add new permissions to the VALIDATION_APPROVALS role",
+    "operation": "updateOne",
+    "filter": {
+      "name": "VALIDATION_APPROVALS"
+    },
+    "update": {
+      "$push": {
+        "permissions": {
+          "$each": [ 
+              { 
+                "name" : "VALIDATION_APPROVAL_VOID_ITEM" 
+              },
+              {
+              "name": "VALIDATION_APPROVAL_ORDER_VOID"
+              }
+              
+                   ]
+                }
+               }
+              }
+  }
+]
+

@@ -1,0 +1,351 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICELIST_EU_PHARMACY"
+    }
+  },
+  {
+    "active": true,
+    "skuId": "1",
+    "price": 27,
+    "currencyCode": "SEK",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2",
+    "price": 9.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "3",
+    "price": 10.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "4",
+    "price": 5.95,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "5",
+    "price": 6.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "6",
+    "price": 15.00,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "7",
+    "price": 2.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "8",
+    "price": 10.95,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "9",
+    "price": 0.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "10",
+    "price": 4.95,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "11",
+    "price": 7.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "12",
+    "price": 2.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "13",
+    "price": 1.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "14",
+    "price": 5.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "pricingGroup": "ASSOCIATE",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [
+      {
+        "price": 4.99,
+        "quantity": 3
+      }
+    ],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "14",
+    "price": 7.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [
+      {
+        "price": 6.99,
+        "quantity": 3
+      }
+    ],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "15",
+    "price": 6.95,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "16",
+    "price": 6.09,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "17",
+    "price": 5.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "18",
+    "price": 14.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "18",
+    "pricingGroup": "MEMBER",
+    "price": 12.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "19",
+    "price": 15.99,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "20",
+    "price": 3.49,
+    "currencyCode": "EUR",
+    "priceList": "PRICELIST_EU_PHARMACY",
+    "startDate" : {
+      "$date" : "2017-01-01T04:00:00.000Z"
+    },
+    "endDate" : {
+      "$date" : "2099-12-31T15:59:59.000Z"
+    },
+    "tiers" : [ ],
+    "UOM" : "EACH"
+  }
+]

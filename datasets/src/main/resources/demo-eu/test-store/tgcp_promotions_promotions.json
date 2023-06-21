@@ -1,0 +1,458 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "promotionsSet": "PROMOTION_SET_TEST"
+    }
+  },
+  {
+    "description": "Replace USD by GBP",
+    "operation": "updateMany",
+    "filter": {
+      "modification.adjustmentCurrencyCode": "USD"
+    },
+    "update": {
+      "$set": {
+        "modification.adjustmentCurrencyCode": "GBP"
+      }
+    }
+  },
+  {
+    "name": "ONE_POUND_OFF_IN_EGGS_DEPT_WITH_BACON_DEPT_ITEM_PURCHASED",
+    "promotionsSet": "PROMOTION_SET_TEST",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "adjustmentCurrencyCode": "GBP",
+      "perCombination": true,
+      "offerId": "ONE_POUND_OFF_IN_EGGS_DEPT_WITH_BACON_DEPT_ITEM_PURCHASED",
+      "customerMessage": {
+        "default": "£1 Off"
+      }
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "EGGS_DEPT_GROUP"
+        ]
+      },
+      {
+        "catalogGroupName": [
+          "BACON_DEPT_GROUP"
+        ]
+      }
+    ],
+    "triggerItems": [
+      {
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      },
+      {
+        "isTarget": false
+      }
+    ]
+  },
+  {
+    "name": "10PercentForAssociate",
+    "promotionsSet": "PROMOTION_SET_TEST",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "orderLevelPromotion": true,
+    "enabled": true,
+    "loyaltyTypes": [
+      "ASSOCIATE_ID"
+    ],
+    "customerConstraint": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "perCombination": false,
+      "offerId": "10PercentForAssociate",
+      "customerMessage": {
+        "default": "10% Off for staff"
+      },
+      "groups": [
+        "LOYALTY_MEMBERSHIP"
+      ],
+      "exclusiveGroups": [
+        "LOYALTY_MEMBERSHIP"
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "enabled" : true,
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "modification" : {
+      "type" : "PERCENT_OFF",
+      "amountThresholdType" : "SALE_PRICE",
+      "distributed" : false,
+      "offerId" : "PromoLimitPerLifetime",
+      "adjustmentAmount" : 10,
+      "contributesToOrderTotalTrigger" : true,
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "immediate" : true,
+      "perCombination" : false,
+      "customerMessage" : {
+        "default" : "Loyalty 5% off"
+      },
+      "applyPromotionToTriggeredItems" : true,
+      "maxUsagePerLifetime" : 5,
+      "tiers" : [],
+      "campaignDescription" : {},
+      "uiPrompt" : {}
+    },
+    "loyaltyTypes": [
+      "LOYALTY_ID"
+    ],
+    "customerConstraint": true,
+    "startDate" : "2021-01-19T00:00:00.000Z",
+    "endDate" : "2030-12-31T00:00:00.000Z",
+    "eligibleDays" : [],
+    "triggers" : [
+      {
+        "skuId" : [
+          "15"
+        ],
+        "quantity" : 1
+      }
+    ],
+    "triggerItems" : [],
+    "name" : "PromoLimitPerLifetime"
+  },
+  {
+    "name" : "10_OFF_ITEM_16",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "modification" : {
+      "type" : "AMOUNT_OFF",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 10,
+      "adjustmentCurrencyCode" : "GBP",
+      "perCombination" : false,
+      "offerId" : "10_OFF_ITEM_16",
+      "customerMessage" : {
+        "default" : "Costume 10.00 Off"
+      },
+      "groups" : [
+        "10_OFF_ITEM_16"
+      ],
+      "exclusiveGroups" : [
+        "10_OFF_ITEM_16"
+      ]
+    },
+    "triggers" : [
+      {
+        "skuId" : [
+          "16"
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "10_PERCENT_OFF_ITEM_17",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "modification" : {
+      "type" : "PERCENT_OFF",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 10,
+      "adjustmentCurrencyCode" : "GBP",
+      "perCombination" : false,
+      "offerId" : "10_PERCENT_OFF_ITEM_17",
+      "customerMessage" : {
+        "default" : "Pyjamas 10% Off"
+      },
+      "groups" : [
+        "10_PERCENT_OFF_ITEM_17"
+      ],
+      "exclusiveGroups" : [
+        "10_PERCENT_OFF_ITEM_17"
+      ]
+    },
+    "triggers" : [
+      {
+        "skuId" : [
+          "17"
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "ContOffer_QtyBasedAwdFreeItem",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "enabled" : true,
+    "customerConstraint" : false,
+    "startDate" : "2021-02-01T00:00:00.000Z",
+    "endDate" : "2030-02-01T00:00:00.000Z",
+    "modification" : {
+      "continuityOffer" : true,
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "immediate" : true,
+      "perCombination" : false,
+      "triggeredQuantity" : "4",
+      "customerMessage" : {
+        "default" : "Promotion 4=3"
+      },
+      "offerId" : "ContOffer_QtyBasedAwdFreeItem",
+      "amountThresholdType" : "SALE_PRICE",
+      "type" : "FINAL_PRICE",
+      "distributed" : false,
+      "uiPrompt" : {},
+      "applyPromotionToTriggeredItems" : true,
+      "campaignDescription" : {},
+      "isEBTFoodAllowed" : true,
+      "adjustmentAmount" : 0,
+      "contributesToOrderTotalTrigger" : true,
+      "tiers" : []
+    },
+    "triggerItems" : [],
+    "triggers" : [
+      {
+        "quantity" : 1,
+        "triggerAttributeValue" : {},
+        "skuId" : [
+          "17"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "3_PERCENT_OFF_OVER_1000",
+    "promotionsSet": "PROMOTION_SET_TEST",
+    "enabled": true,
+    "customerConstraint": false,
+    "startDate": "2021-02-01T00:00:00.000Z",
+    "endDate": "2030-02-01T00:00:00.000Z",
+    "modification": {
+      "adjustmentCurrencyCode": "GBP",
+      "tiers": [],
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": "3",
+      "offerId": "3_PERCENT_OFF_OVER_1000",
+      "amountThresholdType": "SALE_PRICE",
+      "type": "PERCENT_OFF_ORDER",
+      "receiptFooters": [
+        {
+          "message": {},
+          "orderLevelMessage": false
+        }
+      ],
+      "contributesToOrderTotalTrigger": true,
+      "immediate": true,
+      "electiveRedemption": false,
+      "perCombination": false,
+      "triggeredAmount": "1000",
+      "customerMessage": {
+        "default": "3% after spending 1000.00"
+      },
+      "applyPromotionToTriggeredItems": true,
+      "isEBTFoodAllowed": false,
+      "distributed": false,
+      "orderLevelPromotion": true,
+      "uiPrompt": {},
+      "campaignDescription": {},
+      "continuityOffer": false
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": "1"
+      }
+    ],
+    "eligibleDays": [],
+    "loyaltyTypes": []
+  },
+  {
+    "name" : "TIERED_OFF_ITEM_15",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "modification" : {
+      "type" : "AMOUNT_OFF",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 10,
+      "triggeredQuantity" : 3,
+      "adjustmentCurrencyCode" : "USD",
+      "perCombination" : false,
+      "distributed" : false,
+      "offerId" : "TIERED_OFF_ITEM_6",
+      "customerMessage" : {
+        "default" : "Buy 3 for 2"
+      },
+      "groups" : [
+        "TIERED_OFF_ITEM_15"
+      ],
+      "exclusiveGroups" : [
+        "TIERED_OFF_ITEM_15"
+      ],
+      "tiers" : [
+      ]
+    },
+    "triggers" : [
+      {
+        "skuId" : [
+          "15"
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "1POINT_1X21",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "customerConstraint" : true,
+    "triggers" : [
+      {
+        "skuId" : [
+          "21"
+        ],
+        "quantity" : 1
+      }
+    ],
+    "modification" : {
+      "type" : "POINTS",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "pointsBucket" : "LOYALTY_REWARDS",
+      "customerConstraint" : true,
+      "coupon" : false,
+      "maxOccurrencesOnOrder" : 99,
+      "adjustmentAmount" : 1,
+      "perCombination" : false,
+      "immediate" : false,
+      "orderLevelPromotion" : false,
+      "offerId" : "1POINT_1X21",
+      "customerMessage" : {
+        "default" : "1 extra point"
+      }
+    },
+    "triggerItems" : [ ]
+  },
+  {
+    "name" : "1_POINT_PER_50",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "customerConstraint" : true,
+    "triggers" : [
+      { }
+    ],
+    "modification" : {
+      "type" : "POINTS_RATIO",
+      "pointsBucket" : "LOYALTY_REWARDS",
+      "customerConstraint" : true,
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 0.02,
+      "perCombination" : false,
+      "immediate" : false,
+      "orderLevelPromotion" : true,
+      "offerId" : "1_POINT_PER_50",
+      "appliesToManuallyLockedItems": true,
+      "customerMessage" : {
+        "default" : "1 point per 50.00"
+      }
+    },
+    "triggerItems" : [ ]
+  },
+  {
+    "name" : "1_PREMIUM_POINT_PER_100",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "customerConstraint" : true,
+    "triggers" : [
+      { }
+    ],
+    "modification" : {
+      "type" : "POINTS_RATIO",
+      "pointsBucket" : "PREMIUM_REWARDS",
+      "customerConstraint" : true,
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 0.01,
+      "perCombination" : false,
+      "immediate" : false,
+      "orderLevelPromotion" : true,
+      "offerId" : "1_PREMIUM_POINT_PER_100",
+      "appliesToManuallyLockedItems": true,
+      "customerMessage" : {
+        "default" : "1 premium point per 100.00"
+      }
+    },
+    "triggerItems" : [ ]
+  },
+  {
+    "name" : "2XPOINTS",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "customerConstraint" : true,
+    "triggers" : [
+      { }
+    ],
+    "modification" : {
+      "type" : "POINTS_MULTIPLICATION",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "coupon" : true,
+      "percentDistributionOfCoupon" : 0,
+      "maxOccurrencesOnOrder" : 1,
+      "adjustmentAmount" : 2,
+      "perCombination" : false,
+      "immediate" : false,
+      "orderLevelPromotion" : true,
+      "offerId" : "2XPOINTS",
+      "pointsBucket" : "LOYALTY_REWARDS",
+      "customerMessage" : {
+        "default" : "Double Points"
+      }
+    },
+    "triggerItems" : [ ]
+  },
+  {
+    "name" : "5_CNY_OFF_COUPON",
+    "promotionsSet" : "PROMOTION_SET_TEST",
+    "startDate" : "2017-01-01T04:00:00.000Z",
+    "endDate" : "2099-12-31T15:59:59.000Z",
+    "enabled" : true,
+    "triggers" : [
+      { }
+    ],
+    "modification" : {
+      "type" : "AMOUNT_OFF",
+      "distributionType" : "ALL_TARGET_ITEMS",
+      "adjustmentAmount" : 5,
+      "adjustmentCurrencyCode" : "GBP",
+      "perCombination" : false,
+      "offerId" : "5_CNY_OFF_COUPON",
+      "immediate" : false,
+      "singleUse" : true,
+      "coupon" : true,
+      "percentDistributionOfCoupon" : 0,
+      "distributed" : true,
+      "orderTotalDueTrigger" : 5.0,
+      "amountThresholdType" : "ADJUSTED_PRICE",
+      "customerMessage" : {
+        "default" : "5 Off Coupon"
+      }
+    },
+    "triggerItems" : [ ]
+  }
+]

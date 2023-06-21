@@ -1,0 +1,4012 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "promotionsSet": "RI"
+        },
+        {
+          "promotionsSet": "RI_LEAF_NODE"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_2"
+        },
+        {
+          "promotionsSet": "RI_RALEIGH_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_NO_EXTEND_SET"
+        },
+        {
+          "promotionsSet": "BAD_DATA_REBUILD"
+        },
+        {
+          "promotionsSet": "ELECTIVE_PROMOTION_SET"
+        },
+        {
+          "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET"
+        },
+        {
+          "promotionsSet": "ADMIN_UI_TEST_CASES_SET"
+        },
+        {
+          "promotionsSet": "TURKEY_PROMOTIONS_SET"
+        },
+        {
+          "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+        }
+      ]
+    }
+  },
+  {
+    "name": "MealDeal",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pasta"
+        ]
+      },
+      {
+        "skuId": [
+          "cheese"
+        ]
+      },
+      {
+        "skuId": [
+          "bread"
+        ]
+      },
+      {
+        "skuId": [
+          "sauce"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "MealDeal",
+      "customerMessage": {
+        "default": "$5 Spaghetti Night!"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "PizzaNight",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pizza"
+        ]
+      },
+      {
+        "skuId": [
+          "cheese"
+        ]
+      },
+      {
+        "skuId": [
+          "soda"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "PizzaNight",
+      "customerMessage": {
+        "default": "$10 Pizza Night!"
+      },
+      "mustReturnBundle": true
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "BuyHotDogsAndBuns_GetMustardFree",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "hotdogs"
+        ]
+      },
+      {
+        "skuId": [
+          "buns"
+        ]
+      },
+      {
+        "skuId": [
+          "mustard"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "FINAL_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "BuyHotDogsAndBuns_GetMustardFree",
+      "customerMessage": {
+        "default": "Free Mustard with Hot Dogs and Buns"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 1,
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "BuyOne_Get10PercentOffTwoSodasWithPizza",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pizza"
+        ]
+      },
+      {
+        "skuId": [
+          "soda"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "offerId": "BuyOne_Get10PercentOffTwoSodasWithPizza",
+      "customerMessage": {
+        "default": "10% Off Two Sodas With a Pizza"
+      },
+      "attributes": {
+        "att1": 1,
+        "att2": 2.5,
+        "att3": "String Attribute",
+        "att4": 123456789012345566
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "pizza"
+        ],
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 2,
+        "skuId": [
+          "soda"
+        ],
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "2XPOINTS",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "POINTS_MULTIPLICATION",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "maxOccurrencesOnOrder": 1,
+      "adjustmentAmount": 2,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true,
+      "offerId": "2XPOINTS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "customerMessage": {
+        "default": "Double Points"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "75POINTS_3X_7",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "7"
+        ],
+        "quantity": 3
+      }
+    ],
+    "modification": {
+      "type": "POINTS",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "customerConstraint": true,
+      "coupon": false,
+      "maxOccurrencesOnOrder": 1,
+      "adjustmentAmount": 75,
+      "perCombination": false,
+      "immediate": false,
+      "offerId": "75POINTS_3X_7",
+      "customerMessage": {
+        "default": "75 Points with three 7s"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "2_WITH_1",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "2"
+        ]
+      },
+      {
+        "skuId": [
+          "1"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 50,
+      "offerId": "2_WITH_1",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 2,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "50% Off 2 with purchase of 1"
+      },
+      "groups": [
+        "2_WITH_1"
+      ],
+      "exclusiveGroups": [
+        "2_WITH_1"
+      ]
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      },
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": false
+      }
+    ]
+  },
+  {
+    "name": "20_PERCENT_OFF_COUPON",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "NOTE_all_items_no_constraint": ""
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 20,
+      "perCombination": false,
+      "orderLevelPromotion": true,
+      "offerId": "20_PERCENT_OFF_COUPON",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "20% off one item",
+        "jp-JP": "1つのアイテムが20％オフ"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "1_OFF_W_100_PTS",
+    "promotionsSet": "RI",
+    "customerConstraint": true,
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "orderTotalDueTrigger": 1,
+      "pointsRequired": 100,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "1_OFF_W_100_PTS",
+      "orderLevelPromotion": true,
+      "immediate": false,
+      "distributed": true,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$1 Off With 100 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "10_OFF_W_6250_PTS",
+    "promotionsSet": "RI",
+    "customerConstraint": true,
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "orderTotalDueTrigger": 10,
+      "pointsRequired": 6250,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "10_OFF_W_6250_PTS",
+      "orderLevelPromotion": true,
+      "immediate": false,
+      "distributed": true,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$10 Off With 6250 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "25_CENTS_OFF_W_50_PTS",
+    "promotionsSet": "RI",
+    "customerConstraint": true,
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.25,
+      "orderTotalDueTrigger": 0.25,
+      "pointsRequired": 50,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "25_CENTS_OFF_W_50_PTS",
+      "orderLevelPromotion": true,
+      "immediate": false,
+      "distributed": true,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$0.25 Off With 50 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "5_DOLLARS_OFF_COUPON",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "5_DOLLARS_OFF_COUPON",
+      "immediate": false,
+      "singleUse": true,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "distributed": true,
+      "orderTotalDueTrigger": 5.0,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$5 Off Coupon"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "5_DOLLARS_OFF_COUPON_SPLIT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "5_DOLLARS_OFF_COUPON_SPLIT",
+      "appliesToManuallyLockedItems": true,
+      "appliesToManuallyAdjustedItems": true,
+      "immediate": false,
+      "singleUse": true,
+      "coupon": true,
+      "percentDistributionOfCoupon": 40,
+      "distributed": true,
+      "orderTotalDueTrigger": 5.0,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$5 Off Coupon"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "5_DOLLARS_OFF_MANUFACTURER_COUPON",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "5_DOLLARS_OFF_MANUFACTURER_COUPON",
+      "immediate": false,
+      "singleUse": true,
+      "coupon": true,
+      "percentDistributionOfCoupon": 100,
+      "distributed": true,
+      "orderTotalDueTrigger": 5.0,
+      "amountThresholdType": "ADJUSTED_PRICE",
+      "customerMessage": {
+        "default": "$5 Off Coupon"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "BuyOne_GetOne50PercentOff",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "item1",
+          "item2"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 50,
+      "offerId": "BuyOne_GetOne50PercentOff",
+      "maxQuantityAdjusted": 1,
+      "customerMessage": {
+        "default": "Buy One Get One 50% off"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 2,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "BOGO_GROUP",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "triggerAttributeName": [
+          "BOGO",
+          "BOGO_TEST"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 50,
+      "offerId": "BOGO_GROUP",
+      "maxQuantityAdjusted": 2,
+      "perCombination": true,
+      "maxOccurrencesOnOrder": 3,
+      "customerMessage": {
+        "default": "BOGO Group Deal"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 2,
+        "maxQuantityAdjustedPerCombination": 2,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "DISCOUNT_BY_DEPARTMENT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "triggerAttributeValue": {
+          "Department": "2"
+        }
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 50,
+      "offerId": "DISCOUNT_BY_DEPARTMENT",
+      "maxQuantityAdjusted": 2,
+      "maxOccurrencesOnOrder": 3,
+      "customerMessage": {
+        "default": "BOGO Group Deal by Department"
+      },
+      "perCombination": true
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 2,
+        "maxQuantityAdjustedPerCombination": 2,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "DOLLAR_OFF_ITEM_6",
+    "promotionsSet": "BAD_DATA_REBUILD",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "offerId": "DOLLAR_OFF_ITEM_6",
+      "customerMessage": {
+        "default": "$1 Off Item 6"
+      },
+      "groups": [
+        "DOLLAR_OFF_ITEM_6"
+      ],
+      "exclusiveGroups": [
+        "DOLLAR_OFF_ITEM_6"
+      ]
+    },
+    "triggers": [
+      {
+        "skuId": [
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TIERED_OFF_ITEM_6",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1.1,
+      "triggeredQuantity": 5,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "distributed": false,
+      "offerId": "TIERED_OFF_ITEM_6",
+      "customerMessage": {
+        "default": "By 5, $1.10 Off Item 6"
+      },
+      "groups": [
+        "DOLLAR_OFF_ITEM_6"
+      ],
+      "exclusiveGroups": [
+        "DOLLAR_OFF_ITEM_6"
+      ],
+      "tiers": [
+        {
+          "adjustmentAmount": 2,
+          "triggeredQuantity": 10,
+          "customerMessage": {
+            "default": "By 10, $2 Off Item 6 each"
+          }
+        },
+        {
+          "adjustmentAmount": 3,
+          "triggeredQuantity": 20,
+          "customerMessage": {
+            "default": "By 20, $3 Off Item 6 each"
+          }
+        }
+      ]
+    },
+    "triggers": [
+      {
+        "skuId": [
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROMO_LIMIT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "MEAT"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.9,
+      "adjustmentCurrencyCode": "EUR",
+      "maxQuantityAdjusted": 9,
+      "perCombination": false,
+      "offerId": "PROMO_LIMIT",
+      "customerMessage": {
+        "default": "$0.90 Off per Lbs"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "5PercentForCustomer",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "type": "SALE"
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5,
+      "perCombination": false,
+      "orderLevelPromotion": true,
+      "offerId": "5PercentForCustomer",
+      "customerMessage": {
+        "default": "5% Off For All Customers"
+      },
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Thank you for being a loyal customer!"
+          },
+          "orderLevelMessage": true
+        }
+      ],
+      "groups": [
+        "LOYALTY_MEMBERSHIP"
+      ],
+      "exclusiveGroups": [
+        "LOYALTY_MEMBERSHIP"
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "OnePointPerFiveDollar",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "POINTS_RATIO",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "customerConstraint": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.2,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true,
+      "offerId": "OnePointPerFiveDollar",
+      "appliesToManuallyLockedItems": true,
+      "customerMessage": {
+        "default": "1 point per $5"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "OnePremiumPointPerTenDollar",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "POINTS_RATIO",
+      "pointsBucket": "PREMIUM_REWARDS",
+      "customerConstraint": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.1,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true,
+      "offerId": "OnePremiumPointPerTenDollar",
+      "appliesToManuallyLockedItems": true,
+      "customerMessage": {
+        "default": "1 point per $10"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "10PercentForAssociate",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "orderLevelPromotion": true,
+    "enabled": true,
+    "loyaltyTypes": [
+      "ASSOCIATE_ID"
+    ],
+    "customerConstraint": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "perCombination": false,
+      "offerId": "10PercentForAssociate",
+      "customerMessage": {
+        "default": "10% Off For All Associates"
+      },
+      "groups": [
+        "LOYALTY_MEMBERSHIP"
+      ],
+      "exclusiveGroups": [
+        "LOYALTY_MEMBERSHIP"
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "MSG_EXAMPLE",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "msg"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "offerId": "MSG_EXAMPLE",
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Thank you for trying our store",
+            "es-MX": "Gracias por probar nuestra tienda"
+          },
+          "orderLevelMessage": true
+        }
+      ],
+      "uiPrompt": {
+        "default": "Please welcome the new shopper",
+        "es-MX": "Por favor, dale la bienvenida al nuevo comprador"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "MealDeal_RI_Zone_1",
+    "promotionsSet": "RI_ZONE_SET_1",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pasta"
+        ]
+      },
+      {
+        "skuId": [
+          "cheese"
+        ]
+      },
+      {
+        "skuId": [
+          "bread"
+        ]
+      },
+      {
+        "skuId": [
+          "sauce"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 4,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "MealDeal_RI_Zone_1",
+      "customerMessage": {
+        "default": "$4 Spaghetti Night!"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "pasta"
+        ],
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "BuyOne_Get15PercentOffTwoSodasWithPizza",
+    "promotionsSet": "RI_RALEIGH_ZONE_SET_1",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pizza"
+        ]
+      },
+      {
+        "skuId": [
+          "soda"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 15,
+      "offerId": "BuyOne_Get15PercentOffTwoSodasWithPizza",
+      "customerMessage": {
+        "default": "15% Off Two Sodas With a Pizza"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 2,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "BuyHotDogsAndBuns_GetKetchupFree",
+    "promotionsSet": "RI_ZONE_NO_EXTEND_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "hotdogs"
+        ]
+      },
+      {
+        "skuId": [
+          "buns"
+        ]
+      },
+      {
+        "skuId": [
+          "mustard"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "FINAL_PRICE",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "BuyHotDogsAndBuns_GetKetchupFree",
+      "customerMessage": {
+        "default": "Free Ketchup with Hot Dogs and Buns"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "hotdogs"
+        ],
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "buns"
+        ],
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "ketchup"
+        ],
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "2_WITH_1",
+    "promotionsSet": "RI_ZONE_SET_1",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "2"
+        ]
+      },
+      {
+        "skuId": [
+          "1"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 60,
+      "offerId": "2_WITH_1",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 2,
+      "customerMessage": {
+        "default": "60% Off 2 with purchase of 1"
+      },
+      "perCombination": true
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      },
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": false
+      }
+    ]
+  },
+  {
+    "name": "2_WITH_1",
+    "promotionsSet": "RI_ZONE_SET_2",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "2"
+        ]
+      },
+      {
+        "skuId": [
+          "1"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 40,
+      "offerId": "2_WITH_1",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 2,
+      "customerMessage": {
+        "default": "40% Off 2 with purchase of 1"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      },
+      {
+        "requiredQuantity": 1,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": false
+      }
+    ]
+  },
+  {
+    "name": "MealDeal",
+    "promotionsSet": "RI_LEAF_NODE",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "pasta"
+        ]
+      },
+      {
+        "skuId": [
+          "cheese"
+        ]
+      },
+      {
+        "skuId": [
+          "bread"
+        ]
+      },
+      {
+        "skuId": [
+          "sauce"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 2.5,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "MealDeal",
+      "customerMessage": {
+        "default": "$2.50 Spaghetti Night!"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "skuId": [
+          "pasta"
+        ],
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "DayOfWeekMealDeal",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "eligibleDays": [],
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "friedchicken"
+        ]
+      },
+      {
+        "skuId": [
+          "biscuits"
+        ]
+      },
+      {
+        "skuId": [
+          "potatoside"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "DayOfWeekMealDeal",
+      "customerMessage": {
+        "default": "10-pc. Fried Chicken, Biscuits, and Mashed Potatoes for $10 only on certain days of the week"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 10,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "DayOfMonthMealDeal",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "intervalType": "MONTHLY",
+    "intervalStartDate": "2017-01-01T00:00:00.000Z",
+    "intervalEndDate": "2099-01-31T23:59:59.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "eligibleDays": [],
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "monthlyfriedpickles"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 4.41,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "DayOfMonthMealDeal",
+      "customerMessage": {
+        "default": "Fried Pickles of the Month are on sale every day of the month"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "DailyMealDeal",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "intervalType": "DAILY",
+    "intervalStartDate": "2017-01-01T00:00:00.000Z",
+    "intervalEndDate": "2099-01-31T23:59:59.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "eligibleDays": [],
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "dailymeat"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 4.42,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "DailyMealDeal",
+      "customerMessage": {
+        "default": "Meat of the Day"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "YearlyMealDeal",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "intervalType": "YEARLY",
+    "intervalStartDate": "2017-01-01T00:00:00.000Z",
+    "intervalEndDate": "2099-12-31T23:59:59.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "eligibleDays": [],
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "yearlybread"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "BUNDLE_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 4.43,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "YearlyMealDeal",
+      "customerMessage": {
+        "default": "Bread of the Year is on sale every day of the year"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "RABATT_KLEBETIKETTEN_AMT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "latch": true,
+      "type": "AMOUNT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentCurrencyCode": "EUR",
+      "distributed": true,
+      "adjustmentAmount": 1,
+      "perCombination": false,
+      "offerId": "RABATT_KLEBETIKETTEN_AMT",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "Kleberabatte amount",
+        "fr-FR": "Montant de la remise de colle"
+      }
+    }
+  },
+  {
+    "name": "RABATT_KLEBETIKETTEN_PCT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "latch": true,
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentCurrencyCode": "EUR",
+      "distributed": true,
+      "adjustmentAmount": 10,
+      "perCombination": false,
+      "offerId": "RABATT_KLEBETIKETTEN_PCT",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "Kleberabatte %"
+      }
+    }
+  },
+  {
+    "name": "RABATT_KLEBETIKETTEN_5PCT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "latch": true,
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentCurrencyCode": "EUR",
+      "distributed": true,
+      "adjustmentAmount": 5,
+      "perCombination": false,
+      "offerId": "RABATT_KLEBETIKETTEN_5PCT",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "Kleberabatte 5%"
+      }
+    }
+  },
+  {
+    "name": "RABATT_KLEBETIKETTEN_10PCT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "latch": true,
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentCurrencyCode": "EUR",
+      "distributed": true,
+      "adjustmentAmount": 10,
+      "perCombination": false,
+      "offerId": "RABATT_KLEBETIKETTEN_10PCT",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "Kleberabatte 10%"
+      }
+    }
+  },
+  {
+    "name": "RABATT_KLEBETIKETTEN_20PCT",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "latch": true,
+      "type": "PERCENT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentCurrencyCode": "EUR",
+      "distributed": true,
+      "adjustmentAmount": 20,
+      "perCombination": false,
+      "offerId": "RABATT_KLEBETIKETTEN_20PCT",
+      "maxQuantityAdjusted": 1,
+      "maxOccurrencesOnOrder": 1,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "customerMessage": {
+        "default": "Kleberabatte 20%"
+      }
+    }
+  },
+  {
+    "name": "BUY2_GET20PCT",
+    "promotionsSet": "RI",
+    "customerConstraint": false,
+    "eligibleDays": [],
+    "enabled": true,
+    "endDate": "2099-12-30T23:00:00.000Z",
+    "loyaltyTypes": [],
+    "modification": {
+      "amountThresholdType": "SALE_PRICE",
+      "type": "PERCENT_OFF",
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "offerId": "BUY2_GET20PCT",
+      "distributed": false,
+      "adjustmentAmount": 20,
+      "singleUse": true,
+      "customerMessage": {
+        "default": "Buy 2 get 20%"
+      },
+      "contributesToOrderTotalTrigger": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "perCombination": true,
+      "applyPromotionToTriggeredItems": true
+    },
+    "startDate": "2019-12-31T23:00:00.000Z",
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      },
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "skuId": [
+          "1"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "2"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "customerConstraint": false,
+    "triggerItems": [
+      {
+        "isTarget": false,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ],
+    "enabled": true,
+    "startDate": "1999-01-01T06:00:00.000Z",
+    "promotionsSet": "RI",
+    "endDate": "2090-01-01T06:00:00.000Z",
+    "loyaltyTypes": [],
+    "eligibleDays": [
+      "SUNDAY",
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY"
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "offerId": "2_WITH_0",
+      "adjustmentAmount": 0.5,
+      "contributesToOrderTotalTrigger": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentCurrencyCode": "EUR",
+      "immediate": true,
+      "customerMessage": {
+        "default": "0.50 Off 2 with purchase of 0"
+      },
+      "applyPromotionToTriggeredItems": true,
+      "coupon": true,
+      "distributed": false,
+      "amountThresholdType": "SALE_PRICE",
+      "perCombination": true
+    },
+    "triggers": [
+      {
+        "skuId": [
+          "0"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "2"
+        ],
+        "quantity": 1
+      }
+    ],
+    "name": "2_WITH_0"
+  },
+  {
+    "name": "Buy0_Get2Free",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "skuId": [
+          "0"
+        ]
+      },
+      {
+        "skuId": [
+          "2"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "FINAL_PRICE",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "Buy0_Get2Free",
+      "coupon": true,
+      "customerMessage": {
+        "default": "Free 2 with 0"
+      }
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": false
+      },
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "Return_Get1%Fee",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "perCombination": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "adjustmentCurrencyCode": "EUR",
+      "offerId": "Return_Get1%Fee",
+      "maxQuantityAdjusted": 1,
+      "customerMessage": {
+        "default": "$1% Restocking Fee"
+      },
+      "isEBTFoodAllowed": false
+    },
+    "triggers": [
+      {
+        "skuId": [
+          "1998"
+        ],
+        "type": "RETURN"
+      }
+    ],
+    "triggerItems": [
+      {
+        "requiredQuantity": 1,
+        "isTarget": true
+      }
+    ]
+  },
+  {
+    "name": "Buy10DollarsJuiceDepartment_Get10PercentOffTwoBottlesOfJuice",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "adjustmentAmount": 10,
+      "customerMessage": {
+        "default": "$Buy10DollarsJuiceDepartment_Get10PercentOffTwoBottlesOfJuice"
+      },
+      "description": "Buy10DollarsJuiceDepartment_Get10PercentOffTwoBottlesOfJuice",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "offerId": "Buy10DollarsJuiceDepartment_Get10PercentOffTwoBottlesOfJuice",
+      "type": "PERCENT_OFF",
+      "perCombination": true
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "JUICE_DEPT_GROUP"
+        ]
+      },
+      {
+        "catalogGroupName": [
+          "JUICE_DEPT_GROUP"
+        ],
+        "triggerAttributeValue": {
+          "bottle": true
+        }
+      }
+    ],
+    "triggerItems": [
+      {
+        "isTarget": false,
+        "requiredPrice": 10.00
+      },
+      {
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 2
+      }
+    ]
+  },
+  {
+    "name": "10PercentOffOrder_MaxAmount_OrderLevel",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "loyaltyTypes": [],
+    "customerConstraint": false,
+    "triggers": [
+      {
+        "skuId": [
+          "pizza"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "WG_SAUCE"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF_ORDER",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "perCombination": false,
+      "distributed": false,
+      "immediate": true,
+      "maxAdjustmentAmount": 1.5,
+      "orderLevelPromotion": true,
+      "offerId": "10PercentOffOrder_MaxAmount_OrderLevel",
+      "contributesToOrderTotalTrigger": false,
+      "customerMessage": {
+        "default": "10% Off when buying pizza and wg ketchup/sauce"
+      },
+      "groups": [],
+      "exclusiveGroups": []
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "AmountOffOrder_OrderLevel",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "loyaltyTypes": [],
+    "customerConstraint": false,
+    "triggers": [
+      {
+        "skuId": [
+          "WG_SAUCE"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "soda"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF_ORDER",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1.5,
+      "perCombination": false,
+      "distributed": false,
+      "immediate": true,
+      "orderLevelPromotion": true,
+      "offerId": "AmountOffOrder_OrderLevel",
+      "customerMessage": {
+        "default": "$1.5 Off when buying wg ketchup/sauce and 2 sodas"
+      },
+      "groups": [],
+      "exclusiveGroups": []
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "10PctOff_MaxAdjAmnt_Distributed_Items",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "loyaltyTypes": [],
+    "customerConstraint": false,
+    "triggers": [
+      {
+        "skuId": [
+          "WG_SAUCE"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "2"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "perCombination": true,
+      "distributed": true,
+      "immediate": true,
+      "offerId": "10PctOff_MaxAdjAmnt_Distributed_Items",
+      "customerMessage": {
+        "default": "10% Off when buying item 2 and wg ketchup/sauce"
+      },
+      "groups": [],
+      "exclusiveGroups": []
+    },
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ]
+  },
+  {
+    "name": "ONE_DLL_OFF_IN_EGGS_DEPT_WITH_BACON_DEPT_ITEM_PURCHASED",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": true,
+      "offerId": "ONE_DLL_OFF_IN_EGGS_DEPT_WITH_BACON_DEPT_ITEM_PURCHASED",
+      "customerMessage": {
+        "default": "$1 Off"
+      }
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "EGGS_DEPT_GROUP"
+        ]
+      },
+      {
+        "catalogGroupName": [
+          "BACON_DEPT_GROUP"
+        ]
+      }
+    ],
+    "triggerItems": [
+      {
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      },
+      {
+        "isTarget": false
+      }
+    ]
+  },
+  {
+    "name": "OneOffFirstFiveDeptPurchase",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "adjustmentAmount": 1,
+      "customerMessage": {
+        "default": "$1 Off First $5 Depth Purchase"
+      },
+      "description": "$1 Off First $5 Depth Purchase",
+      "distributed": false,
+      "orderLevelPromotion": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "offerId": "OneOffFirstFiveDeptPurchase",
+      "perCombination": false,
+      "type": "AMOUNT_OFF_ORDER",
+      "triggeredAmount": 5,
+      "adjustmentCurrencyCode": "EUR"
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "ONE_OFF_FIRST_FIVE_DEPARTMENT"
+        ]
+      }
+    ],
+    "triggerItems": []
+  },
+  {
+    "name": "25_PERCENT_OFF_IN_FLOWERS_MANUFACTURER_COUPON",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 25,
+      "perCombination": false,
+      "offerId": "25_PERCENT_OFF_IN_FLOWERS_MANUFACTURER_COUPON",
+      "coupon": true,
+      "percentDistributionOfCoupon": 100,
+      "appliesToManuallyLockedItems": true,
+      "customerMessage": {
+        "default": "25% off"
+      },
+      "isEBTFoodAllowed": false
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "FLOWERS"
+        ]
+      }
+    ],
+    "triggerItems": []
+  },
+  {
+    "name": "25_PERCENT_OFF_IN_FLOWERS_STORE_COUPON",
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 25,
+      "perCombination": false,
+      "offerId": "25_PERCENT_OFF_IN_FLOWERS_STORE_COUPON",
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "appliesToManuallyLockedItems": true,
+      "customerMessage": {
+        "default": "25% off"
+      }
+    },
+    "triggers": [
+      {
+        "catalogGroupName": [
+          "FLOWERS"
+        ]
+      }
+    ],
+    "triggerItems": []
+  },
+  {
+    "enabled": true,
+    "promotionsSet": "RI",
+    "modification": {
+      "type": "PERCENT_OFF",
+      "amountThresholdType": "SALE_PRICE",
+      "distributed": false,
+      "offerId": "PromoLimitPerLifetime",
+      "adjustmentAmount": 10,
+      "contributesToOrderTotalTrigger": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "perCombination": false,
+      "customerMessage": {
+        "default": "10% off on WG_SAUCE for any loyalty customer"
+      },
+      "applyPromotionToTriggeredItems": true,
+      "maxUsagePerLifetime": 5
+    },
+    "customerConstraint": true,
+    "startDate": "2021-01-19T00:00:00.000Z",
+    "endDate": "2030-12-31T00:00:00.000Z",
+    "eligibleDays": [],
+    "triggers": [
+      {
+        "skuId": [
+          "WG_SAUCE"
+        ],
+        "quantity": 1
+      }
+    ],
+    "triggerItems": [],
+    "name": "PromoLimitPerLifetime"
+  },
+  {
+    "enabled": true,
+    "promotionsSet": "RI",
+    "modification": {
+      "type": "PERCENT_OFF",
+      "description": "10% off bread and wg_sauce for any loyalty customer when buying these and soda.",
+      "amountThresholdType": "SALE_PRICE",
+      "distributed": false,
+      "offerId": "PromoLimitPerDayLifetime",
+      "adjustmentAmount": 10,
+      "contributesToOrderTotalTrigger": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "perCombination": true,
+      "customerMessage": {},
+      "applyPromotionToTriggeredItems": true,
+      "maxUsagePerLifetime": 5,
+      "maxUsagePerDay": 2
+    },
+    "customerConstraint": true,
+    "startDate": "2021-01-19T00:00:00.000Z",
+    "endDate": "2030-12-31T00:00:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "WG_SAUCE"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "soda"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "bread"
+        ],
+        "quantity": 1
+      }
+    ],
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": false,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ],
+    "name": "PromoLimitPerDayLifetime"
+  },
+  {
+    "enabled": true,
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "name": "ContOffer_QtyBasedAwdFreeItem",
+    "customerConstraint": true,
+    "startDate": "2021-02-01T00:00:00.000Z",
+    "endDate": "2030-02-01T00:00:00.000Z",
+    "modification": {
+      "continuityOffer": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "perCombination": false,
+      "triggeredQuantity": "10",
+      "customerMessage": {
+        "default": "One soda free when buying 10"
+      },
+      "offerId": "ContOffer_QtyBasedAwdFreeItem",
+      "amountThresholdType": "SALE_PRICE",
+      "type": "FINAL_PRICE",
+      "distributed": false,
+      "applyPromotionToTriggeredItems": true,
+      "isEBTFoodAllowed": true,
+      "adjustmentAmount": 0,
+      "contributesToOrderTotalTrigger": true
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1,
+        "triggerAttributeValue": {},
+        "skuId": [
+          "soda"
+        ]
+      }
+    ]
+  },
+  {
+    "enabled": true,
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "name": "ContOffer_AmntBasedAwdPoints",
+    "customerConstraint": true,
+    "startDate": "2021-02-01T00:00:00.000Z",
+    "endDate": "2030-02-01T00:00:00.000Z",
+    "modification": {
+      "continuityOffer": true,
+      "triggeredAmount": 10,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "immediate": true,
+      "perCombination": false,
+      "customerMessage": {
+        "default": "20 Loyalty Points after spending $10"
+      },
+      "offerId": "ContOffer_AmntBasedAwdPoints",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "amountThresholdType": "SALE_PRICE",
+      "type": "POINTS",
+      "distributed": false,
+      "applyPromotionToTriggeredItems": true,
+      "isEBTFoodAllowed": true,
+      "adjustmentAmount": 20,
+      "contributesToOrderTotalTrigger": true
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "1_PERCENT_OFF_W_10_PTS_TEST_ELECTIVE_REDEMPTION",
+    "promotionsSet": "ELECTIVE_PROMOTION_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "customerConstraint": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 1,
+      "pointsRequired": 10,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "electiveRedemption": true,
+      "perCombination": false,
+      "maxOccurrencesOnOrder": 1,
+      "offerId": "1_PERCENT_OFF_W_10_PTS_TEST_ELECTIVE_REDEMPTION",
+      "orderLevelPromotion": true,
+      "customerMessage": {
+        "default": "1% Off With 10 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "2_PERCENT_OFF_W_20_PTS_TEST_ELECTIVE_REDEMPTION",
+    "promotionsSet": "ELECTIVE_PROMOTION_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "customerConstraint": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 2,
+      "pointsRequired": 20,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "electiveRedemption": true,
+      "perCombination": false,
+      "maxOccurrencesOnOrder": 1,
+      "offerId": "2_PERCENT_OFF_W_20_PTS_TEST_ELECTIVE_REDEMPTION",
+      "orderLevelPromotion": true,
+      "customerMessage": {
+        "default": "2% Off With 20 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "2.5_OFF_W_25_PTS_TEST_ELECTIVE_REDEMPTION",
+    "promotionsSet": "ELECTIVE_PROMOTION_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "customerConstraint": true,
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "LOWEST_PRICED_ITEM",
+      "adjustmentAmount": 2.5,
+      "pointsRequired": 25,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "electiveRedemption": true,
+      "perCombination": false,
+      "maxOccurrencesOnOrder": 1,
+      "offerId": "2.5_OFF_W_25_PTS_TEST_ELECTIVE_REDEMPTION",
+      "orderLevelPromotion": true,
+      "customerMessage": {
+        "default": "$2.5 Off With 25 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "BUY_3_PIZZAS_GET_5_DLLS_OFF_RECEIPT_FOOTER_BARCODE",
+    "promotionsSet": "RI",
+    "triggers": [
+      {
+        "triggerAttributeValue": {},
+        "skuId": [
+          "pizza"
+        ],
+        "quantity": 3
+      }
+    ],
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "eligibleDays": [],
+    "modification": {
+      "singleUse": false,
+      "customerMessage": {
+        "default": "Buy 3 pizzas, get $5 off and some barcodes!"
+      },
+      "receiptFooters": [
+        {
+          "barcodeData": "www.google.com",
+          "symbology": "QRCODE",
+          "orderLevelMessage": false
+        },
+        {
+          "barcodeData": "90311017",
+          "symbology": "EAN8",
+          "orderLevelMessage": false
+        }
+      ],
+      "amountThresholdType": "SALE_PRICE",
+      "adjustmentCurrencyCode": "EUR",
+      "maxOccurrencesOnOrder": 1,
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "perCombination": false,
+      "immediate": true,
+      "type": "AMOUNT_OFF",
+      "distributed": false,
+      "offerId": "BUY_3_PIZZAS_GET_5_DLLS_OFF_RECEIPT_FOOTER_BARCODE",
+      "isEBTFoodAllowed": true,
+      "adjustmentAmount": 5,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "coupon": false,
+      "percentDistributionOfCoupon": 0
+    },
+    "customerConstraint": false,
+    "triggerItems": [],
+    "loyaltyTypes": [],
+    "enabled": true,
+    "startDate": "2020-01-01T04:00:00.000Z"
+  },
+  {
+    "name": "10Prct_Off_ElectRedemption_LimPerDayLifetime",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "customerConstraint": true,
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "pointsRequired": 3,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "electiveRedemption": true,
+      "perCombination": false,
+      "maxUsagePerDay": 2,
+      "maxUsagePerLifetime": 5,
+      "offerId": "10Prct_Off_ElectRedemption_LimPerDayLifetime",
+      "orderLevelPromotion": true,
+      "customerMessage": {
+        "default": "10% Off With 3 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "MSG_ONLY_TenderTypePromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "paymentTypeGroup": "CASH",
+        "paymentAmount": 2
+      }
+    ],
+    "modification": {
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "perCombination": false,
+      "offerId": "MSG_ONLY_TenderTypePromotion",
+      "customerMessage": {
+        "default": "This is a MSG Only promotion triggered by CASH"
+      },
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Msg Only promotion after tendering with CASH"
+          },
+          "orderLevelMessage": true
+        }
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "Points_Award_TenderTypePromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "paymentTypeGroup": "CASH",
+        "paymentAmount": 4
+      }
+    ],
+    "modification": {
+      "type": "POINTS",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "Points_Award_TenderTypePromotion",
+      "maxOccurrencesOnOrder": 1,
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "Get 20 Points when paying $4.00 or more with CASH"
+      },
+      "coupon": false,
+      "adjustmentAmount": 20,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "PointsRatio_Award_TenderTypePromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "paymentTypeGroup": "CASH",
+        "paymentAmount": 5,
+        "skuId": [
+          "pizza"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "type": "POINTS_RATIO",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "customerConstraint": true,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.2,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true,
+      "offerId": "PointsRatio_Award_TenderTypePromotion",
+      "appliesToManuallyLockedItems": true,
+      "customerMessage": {
+        "default": "1 point per $5 and a pizza"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "5%_Off_UOM_WeightedItem_BasedPromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "quantity": 2.5,
+        "uomItemType": "WEIGHT"
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 5.0,
+      "immediate": true,
+      "offerId": "5%_Off_UOM_WeightedItem_BasedPromotion",
+      "appliesToManuallyLockedItems": true,
+      "perCombination": false,
+      "targetUOMItemType": "WEIGHT",
+      "customerMessage": {
+        "default": "5% off on any weighted items"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "$0.50_Off_Weighted_Bananas",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {
+        "quantity": 1.5,
+        "skuId": [
+          "4011"
+        ],
+        "uomItemType": "WEIGHT"
+      }
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.50,
+      "immediate": true,
+      "offerId": "$0.50_Off_Weighted_Bananas",
+      "appliesToManuallyLockedItems": true,
+      "perCombination": false,
+      "targetUOMItemType": "WEIGHT",
+      "customerMessage": {
+        "default": "$0.50 off when buying 1.5 lbs of bananas"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "Points_Award_ExcIncLoyaltyTypesPromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "loyaltyTypes": [
+      "LOYALTY_ID",
+      "VIP"
+    ],
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "POINTS",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "Points_Award_ExcIncLoyaltyTypesPromotion",
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "All members of Loyalty_Id and VIP get 1 Points per dollar spent"
+      },
+      "coupon": false,
+      "adjustmentAmount": 1,
+      "perCombination": false,
+      "immediate": false,
+      "orderLevelPromotion": true,
+      "maxOccurrencesOnOrder": 1
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "AmountOffOrder_Award_ExcIncLoyaltyTypesPromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "excludedLoyaltyTypes": [
+      "LOYALTY_ID",
+      "Baby Club",
+      "Fuel Program"
+    ],
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "AMOUNT_OFF_ORDER",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "AmountOffOrder_Award_ExcIncLoyaltyTypesPromotion",
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "Any customer gets $0.50 off the order total except members of Baby Club and Fuel Program."
+      },
+      "coupon": false,
+      "adjustmentAmount": 0.50,
+      "perCombination": false,
+      "immediate": true,
+      "orderLevelPromotion": true,
+      "maxOccurrencesOnOrder": 1
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "PercentOffOrder_Award_ExcIncLoyaltyTypesPromotion",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "loyaltyTypes": [
+      "Senior Citizens"
+    ],
+    "excludedLoyaltyTypes": [
+      "Students",
+      "VIP"
+    ],
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "PERCENT_OFF_ORDER",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "PercentOffOrder_Award_ExcIncLoyaltyTypesPromotion",
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "All Senior Citizens members get 7% off the order. Excludes Student members."
+      },
+      "coupon": false,
+      "adjustmentAmount": 7,
+      "perCombination": false,
+      "immediate": true,
+      "orderLevelPromotion": true,
+      "distributed": false,
+      "maxOccurrencesOnOrder": 1
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "AttachSegments_Offer",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "5011"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "AttachSegments_Offer",
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "3% off on grapes and attaches the customer to the 'Top Visit' and 'Top Spend' segments"
+      },
+      "coupon": false,
+      "adjustmentAmount": 3,
+      "perCombination": false,
+      "immediate": true,
+      "distributed": false,
+      "maxOccurrencesOnOrder": 1,
+      "segmentsToAttach": [
+        "Top_Visit",
+        "Top_Spend"
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "DetachSegments_Offer",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "2003"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "DetachSegments_Offer",
+      "customerConstraint": true,
+      "customerMessage": {
+        "default": "5% off on Lemon Juice Powder and detaches the customer from the 'Top Visit' and 'Top Spend' segments"
+      },
+      "coupon": false,
+      "adjustmentAmount": 5,
+      "perCombination": false,
+      "immediate": true,
+      "distributed": false,
+      "maxOccurrencesOnOrder": 1,
+      "segmentsToDetach": [
+        "Top_Visit",
+        "Top_Spend"
+      ]
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "IncludeSegments_MessageOnly",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "customerConstraint": true,
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "offerId": "IncludeSegments_MessageOnly",
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Thank you for being a top spend customer"
+          },
+          "orderLevelMessage": true
+        }
+      ]
+    },
+    "triggerItems": [],
+    "customerConstraint": true,
+    "includeSegments": [
+      "Top_Spend",
+      "Baby_Club"
+    ]
+  },
+  {
+    "name": "ExcludeSegments_MessageOnly",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "customerConstraint": true,
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "offerId": "ExcludeSegments_MessageOnly",
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "We invite you to become a top spend customer!"
+          },
+          "orderLevelMessage": true
+        }
+      ]
+    },
+    "triggerItems": [],
+    "customerConstraint": true,
+    "excludeSegments": [
+      "Top_Spend",
+      "Top_Visit"
+    ]
+  },
+  {
+    "name": "ExcludeIncludeSegments_MessageOnly",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "customerConstraint": true,
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "offerId": "ExcludeIncludeSegments_MessageOnly",
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Thanks for being a top P&G or a baby club customer !"
+          },
+          "orderLevelMessage": true
+        }
+      ]
+    },
+    "triggerItems": [],
+    "customerConstraint": true,
+    "excludeSegments": [
+      "Senior_Citizens",
+      "Student"
+    ],
+    "includeSegments": [
+      "Baby_Club",
+      "Top_P&G"
+    ]
+  },
+  {
+    "name": "Combined_promo_itm_0044_0045_0046_receipt_footer_non_distributed",
+    "enabled": true,
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "promotionsSet": "RI",
+    "customerConstraint": false,
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ],
+    "modification": {
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Combined promo items 0044,0045,0046, non distributed"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_COUPON_5_DLLS_OFF"
+        }
+      ],
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "perCombination": true,
+      "immediate": true,
+      "triggeredQuantity": 1,
+      "customerMessage": {
+        "default": "Get 10 cents off on each when combined"
+      },
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.1,
+      "offerId": "Combined_promo_itm_0044_0045_0046_receipt_footer",
+      "description": "Combined promotion, when items 0044, 0045 and 0046 are in the order you get 10 cents off on each",
+      "distributed": false,
+      "isEBTFoodAllowed": true
+    },
+    "triggers": [
+      {
+        "quantity": 1,
+        "skuId": [
+          "0044"
+        ]
+      },
+      {
+        "quantity": 1,
+        "skuId": [
+          "0045"
+        ]
+      },
+      {
+        "quantity": 1,
+        "skuId": [
+          "0046"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Combined_promo_itm_0047_0048_0049_receipt_footer_distributed",
+    "enabled": true,
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "promotionsSet": "RI",
+    "customerConstraint": false,
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      },
+      {
+        "isTarget": true,
+        "requiredQuantity": 1
+      }
+    ],
+    "modification": {
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "Combined promo items 0047,0048,0049 distributed"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_COUPON_10_PERCENT_DOG_FOOD"
+        }
+      ],
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "perCombination": true,
+      "immediate": true,
+      "triggeredQuantity": 1,
+      "customerMessage": {
+        "default": "Get 10 cents off on each when combined"
+      },
+      "type": "AMOUNT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 0.1,
+      "offerId": "Combined_promo_itm_0047_0048_0049_receipt_footer",
+      "description": "Combined promotion, when items 0047, 0048 and 0049 are in the order you get 10 cents off on each",
+      "distributed": true,
+      "isEBTFoodAllowed": true
+    },
+    "triggers": [
+      {
+        "quantity": 1,
+        "skuId": [
+          "0047"
+        ]
+      },
+      {
+        "quantity": 1,
+        "skuId": [
+          "0048"
+        ]
+      },
+      {
+        "quantity": 1,
+        "skuId": [
+          "0049"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Single_item_0100_percent_discount_receipt_footer",
+    "enabled": true,
+    "promotionsSet": "RI",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": false,
+    "modification": {
+      "receiptFooters": [
+        {
+          "message": {
+            "default": "single item group promo message 1"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_MESSAGE_STORE_ANNIVERSARY_CELEBRATION"
+        },
+        {
+          "message": {
+            "default": "single item group promo message 2"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_COUPON_FREE_COOKIES"
+        }
+      ],
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "10% off single item promo, receipt footer"
+      },
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "offerId": "single_item_multiple_promo",
+      "distributed": false,
+      "isEBTFoodAllowed": true
+    },
+    "triggers": [
+      {
+        "triggerAttributeValue": {},
+        "quantity": 1,
+        "skuId": [
+          "0100"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "2_DOLLARS_OFF_COUPON",
+    "promotionsSet": "RI",
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ],
+    "triggerItems": [],
+    "modification": {
+      "immediate": true,
+      "customerMessage": {
+        "default": "FV Paper 2.00/1/0"
+      },
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "triggeredQuantity": 1,
+      "type": "AMOUNT_OFF",
+      "description": "FV Paper 2.00/1/0",
+      "distributed": true,
+      "adjustmentAmount": 2,
+      "offerId": "2_DOLLARS_OFF_COUPON",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "coupon": true,
+      "percentDistributionOfCoupon": 0
+    },
+    "startDate": "2020-06-16T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true
+  },
+  {
+    "name": "Turkey_Earnings",
+    "promotionsSet": "TURKEY_PROMOTIONS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "Turkey_Earnings",
+      "description": "Keep track of Turkey spend",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "Turkey_Spend",
+      "triggeredAmount": 1,
+      "perCombination": false,
+      "immediate": true,
+      "maxOccurrencesOnOrder": 1,
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "type": "POINTS_RATIO",
+      "orderLevelPromotion": true,
+      "appliesToManuallyLockedItems": true,
+      "distributed": false,
+      "adjustmentAmount": 1
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Turkey_Earned",
+    "promotionsSet": "TURKEY_PROMOTIONS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "excludeSegments": [
+      "Holiday_Turkey"
+    ],
+    "modification": {
+      "offerId": "Turkey_Earned",
+      "pointsBucket": "Turkey_Spend",
+      "perCombination": false,
+      "maxUsagePerLifetime": 1,
+      "segmentsToAttach": [
+        "Holiday_Turkey"
+      ],
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "pointsRequired": 300,
+      "receiptFooters": [
+        {
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_TURKEY_EARNED"
+        }
+      ],
+      "description": "Reward Customer with Turkey"
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Turkey_Redeemed",
+    "promotionsSet": "TURKEY_PROMOTIONS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "includeSegments": [
+      "Holiday_Turkey"
+    ],
+    "modification": {
+      "offerId": "Turkey_Redeemed",
+      "pointsBucket": "Turkey_Spend",
+      "pointsRequired": 300,
+      "perCombination": false,
+      "maxUsagePerLifetime": 1,
+      "triggeredQuantity": 1,
+      "customerMessage": {
+        "default": "FREE BUTTERBALL TURKEY"
+      },
+      "receiptFooters": [
+        {
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_TURKEY_EARNED"
+        }
+      ],
+      "type": "FINAL_PRICE",
+      "maxQuantityAdjusted": 1,
+      "description": "Give Butterball Turkey",
+      "adjustmentAmount": 0
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1,
+        "skuId": [
+          "turkey"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Foodbank_Earned",
+    "promotionsSet": "TURKEY_PROMOTIONS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "excludeSegments": [
+      "Foodback_Achievers"
+    ],
+    "modification": {
+      "offerId": "Foodbank_Earned",
+      "pointsBucket": "Turkey_Spend",
+      "perCombination": false,
+      "maxUsagePerLifetime": 1,
+      "segmentsToAttach": [
+        "Foodback_Achievers"
+      ],
+      "type": "MESSAGE_ONLY",
+      "orderLevelPromotion": true,
+      "pointsRequired": 600,
+      "receiptFooters": [
+        {
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "RF_FOODBANK_EARNED"
+        }
+      ],
+      "description": "Butterball Turkey for Foodbank"
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "ContinuityOffer_PerCombination_QtyBased",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "ContinuityOffer_PerCombination_QtyBased",
+      "perCombination": true,
+      "type": "AMOUNT_OFF",
+      "adjustmentAmount": 0.20,
+      "distributed": false,
+      "customerMessage": {
+        "default": "Buy 4 Pepsis/Sprites and get on $0.20 off"
+      },
+      "continuityOffer": true
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 4,
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 1
+      }
+    ],
+    "triggers": [
+      {
+        "skuId": [
+          "SPRITE",
+          "PEPSI"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "ContinuityOffer_PerCombination_AmntBased",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "ContinuityOffer_PerCombination_AmntBased",
+      "perCombination": true,
+      "type": "PERCENT_OFF",
+      "adjustmentAmount": 15,
+      "distributed": false,
+      "customerMessage": {
+        "default": "Spend $20 or more on Marlboro products and get %15 off on 1 of them"
+      },
+      "continuityOffer": true
+    },
+    "triggerItems": [
+      {
+        "requiredPrice": 20,
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 1
+      }
+    ],
+    "triggers": [
+      {
+        "triggerAttributeValue": {
+          "grouping": "marlboro"
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "ContinuityOffer_PerCombination_MultipleTriggers",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "ContinuityOffer_PerCombination_MultipleTriggers",
+      "perCombination": true,
+      "type": "FINAL_PRICE",
+      "adjustmentAmount": 0,
+      "distributed": false,
+      "customerMessage": {
+        "default": "Spend $10 or more on pasta and coca-cola get one coca-cola free"
+      },
+      "continuityOffer": true
+    },
+    "triggerItems": [
+      {
+        "requiredPrice": 10,
+        "isTarget": false
+      },
+      {
+        "requiredPrice": 10,
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 1
+      }
+    ],
+    "triggers": [
+      {
+        "skuId": [
+          "pasta"
+        ],
+        "quantity": 1
+      },
+      {
+        "skuId": [
+          "COCACOLA"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "TrackedOffer_QtyBased_HouseholdLevel",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "TrackedOffer_QtyBased_HouseholdLevel",
+      "perCombination": true,
+      "type": "FINAL_PRICE",
+      "adjustmentAmount": 0,
+      "distributed": false,
+      "customerMessage": {
+        "default": "Buy 10 or more PEPSIs and get one free"
+      },
+      "continuityOffer": true,
+      "maxUsagePerLifetime": 5,
+      "maxUsagePerDay": 2
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 10,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "skuId": [
+          "PEPSI"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "TrackedOffer_SpendBased_HouseholdLevel",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "modification": {
+      "offerId": "TrackedOffer_SpendBased_HouseholdLevel",
+      "perCombination": true,
+      "type": "PERCENT_OFF",
+      "adjustmentAmount": 5,
+      "distributed": false,
+      "customerMessage": {
+        "default": "Spend $20 or more on Marlboro cigarettes and get 5% off on each one of them."
+      },
+      "continuityOffer": true
+    },
+    "triggerItems": [
+      {
+        "requiredPrice": 20,
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerAttributeValue": {
+          "grouping": "marlboro"
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "10_percent_off_total_order_when_SKU3_included",
+    "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "enabled": true,
+    "endDate": "2099-02-11T05:59:00.000Z",
+    "startDate": "2022-02-03T06:00:00.000Z",
+    "modification": {
+      "globalExclusiveGroups": [
+        "BRR_SINGLE_ITEM_PROMOTIONS_GROUP"
+      ],
+      "customerMessage": {
+        "default": "10 Off Order- SKU3"
+      },
+      "perCombination": true,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "type": "PERCENT_OFF_ORDER",
+      "orderLevelPromotion": true,
+      "description": "10 percent off on total order when an item with SKU_ID 3 is included in the order",
+      "distributed": false,
+      "adjustmentAmount": "10",
+      "offerId": "10_percent_off_total_order_when_SKU3_included"
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": "1",
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "quantity": "1",
+        "skuId": [
+          "3"
+        ],
+        "constraintDescription": {
+          "default": "Constraint description over item sku 3"
+        }
+      }
+    ]
+  },
+  {
+    "name": "WeightedItem_SimpleTrigger_Limited_AmountOff_Promotion",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "4011"
+        ],
+        "quantity": 1,
+        "uomItemType": "WEIGHT"
+      }
+    ],
+    "modification": {
+      "applyPromotionToTriggeredItems": true,
+      "perCombination": false,
+      "triggeredQuantity": 2,
+      "immediate": true,
+      "customerMessage": {
+        "default": "Buy 2lbs of bananas and get $0.10 off up to 4 lbs"
+      },
+      "type": "AMOUNT_OFF",
+      "offerId": "WeightedItem_SimpleTrigger_Limited_AmountOff_Promotion",
+      "distributed": false,
+      "adjustmentAmount": 0.10,
+      "maxQuantityAdjusted": 4,
+      "targetUOMItemType": "WEIGHT"
+    }
+  },
+  {
+    "name": "WeightedItem5011_PerCombination_Limited_AmountOff_Promotion",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "5011"
+        ],
+        "quantity": 1,
+        "uomItemType": "WEIGHT"
+      }
+    ],
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 4
+      }
+    ],
+    "modification": {
+      "applyPromotionToTriggeredItems": true,
+      "perCombination": true,
+      "immediate": true,
+      "customerMessage": {
+        "default": "Buy 1lbs of grapes and get $1.00 off up to 4 lbs"
+      },
+      "type": "AMOUNT_OFF",
+      "offerId": "WeightedItem5011_PerCombination_Limited_AmountOff_Promotion",
+      "distributed": false,
+      "adjustmentAmount": 1,
+      "maxQuantityAdjusted": 4,
+      "targetUOMItemType": "WEIGHT"
+    }
+  },
+  {
+    "name": "WeightedItem_Meat_PerCombination_Limited_AmountOff_Promotion",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "MEAT"
+        ],
+        "quantity": 2,
+        "uomItemType": "WEIGHT"
+      }
+    ],
+    "triggerItems": [
+      {
+        "isTarget": true,
+        "maxQuantityAdjustedPerCombination": 1,
+        "requiredQuantity": 2
+      }
+    ],
+    "modification": {
+      "applyPromotionToTriggeredItems": true,
+      "perCombination": true,
+      "immediate": true,
+      "customerMessage": {
+        "default": "Buy 2lbs of meat and get $1.00 off up to 1 lbs"
+      },
+      "type": "AMOUNT_OFF",
+      "offerId": "WeightedItem_Meat_PerCombination_Limited_AmountOff_Promotion",
+      "distributed": false,
+      "adjustmentAmount": 1,
+      "maxQuantityAdjusted": 1,
+      "targetUOMItemType": "WEIGHT"
+    }
+  },
+  {
+    "name": "LoadToCard_CouponGiver_Example_1",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "SPRITE"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "applyPromotionToTriggeredItems": true,
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "10% off on 2 Sprite and a printed coupon"
+      },
+      "type": "PERCENT_OFF",
+      "adjustmentAmount": 10,
+      "offerId": "LoadToCard_CouponGiver_Example_1",
+      "distributed": true,
+      "receiptFooters": [
+        {
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "ECoupon_SamplePromotion_1",
+          "couponData": {
+            "id": "ECoupon_SamplePromotion_1",
+            "expirationDate": "2099-01-18T05:59:00.000Z"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "LoadToCard_CouponGiver_Example_2",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "2"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "1 off on the order when buying 2 items 2 and a printed coupon"
+      },
+      "type": "AMOUNT_OFF_ORDER",
+      "adjustmentAmount": 1,
+      "offerId": "LoadToCard_CouponGiver_Example_2",
+      "distributed": false,
+      "orderLevelPromotion": true,
+      "receiptFooters": [
+        {
+          "orderLevelMessage": true,
+          "messageCouponReceiptTemplateId": "ECoupon_SamplePromotion_2",
+          "couponData": {
+            "id": "ECoupon_SamplePromotion_2",
+            "expirationDate": "2099-02-18T05:59:00.000Z"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "ECoupon_SamplePromotion_2",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "soda"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "$0.25 off on the order when buying 2 sodas"
+      },
+      "type": "AMOUNT_OFF",
+      "adjustmentAmount": 0.25,
+      "offerId": "ECoupon_SamplePromotion_2",
+      "distributed": true,
+      "orderLevelPromotion": true,
+      "coupon": true
+    }
+  },
+  {
+    "name": "LoadToCard_CouponGiver_Example_3",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "COCACOLA"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "1 off on the order when buying 2 CocaCola and a printed coupon"
+      },
+      "type": "AMOUNT_OFF_ORDER",
+      "adjustmentAmount": 1,
+      "offerId": "LoadToCard_CouponGiver_Example_3",
+      "distributed": false,
+      "orderLevelPromotion": true,
+      "receiptFooters": [
+        {
+          "orderLevelMessage": true,
+          "messageCouponReceiptTemplateId": "ECoupon_SamplePromotion_3",
+          "couponData": {
+            "id": "ECoupon_SamplePromotion_3",
+            "expirationDate": "2099-02-18T05:59:00.000Z"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "ECoupon_SamplePromotion_3",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-01-01T06:00:00.000Z",
+    "endDate": "2099-01-18T05:59:00.000Z",
+    "triggers": [
+      {
+        "skuId": [
+          "bread"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "perCombination": false,
+      "immediate": true,
+      "customerMessage": {
+        "default": "$0.25 off on a loft of bread"
+      },
+      "type": "AMOUNT_OFF",
+      "adjustmentAmount": 0.25,
+      "offerId": "ECoupon_SamplePromotion_3",
+      "distributed": true,
+      "orderLevelPromotion": true,
+      "coupon": true
+    }
+  },
+  {
+    "name": "AllCustomers_Issuance",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "customerConstraint": false,
+    "enabled": true,
+    "startDate": "2022-07-28T00:00:00.735Z",
+    "endDate": "2099-08-04T23:59:59.735Z",
+    "intervalEndDate": "2099-08-04T23:59:00.759Z",
+    "intervalStartDate": "2022-07-28T00:00:00.759Z",
+    "modification": {
+      "customerMessage": {
+        "default": "Give All Customers Coupon"
+      },
+      "receiptFooters": [
+        {
+          "couponData": {
+            "id": "AllCustomers_Redeemer",
+            "expirationDate": "2099-08-04T23:59:59.851Z"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "AllCustomers_Redeemer"
+        }
+      ],
+      "electiveRedemption": false,
+      "groups": [],
+      "exclusiveGroups": [],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "type": "MESSAGE_ONLY",
+      "description": "Give All Customers Coupon",
+      "offerId": "AllCustomers_Issuance",
+      "orderLevelPromotion": true,
+      "immediate": true,
+      "perCombination": true
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 1,
+        "skuId": [
+          "bookOfStamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AllCustomers_Redeemer",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "customerConstraint": false,
+    "enabled": true,
+    "startDate": "2022-07-28T00:00:00.851Z",
+    "endDate": "2099-08-04T23:59:59.851Z",
+    "intervalEndDate": "2099-08-04T23:59:00.875Z",
+    "intervalStartDate": "2022-07-28T00:00:00.875Z",
+    "modification": {
+      "triggeredAmount": 10,
+      "customerMessage": {
+        "default": "For all customers"
+      },
+      "receiptFooters": [],
+      "amountThresholdType": "SALE_PRICE",
+      "electiveRedemption": false,
+      "contributesToOrderTotalTrigger": true,
+      "singleUse": false,
+      "groups": [],
+      "exclusiveGroups": [],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "type": "PERCENT_OFF_ORDER",
+      "description": "For all customers",
+      "adjustmentAmount": "3",
+      "coupon": true,
+      "percentDistributionOfCoupon": "0",
+      "offerId": "AllCustomers_Redeemer",
+      "tiers": [],
+      "orderLevelPromotion": true,
+      "immediate": true,
+      "distributed": false,
+      "perCombination": false
+    },
+    "triggerItems": [],
+    "triggers": [
+      {
+        "quantity": "1",
+        "skuId": [
+          "monthlyfriedpickles"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NOT_DISTRIBUTED_2_DOLLARS_OFF_COUPON",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "triggers": [
+      {
+        "quantity": 1
+      }
+    ],
+    "triggerItems": [],
+    "modification": {
+      "immediate": true,
+      "customerMessage": {
+        "default": "NOT DISTRIBUTED FV Paper 2.00/1/0"
+      },
+      "adjustmentCurrencyCode": "EUR",
+      "perCombination": false,
+      "triggeredQuantity": 1,
+      "type": "AMOUNT_OFF_ORDER",
+      "description": "NOT DISTRIBUTED FV Paper 2.00/1/0",
+      "distributed": false,
+      "orderLevelPromotion": true,
+      "adjustmentAmount": 2,
+      "offerId": "NOT_DIST_2_DOLLARS_OFF_COUPON",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "coupon": true,
+      "percentDistributionOfCoupon": 0
+    },
+    "startDate": "2020-06-16T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true
+  },
+  {
+    "name": "MemberAccountCurrentBalance_Example_1",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "enabled": true,
+    "customerConstraint": true,
+    "triggers": [
+      {
+        "skuId": [
+          "PEPSI"
+        ]
+      }
+    ],
+    "modification": {
+      "type": "POINTS",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "pointsBucket": "LOYALTY_REWARDS",
+      "offerId": "MemberAccountCurrentBalance_Example_1",
+      "maxOccurrencesOnOrder": 1,
+      "customerMessage": {
+        "default": "Get 20 Points when buying a Pepsi"
+      },
+      "adjustmentAmount": 20,
+      "perCombination": false,
+      "immediate": true
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "MemberAccountCurrentBalance_Example_2",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "startDate": "2017-01-01T04:00:00.000Z",
+    "endDate": "2099-12-31T15:59:59.000Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "triggers": [
+      {}
+    ],
+    "modification": {
+      "type": "PERCENT_OFF",
+      "distributionType": "ALL_TARGET_ITEMS",
+      "adjustmentAmount": 10,
+      "pointsRequired": 25,
+      "pointsBucket": "LOYALTY_REWARDS",
+      "perCombination": false,
+      "offerId": "MemberAccountCurrentBalance_Example_2",
+      "customerMessage": {
+        "default": "10% Off on each Order Item With 25 Pts"
+      }
+    },
+    "triggerItems": []
+  },
+  {
+    "name": "LoyaltyOnly",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "customerConstraint": true,
+    "enabled": true,
+    "startDate": "2022-08-01T00:00:00.168Z",
+    "endDate": "2099-08-08T23:59:59.169Z",
+    "intervalEndDate": "2099-08-08T23:59:00.217Z",
+    "intervalStartDate": "2022-08-01T00:00:00.217Z",
+    "modification": {
+      "customerMessage": {
+        "default": "Loyalty Customers"
+      },
+      "receiptFooters": [],
+      "electiveRedemption": false,
+      "singleUse": false,
+      "groups": [],
+      "exclusiveGroups": [],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "type": "FINAL_PRICE",
+      "description": "For all Loyalty Customers",
+      "adjustmentAmount": 0,
+      "coupon": true,
+      "percentDistributionOfCoupon": 0,
+      "maxQuantityAdjusted": 1,
+      "offerId": "LoyaltyOnly",
+      "tiers": [],
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 2,
+        "maxQuantityAdjustedPerCombination": 1,
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "skuId": [
+          "SPRITE"
+        ],
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "name": "GiveLoyalty",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "createTimestamp": "2022-08-01T19:59:53.722Z",
+    "customerConstraint": true,
+    "enabled": true,
+    "startDate": "2022-08-01T00:00:00.789Z",
+    "endDate": "2099-08-08T23:59:59.791Z",
+    "intervalEndDate": "2099-08-08T23:59:00.858Z",
+    "intervalStartDate": "2022-08-01T00:00:00.858Z",
+    "modification": {
+      "customerMessage": {
+        "default": "Issue Loyalty Only Coupon"
+      },
+      "receiptFooters": [
+        {
+          "couponData": {
+            "id": "LoyaltyOnly",
+            "expirationDate": "2099-08-08T23:59:59.169Z"
+          },
+          "orderLevelMessage": false,
+          "messageCouponReceiptTemplateId": "LoyaltyOnly"
+        }
+      ],
+      "electiveRedemption": false,
+      "groups": [],
+      "exclusiveGroups": [],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "type": "MESSAGE_ONLY",
+      "description": "Issue Loyalty Only Coupon",
+      "offerId": "GiveLoyalty",
+      "orderLevelPromotion": true,
+      "immediate": true,
+      "perCombination": true
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "skuId": [
+          "pizza"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "PricingAlias_PromotionExample",
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "enabled": true,
+    "startDate": "2022-08-19T14:30:59.000Z",
+    "endDate": "2099-08-25T23:59:59.548Z",
+    "modification": {
+      "perCombination": true,
+      "immediate": true,
+      "customerMessage": {
+        "default": "$1.50 off on each item with pricing alias basketballshoes"
+      },
+      "type": "AMOUNT_OFF",
+      "adjustmentAmount": 1.50,
+      "offerId": "PricingAlias_PromotionExample",
+      "distributed": false
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "pricingAlias": [
+          "basketballshoes"
+        ],
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "BuyOne_GetOne50PercentOff_WicEligibleItems",
+    "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+    "triggers": [
+      {
+        "skuId": [
+          "WICCVBItem4"
+        ],
+        "quantity": 2
+      }
+    ],
+    "modification": {
+      "triggeredQuantity": 2,
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "type": "PERCENT_OFF",
+      "adjustmentCurrencyCode": "EUR",
+      "adjustmentAmount": 50,
+      "maxQuantityAdjusted": 1,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "offerId": "BuyOne_GetOne50PercentOff_WicEligibleItems",
+      "isEBTFoodAllowed": true,
+      "distributed": false,
+      "immediate": true,
+      "perCombination": false
+    },
+    "enabled": true,
+    "startDate": "2022-09-13T00:00:00Z",
+    "endDate": "2099-12-31T00:00:00Z"
+  },
+  {
+    "name": "BOG_dollar_off",
+    "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+    "triggers": [
+      {
+        "skuId": [
+          "WICCVBItem5"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "triggeredQuantity": 1,
+      "customerMessage": {
+        "default": "Buy item get $1 off promotion"
+      },
+      "appliesToManuallyAdjustedItems": true,
+      "type": "AMOUNT_OFF",
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "adjustmentCurrencyCode": "EUR",
+      "adjustmentAmount": 1,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "offerId": "BOG_dollar_off",
+      "maxQuantityAdjusted": 1,
+      "isEBTFoodAllowed": true,
+      "appliesToManuallyLockedItems": true,
+      "immediate": true,
+      "distributed": false,
+      "perCombination": false
+    },
+    "enabled": true,
+    "startDate": "2022-09-13T00:00:00Z",
+    "endDate": "2099-12-31T00:00:00Z"
+  },
+  {
+    "name": "Buy_2_get_1",
+    "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+    "triggers": [
+      {
+        "skuId": [
+          "WICCVBItem6"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "triggeredQuantity": 3,
+      "customerMessage": {
+        "default": "Buy 2 items get 1 item free"
+      },
+      "appliesToManuallyAdjustedItems": true,
+      "type": "PERCENT_OFF",
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "adjustmentCurrencyCode": "EUR",
+      "adjustmentAmount": 100,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "offerId": "Buy_2_get_1",
+      "maxQuantityAdjusted": 1,
+      "isEBTFoodAllowed": true,
+      "appliesToManuallyLockedItems": true,
+      "immediate": true,
+      "distributed": false,
+      "perCombination": false
+    },
+    "enabled": true,
+    "startDate": "2022-09-14T00:00:00Z",
+    "endDate": "2099-12-31T00:00:00Z"
+  },
+  {
+    "name": "Buy_2_get_50_percent_off_on_both_items",
+    "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+    "triggers": [
+      {
+        "skuId": [
+          "WICCVBItem7"
+        ],
+        "quantity": 1
+      }
+    ],
+    "modification": {
+      "triggeredQuantity": 2,
+      "customerMessage": {
+        "default": "Buy_2_get_50_percent_off_on_both_items"
+      },
+      "appliesToManuallyAdjustedItems": true,
+      "type": "PERCENT_OFF",
+      "amountThresholdType": "SALE_PRICE",
+      "applyPromotionToTriggeredItems": true,
+      "contributesToOrderTotalTrigger": true,
+      "adjustmentCurrencyCode": "EUR",
+      "adjustmentAmount": 50,
+      "distributionType": "ALL_TARGET_ITEMS",
+      "offerId": "Buy_2_get_50_percent_off_on_both_items",
+      "maxQuantityAdjusted": 2,
+      "isEBTFoodAllowed": true,
+      "appliesToManuallyLockedItems": true,
+      "immediate": true,
+      "distributed": false,
+      "perCombination": false
+    },
+    "enabled": true,
+    "startDate": "2022-09-14T00:00:00Z",
+    "endDate": "2099-12-31T00:00:00Z"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "description": "Add ELERAPAY settings",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.CLIENT_PAYMENTS_ENABLED": {
+          "name" : "CLIENT_PAYMENTS_ENABLED",
+          "value" : true
+        },
+        "configurations.ELERAPAY_ENABLED": {
+          "name" : "ELERAPAY_ENABLED",
+          "value" : true
+        },
+        "configurations.ELERAPAY_IP_HOST": {
+          "name" : "ELERAPAY_IP_HOST",
+          "value" : "localhost"
+        },
+        "configurations.ELERAPAY_IP_PORT": {
+          "name" : "ELERAPAY_IP_PORT",
+          "value" : 9002
+        },
+        "configurations.VISA": {
+          "name": "VISA",
+          "value": {
+            "name": "VISA",
+            "displayName": {
+              "default": "VISA"
+            },
+            "group": "CREDIT",
+            "cashBackLimit": "100.00",
+            "voidable": true,
+            "tillAmountReconcilable": false,
+            "tillQuantityReconcilable": false,
+            "canBePickedUp": true,
+            "validForSales": true,
+            "validForReturns": true,
+            "paymentHostUsed": true,
+            "allowFractionalAmount": true
+          }
+        },
+        "configurations.MASTERCARD": {
+          "name": "MASTERCARD",
+          "value": {
+            "name": "MASTERCARD",
+            "displayName": {
+              "default": "MASTERCARD"
+            },
+            "group": "CREDIT",
+            "cashBackLimit": "100.00",
+            "voidable": true,
+            "tillAmountReconcilable": false,
+            "tillQuantityReconcilable": false,
+            "canBePickedUp": true,
+            "validForSales": true,
+            "validForReturns": true,
+            "paymentHostUsed": true,
+            "allowFractionalAmount": true
+          }
+        }
+      }
+    }
+  }
+]

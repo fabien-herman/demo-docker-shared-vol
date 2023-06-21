@@ -1,0 +1,40 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "_id": "5c1017a0f02de94df9150ac1"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac2"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac3"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac4"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac5"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac6"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac7"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac8"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ad0"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ad1"
+        }
+      ]
+    }
+  }
+]

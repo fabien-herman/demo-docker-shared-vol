@@ -1,0 +1,31 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "STORES_QA"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_QA_[0-9]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_QA_[A-Z]+$"
+          }
+        },
+        {
+          "name": "STORE_ELERAPAY"
+        },
+        {
+          "name": "STORE_DEV"
+        }
+      ]
+    }
+  }
+]

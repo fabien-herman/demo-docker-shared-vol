@@ -1,0 +1,92 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$pull": {
+        "configurations.PROMOTION_SETS.value.list": {
+          "promotionSetName": {
+            "$in": [
+              "RI",
+              "RI_LEAF_NODE",
+              "RI_ZONE_SET_1",
+              "RI_ZONE_SET_2",
+              "RI_RALEIGH_ZONE_SET_1",
+              "RI_ZONE_NO_EXTEND_SET",
+              "BAD_DATA_REBUILD",
+              "ELECTIVE_PROMOTION_SET",
+              "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+              "ADMIN_UI_TEST_CASES_SET",
+              "TURKEY_PROMOTIONS_SET",
+              "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$push": {
+        "configurations.PROMOTION_SETS.value.list": {
+          "$each": [
+            {
+              "promotionSetName": "RI",
+              "order": 6
+            },
+            {
+              "promotionSetName": "RI_LEAF_NODE",
+              "order": 7
+            },
+            {
+              "promotionSetName": "RI_ZONE_SET_1",
+              "order": 8
+            },
+            {
+              "promotionSetName": "RI_ZONE_SET_2",
+              "order": 8
+            },
+            {
+              "promotionSetName": "RI_RALEIGH_ZONE_SET_1",
+              "order": 9
+            },
+            {
+              "promotionSetName": "RI_ZONE_NO_EXTEND_SET",
+              "order": 10
+            },
+            {
+              "promotionSetName": "BAD_DATA_REBUILD",
+              "order": 11
+            },
+            {
+              "promotionSetName": "ELECTIVE_PROMOTION_SET",
+              "order": 12
+            },
+            {
+              "promotionSetName": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+              "order": 13
+            },
+            {
+              "promotionSetName": "ADMIN_UI_TEST_CASES_SET",
+              "order": 14
+            },
+            {
+              "promotionSetName": "TURKEY_PROMOTIONS_SET",
+              "order": 15
+            },
+            {
+              "promotionSetName": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+              "order": 16
+            }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "STORE_EU_5"
+    }
+  },
+  {
+    "name": "STORE_EU_5",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    },
+    "phone": "01/234.56.78",
+    "configurations": [
+      {
+        "name": "CATALOG",
+        "value": [
+          {
+            "order": 1,
+            "value": "CATALOG_EU_PHARMACY"
+          }
+        ]
+      },
+      {
+        "name": "PRICE_LISTS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "priceListName": "PRICELIST_EU_PHARMACY",
+              "order": 0
+            }
+          ]
+        }
+      },
+      {
+        "name": "PROMOTION_SETS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "promotionSetName": "PROMOTION_SET_EU_PHARMACY",
+              "order": 1
+            }
+          ]
+        }
+      }
+    ],
+    "displayName": {
+      "default": "EU Store 5"
+    },
+    "isSystemNode": false,
+    "parentName": "STORES_EU",
+    "notFirstClass": false
+  },
+  {
+    "name": "STORE_SE_2",
+    "parentName": "STORES_SE",
+    "displayName": {
+      "default": "Swedish store 2",
+      "sv-SE": "Apotek (butik 2)"
+    },
+    "configurations": [
+      {
+        "name": "RECEIPT_HEADER_IMAGE",
+        "value": 8
+      },
+      {
+        "name": "CATALOG",
+        "value": [
+          {
+            "order": 1,
+            "value": "CATALOG_EU_PHARMACY"
+          }
+        ]
+      },
+      {
+        "name": "PRICE_LISTS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "priceListName": "PRICELIST_EU_PHARMACY",
+              "order": 0
+            }
+          ]
+        }
+      },
+      {
+        "name": "PROMOTION_SETS",
+        "value": {
+          "extends": true,
+          "list": [
+            {
+              "promotionSetName": "PROMOTION_SET_EU_PHARMACY",
+              "order": 1
+            }
+          ]
+        }
+      }
+    ],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1",
+        "sv-SE": "Adress 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City",
+        "sv-SE": "Stad"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  }
+]

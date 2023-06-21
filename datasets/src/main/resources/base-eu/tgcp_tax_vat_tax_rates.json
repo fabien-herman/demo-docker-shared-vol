@@ -1,0 +1,506 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+    }
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "1"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 6,
+    "_id": "2"
+
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "REDUCED",
+    "startDateTime" : "1992-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 12,
+    "_id": "3"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 25,
+    "_id": "4"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1980-12-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 33,
+    "_id": "5"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1992-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19.5,
+    "_id": "6"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1994-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 20.5,
+    "_id": "7"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1996-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 21,
+    "_id": "8"
+  },
+  {
+    "taxSetId" : "BE",
+    "taxGroupId" : "FALLTHROUGH",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 25,
+    "_id": "9"
+  },
+  {
+    "taxSetId" : "DE",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "10"
+  },
+  {
+    "taxSetId" : "DE",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 7,
+    "_id": "11"
+  },
+  {
+    "taxSetId" : "DE",
+    "taxGroupId" : "REDUCED-HIGH",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 10.7,
+    "_id": "12"
+  },
+  {
+    "taxSetId" : "DE",
+    "taxGroupId" : "REDUCED-LOW",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 5.5,
+    "_id": "13"
+  },
+  {
+    "taxSetId" : "DE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19,
+    "_id": "14"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1969-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "15"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1969-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 4,
+    "_id": "16"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1984-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 5,
+    "_id": "17"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1986-10-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 6,
+    "_id": "18"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "2019-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 9,
+    "_id": "19"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1969-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 12,
+    "_id": "20"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1971-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 14,
+    "_id": "21"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1973-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 16,
+    "_id": "22"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1976-10-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 18,
+    "_id": "23"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1984-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19,
+    "_id": "24"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1989-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 18.5,
+    "_id": "25"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1992-10-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 17.5,
+    "_id": "26"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2001-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19,
+    "_id": "27"
+  },
+  {
+    "taxSetId" : "NL",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2012-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 21,
+    "_id": "28"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1968-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "29"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1986-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 2.1,
+    "_id": "30"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "REDUCED 1",
+    "startDateTime" : "1982-07-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 5.5,
+    "_id": "31"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "REDUCED 2",
+    "startDateTime" : "2012-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 7,
+    "_id": "32"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "REDUCED 2",
+    "startDateTime" : "2014-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 10,
+    "_id": "33"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1968-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 16.66,
+    "_id": "34"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1968-12-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19,
+    "_id": "35"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1970-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 23,
+    "_id": "36"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1973-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 20,
+    "_id": "37"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1977-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 17.6,
+    "_id": "38"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1982-07-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 18.6,
+    "_id": "39"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1995-08-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 20.6,
+    "_id": "40"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2000-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 19.6,
+    "_id": "41"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "ECO.5",
+    "startDateTime" : "2014-01-01T00:00:00.000Z",
+    "rateType" : "AMOUNT",
+    "rate" : 0.5,
+    "_id": "42"
+  },
+  {
+    "taxSetId" : "FR",
+    "taxGroupId" : "ECO.25",
+    "startDateTime" : "2014-01-01T00:00:00.000Z",
+    "rateType" : "AMOUNT",
+    "rate" : 0.25,
+    "_id": "43"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1973-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "44"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1995-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 8,
+    "_id": "45"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1997-09-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 5,
+    "_id": "46"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1973-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 10,
+    "_id": "47"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1974-07-29T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 8,
+    "_id": "48"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1979-06-18T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 15,
+    "_id": "49"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1991-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 17.5,
+    "_id": "50"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2008-12-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 15,
+    "_id": "51"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2010-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 17.5,
+    "_id": "52"
+  },
+  {
+    "taxSetId" : "UK",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2011-01-04T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 20,
+    "_id": "53"
+  },
+  {
+    "taxSetId" : "IT",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1979-06-18T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "54"
+  },
+  {
+    "taxSetId" : "IT",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1991-04-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 4,
+    "_id": "55"
+  },
+  {
+    "taxSetId" : "IT",
+    "taxGroupId" : "REDUCED 1",
+    "startDateTime" : "2008-12-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 5,
+    "_id": "56"
+  },
+  {
+    "taxSetId" : "IT",
+    "taxGroupId" : "REDUCED 2",
+    "startDateTime" : "2010-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 10,
+    "_id": "57"
+  },
+  {
+    "taxSetId" : "IT",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "2011-01-04T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 22,
+    "_id": "58"
+  },
+  {
+    "taxSetId" : "SE",
+    "taxGroupId" : "NONE",
+    "startDateTime" : "1969-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 0,
+    "_id": "59"
+  },
+  {
+    "taxSetId" : "SE",
+    "taxGroupId" : "LOW",
+    "startDateTime" : "1996-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 6,
+    "_id": "60"
+
+  },
+  {
+    "taxSetId" : "SE",
+    "taxGroupId" : "REDUCED",
+    "startDateTime" : "1996-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 12,
+    "_id": "61"
+  },
+  {
+    "taxSetId" : "SE",
+    "taxGroupId" : "HIGH",
+    "startDateTime" : "1990-01-01T00:00:00.000Z",
+    "rateType" : "PERCENT",
+    "rate" : 25,
+    "_id": "62"
+  }
+]

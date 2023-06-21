@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"terminalType": "TGCP_VUE_MOBILE_WEBVIEW"},
+        {"terminalType": "TGCP_VUE_MOBILE_WEBVIEW_MOCK"}
+      ]
+    }
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "name": "POS_EU_1_8",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW_MOCK",
+    "endpointId": "1018"
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "name": "POS_EU_1_9",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "1019"
+  }
+]

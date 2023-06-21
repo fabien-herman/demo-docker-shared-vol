@@ -1,0 +1,501 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICELIST_EU_FASHION"
+    }
+  },
+  {
+    "active": true,
+    "skuId": "1",
+    "price": 24.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2",
+    "price": 5.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "3",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "4",
+    "price": 17.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "5",
+    "price": 17.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "6",
+    "price": 9.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "7",
+    "price": 17.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "8",
+    "price": 19.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "9",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "10",
+    "price": 34.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "11",
+    "price": 9.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "12",
+    "price": 39.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "13",
+    "price": 14.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "5011",
+    "price": 24.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "22",
+    "price": 14.0,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2001",
+    "price": 14.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2002",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2003",
+    "price": 34.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "2004",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "1001",
+    "price": 17.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "1002",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "1003",
+    "price": 9.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "14",
+    "price": 9.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "pricingGroup": "ASSOCIATE",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [
+      {
+        "price": 7.99,
+        "quantity": 3
+      }
+    ],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "14",
+    "price": 12.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [
+      {
+        "price": 11.99,
+        "quantity": 3
+      }
+    ],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "15",
+    "price": 3.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "16",
+    "price": 14.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "17",
+    "price": 34.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "18",
+    "price": 17.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "18",
+    "pricingGroup": "MEMBER",
+    "price": 15.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "19",
+    "price": 6.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  },
+  {
+    "active": true,
+    "skuId": "20",
+    "price": 19.99,
+    "currencyCode": "GBP",
+    "priceList": "PRICELIST_EU_FASHION",
+    "startDate" : {
+      "$date" : "2017-01-01T04:00:00.000Z"
+    },
+    "endDate" : {
+      "$date" : "2099-12-31T15:59:59.000Z"
+    },
+    "tiers" : [ ],
+    "UOM" : "EACH"
+  },
+  {
+    "active" : true,
+    "skuId" : "21",
+    "price" : 12.99,
+    "currencyCode" : "GBP",
+    "priceList" : "PRICELIST_EU_FASHION",
+    "startDate" : {
+      "$date" : "2017-01-01T04:00:00.000Z"
+    },
+    "endDate" : {
+      "$date" : "2099-12-31T15:59:59.000Z"
+    },
+    "tiers" : [ ],
+    "UOM" : "EACH"
+  }
+]

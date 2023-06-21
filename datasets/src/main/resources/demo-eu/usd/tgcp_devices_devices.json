@@ -1,0 +1,35 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {
+        "$regex": "^POS_US_[0-9]+_[0-9]+"
+      }
+    }
+  },
+  {
+    "nodeId": "STORE_US_1",
+    "name": "POS_US_1_1",
+    "terminalType": "TGCP_VUE_DESKTOP_MOCK",
+    "endpointId": "99011"
+  },
+  {
+    "nodeId": "STORE_US_1",
+    "name": "POS_US_1_2",
+    "terminalType": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK",
+    "endpointId": "99012"
+  },
+  {
+    "nodeId": "STORE_US_1",
+    "name": "POS_US_1_3",
+    "terminalType": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK",
+    "endpointId": "99013"
+  },
+  {
+    "nodeId": "STORE_US_1",
+    "name": "POS_US_1_4",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "99014"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORES_BE"
+    },
+    "update": {
+      "$set": {
+        "configurations.PRICE_LISTS": {
+          "name": "PRICE_LISTS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "priceListName": "PRICE_LIST",
+                "order": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORES_BE"
+    },
+    "update": {
+      "$set": {
+        "configurations.CATALOG": {
+          "name": "CATALOG",
+          "value": [
+            {
+              "order": 1,
+              "value": "CATALOG"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "STORES_BE"
+    },
+    "update": {
+      "$set": {
+        "configurations.PROMOTION_SETS": {
+          "name": "PROMOTION_SETS",
+          "value": [
+            {
+              "order": 1,
+              "value": "PROMOTION_SET"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

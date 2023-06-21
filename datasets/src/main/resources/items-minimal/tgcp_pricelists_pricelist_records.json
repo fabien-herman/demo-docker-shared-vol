@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICE_LIST"
+    }
+  },
+  {
+    "active": true,
+    "skuId": "1",
+    "price": 1.00,
+    "currencyCode": "EUR",
+    "priceList": "PRICE_LIST",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    },
+    "tiers": [],
+    "UOM": "EACH"
+  }
+]

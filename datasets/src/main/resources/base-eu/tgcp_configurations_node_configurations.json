@@ -1,0 +1,3628 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^ENTERPRISE_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORES_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_[A-Z]+_[0-9]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Cleanup US data",
+    "operation": "updateMany",
+    "filter": {
+      "name": "SYSTEM"
+    },
+    "update": {
+      "$unset": {
+        "configurations.TAX_SET_ID": ""
+      }
+    }
+  },
+  {
+    "description": "Cleanup the WEBPOS_THEME_LIST to only include the ones we need now",
+    "filter": {
+      "name": "SYSTEM"
+    },
+    "update": {
+      "$set": {
+        "configurations.WEBPOS_THEME_LIST.value": [
+          {
+              "order": 0,
+              "value": "tgcpVueDesktop"
+          },
+          {
+              "order": 1,
+              "value": "tgcpVueDesktopMock"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "Define the SYSTEM level currencies (Add CNY, SEK).  Have to do it on system level because the returns services seems to use that one from time to time",
+    "filter": {
+      "name": "SYSTEM"
+    },
+    "update": {
+      "$set": {
+        "configurations.CURRENCIES.value": {
+          "USD" : {
+            "code" : "USD",
+            "name" : {
+              "default" : "US Dollar"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 1
+            }
+          },
+          "CAD" : {
+            "code" : "CAD",
+            "name" : {
+              "default" : "Canadian Dollar"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 5
+            }
+          },
+          "FRF" : {
+            "code" : "FRF",
+            "name" : {
+              "default" : "French Franc"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 1
+            }
+          },
+          "EUR" : {
+            "code" : "EUR",
+            "name" : {
+              "default" : "Euro"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 1
+            }
+          },
+          "GBP" : {
+            "code" : "GBP",
+            "name" : {
+              "default" : "British Pound Sterling"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 1
+            }
+          },
+          "JPY" : {
+            "code" : "JPY",
+            "name" : {
+              "default" : "Japanese Yen"
+            },
+            "roundingMode" : "DOWN",
+            "significantDigits" : 0,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "DOWN",
+              "significantDigits" : 0,
+              "roundingIncrement" : 1
+            }
+          },
+          "CHF" : {
+            "code" : "CHF",
+            "name" : {
+              "default" : "Swiss Franc"
+            },
+            "roundingMode" : "HALF_UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 5,
+            "cashRounding" : {
+              "roundingMode" : "HALF_UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 5
+            }
+          },
+          "RSD" : {
+            "code" : "RSD",
+            "name" : {
+              "default" : "Serbian Dinar"
+            },
+            "roundingMode" : "UP",
+            "significantDigits" : 3,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "UP",
+              "significantDigits" : 3,
+              "roundingIncrement" : 1
+            }
+          },
+          "CNY" : {
+            "code" : "CNY",
+            "name" : {
+              "default" : "Chinese Yuan/Renminbi"
+            },
+            "roundingMode" : "UP",
+            "significantDigits" : 2,
+            "roundingIncrement" : 1,
+            "cashRounding" : {
+              "roundingMode" : "UP",
+              "significantDigits" : 2,
+              "roundingIncrement" : 1
+            }
+          },
+          "SEK": {
+            "code": "SEK",
+            "name": {
+              "default": "Swedish Krona"
+            },
+            "roundingMode": "HALF_UP",
+            "significantDigits": 2,
+            "roundingIncrement": 1,
+            "cashRounding": {
+              "roundingMode": "HALF_UP",
+              "significantDigits": 2,
+              "roundingIncrement": 1
+            }
+          }
+        },
+        "configurations.CURRENCIES.name": "CURRENCIES"
+      }
+    }
+  },
+  {
+    "name": "ENTERPRISE_EU",
+    "parentName": "SYSTEM",
+    "displayName": {
+      "default": "Enterprise Europe"
+    },
+    "configurations": [
+      {
+        "name": "LOCALE",
+        "value": "en-GB-CET"
+      },
+      {
+        "name": "CURRENCY",
+        "value": "EUR"
+      },
+      {
+        "name": "SUBTOTAL_INCLUDES_TAX",
+        "value": true
+      },
+      {
+        "name": "FISCAL_TRANSACTION_ENABLED",
+        "value": false
+      },
+      {
+        "comment": "Tax"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "BE"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "BE",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "comment": "Receipt"
+      },
+      {
+        "name": "RECEIPT_TEMPLATES",
+        "value": {
+          "headers": [
+            {
+              "name": "TEMPLATE_SET",
+              "type": "Text",
+              "description": "The Template Name"
+            }
+          ],
+          "rows": {
+            "template1": {
+              "row": [
+                "RECEIPT"
+              ],
+              "order": 0
+            },
+            "template2": {
+              "row": [
+                "RI"
+              ],
+              "order": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "RECEIPT_STYLESHEETS",
+        "value": {
+          "headers": [
+            {
+              "name": "STYLESHEET_SET",
+              "type": "Text",
+              "description": "The Stylesheet Name"
+            }
+          ],
+          "rows": {
+            "stylesheet1": {
+              "row": [
+                "RI_EU"
+              ],
+              "order": 0
+            },
+            "stylesheet2": {
+              "row": [
+                "RI"
+              ],
+              "order": 1
+            }
+          }
+        }
+      },
+      {
+        "comment": "Tenders CASH"
+      },
+      {
+        "name": "CASH_EUR",
+        "value": {
+          "name": "CASH_EUR",
+          "displayName": {
+            "default": "Cash",
+            "en-US": "Cash (EUR)",
+            "en-GB": "Cash (EUR)",
+            "nl-NL": "Kontant",
+            "nl-BE": "Kontant",
+            "sv-SE": "Kontanter"
+          },
+          "group": "CASH",
+          "cashBackLimitDepositRefund": "50.00",
+          "currencyCode": "EUR",
+          "voidable": true,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": true,
+          "tillLoanable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true
+        }
+      },
+      {
+        "name": "CASH_GBP",
+        "value": {
+          "name": "CASH_GBP",
+          "displayName": {
+            "default": "Cash (GBP)",
+            "en-US": "Cash (GBP)",
+            "en-GB": "Cash",
+            "nl-NL": "Kontant (GBP)",
+            "nl-BE": "Kontant (GBP)",
+            "sv-SE": "Kontanter"
+          },
+          "group": "CASH",
+          "currencyCode": "GBP",
+          "voidable": true,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": true,
+          "tillLoanable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true
+        }
+      },
+      {
+        "name": "CASH_USD",
+        "value": {
+          "name": "CASH_USD",
+          "displayName": {
+            "default": "Cash",
+            "en-US": "Cash (USD)",
+            "en-GB": "Cash (USD)",
+            "nl-NL": "Kontant (USD)",
+            "nl-BE": "Kontant (USD)",
+            "sv-SE": "Kontanter"
+          },
+          "group": "CASH",
+          "cashBackLimitDepositRefund": "50.00",
+          "currencyCode": "USD",
+          "voidable": true,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": false,
+          "tillLoanable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true,
+          "notPresentRefundTypes": [
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ],
+          "inPersonRefundTypes": [
+            {
+              "amountLimit": 50.0,
+              "paymentType": "CASH_USD"
+            },
+            {
+              "paymentType": "GIFT_CARD"
+            }
+          ],
+          "inPersonPSARefundTypes": [
+            {
+              "amountLimit": 40.0,
+              "paymentType": "CASH_USD"
+            },
+            {
+              "paymentType": "GIFT_CARD"
+            }
+          ]
+        }
+      },
+      {
+        "name": "CASH_SEK",
+        "value": {
+          "name": "CASH_SEK",
+          "displayName": {
+            "default": "Cash (SEK)",
+            "en-US": "Cash (SEK)",
+            "nl-NL": "Kontant (SEK)",
+            "nl-BE": "Kontant (SEK)",
+            "sv-SE": "Kontanter"
+          },
+          "group": "CASH",
+          "cashBackLimitDepositRefund": "500.00",
+          "currencyCode": "SEK",
+          "voidable": true,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": true,
+          "tillLoanable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true
+        }
+      },
+      {
+        "comment": "Tenders CREDIT/DEBIT"
+      },
+      {
+        "name": "CREDIT",
+        "value": {
+          "name": "CREDIT",
+          "displayName": {
+            "default": "Credit Card"
+          },
+          "group": "CREDIT",
+          "cashBackLimit": "0.00",
+          "signatureLimit": "25.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "DEBIT",
+        "value": {
+          "name": "DEBIT",
+          "displayName": {
+            "default": "Debit Card"
+          },
+          "group": "DEBIT",
+          "pinEntryRequired": true,
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "VISA_CREDIT",
+        "value": {
+          "name": "VISA_CREDIT",
+          "displayName": {
+            "default": "VISA Credit"
+          },
+          "group": "CREDIT",
+          "cashBackLimit": "0.00",
+          "signatureLimit": "25.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "VISA_DEBIT",
+        "value": {
+          "name": "VISA_DEBIT",
+          "displayName": {
+            "default": "VISA Debit"
+          },
+          "group": "DEBIT",
+          "pinEntryRequired": true,
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "MC_CREDIT",
+        "value": {
+          "name": "MC_CREDIT",
+          "displayName": {
+            "default": "MasterCard Credit"
+          },
+          "group": "CREDIT",
+          "cashBackLimit": "0.00",
+          "signatureLimit": "25.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "MC_DEBIT",
+        "value": {
+          "name": "MC_DEBIT",
+          "displayName": {
+            "default": "MasterCard Debit"
+          },
+          "group": "DEBIT",
+          "pinEntryRequired": true,
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "AMEX_CREDIT",
+        "value": {
+          "name": "AMEX_CREDIT",
+          "displayName": {
+            "default": "American Express Credit"
+          },
+          "group": "CREDIT",
+          "cashBackLimit": "0.00",
+          "signatureLimit": "25.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "AMEX_DEBIT",
+        "value": {
+          "name": "AMEX_DEBIT",
+          "displayName": {
+            "default": "American Express Debit"
+          },
+          "group": "DEBIT",
+          "pinEntryRequired": true,
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "DISCOVER_CREDIT",
+        "value": {
+          "name": "DISCOVER_CREDIT",
+          "displayName": {
+            "default": "Discover Credit"
+          },
+          "group": "CREDIT",
+          "cashBackLimit": "0.00",
+          "signatureLimit": "25.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "DISCOVER_DEBIT",
+        "value": {
+          "name": "DISCOVER_DEBIT",
+          "displayName": {
+            "default": "Discover Debit"
+          },
+          "group": "DEBIT",
+          "pinEntryRequired": true,
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "comment": "Tenders STORED_VALUE"
+      },
+      {
+        "name": "VISA_PREPAID",
+        "value": {
+          "name": "VISA_PREPAID",
+          "displayName": {
+            "default": "VISA Prepaid Card"
+          },
+          "group": "STORED_VALUE",
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "MC_STORED_VALUE",
+        "value": {
+          "name": "MC_STORED_VALUE",
+          "displayName": {
+            "default": "MasterCard Prepaid Card"
+          },
+          "group": "STORED_VALUE",
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "AMEX_STORED_VALUE",
+        "value": {
+          "name": "AMEX_STORED_VALUE",
+          "displayName": {
+            "default": "AMEX Gift Card"
+          },
+          "group": "STORED_VALUE",
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "DISCOVER_STORED_VALUE",
+        "value": {
+          "name": "DISCOVER_STORED_VALUE",
+          "displayName": {
+            "default": "Discover Prepaid Card"
+          },
+          "group": "STORED_VALUE",
+          "cashBackLimit": "100.00",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "GIFT_CARD",
+        "value": {
+          "name": "GIFT_CARD",
+          "displayName": {
+            "default": "Gift Card"
+          },
+          "group": "STORED_VALUE",
+          "cashBackLimit": "2.00",
+          "voidable": false,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true,
+          "notPresentRefundTypes": [
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ],
+          "inPersonRefundTypes": [
+            {
+              "amountLimit": 75.0,
+              "paymentType": "GIFT_CARD"
+            },
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ],
+          "inPersonPSARefundTypes": [
+            {
+              "amountLimit": 85.0,
+              "paymentType": "GIFT_CARD"
+            },
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ]
+        }
+      },
+      {
+        "comment": "Tenders OTHER"
+      },
+      {
+        "name": "PERSONAL_CHECK",
+        "value": {
+          "name": "PERSONAL_CHECK",
+          "displayName": {
+            "default": "Personal Check"
+          },
+          "group": "OTHER",
+          "cashBackLimit": "10.00",
+          "currencyCode": "EUR",
+          "voidable": false,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": true,
+          "tillIndividualEntries": true,
+          "canBePickedUp": true,
+          "validForSales": false,
+          "validForReturns": false,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true,
+          "notPresentRefundTypes": [
+            {
+              "paymentType": "BUSINESS_CHECK"
+            }
+          ],
+          "inPersonRefundTypes": [
+            {
+              "amountLimit": 50.0,
+              "paymentType": "CASH_EUR"
+            },
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ],
+          "inPersonPSARefundTypes": [
+            {
+              "amountLimit": 50.0,
+              "paymentType": "GIFT_CARD"
+            },
+            {
+              "paymentType": "CORPORATE_CHECK"
+            }
+          ]
+        }
+      },
+      {
+        "name": "BUSINESS_CHECK",
+        "value": {
+          "name": "BUSINESS_CHECK",
+          "displayName": {
+            "default": "Business Check"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "cashBackLimit": "0.00",
+          "voidable": false,
+          "tillAmountReconcilable": true,
+          "tillQuantityReconcilable": true,
+          "tillIndividualEntries": true,
+          "canBePickedUp": true,
+          "validForSales": false,
+          "validForReturns": false,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true,
+          "openCashDrawer": true
+        }
+      },
+      {
+        "name": "MANUFACTURER_COUPON",
+        "value": {
+          "name": "MANUFACTURER_COUPON",
+          "displayName": {
+            "default": "Manufacturer Coupon",
+            "en-US": "Manufacturer Coupon"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": true,
+          "canBePickedUp": true,
+          "validForSales": false,
+          "validForReturns": false,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "DEPOSIT_REFUND_VOUCHER",
+        "value": {
+          "name": "DEPOSIT_REFUND_VOUCHER",
+          "displayName": {
+            "default": "Voucher"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "cashBackLimitDepositRefund": "50.00",
+          "voidable": false,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "validForDepositRefunds": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "MANUFACTURER_COUPON",
+        "value": {
+          "name": "MANUFACTURER_COUPON",
+          "displayName": {
+            "default": "Manufacturer Coupon",
+            "en-US": "Manufacturer Coupon"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "voidable": true,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": true,
+          "canBePickedUp": true,
+          "validForSales": false,
+          "validForReturns": false,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "name": "CORPORATE_CHECK",
+        "value": {
+          "name": "CORPORATE_CHECK",
+          "displayName": {
+            "default": "Corporate Refund-Payout Check"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "cashBackLimit": "0.00",
+          "voidable": false,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": false,
+          "canBePickedUp": false,
+          "validForSales": false,
+          "validForReturns": true,
+          "paymentHostUsed": false,
+          "allowFractionalAmount": true,
+          "openCashDrawer": false
+        }
+      },
+      {
+        "name": "DEPOSIT_REFUND_VOUCHER",
+        "value": {
+          "name": "DEPOSIT_REFUND_VOUCHER",
+          "displayName": {
+            "default": "Voucher"
+          },
+          "group": "OTHER",
+          "currencyCode": "EUR",
+          "cashBackLimitDepositRefund": "50.00",
+          "voidable": false,
+          "tillAmountReconcilable": false,
+          "tillQuantityReconcilable": true,
+          "canBePickedUp": true,
+          "validForSales": true,
+          "validForReturns": true,
+          "validForDepositRefunds": true,
+          "paymentHostUsed": true,
+          "allowFractionalAmount": true
+        }
+      },
+      {
+        "comment": "Cash management"
+      },
+      {
+        "name": "CASH_TRACKING_ENABLED",
+        "value": true
+      },
+      {
+        "name": "DEFAULT_TILL_CONTENTS",
+        "value": [
+          {
+            "type": "CASH_EUR",
+            "currencyCode": "EUR",
+            "amount": "200.00"
+          }
+        ]
+      },
+      {
+        "name": "DEFAULT_SAFE_CONTENTS",
+        "value": [
+          {
+            "type": "CASH_EUR",
+            "currencyCode": "EUR",
+            "amount": "500.00"
+          }
+        ]
+      },
+      {
+        "name": "TILL_WARNING_THRESHOLD",
+        "value": [
+          {
+            "type": "CASH_EUR",
+            "currencyCode": "EUR",
+            "amount": "300.00"
+          },
+          {
+            "type": "PERSONAL_CHECK",
+            "currencyCode": "EUR",
+            "amount": "999.00"
+          },
+          {
+            "type": "BUSINESS_CHECK",
+            "currencyCode": "EUR",
+            "amount": "999.00"
+          },
+          {
+            "type": "MANUFACTURER_COUPON",
+            "currencyCode": "EUR",
+            "quantity": 999
+          }
+        ]
+      },
+      {
+        "name": "SAFE_CONTENTS_OPERATING_FUND",
+        "value": [
+          {
+            "type": "CASH_EUR",
+            "currencyCode": "EUR",
+            "amount": "100.00"
+          }
+        ]
+      },
+      {
+        "name": "TILL_PICKUP_THRESHOLD",
+        "value": [
+          {
+            "type": "CASH_EUR",
+            "currencyCode": "EUR",
+            "amount": "999999999.00"
+          },
+          {
+            "type": "PERSONAL_CHECK",
+            "currencyCode": "EUR",
+            "amount": "999.00"
+          },
+          {
+            "type": "BUSINESS_CHECK",
+            "currencyCode": "EUR",
+            "amount": "5000.00"
+          },
+          {
+            "type": "MANUFACTURER_COUPON",
+            "currencyCode": "EUR",
+            "quantity": 999
+          }
+        ]
+      },
+      {
+        "name": "TILL_RECONCILE_DISCREPANCY_LIMIT",
+        "value": "4.50"
+      },
+      {
+        "name": "SAFE_RECONCILE_DISCREPANCY_LIMIT",
+        "value": "0.02"
+      },
+      {
+        "name": "TILL_PAYOUT_LIMIT",
+        "value": "500"
+      },
+      {
+        "comment": "NLS Translations"
+      },
+      {
+        "name": "CLIENT_NLS",
+        "value": {
+          "ORDER_NOT_DRAFT": {
+            "default": "Order is not in DRAFT or ACTIVE_DRAFT state"
+          }
+        }
+      },
+      {
+        "name": "RECEIPT_NLS",
+        "value": {
+          "SALE_change": {
+            "default": "CHANGE DUE",
+            "en-US": "CHANGE DUE",
+            "fr-CA": "Monnaie due",
+            "fr-FR": "RENDU",
+            "nl-BE": "TERUG",
+            "nl-NL": "TERUG"
+          },
+          "SALE_serialDescription": {
+            "default": "SerialNo:",
+            "en-US": "SerialNo:",
+            "nl-BE": "Serie Nr:",
+            "nl-NL": "Serie Nr:"
+          },
+          "SALE_totalCoupons": {
+            "default": "TOTAL COUPONS",
+            "en-US": "TOTAL COUPONS",
+            "fr-CA": "Total des bon-rabais"
+          },
+          "SALE_balance": {
+            "default": "BALANCE",
+            "en-US": "BALANCE",
+            "fr-CA": "Solde",
+            "fr-FR": "TOTAL",
+            "nl-BE": "TOTAAL",
+            "nl-NL": "TOTAAL"
+          },
+          "SALE_manualWeight": {
+            "default": "MAN WT",
+            "en-US": "MAN WT"
+          },
+          "SALE_weightFlag": {
+            "default": "WT",
+            "en-US": "WT"
+          },
+          "SALE_totalItems": {
+            "default": "TOTAL NUMBER OF ITEMS =",
+            "en-US": "TOTAL NUMBER OF ITEMS =",
+            "fr-FR": "Nombre d'articles =",
+            "nl-BE": "Aantal artikelen =",
+            "nl-NL": "Aantal artikelen ="
+          },
+          "SALE_barcodeDescription": {
+            "default": "Barcode:",
+            "en-US": "Barcode:",
+            "fr-CA": "Code à barre:"
+          },
+          "SALE_priceModificationDefaultDescription": {
+            "default": "PRICE MODIFICATION",
+            "en-US": "PRICE MODIFICATION",
+            "fr-CA": "Outrepass. prix:",
+            "fr-FR": "Changement de prix",
+            "nl-BE": "Prijswijziging",
+            "nl-NL": "Prijswijziging"
+          },
+          "SALE_skuDescription": {
+            "default": "SkuId:",
+            "en-US": "SkuId:",
+            "fr-CA": "UGS:"
+          },
+          "SALE_totalSurcharges": {
+            "default": "TOTAL SURCHARGES",
+            "en-US": "TOTAL SURCHARGES",
+            "fr-CA": "Frais supplémentaires"
+          },
+          "SALE_reprint": {
+            "default": "Reprinted receipt",
+            "en-US": "Reprinted receipt",
+            "fr-CA": "Reçu réimprimé"
+          },
+          "SALE_orderTax": {
+            "default": "TAX",
+            "en-US": "TAX",
+            "fr-CA": "Taxe"
+          },
+          "PRICE_title": {
+            "default": "PRICE VERIFY",
+            "en-US": "PRICE VERIFY",
+            "fr-CA": "VÉRIFIER PRIX"
+          },
+          "PRICE_noPrice": {
+            "default": "Item does not have a price record or\nit has price required flag set",
+            "en-US": "Item does not have a price record or\nit has price required flag set",
+            "fr-CA": "Article à prix requis\nou non défini"
+          },
+          "SUSPEND_title": {
+            "default": "SUSPEND SLIP",
+            "en-US": "SUSPEND SLIP",
+            "fr-CA": "COMMANDE EN SUSPENS"
+          },
+          "SUSPEND_items": {
+            "default": "ITEMS: ",
+            "en-US": "ITEMS: ",
+            "fr-CA": "ARTICLE(S): "
+          },
+          "SUSPEND_footer": {
+            "default": "NOT VALID FOR RETURNS",
+            "en-US": "NOT VALID FOR RETURNS",
+            "fr-CA": "N'EST PAS VALIDE POUR LES RETOURS"
+          },
+          "VOID_title": {
+            "default": "VOID DURING",
+            "en-US": "VOID DURING",
+            "fr-CA": "ANNULATION"
+          },
+          "VOID_voidLine": {
+            "default": "VOID VOID VOID VOID VOID VOID VOID VOID",
+            "en-US": "VOID VOID VOID VOID VOID VOID VOID VOID",
+            "fr-CA": "ANNULATION ANNULATION ANNULATION ANNULATION"
+          },
+          "VOID_totalAmount": {
+            "default": "VOID AMOUNT",
+            "en-US": "VOID AMOUNT",
+            "fr-CA": "MONTANT DE ANNULATION"
+          },
+          "SALE_orderTaxes": {
+            "default": "TAXES",
+            "fr-FR": "TVA",
+            "nl-BE": "BTW",
+            "nl-NL": "BTW"
+          },
+          "Sale_TaxRate": {
+            "default": "Rate",
+            "fr-FR": "Taux",
+            "nl-BE": "Tarief",
+            "nl-NL": "Tarief"
+          },
+          "SALE_TaxGross": {
+            "default": "Gross",
+            "fr-FR": "Brut",
+            "nl-BE": "Bruto",
+            "nl-NL": "Bruto"
+          },
+          "SALE_TaxAmount": {
+            "default": "Tax",
+            "fr-FR": "TVA",
+            "nl-BE": "BTW",
+            "nl-NL": "BTW"
+          },
+          "SALE_TaxNet": {
+            "default": "Net",
+            "fr-FR": "Net",
+            "nl-BE": "Netto",
+            "nl-NL": "Netto"
+          },
+          "SALE_paymentReversalError1": {
+            "default": "PAYMENT REVERSAL UNSUCCESSFUL",
+            "en-US": "PAYMENT REVERSAL UNSUCCESSFUL"
+          },
+          "SALE_paymentReversalError2": {
+            "default": "CONTACT CUSTOMER SERVICE",
+            "en-US": "CONTACT CUSTOMER SERVICE"
+          },
+          "TILL_openTillTitle": {
+            "default": "OPEN TILL",
+            "en-US": "OPEN TILL",
+            "fr-FR": "OUVRIR CAISSE"
+          },
+          "TILL_closeTillTitle": {
+            "default": "CLOSE TILL",
+            "en-US": "CLOSE TILL",
+            "fr-FR": "FERMER CAISSE"
+          },
+          "TILL_tillPickupTitle": {
+            "default": "TILL PICKUP",
+            "en-US": "TILL PICKUP",
+            "fr-FR": "RETRAIT DE CAISSE"
+          },
+          "TILL_tillPayInTitle": {
+            "default": "TILL PAY-IN",
+            "en-US": "TILL PAY-IN"
+          },
+          "TILL_tillPayOutTitle": {
+            "default": "TILL PAY-OUT",
+            "en-US": "TILL PAY-OUT",
+            "fr-FR": "GAIN DE CAISSE"
+          },
+          "TILL_contentsTitle": {
+            "default": "TILL CONTENTS",
+            "en-US": "TILL CONTENTS",
+            "fr-FR": "CONTENU DE LA CAISSE"
+          },
+          "TILL_tillPayInPayOutReason": {
+            "default": "Account Group: ",
+            "en-US": "Account Group: ",
+            "fr-FR": "Groupe de comptes"
+          },
+          "TILL_payInPayOutDescription": {
+            "default": "Description: ",
+            "en-US": "Description: ",
+            "fr-FR": "La description: "
+          },
+          "TILL_payInPayOutAmount": {
+            "default": "Amount: ",
+            "en-US": "Amount: ",
+            "fr-FR": "Montant: "
+          },
+          "TILL_payInPayOutInvoiceNumber": {
+            "default": "Invoice Number: ",
+            "en-US": "Invoice Number: ",
+            "fr-FR": "Numéro de facture: "
+          },
+          "TILL_payInPayOutStoreId": {
+            "default": "Store ID: ",
+            "en-US": "Store ID: ",
+            "fr-FR": "Identifiant magasin: "
+          },
+          "TILL_payInHeader": {
+            "default": "Pay-In Details",
+            "en-US": "Pay-In Details",
+            "fr-FR": "Informations"
+          },
+          "TILL_payOutHeader": {
+            "default": "Pay-Out Details",
+            "en-US": "Pay-Out Details",
+            "fr-FR": "Informations de gain"
+          },
+          "TILL_tillContentsHeader": {
+            "default": "Till Contents",
+            "en-US": "Till Contents",
+            "fr-FR": "Contenu de caisse"
+          },
+          "TILL_date": {
+            "default": "Date: ",
+            "en-US": "Date: ",
+            "fr-FR": "Date: "
+          },
+          "TILL_operatorId": {
+            "default": "Operator ID: ",
+            "en-US": "Operator ID: ",
+            "fr-FR": "Identifiant OpÃ©rateur"
+          },
+          "TILL_endpointId": {
+            "default": "Terminal ID: ",
+            "en-US": "Terminal ID: ",
+            "fr-FR": "Identifiant terminal"
+          },
+          "TILL_tillId": {
+            "default": "Till ID: ",
+            "en-US": "Till ID: ",
+            "fr-FR": "Identifiant caisse"
+          },
+          "TILL_amount": {
+            "default": "Amount: ",
+            "en-US": "Amount: ",
+            "fr-FR": "Montant: "
+          },
+          "TILL_quantity": {
+            "default": "Quantity: ",
+            "en-US": "Quantity: ",
+            "fr-FR": "Quantité: "
+          },
+          "FISCAL_signature": {
+            "default": "FISCAL SIGNATURE",
+            "en-US": "FISCAL SIGNATURE",
+            "de-DE": "fiskalisch Signatur"
+          },
+          "FISCAL_fiscalTransactionNumber": {
+            "default": "FISCAL TRANSACTION NUMBER",
+            "en-US": "FISCAL TRANSACTION NUMBER",
+            "de-DE": "fiskalisch Transaktionsnummer"
+          },
+          "FISCAL_transactionStatusError": {
+            "default": "FISCAL TRANSACTION ERROR",
+            "de-DE": "fiskalisch Fehler"
+          },
+          "SALE_depositRefundVoucherTitle": {
+            "default": "DEPOSIT REFUND VOUCHER",
+            "en-US": "DEPOSIT REFUND VOUCHER",
+            "fr-FR": "BON DE REMBOURSEMENT"
+          },
+          "SALE_depositRefundVoucherAmount": {
+            "default": "AMOUNT",
+            "en-US": "AMOUNT",
+            "fr-FR": "MONTANTE"
+          },
+          "SALE_depositRefundVoucherExpiration": {
+            "default": "EXPIRATION",
+            "en-US": "EXPIRATION",
+            "fr-FR": "EXPIRATION"
+          },
+          "SALE_depositRefundVoucherConfigError": {
+            "default": "DEPOSIT REFUND VOUCHER BARCODE\nINVALID CONFIGURATION",
+            "en-US": "DEPOSIT REFUND VOUCHER BARCODE\nINVALID CONFIGURATION",
+            "fr-FR": "CONFIGURATION INVALIDE DU CODE\n\u00E1 BARRES DU BON DE REMBOURSEMENT"
+          },
+          "SALE_depositRefundVoucherInvalidData": {
+            "default": "DEPOSIT REFUND VOUCHER\nINVALID DATA",
+            "en-US": "DEPOSIT REFUND VOUCHER\nINVALID DATA",
+            "fr-FR": "BON DE REMBOURSEMENT\nDONN\u00e9ES INVALIDES"
+          },
+          "SALE_eftPrintData": {
+            "default": "EFT details",
+            "en-US": "EFT details",
+            "fr-FR": "EFT détail"
+          },
+          "SALE_eftPrintVoidedPaymentsTitle": {
+            "default": "VOIDED EFT PAYMENTS",
+            "en-US": "VOIDED EFT PAYMENTS",
+            "fr-FR": "PAIEMENTS EFT ANNUL\u00c9S"
+          },
+          "CARD_number": {
+            "default": "Card No. :",
+            "en-US": "Card No. :",
+            "fr-FR": "Numéro de carte :"
+          }
+        }
+      },
+      {
+        "comment": "Item not on file handling"
+      },
+      {
+        "name": "NOT_ON_FILE_ITEMS_ENABLED",
+        "value": "true"
+      },
+      {
+        "name": "NOT_ON_FILE_ITEM_MAP",
+        "value": {
+          "DEFAULT": "DEFAULT_TEMPLATE_ITEM",
+          "DEPT1": "DEFAULT_TEMPLATE_ITEM"
+        }
+      },
+      {
+        "comment": "Payment options"
+      },
+      {
+        "name": "ITEM_PAYMENT_RESTRICTION",
+        "value": "true"
+      },
+      {
+        "name": "MAX_CASH_TENDER",
+        "value": "true"
+      },
+      {
+        "name": "MAX_CASH_TENDER_AMOUNT",
+        "value": "20000"
+      },
+      {
+        "name": "VOID_PAYMENT_TENDER",
+        "value": "true"
+      },
+      {
+        "name": "VOID_PAYMENT_ORDER",
+        "value": "true"
+      },
+      {
+        "name": "PAYMENT_REQUEST_CASHBACK_MAX",
+        "value": "true"
+      },
+      {
+        "name": "PAYMENT_CASHBACK_MAX",
+        "value": "true"
+      },
+      {
+        "comment": "Copied from STORE_DEV_EU"
+      },
+      {
+        "name": "DEPOSIT_REFUND_TENDERS_ALLOWED",
+        "value": [
+          {
+            "name": "CASH_EUR",
+            "order": 0
+          },
+          {
+            "name": "DEPOSIT_REFUND_VOUCHER",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "name": "EAT_IN_TAKE_OUT_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "EAT_IN_TAKE_OUT_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "EAT_IN",
+                {
+                  "default": "Eat In"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "TAKE_OUT",
+                {
+                  "default": "Take Out"
+                }
+              ],
+              "order": 2
+            }
+          }
+        }
+      },
+      {
+        "comment": "Copied from STORE_DEV"
+      },
+      {
+        "name": "YES",
+        "value": {
+          "default": "Yes"
+        }
+      },
+      {
+        "name": "NO",
+        "value": {
+          "default": "No"
+        }
+      },
+      {
+        "name": "RETURN_EXACT_MATCH_QUANTITY_FOR_NON_EACH_UOM",
+        "value": false
+      },
+      {
+        "name": "PAY_IN_PAY_OUT_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "ORDER_RESUME_LIMIT_DAYS",
+        "value": 30
+      },
+      {
+        "name": "RETURN_ORDER_SEARCH_LIMIT",
+        "value": 10
+      },
+      {
+        "name": "RETURN_LOWEST_ITEM_PRICE_DAYS",
+        "value": 30
+      },
+      {
+        "name": "RETURN_ERROR_FOR_ITEM_NOT_FOUND_IN_ORDER",
+        "value": "false"
+      },
+      {
+        "name": "RETURN_LOYALTY_ORDERS_QUERY_TIME_LIMIT_DAYS",
+        "value": 90
+      },
+      {
+        "name": "RETURN_LOYALTY_ORDERS_QUERY_RESULTS_LIMIT",
+        "value": 20
+      },
+      {
+        "name": "NON_APPLIED_PROMOTIONS",
+        "value": "true"
+      },
+      {
+        "name": "SINGLE_USE_COUPONS",
+        "value": "true"
+      },
+      {
+        "name": "ITEM_PRICE_OVERRIDE_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "ITEM_RETURN_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "ITEM_VOID_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "ORDER_COMPLETE",
+        "value": "false"
+      },
+      {
+        "name": "ITEM_NOF_REASON_CODE",
+        "value": "true"
+      },
+      {
+        "name": "RESTRICTED_ITEMS_VALIDATION",
+        "value": "true"
+      },
+      {
+        "name": "RETURN_NO_RECEIPT_VALIDATION",
+        "value": "true"
+      },
+      {
+        "name": "PARTIAL_BUNDLE_RETURN_OVERRIDE",
+        "value": "true"
+      },
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": false
+      },
+      {
+        "name": "ITEM_PRICE_REQUIRED",
+        "value": "true"
+      },
+      {
+        "name": "ITEM_PRICE_REQUIRED_MUST_SPLIT",
+        "value": "true"
+      },
+      {
+        "name": "QUANTITY_REQUIRED",
+        "value": "true"
+      },
+      {
+        "name": "SERIAL_REQUIRED",
+        "value": "true"
+      },
+      {
+        "name": "SELECT_REFERENCE_ITEM",
+        "value": "true"
+      },
+      {
+        "name": "DEPOSIT_REFUND_PAYMENT_CASHBACK_MAX",
+        "value": "true"
+      },
+      {
+        "name": "AGE_TO_BUY",
+        "value": "true"
+      },
+      {
+        "name": "AGE_TO_SELL",
+        "value": "true"
+      },
+      {
+        "name": "TAX_EXEMPT_DETAIL_VALIDATION",
+        "value": "true"
+      },
+      {
+        "name": "GRANDFATHER_DATE",
+        "value": "true"
+      },
+      {
+        "name": "NOT_FOR_SALE",
+        "value": true
+      },
+      {
+        "name": "PRICE_OVERRIDE",
+        "value": "true"
+      },
+      {
+        "name": "MANUAL_DISCOUNT",
+        "value": "true"
+      },
+      {
+        "name": "ORDER_AUDITS_ENABLED",
+        "value": "true"
+      },
+      {
+        "name": "ASYNC_AUDITING_ENABLED",
+        "value": "true"
+      },
+      {
+        "name": "MAX_VOID_ORDER",
+        "value": "true"
+      },
+      {
+        "name": "NODE_LAYOUT_NAME",
+        "value": "DEFAULT_LAYOUT"
+      },
+      {
+        "name": "MAX_VOID_ORDER_AMOUNT",
+        "value": "10000"
+      },
+      {
+        "name": "MAX_POST_SALE_ADJUSTMENT_ORDER_AMOUNT_DELTA",
+        "value": "50"
+      },
+      {
+        "name": "NUM_OF_ORDERS_TO_DISPLAY_FOR_REPRINT",
+        "value": 5
+      },
+      {
+        "name": "NUM_OF_ORDERS_TO_DISPLAY_FOR_POSTVOID",
+        "value": 5
+      },
+      {
+        "name": "IS_WARRANTY_PROMPTED_ON_ITEM_ADDITION",
+        "value": true
+      },
+      {
+        "name": "IS_FREEFORM_ENTRY_FOR_DISCOUNTS_ALLOWED",
+        "value": false
+      },
+      {
+        "name": "SHOW_VOIDED_ITEMS",
+        "value": true
+      },
+      {
+        "name": "IS_SALESPERSON_ID_PER_ITEM",
+        "value": false
+      },
+      {
+        "name": "HIDE_UI_KEYPAD",
+        "value": true
+      },
+      {
+        "name": "REMOVE_UI_KEYPAD",
+        "value": false
+      },
+      {
+        "name": "REVERSE_ITEM_LIST_ORDER_UI",
+        "value": true
+      },
+      {
+        "name": "ENABLE_GIFT_REGISTRY_SUPPORT",
+        "value": true
+      },
+      {
+        "name": "DELAY_PROMPT_GIFT_RCPT_QTY",
+        "value": false
+      },
+      {
+        "name": "DEFAULT_FULFILLMENT_TYPE",
+        "value": "CARRY"
+      },
+      {
+        "name": "VALIDATION_TEMPLATES",
+        "value": [
+          {
+            "value": "ELERA_VALIDATIONS",
+            "order": 1000
+          },
+          {
+            "value": "RI",
+            "order": 1001
+          },
+          {
+            "value": "ELERA_VALIDATIONS_EU",
+            "order": 1002
+          }
+        ]
+      },
+      {
+        "name": "ITEM_VOID_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "DIDNT_WANT",
+                {
+                  "default": "Didn't Want",
+                  "es-MX": "No Quería"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "INCORRECT_ENTRY",
+                {
+                  "default": "Incorrect Entry",
+                  "es-MX": "Entrada Incorrecta"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "INSUFFICIENT_FUNDS",
+                {
+                  "default": "Insufficient Funds",
+                  "es-MX": "Fondos insuficientes"
+                }
+              ],
+              "order": 3
+            },
+            "code4": {
+              "row": [
+                "`~!@#$%^&*()_+-=[]{};':\",.<>/?\\|",
+                {
+                  "default": "`~!@#$%^&*()_+-=[]{};':\",.<>/?\\|"
+                }
+              ],
+              "order": 4
+            }
+          }
+        }
+      },
+      {
+        "name": "ITEM_PRICE_OVERRIDE_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "MANAGER",
+                {
+                  "default": "Manager's Discretion"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "DAMAGED",
+                {
+                  "default": "Damaged Goods"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "MATCH",
+                {
+                  "default": "Price Match"
+                }
+              ],
+              "order": 3
+            }
+          }
+        }
+      },
+      {
+        "name": "ITEM_RETURN_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "DIDNT_NEED",
+                {
+                  "default": "Didn't Need"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "DAMAGED",
+                {
+                  "default": "Damaged Goods"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "MISSING_PARTS",
+                {
+                  "default": "Missing Parts"
+                }
+              ],
+              "order": 3
+            }
+          }
+        }
+      },
+      {
+        "name": "ITEM_NOF_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "MANAGER",
+                {
+                  "default": "Manager's Discretion"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "DAMAGED",
+                {
+                  "default": "Missing Item"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "MATCH",
+                {
+                  "default": "Price Match"
+                }
+              ],
+              "order": 3
+            }
+          }
+        }
+      },
+      {
+        "name": "POSOrderPercentOff",
+        "value": {
+          "columns": [
+            {
+              "name": "DiscountDesc",
+              "cellType": "Text",
+              "values": [
+                {
+                  "value": {
+                    "default": "5 Percent Off Order"
+                  },
+                  "order": 1
+                },
+                {
+                  "value": {
+                    "default": "10 Percent Off Order"
+                  },
+                  "order": 2
+                },
+                {
+                  "value": {
+                    "default": "25 Percent Off Order"
+                  },
+                  "order": 3
+                },
+                {
+                  "value": {
+                    "default": "50 Percent Off Order"
+                  },
+                  "order": 4
+                }
+              ]
+            },
+            {
+              "name": "DiscountVal",
+              "cellType": "Text",
+              "values": [
+                {
+                  "value": {
+                    "default": "-5"
+                  },
+                  "order": 1
+                },
+                {
+                  "value": {
+                    "default": "-10"
+                  },
+                  "order": 2
+                },
+                {
+                  "value": {
+                    "default": "-25"
+                  },
+                  "order": 3
+                },
+                {
+                  "value": {
+                    "default": "-50"
+                  },
+                  "order": 4
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "POSOrderAmountOff",
+        "value": {
+          "columns": [
+            {
+              "name": "DiscountDesc",
+              "cellType": "Text",
+              "values": [
+                {
+                  "value": {
+                    "default": "1.00 Fixed Amount Off Order"
+                  },
+                  "order": 1
+                },
+                {
+                  "value": {
+                    "default": "5.00 Fixed Amount Off Order"
+                  },
+                  "order": 2
+                },
+                {
+                  "value": {
+                    "default": "10.00 Fixed Amount Off Order"
+                  },
+                  "order": 3
+                },
+                {
+                  "value": {
+                    "default": "20.00 Fixed Amount Off Order"
+                  },
+                  "order": 4
+                }
+              ]
+            },
+            {
+              "name": "DiscountVal",
+              "cellType": "Text",
+              "values": [
+                {
+                  "value": {
+                    "default": "-1"
+                  },
+                  "order": 1
+                },
+                {
+                  "value": {
+                    "default": "-5"
+                  },
+                  "order": 2
+                },
+                {
+                  "value": {
+                    "default": "-10"
+                  },
+                  "order": 3
+                },
+                {
+                  "value": {
+                    "default": "-20"
+                  },
+                  "order": 4
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "RECEIPT_FOOTER_SALE_PRINT",
+        "value": {
+          "value": "Thank you for shopping with Toshiba.",
+          "type": "SALE",
+          "endpoint": "PRINT",
+          "locale": "en-US"
+        }
+      },
+      {
+        "name": "RECEIPT_FOOTER_SALE_EMAIL",
+        "value": {
+          "value": "Thank you for shopping with Toshiba.",
+          "type": "SALE",
+          "endpoint": "EMAIL",
+          "locale": "en-US"
+        }
+      },
+      {
+        "name": "RECEIPT_EMAIL_SMTP_CONFIG",
+        "value": {
+          "mail_smtp_auth": "false",
+          "mail_smtp_starttls_enable": "true",
+          "mail_smtp_host": "10.89.152.60",
+          "mail_smtp_port": "25",
+          "mail_smtp_ssl_trust": "10.89.152.60",
+          "mail_auth_username": "",
+          "mail_auth_password": "",
+          "mail_from_address": "test@tgcp.com",
+          "mail_to_addresses": "test@gmail.com",
+          "mail_smtp_timeout": "1000",
+          "mail_smtp_connectiontimeout": "1000"
+        }
+      },
+      {
+        "name": "UOM_MAP",
+        "value": {
+          "OZ": "WEIGHT",
+          "LBS": "WEIGHT",
+          "KG": "WEIGHT",
+          "GAL": "VOLUME",
+          "PT": "VOLUME",
+          "QT": "VOLUME"
+        }
+      },
+      {
+        "name": "ALTERNATE_ID_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for deposit refund voucher barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "METADATA",
+              "type": "Key",
+              "description": "A set of key, value strings to provide any additional metadata e.g { \"key1\" : \"value1\", \"key2\" : \"value2\" }"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            }
+          ],
+          "rows": {
+            "alternateId1": {
+              "row": [
+                "ALTERNATE_ID",
+                "^(?=.{24}$)AID[-]\\s*[a-z0-9]*[0-9a-z]{4}$",
+                "Code128",
+                "{\"prefix\": \"AID-\", \"length\": \"24\"}",
+                true
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "LOYALTY_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier/type for the loyalty program that will be used for customer associations"
+            },
+            {
+              "name": "DISPLAY_NAME",
+              "type": "Text",
+              "description": "The name of the customer loyalty/rewards program"
+            },
+            {
+              "name": "DESCRIPTION",
+              "type": "Text",
+              "description": "The description of the customer loyalty/rewards program"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for the loyalty program customer ids that will be used to match an input to associate to the loyalty code"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format that the loyalty program customer id barcodes will use when scanned"
+            },
+            {
+              "name": "METADATA",
+              "type": "Key",
+              "description": "A set of key, value strings to provide any additional metadata e.g { \"key1\" : \"value1\", \"key2\" : \"value2\" }"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the loyalty program is active for the node"
+            }
+          ],
+          "rows": {
+            "loyalty1": {
+              "row": [
+                "REWARDS_ID",
+                {
+                  "default": "REWARDS ID"
+                },
+                {
+                  "default": "customer rewards id"
+                },
+                "^C0\\d{8}$",
+                "Code128",
+                "{\"prefix\": \"C\", \"length\": \"10\"}",
+                true
+              ],
+              "order": 3
+            },
+            "loyalty2": {
+              "row": [
+                "ASSOCIATE_ID",
+                {
+                  "default": "ASSOCIATE ID"
+                },
+                {
+                  "default": "Associate employee no"
+                },
+                "^A[-]\\d{7}$",
+                "Code39",
+                "{\"prefix\": \"A\", \"length\": \"9\"}",
+                true
+              ],
+              "order": 2
+            },
+            "loyalty3": {
+              "row": [
+                "CUSTOMER_ID",
+                {
+                  "default": "CUSTOMER UNIQUE ID"
+                },
+                {
+                  "default": "customer id"
+                },
+                "^(?i)[a-f\\d]{24}$",
+                "Code128",
+                "{\"length\": \"24\"}",
+                true
+              ],
+              "order": 1
+            },
+            "loyalty4": {
+              "row": [
+                "LOYALTY_ID",
+                {
+                  "default": "CUSTOMER UNIQUE ID"
+                },
+                {
+                  "default": "loyalty id"
+                },
+                "^[1]\\d{9}$",
+                "Code128",
+                "{\"length\": \"10\"}",
+                true
+              ],
+              "order": 4
+            },
+            "loyalty5": {
+              "row": [
+                "LOYALTY_CARD",
+                {
+                  "default": "CUSTOMER LOYALTY CARD NUMBER"
+                },
+                {
+                  "default": "loyalty card number"
+                },
+                "^(?<prefix>1000000)(?<sequence>\\d{9})$",
+                "Code128",
+                "{\"length\": \"16\"}",
+                true
+              ],
+              "order": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "ORDER_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for deposit refund voucher barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            }
+          ],
+          "rows": {
+            "order1": {
+              "row": [
+                "Order Number",
+                "^(?<sequence>o[0-9a-f]{24})$",
+                "Code128",
+                true
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "PAYMENT_TYPE_GROUP_CHANGE_GIVEN_PRIORITY",
+        "type": "List",
+        "value": [
+          {
+            "value": "CASH",
+            "order": 0
+          },
+          {
+            "value": "EBT_CASH",
+            "order": 1
+          },
+          {
+            "value": "OTHER",
+            "order": 2
+          },
+          {
+            "value": "STORED_VALUE",
+            "order": 3
+          },
+          {
+            "value": "DEBIT",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "name": "PAYMENT_TYPE_GROUP_REFUND_PRIORITY",
+        "type": "List",
+        "value": [
+          {
+            "value": "DEBIT",
+            "order": 0
+          },
+          {
+            "value": "CREDIT",
+            "order": 1
+          },
+          {
+            "value": "STORED_VALUE",
+            "order": 2
+          },
+          {
+            "value": "OTHER",
+            "order": 3
+          },
+          {
+            "value": "CASH",
+            "order": 4
+          },
+          {
+            "value": "EBT_CASH",
+            "order": 5
+          },
+          {
+            "value": "EBT_FOOD",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "PAYMENT_TYPE_GROUP_PSA_REFUND_PRIORITY",
+        "type": "List",
+        "value": [
+          {
+            "value": "DEBIT",
+            "order": 0
+          },
+          {
+            "value": "CREDIT",
+            "order": 1
+          },
+          {
+            "value": "STORED_VALUE",
+            "order": 2
+          },
+          {
+            "value": "OTHER",
+            "order": 3
+          },
+          {
+            "value": "CASH",
+            "order": 4
+          },
+          {
+            "value": "EBT_CASH",
+            "order": 5
+          },
+          {
+            "value": "EBT_FOOD",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "TRANSACTION_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for deposit refund voucher barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            }
+          ],
+          "rows": {
+            "transaction1": {
+              "row": [
+                "Transaction ID",
+                "^(?<sequence>((?<timestamp>[0-9]{12})(?<nodeSuffix>[A-Za-z0-9\\-_\u0080-\uFFF0]{4})(?<terminal>([0-9]{3}))(?<transactionSequence>([0-9]{5}))))$",
+                "Code128",
+                true
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "NON_RECEIPTED_RETURN_REFUND_PAYMENT_TYPE",
+        "value": "CASH_EUR"
+      },
+      {
+        "name": "STORED_VALUE_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for the stored value card barcode"
+            },
+            {
+              "name": "ITEM_ALIAS_REGEX_GROUP",
+              "type": "Integer",
+              "description": "The regex capturing group for the item alias (e.g. UPC) portion of the barcode"
+            },
+            {
+              "name": "ACCOUNT_NUMBER_REGEX_GROUP",
+              "type": "Integer",
+              "description": "The regex capturing group for the account number portion of the barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ITEM_ALIAS_SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology to use for the lookup of the item alias portion of the barcode"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            }
+          ],
+          "rows": {
+            "Blackhawk": {
+              "row": [
+                "^(\\d{11})(\\d{19})$",
+                1,
+                2,
+                "Code128",
+                "UPC-A",
+                true
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "ITEM_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            },
+            {
+              "name": "BARCODE",
+              "type": "Key",
+              "description": "The barcode pattern"
+            },
+            {
+              "name": "LOOKUP",
+              "type": "Key",
+              "description": "The lookup pattern"
+            },
+            {
+              "name": "ALIAS",
+              "type": "Key",
+              "description": "The lookup alias, if blank use the SkuID"
+            }
+          ],
+          "rows": {
+            "UPC-E": {
+              "row": [
+                "UPC-E CD",
+                "UPC-E",
+                true,
+                "0IIIIII",
+                "0IIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-E CD": {
+              "row": [
+                "UPC-E CD",
+                "UPC-E",
+                true,
+                "0IIIIIIc",
+                "0IIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-8": {
+              "row": [
+                "EAN-8",
+                "EAN-8",
+                true,
+                "IIIIIIIc",
+                "IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GTIN-12": {
+              "row": [
+                "GTIN-12",
+                "UPC-A",
+                true,
+                "MMMMMIIIIIIc",
+                "MMMMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A2": {
+              "row": [
+                "UPC-A2",
+                "UPC-A",
+                true,
+                "2MMMMMpPPPP",
+                "2MMMMM00000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A2 with CD": {
+              "row": [
+                "UPC-A2 with CD",
+                "UPC-A",
+                true,
+                "2MMMMMpPPPPc",
+                "2MMMMM00000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-02": {
+              "row": [
+                "EAN-02",
+                "EAN-13",
+                true,
+                "02IIIIpPPPPPc",
+                "02IIII000000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC30 (NDC)": {
+              "row": [
+                "UPC30 (NDC)",
+                "UPC-A",
+                true,
+                "30MMMIIIIII",
+                "30MMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC38 (NDC)": {
+              "row": [
+                "UPC38 (NDC)",
+                "UPC-A",
+                true,
+                "3MMMMIIIIII",
+                "3MMMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A0": {
+              "row": [
+                "UPC-A0",
+                "UPC-A",
+                true,
+                "MMMMMIIIII",
+                "0MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A no MFR": {
+              "row": [
+                "UPC-A no MFR",
+                "UPC-A",
+                true,
+                "A000IIIIIII",
+                "A000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A no number system in lookup": {
+              "row": [
+                "UPC-A no number system in lookup",
+                "UPC-A",
+                true,
+                "AMMMMMIIIII",
+                "MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 2
+            },
+            "UPC-A with CD no number system in lookup": {
+              "row": [
+                "UPC-A with CD no number system in lookup",
+                "UPC-A",
+                true,
+                "AMMMMMIIIIIc",
+                "MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 2
+            },
+            "UPC-A no MFR CD": {
+              "row": [
+                "UPC-A no MFR CD",
+                "UPC-A",
+                true,
+                "A000IIIIIIIc",
+                "A000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A": {
+              "row": [
+                "UPC-A with CD",
+                "UPC-A",
+                true,
+                "AMMMMMIIIII",
+                "AMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A with CD": {
+              "row": [
+                "UPC-A with CD",
+                "UPC-A",
+                true,
+                "AMMMMMIIIIIc",
+                "AMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-20": {
+              "row": [
+                "EAN-20",
+                "EAN-13",
+                true,
+                "20000IIIIIIIc",
+                "20000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-21": {
+              "row": [
+                "EAN-21",
+                "EAN-13",
+                true,
+                "21000IIIIIIIc",
+                "21000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-22": {
+              "row": [
+                "EAN-22",
+                "EAN-13",
+                true,
+                "22000IIIIIIc",
+                "22000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GS1 DataBar-14": {
+              "row": [
+                "GS1 DataBar-14",
+                "GS1_DATABAR",
+                true,
+                "01AAAMMMMMIIIII",
+                "AAAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GS1 DataBar-14 With CD": {
+              "row": [
+                "GS1 DataBar-14 With CD",
+                "GS1_DATABAR",
+                true,
+                "01AAAMMMMMIIIIIc",
+                "AAAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-DEF": {
+              "row": [
+                "EAN-DEF",
+                "EAN-13",
+                true,
+                "AAMMMMMIIIII",
+                "AAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-DEF With CD": {
+              "row": [
+                "EAN-DEF With CD",
+                "EAN-13",
+                true,
+                "AAMMMMMIIIIIc",
+                "AAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-24 Quantity": {
+              "row": [
+                "EAN-24 Q",
+                "Code128",
+                true,
+                "0000IIIIIIIIIIIIAAAAQQQQ",
+                "IIIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "EAN-24 Weight": {
+              "row": [
+                "EAN-24 W",
+                "Code128",
+                true,
+                "1000IIIIIIIIIIIIWWWW0000",
+                "IIIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "Code128": {
+              "row": [
+                "Code128 30 digits",
+                "Code128",
+                true,
+                "IIIIIIIIIIICCCCCCCCCCCCCCCCCCC",
+                "IIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "Code-39": {
+              "row": [
+                "Code-39",
+                "Code39",
+                true,
+                "AAAAAAAAAAA",
+                "AAAAAAAAAAA",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "CASE CODE": {
+              "row": [
+                "CASE CODE",
+                "EAN-13",
+                true,
+                "IIIIIIIIIIIIIc",
+                "IIIIIIIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "MATRIX_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier/type for the barcode processing"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format that used to help match for processing"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for the matching the MATRIX barcode for processing"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if MATRIX barcode processing is active for the node"
+            }
+          ],
+          "rows": {
+            "Barcode1": {
+              "row": [
+                "QR_ITEM_BARCODE",
+                "QR-Code",
+                "https?://.+.com/.*/([A-Z]{2}[0-9]{4}.[0-9]{8}$)",
+                true
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "PROMOTION_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for the promotion barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            },
+            {
+              "name": "REGEX_OFFER_ID",
+              "type": "Integer",
+              "description": "The group the contains the offer id. If blank, then the whole regex will be used"
+            },
+            {
+              "name": "REGEX_AMOUNT",
+              "type": "Integer",
+              "description": "The optional group the contains the adjustment amount. If amount off, then decimal place will be based upon promotional currency."
+            }
+          ],
+          "rows": {
+            "loyalty1": {
+              "row": [
+                "^1180(\\d{7})(\\d{7})\\d{12}$",
+                "Code128",
+                true,
+                1,
+                2
+              ],
+              "order": 1
+            },
+            "loyalty2": {
+              "row": [
+                "^11\\d{5}$",
+                "Code39",
+                true
+              ],
+              "order": 2
+            },
+            "kleberabatte": {
+              "row": [
+                "^98(\\d{7})(\\d{3})\\d{1}$",
+                "EAN-13",
+                true,
+                1,
+                2
+              ],
+              "order": 100
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "DEPOSIT_REFUND_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "REGEX",
+              "type": "Key",
+              "description": "The regex pattern for deposit refund voucher barcode"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "CATALOG_ITEM_SKU_ID",
+              "type": "Key",
+              "description": "The sku id of the catalog item the deposit refund voucher is linked to"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the deposit refund barcode is active for the node"
+            },
+            {
+              "name": "CURRENCY_CODE",
+              "type": "Key",
+              "description": "The currency of the value represented by vouchers of this barcode type"
+            },
+            {
+              "name": "SOURCE",
+              "type": "Text",
+              "description": "INTERNAL for barcodes that are generated by the deposit refund service. EXTERNAL for barcodes generated by other systems."
+            }
+          ],
+          "rows": {
+            "deposit_refund1": {
+              "row": [
+                "DRV prefix 980",
+                "^(?<prefix>980)(?<sequence>\\d{28})$",
+                "Code128",
+                "depositrefund",
+                true,
+                null,
+                "INTERNAL"
+              ],
+              "order": 1
+            },
+            "deposit_refund2": {
+              "row": [
+                "DRV prefix 981 EXTERNAL",
+                "^(?<prefix>981)(?<sequence>\\d{5})(?<issuedYear>\\d{2})(?<issuedMonth>\\d{2})(?<issuedDay>\\d{2})(?<amountIntegral>\\d{2})(?<amountFractional>\\d{2})$",
+                "Code128",
+                "depositrefund",
+                true,
+                "EUR",
+                "EXTERNAL"
+              ],
+              "order": 2
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "DEPOSIT_REFUND_VOUCHER_VALIDITY",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "YEARS",
+              "type": "Key",
+              "description": "Years"
+            },
+            {
+              "name": "MONTHS",
+              "type": "Key",
+              "description": "Months"
+            },
+            {
+              "name": "DAYS",
+              "type": "Key",
+              "description": "Days"
+            },
+            {
+              "name": "HOURS",
+              "type": "Key",
+              "description": "Hours"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the validity duration entry is active"
+            }
+          ],
+          "rows": {
+            "validity1": {
+              "row": [
+                "6 MONTHS 20 DAYS 12 HOURS",
+                "0",
+                "6",
+                "20",
+                "12",
+                true
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "DEPOSIT_REFUND_TENDERS_ALLOWED",
+        "value": [
+          {
+            "name": "CASH_EUR",
+            "order": 0
+          },
+          {
+            "name": "DEPOSIT_REFUND_VOUCHER",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "name": "QUANTITY_ENTRY_REASON_CODE",
+        "value": true
+      },
+      {
+        "name": "QUANTITY_ENTRY_REASON_CODE_AMOUNT",
+        "value": "25"
+      },
+      {
+        "type": "Table",
+        "name": "QUANTITY_ENTRY_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "BIG_FAMILY",
+                {
+                  "default": "Big family"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "STORM_COMING",
+                {
+                  "default": "Storm coming"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "RESELLER",
+                {
+                  "default": "For Reselling"
+                }
+              ],
+              "order": 3
+            }
+          }
+        }
+      },
+      {
+        "name": "TILL_PAY_IN_PAY_OUT_REASON_CODES",
+        "value": [
+          {
+            "value": {
+              "default": "Supplies"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "default": "Barefoot Farms"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "default": "Maintenance"
+            },
+            "order": 2
+          },
+          {
+            "value": {
+              "default": "Recurring Maintenance"
+            },
+            "order": 3
+          },
+          {
+            "value": {
+              "default": "Fran's Floors"
+            },
+            "order": 4
+          },
+          {
+            "value": {
+              "default": "Fred's Fix-It Shop"
+            },
+            "order": 5
+          },
+          {
+            "value": {
+              "default": "Walter's Windows"
+            },
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "TILL_PAY_IN_REASON_CODES",
+        "value": [
+          {
+            "value": {
+              "default": "Change from Pay out"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "default": "Found Loose Money"
+            },
+            "order": 1
+          }
+        ]
+      },
+      {
+        "name": "TILL_PAY_OUT_REASON_CODES",
+        "value": [
+          {
+            "value": {
+              "default": "Supplies"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "default": "Barefoot Farms"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "default": "Maintenance"
+            },
+            "order": 2
+          },
+          {
+            "value": {
+              "default": "Recurring Maintenance"
+            },
+            "order": 3
+          },
+          {
+            "value": {
+              "default": "Fran's Floors"
+            },
+            "order": 4
+          },
+          {
+            "value": {
+              "default": "Fred's Fix-It Shop"
+            },
+            "order": 5
+          },
+          {
+            "value": {
+              "default": "Walter's Windows"
+            },
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "SAFE_PAY_IN_REASON_CODES",
+        "value": [
+          {
+            "value": {
+              "default": "Change from Pay out"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "default": "Found Loose Money"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "default": "Local Economic Incentive"
+            },
+            "order": 2
+          }
+        ]
+      },
+      {
+        "name": "SAFE_PAY_OUT_REASON_CODES",
+        "value": [
+          {
+            "value": {
+              "default": "Supplies"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "default": "Barefoot Farms"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "default": "Maintenance"
+            },
+            "order": 2
+          },
+          {
+            "value": {
+              "default": "Recurring Maintenance"
+            },
+            "order": 3
+          },
+          {
+            "value": {
+              "default": "Fran's Floors"
+            },
+            "order": 4
+          },
+          {
+            "value": {
+              "default": "Fred's Fix-It Shop"
+            },
+            "order": 5
+          },
+          {
+            "value": {
+              "default": "Walter's Windows"
+            },
+            "order": 6
+          },
+          {
+            "value": {
+              "default": "Corporate Remodeling"
+            },
+            "order": 7
+          }
+        ]
+      },
+      {
+        "name": "CALLBACK_RESPONSE_REQUIRED_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "OK",
+                {
+                  "default": "Ok"
+                }
+              ],
+              "order": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "RETURN_LIMIT_DAYS",
+        "value": 30
+      },
+      {
+        "name": "GLOBAL_TARE_LIST",
+        "value": [
+          {
+            "displayName": {
+              "default": "Small bag"
+            },
+            "weight": "0.05",
+            "UOM": "KG",
+            "order": 0
+          },
+          {
+            "displayName": {
+              "default": "Medium bag"
+            },
+            "weight": "0.08",
+            "UOM": "KG",
+            "order": 1
+          },
+          {
+            "displayName": {
+              "default": "Large bag"
+            },
+            "weight": "0.10",
+            "UOM": "KG",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "name": "RECEIPT_IMAGE_LIST",
+        "value": [
+          {
+            "id": "printedLogo",
+            "active": true,
+            "sourcePath": "/receipts/images/ENTERPRISE_EU/toshiba_300.png",
+            "printMethod": "PRELOAD",
+            "printerConfig": {
+              "slotNumber": 1,
+              "alignment": "PTR_BM_CENTER",
+              "station": "PTR_S_RECEIPT",
+              "width": "PTR_BM_ASIS"
+            },
+            "order": 0
+          }
+        ]
+      },
+      {
+        "name": "PROMOTIONS_DEFERRED_EVALUATION",
+        "value": "false"
+      },
+      {
+        "name": "TAX_MANUFACTURER_COUPONS",
+        "value": true
+      },
+      {
+        "name": "RETURN_ITEM_DIFFERENTIATORS",
+        "value": [
+          {
+            "value": {
+              "fieldName": "isForResale",
+              "requestField": "isForResale",
+              "fieldType": "Boolean",
+              "defaultLabel": {
+                "default": "For Resale"
+              },
+              "source": "OrderItem",
+              "defaultValue": "Boolean.FALSE"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "fieldName": "taxExemptFlag",
+              "requestField": "taxExemptFlag",
+              "fieldType": "Boolean",
+              "defaultLabel": {
+                "default": "Tax Exempt"
+              },
+              "source": "ItemPrice",
+              "defaultValue": "Boolean.FALSE"
+            },
+            "order": 2
+          }
+        ]
+      },
+      {
+        "name": "BAG_REFUND_ITEMS",
+        "value": [
+          {
+            "value": "largeBagRefund",
+            "order": 0
+          },
+          {
+            "value": "smallBagRefund",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "comment": "Copied from ENTERPRISE"
+      },
+      {
+        "name": "SHARD_KEY",
+        "value": "ENTERPRISE"
+      },
+      {
+        "name": "BUSINESS_DAY_START_TIME",
+        "value": "22:00"
+      },
+      {
+        "name": "BUSINESS_DAY_SOFT_END_TIME",
+        "value": "22:00"
+      },
+      {
+        "name": "BUSINESS_DAY_HARD_END_TIME",
+        "value": "23:00"
+      },
+      {
+        "name": "ACCOUNTING_PERIOD_START_TIME",
+        "value": {
+          "dayOfWeek": "SATURDAY",
+          "timeOfDay": "20:00:00"
+        }
+      },
+      {
+        "name": "ACCOUNTING_PERIOD_SOFT_END_TIME",
+        "value": {
+          "dayOfWeek": "SATURDAY",
+          "timeOfDay": "20:00:00"
+        }
+      },
+      {
+        "name": "ACCOUNTING_PERIOD_HARD_END_TIME",
+        "value": {
+          "dayOfWeek": "SATURDAY",
+          "timeOfDay": "23:59:59"
+        }
+      },
+      {
+        "name": "TRANSACTION_RECOVERY_ENABLED",
+        "value": true
+      },
+      {
+        "name": "TAX_RECEIPT_INDICATORS",
+        "value": {
+          "TAXABLE_NON-SURCHARGABLE_FOODSTAMPABLE": "B",
+          "TAXABLE_NON-SURCHARGABLE_NON-FOODSTAMPABLE": "M",
+          "TAXABLE_SURCHARGABLE_FOODSTAMPABLE": "P",
+          "TAXABLE_SURCHARGABLE_NON-FOODSTAMPABLE": "T",
+          "NON-TAXABLE_NON-SURCHARGABLE_FOODSTAMPABLE": "F",
+          "NON-TAXABLE_NON-SURCHARGABLE_NON-FOODSTAMPABLE": "N",
+          "NON-TAXABLE_SURCHARGABLE_NON-FOODSTAMPABLE": "S",
+          "ALTERNATE_TAX_NON-SURCHARGABLE_FOODSTAMPABLE": "D",
+          "ALTERNATE_TAX_NON-SURCHARGABLE_NON-FOODSTAMPABLE": "C",
+          "ALTERNATE_TAX_SURCHARGABLE_NON-FOODSTAMPABLE": "A",
+          "RESALE": "R",
+          "TAX_EXEMPT": "E",
+          "NON_TAXABLE_QHP": "Q",
+          "TAXABLE_QHP": "X"
+        }
+      },
+      {
+        "name": "NON_MERCHANDISE_ACCOUNT_CODES",
+        "value": [
+          {
+            "value": {
+              "accountCode": "LOTTERY",
+              "payinPayout": "PAYIN"
+            },
+            "order": 0
+          },
+          {
+            "value": {
+              "accountCode": "STAMPS",
+              "payinPayout": "PAYIN"
+            },
+            "order": 1
+          },
+          {
+            "value": {
+              "accountCode": "LOTTERY_WINNINGS",
+              "payinPayout": "PAYOUT"
+            },
+            "order": 2
+          }
+        ]
+      },
+      {
+        "name": "PAYMENT_REFUND_METHOD",
+        "value": "IN_PERSON"
+      },
+      {
+        "name": "POSTVOID_WINDOW_IN_HOURS",
+        "value": "24"
+      },
+      {
+        "name": "POST_SALE_ADJUSTMENT_WINDOW_IN_HOURS",
+        "value": "24"
+      },
+      {
+        "name": "POST_SALE_ADJUSTABLE_ORDERS_QUERY_RESULTS_LIMIT",
+        "value": "30"
+      },
+      {
+        "name": "DO_NOT_ALLOW_MULTIPLE_POST_SALE_ADJUSTMENTS_PER_ORDER",
+        "value": false
+      },
+      {
+        "name": "STORE_PRICE_MANAGEMENT_ENABLED",
+        "value": false
+      },
+      {
+        "name": "MAX_USER_QUANTITY_ENTRY",
+        "value": 10000
+      },
+      {
+        "name": "EXCHANGE_PRICING_MODE",
+        "value": "LOWEST_PRICE"
+      },
+      {
+        "name": "RETURN_PRICE_FOR_EXCHANGE",
+        "value": "LOWEST_PRICE"
+      },
+      {
+        "name": "DEPOSIT_REFUND_ITEM",
+        "value": "depositRefundItemSKU"
+      },
+      {
+        "name": "RETURN_PRICING_PRIORITY",
+        "value": [
+          {
+            "value": "LOWEST_PRICE",
+            "order": 0
+          },
+          {
+            "value": "OLDEST_PURCHASED",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "name": "PROVIDER_MANUAL_TAX_ROUNDING_MODE",
+        "value": "HALF_EVEN"
+      },
+      {
+        "name": "TAX_OVERRIDE_LIMIT",
+        "value": 100000
+      },
+      {
+         
+        "name": "ORDER_VOID_REASON_CODE",
+        "value": true
+      },
+      {
+         
+        "name": "ORDER_VOID_APPROVAL",
+        "value": true
+      },
+      {
+         
+        "name": "VOID_ITEM_APPROVAL",
+        "value": true
+      },      
+      {
+         
+        "name": "AGE_TO_SELL_TOO_YOUNG_EU",
+        "value": true
+      },
+      {
+        "name": "ORDER_VOID_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code1": {
+              "row": [
+                "NO_CASH", {
+                  "default": "Not enough cash"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "CUSTOMER_LEFT", {
+                  "default": "Customer left store"
+                }
+              ],
+              "order": 2
+            },
+            "code3": {
+              "row": [
+                "NO_REASON", {
+                  "default": "No Reason"
+                }
+              ],
+              "order": 3
+            }
+          }
+        }
+      }
+    ]
+  }
+]

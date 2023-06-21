@@ -1,0 +1,1051 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "catalogName": {
+            "$regex": "CATALOG_QA"
+          }
+        },
+        {
+          "catalogName": {
+            "$regex": "CATALOG_EU_HVR"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "GROUP_1",
+    "displayName": {
+      "default": "GROUP_1"
+    },
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "test1": "TEST1"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_2",
+    "displayName": {
+      "default": "GROUP_2"
+    },
+    "parentName": "GROUP_1",
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "test2": "TEST2"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "SOFT_DRINKS",
+    "displayName": {
+      "default": "SOFT_DRINKS"
+    },
+    "parentName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "softDrink": "SOFT_DRINK"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "TOBACCO",
+    "displayName": {
+      "default": "TOBACCO"
+    },
+    "parentName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_3",
+    "displayName": {
+      "default": "GROUP_3"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_4",
+    "displayName": {
+      "default": "GROUP_4"
+    },
+    "parentName": "GROUP_3",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_5",
+    "displayName": {
+      "default": "GROUP_5"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "Department": "2"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_6",
+    "displayName": {
+      "default": "GROUP_6"
+    },
+    "parentName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "ageToSell": 18,
+      "ageToBuy": 18,
+      "ageGrandfatherDate": "2000-12-31",
+      "managerRequired": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_7",
+    "displayName": {
+      "default": "GROUP_7"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_8",
+    "displayName": {
+      "default": "GROUP_8"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_9",
+    "displayName": {
+      "default": "GROUP_9"
+    },
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "NOT_DISCOUNTABLE_GROUP_1",
+    "catalogName": "CATALOG_QA",
+    "parentName": "DEPOSIT_ITEM_GROUP",
+    "namedAttributes": {
+      "discountable": false,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "NOT_FOR_SALE_GROUP_1",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "notForSale": true,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_1_PRICE_REQUIRED",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_1",
+    "namedAttributes": {
+      "priceRequired": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_2_SERIAL_REQUIRED",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "serialRequired": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "ACTIVATION_REQUIRED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_1_TAX_EXEMPT",
+    "namedAttributes": {
+      "preActivationRequired": true,
+      "activationRequired": true,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "CLIENT_BASED_ACTIVATION_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "ACTIVATION_REQUIRED_GROUP",
+    "namedAttributes": {
+      "clientBasedActivation": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "QUANTITY_REQUIRED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "quantityRequired": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_1_TAX_EXEMPT",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_1",
+    "namedAttributes": {
+      "itemTaxability": "NON_TAXABLE",
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_1_ALWAYS_TAXED",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_1",
+    "namedAttributes": {
+      "itemTaxability": "ALWAYS_TAXED",
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "LOW_TAX_CODE_EU",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "LOW_TAX_CODE_BE",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_1_NO_PRICE_OVERRIDE",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_1_PRICE_REQUIRED",
+    "namedAttributes": {
+      "priceOverrideAllowed": false,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "QUANTITY_ALLOWED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "QUANTITY_REQUIRED_GROUP",
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "GROUP_2_REQUIRED_INVENTORY",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "itemInventoryMethod": "REQUIRED",
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "DEPOSIT_ITEM_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "isDepositItem": true,
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "OPEN_CASH_DRAWER_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "openCashDrawer": true,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "VOID_WITH_PARENT_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "voidWithParent": true,
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "RETURN_WITH_PARENT_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "linkedItemReturnPolicy": "WITH_PARENT",
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "GRANDFATHERDATE_GROUP",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "ageGrandfatherDate": "2000-12-31",
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "AGETOSELL_GROUP",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "ageToSell": "21",
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "RESTRICTED_GROUP",
+    "parentName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "paymentRestrictions": {
+        "paymentExclusions": [
+          {
+            "paymentTypeGroup": "STORED_VALUE",
+            "amount": {
+              "value": 10.0,
+              "currencyCode": "EUR",
+              "currencyValue": {
+                "value": 10.0,
+                "currencyCode": "EUR"
+              }
+            }
+          }
+        ]
+      },
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "NAMED_ATTRIBUTES_TEST_GROUP",
+    "parentName": "GROUP_2",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "voidWithParent": true,
+      "linkedItemReturnPolicy": "WITH_PARENT",
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "DEPARTMENT_A",
+    "displayName": {
+      "default": "Department A"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "DEPARTMENT_B",
+    "displayName": {
+      "default": "Department B"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "FLOWERS",
+    "displayName": {
+      "default": "Flowers Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "SUNFLOWER",
+    "displayName": {
+      "default": "SUNFLOWER Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "parentName": "FLOWERS",
+    "limits": {
+      "refundTotal": {
+        "value": 2,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 2,
+          "currencyCode": "EUR"
+        }
+      }
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "ROSES",
+    "displayName": {
+      "default": "ROSES Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "parentName": "FLOWERS",
+    "limits": {
+      "keyedPriceMax": {
+        "value": 10,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 10,
+          "currencyCode": "EUR"
+        }
+      },
+      "keyedPriceMin": {
+        "value": 1,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 1,
+          "currencyCode": "EUR"
+        }
+      }
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "GARDENIAS",
+    "displayName": {
+      "default": "GARDENIAS Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "parentName": "FLOWERS",
+    "limits": {
+      "storeCouponAmountMax": {
+        "value": 2.00,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 2.00,
+          "currencyCode": "EUR"
+        }
+      }
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "IRISES",
+    "displayName": {
+      "default": "IRISES Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "parentName": "FLOWERS",
+    "limits": {
+      "manufacturerCouponAmountMax": {
+        "value": 2.00,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 2.00,
+          "currencyCode": "EUR"
+        }
+      }
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "CARNATION",
+    "displayName": {
+      "default": "Carnation Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "parentName": "FLOWERS",
+    "limits": {
+      "quantityEntryMax": 2
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "SHAMPOO",
+    "displayName": {
+      "default": "Shampoo Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "isDepositItem": true,
+      "productTaxCodes": [
+        "LOW"
+      ]
+    },
+    "limits": {
+      "depositItemTotal": {
+        "value": 10,
+        "currencyCode": "EUR",
+        "currencyValue": {
+          "value": 10,
+          "currencyCode": "EUR"
+        }
+      }
+    }
+  },
+  {
+    "name": "ALLOWABLE_TIME_SALES_GROUP",
+    "catalogName": "CATALOG_QA",
+    "parentName": "GROUP_2",
+    "namedAttributes": {
+      "allowableTimeOfSale": {
+        "startDate": "2017-01-01T00:00:00.000Z",
+        "endDate": "2099-12-31T15:59:59.000Z",
+        "eligibleDays": [],
+        "intervalType": "MONTHLY",
+        "intervalStartDate": "2017-01-01T00:00:00.000Z",
+        "intervalEndDate": "2019-01-31T23:59:59.000Z",
+        "productTaxCodes": [
+          "HIGH"
+        ]
+      }
+    }
+  },
+  {
+    "catalogName": "CATALOG_QA",
+    "name": "ONE_OFF_FIRST_FIVE_DEPARTMENT",
+    "attributes": {},
+    "displayName": {
+      "default": "One dollar of first five purchase test department"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "catalogName": "CATALOG_QA",
+    "name": "NO_PROMOTIONS_DEPARTMENT",
+    "attributes": {},
+    "displayName": {
+      "default": "Department with no active promotions"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "allowableTimeOfSale": {},
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "JUICE_DEPT_GROUP",
+    "displayName": {
+      "default": "Juice Department"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "BACON_DEPT_GROUP",
+    "displayName": {
+      "default": "BACON_DEPT_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "Department": "BACON_DEPT_GROUP"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "EGGS_DEPT_GROUP",
+    "displayName": {
+      "default": "EGGS_DEPT_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "attributes": {
+      "Department": "EGGS_DEPT_GROUP"
+    },
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "QHP_GROUP",
+    "displayName": {
+      "default": "QHP_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "isQHPEligible": true,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "SURCHARGE_GROUP",
+    "displayName": {
+      "default": "SURCHARGE_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "isSurchargeEligible": true,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "PROHIBITION_GROUP",
+    "displayName": {
+      "default": "PROHIBITION_GROUP"
+    },
+    "parentName": "GROUP_1",
+    "extends": false,
+    "catalogName": "CATALOG_QA",
+    "categories": [
+      "Prohibition"
+    ],
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "DEPT",
+    "displayName": {
+      "default": "Parent Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "priceRequired": true,
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "CHILD_DEPT",
+    "displayName": {
+      "default": "Child Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "parentName": "DEPT",
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "LOW"
+      ]
+    }
+  },
+  {
+    "name": "LUXURY_DEPT",
+    "displayName": {
+      "default": "Luxury Department"
+    },
+    "catalogName": "CATALOG_QA",
+    "extends": false,
+    "namedAttributes": {
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "FURNITURE_WITH_ADD_ONS",
+    "displayName": {
+      "default": "Furniture with Add Ons"
+    },
+    "parentName": "GROUP_1",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "addOnSetName": "FURNITURE_ADDONS",
+      "productTaxCodes": [
+        "HIGH"
+      ]
+    }
+  },
+  {
+    "name": "VARIABLE_GIFT_CARDS",
+    "displayName": {
+      "default": "Variable gift cards"
+    },
+    "parentName": "ACTIVATION_REQUIRED_GROUP",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "priceRequired": true,
+      "itemTaxability": "NON_TAXABLE",
+      "isEBTFoodAllowed": false,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "name": "VARIABLE_GIFT_CARDS_CLIENT_ACTIVATED",
+    "displayName": {
+      "default": "Variable gift cards"
+    },
+    "parentName": "CLIENT_BASED_ACTIVATION_GROUP",
+    "catalogName": "CATALOG_QA",
+    "namedAttributes": {
+      "priceRequired": true,
+      "itemTaxability": "NON_TAXABLE",
+      "isEBTFoodAllowed": false,
+      "productTaxCodes": [
+        "NONE"
+      ]
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "DRINKS",
+    "attributes": {},
+    "displayName": {
+      "default": "Drinks"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "SODA",
+    "attributes": {},
+    "displayName": {
+      "default": "Soda"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "nonMerchandiseAccount": {},
+      "allowableTimeOfSale": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BEER",
+    "attributes": {},
+    "displayName": {
+      "default": "Beers"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "ageToBuy": 18,
+      "managerRequired": false,
+      "nonMerchandise": false,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "isDepositItem": false,
+      "discountable": true,
+      "notForSale": false,
+      "priceRequired": false,
+      "quantityRequired": false,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "FOOD",
+    "attributes": {},
+    "displayName": {
+      "default": "Food"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "NONFOOD",
+    "attributes": {},
+    "displayName": {
+      "default": "Non Food"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BOTTLEDEPOSIT",
+    "attributes": {},
+    "displayName": {
+      "default": "Bottle Deposit"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": false,
+      "nonMerchandise": true,
+      "allowableTimeOfSale": {},
+      "isDepositItem": true,
+      "discountable": false,
+      "notForSale": false,
+      "priceOverrideAllowed": false,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "WINE",
+    "attributes": {},
+    "displayName": {
+      "default": "Wine"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "ageToBuy": 18,
+      "allowableTimeOfSale": {},
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "OTHERS",
+    "attributes": {},
+    "displayName": {
+      "default": "OTHER PRODUCTS"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "canBeReturned": true,
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "isSurchargeEligible": true,
+      "priceOverrideAllowed": true,
+      "discountable": true,
+      "nonMerchandiseAccount": {}
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "BOTTLERETURN",
+    "attributes": {},
+    "displayName": {
+      "default": "Bottle Return"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "preActivationRequired": false,
+      "activationRequired": false,
+      "clientBasedActivation": false,
+      "quantityAllowed": false,
+      "openCashDrawer": false,
+      "managerRequired": false,
+      "allowableTimeOfSale": {},
+      "isNotOnFileItem": false,
+      "isQHPEligible": false,
+      "isSurchargeEligible": false,
+      "isDepositItem": false,
+      "discountable": false,
+      "notForSale": false,
+      "priceRequired": false,
+      "serialRequired": false,
+      "quantityRequired": false,
+      "priceOverrideAllowed": false,
+      "nonMerchandiseAccount": {},
+      "isEBTFoodAllowed": false,
+      "voidWithParent": false
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "LIKOR",
+    "attributes": {},
+    "displayName": {
+      "default": "Likor"
+    },
+    "extends": false,
+    "namedAttributes": {
+      "quantityAllowed": true,
+      "allowableTimeOfSale": {},
+      "discountable": true,
+      "priceOverrideAllowed": true,
+      "canBeReturned": true,
+      "nonMerchandiseAccount": {}
+    },
+    "parentName": "DRINKS"
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "name": "DISCOUNTS_PROMOTIONS",
+    "attributes": {},
+    "displayName": {},
+    "extends": false,
+    "namedAttributes": {
+      "allowableTimesOfSale": [],
+      "nonMerchandiseAccount": {}
+    }
+  }
+]

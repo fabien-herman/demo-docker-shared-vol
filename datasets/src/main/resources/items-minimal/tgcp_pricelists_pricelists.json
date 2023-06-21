@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PRICE_LIST"
+    }
+  },
+  {
+    "name": "PRICE_LIST",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price list"
+    },
+    "startDate": {
+      "$date": "2022-07-31T22:00:00.000Z"
+    }
+  }
+]

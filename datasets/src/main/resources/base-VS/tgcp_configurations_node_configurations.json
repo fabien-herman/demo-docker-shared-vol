@@ -1,0 +1,126 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^STORES_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_[A-Z]+_[0-9]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "STORES_IT",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Italy"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Rome"
+      },
+      {
+        "name": "LOCALE",
+        "value": "it-IT"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "IT"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "IT",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "name": "ITEM_RETURN_REASON_CODE_VALUES",
+        "value": {
+          "headers": [
+            {
+              "name": "SHORT_NAME",
+              "type": "Key",
+              "description": "The reason code"
+            },
+            {
+              "name": "Description",
+              "type": "Text",
+              "description": "The display value"
+            }
+          ],
+          "rows": {
+            "code0": {
+              "row": [
+                "0",
+                {
+                  "default": "No Reason"
+                }
+              ],
+              "order": 0
+            },
+            "code1": {
+              "row": [
+                "1",
+                {
+                  "default": "Non Conformed"
+                }
+              ],
+              "order": 1
+            },
+            "code2": {
+              "row": [
+                "2",
+                {
+                  "default": "Broken"
+                }
+              ],
+              "order": 2
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "STORES_PT",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Portugal"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Lisbon"
+      },
+      {
+        "name": "LOCALE",
+        "value": "pt-PT"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "IT"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "IT",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  }
+]

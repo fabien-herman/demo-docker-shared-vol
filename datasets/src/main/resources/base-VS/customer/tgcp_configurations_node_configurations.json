@@ -1,0 +1,88 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.LOYALTY_BARCODE_TYPES": {
+          "name": "LOYALTY_BARCODE_TYPES",
+          "value": {
+            "headers": [
+              {
+                "type": "Key",
+                "description": "The name will be the unique identifier/type for the loyalty program that will be used for customer associations",
+                "name": "NAME"
+              },
+              {
+                "type": "Text",
+                "description": "The name of the customer loyalty/rewards program",
+                "name": "DISPLAY_NAME"
+              },
+              {
+                "type": "Text",
+                "description": "The description of the customer loyalty/rewards program",
+                "name": "DESCRIPTION"
+              },
+              {
+                "type": "Key",
+                "description": "The regex pattern for the loyalty program customer ids that will be used to match an input to associate to the loyalty code",
+                "name": "REGEX"
+              },
+              {
+                "type": "Key",
+                "description": "The symbology format that the loyalty program customer id barcodes will use when scanned",
+                "name": "SYMBOLOGY"
+              },
+              {
+                "type": "Key",
+                "description": "A set of key, value strings to provide any additional metadata e.g { \"key1\" : \"value1\", \"key2\" : \"value2\" }",
+                "name": "METADATA"
+              },
+              {
+                "type": "Boolean",
+                "description": "Flag that determines if the loyalty program is active for the node",
+                "name": "ACTIVE"
+              }
+            ],
+            "rows": {
+              "loyalty1": {
+                "order": 1,
+                "row": [
+                  "LOYALTY_ID",
+                  {
+                    "default": "LOYALTY ID"
+                  },
+                  {
+                    "default": "Customer loyalty id"
+                  },
+                  "^26\\d{11}$",
+                  "EAN-13",
+                  "{\"prefix\": \"26\", \"length\": \"13\"}",
+                  true
+                ]
+              },
+              "loyalty2": {
+                "order": 2,
+                "row": [
+                  "LOYALTY_ID",
+                  {
+                    "default": "LOYALTY ID"
+                  },
+                  {
+                    "default": "Customer loyalty id"
+                  },
+                  "^26\\d{11}$",
+                  "JAN-13",
+                  "{\"prefix\": \"26\", \"length\": \"13\"}",
+                  true
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

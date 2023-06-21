@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Update WEBPOS_THEME_LIST",
+    "filter": {
+      "name": "SYSTEM"
+    },
+    "update": {
+      "$push": {
+        "configurations.WEBPOS_THEME_LIST.value": {
+          "$each": [
+            {
+              "order": 40,
+              "value": "tgcpVueMobileWebView"
+            },
+            {
+              "order": 41,
+              "value": "tgcpVueMobileWebViewMock"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

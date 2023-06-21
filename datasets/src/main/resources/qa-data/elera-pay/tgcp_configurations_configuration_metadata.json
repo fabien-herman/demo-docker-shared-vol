@@ -1,0 +1,46 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "ELERAPAY_ENABLED"
+        },
+        {
+          "name": "VISA"
+        },
+        {
+          "name": "MASTERCARD"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ELERAPAY_ENABLED",
+    "type": "Boolean",
+    "group": "PAYMENT",
+    "subGroup": "EXTERNAL",
+    "description": {
+      "default": "If true, ELERA Pay is enabled."
+    }
+  },
+  {
+    "name": "VISA",
+    "type": "Map",
+    "group": "PAYMENT",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines the configuration settings for VISA payment type."
+    }
+  },
+  {
+    "name": "MASTERCARD",
+    "type": "Map",
+    "group": "PAYMENT",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines the configuration settings for MASTERCARD payment type."
+    }
+  }
+]

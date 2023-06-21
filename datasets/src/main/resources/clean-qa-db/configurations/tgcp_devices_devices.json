@@ -1,0 +1,51 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": "POS_QA_1_1"},
+        {
+          "name": {
+            "$regex": "^POS_QA_1_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^POS_QA_MOBILE_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^POS_QA_KIOSK_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^POS_QA_KIOSK_REAL_[A-Z]+$"
+          }
+        },
+        {"name": "POS_QA_KIOSK_1_1"},
+        {"name": "DEV_DEMO_MOBILE"},
+        {"name": "DEV_DEMO_TABLET"},
+        {"name": "DEV_MOCK_MOBILE"},
+        {
+          "name": {
+            "$regex": "^DEV_MOBILE_[A-Z]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^DEV_KIOSK_[A-Z]+$"
+          }
+        },
+        {
+          "name": "TEST_TERMINAL_WITH_VUE_MOBILE_WEBVIEW_TYPE"
+        },
+        {
+          "name": "DEV_TABLET"
+        }
+      ]
+    }
+  }
+]

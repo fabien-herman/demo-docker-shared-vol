@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "RECEIPT_HEADER_IMAGE"
+        }
+      ]
+    }
+  },
+  {
+    "type": "Integer",
+    "description": {
+      "default": "The receipt header image to use from the RECEIPT_IMAGE_LIST"
+    },
+    "group": "RECEIPT",
+    "subGroup": "CONFIG",
+    "name": "RECEIPT_HEADER_IMAGE"
+  }
+]

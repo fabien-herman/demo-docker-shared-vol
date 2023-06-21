@@ -1,0 +1,13 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ITEM_ALIAS_TYPES"
+    },
+    "update": {
+      "$push": {
+         "value": "Unknown"
+      }
+    }
+  }
+]

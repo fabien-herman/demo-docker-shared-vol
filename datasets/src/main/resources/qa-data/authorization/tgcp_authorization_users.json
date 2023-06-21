@@ -1,0 +1,172 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "_id": "5c1017a0f02de94df9150ac1"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac2"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac3"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac4"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac5"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac6"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac7"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ac8"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ad0"
+        },
+        {
+          "_id": "5c1017a0f02de94df9150ad1"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac3",
+    "notes": "1 - 1 : user has manager-level privileges for admin-ui and webpos",
+    "username": "1",
+    "firstName": "1",
+    "lastName": "1",
+    "password": "$2a$10$.eSpG/or3EpimqX5yGRp6ehDJJqcekgtYmM8sjsToqpoxyCPaR.Su",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "1"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac2",
+    "notes": "jo - jo : user has manager-level privileges for admin-ui and webpos",
+    "username": "jo",
+    "firstName": "jo",
+    "lastName": "jo",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "jo"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac1",
+    "notes": "raluca - raluca : user has manager-level privileges for admin-ui and webpos",
+    "username": "raluca",
+    "firstName": "raluca",
+    "lastName": "raluca",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "raluca"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac4",
+    "notes": "andrei - andrei : user has manager-level privileges for admin-ui and webpos",
+    "username": "andrei",
+    "firstName": "andrei",
+    "lastName": "andrei",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "andrei"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac5",
+    "notes": "andreea - andreea : user has manager-level privileges for admin-ui and webpos",
+    "username": "andreea",
+    "firstName": "andreea",
+    "lastName": "andreea",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "andreea"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac6",
+    "notes": "nelson - nelson : user has manager-level privileges for admin-ui and webpos",
+    "username": "nelson",
+    "firstName": "nelson",
+    "lastName": "nelson",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "nelson"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac7",
+    "notes": "adrian - adrian : user has manager-level privileges for admin-ui and webpos",
+    "username": "adrian",
+    "firstName": "adrian",
+    "lastName": "adrian",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "adrian"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ac8",
+    "notes": "mariska - mariska : user has manager-level privileges for admin-ui and webpos",
+    "username": "mariska",
+    "firstName": "mariska",
+    "lastName": "mariska",
+    "password": "$2a$12$wuW4vNUgcODgghXl4Qd.huKhfTgpDviVn6UWGVmOmfuaujrcs33Ni",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "mariska"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ad0",
+    "notes": "1001 - 1 : user has POS_CASHIER & POS_MANAGER privileges for webpos",
+    "username": "1001",
+    "firstName": "1001",
+    "lastName": "1001",
+    "birthdate" : "1984-03-11",
+    "password": "$2a$10$beqXFsKI5BCpbUdot84RjO48xpcTiJpqNvDlpvUzDs8rXVUKk9N2C",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "1001"
+  },
+  {
+    "_id": "5c1017a0f02de94df9150ad1",
+    "notes": "1002 - 2 : user has POS_CASHIER privileges for webpos",
+    "username": "1002",
+    "firstName": "1002",
+    "lastName": "1002",
+    "birthdate" : "2011-09-18",
+    "password": "$2a$10$odYnnas2nioQ7Pw9M2CLGe4TLthmjiNVx7wOh3dXT9zo4.ZwKQsiu",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "1002"
+  }
+]

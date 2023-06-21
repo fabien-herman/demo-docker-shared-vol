@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "be625595-fbb9-483d-9475-9653e2342f0e"
+        },
+        {
+          "name": {
+            "$regex": "PROMOTION_SET_VS.*"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "PROMOTION_SET_VS",
+    "displayName": {
+      "default": "VisualStore promotions"
+    }
+  }
+]

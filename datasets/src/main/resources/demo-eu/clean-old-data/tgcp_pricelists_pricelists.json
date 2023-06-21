@@ -1,0 +1,16 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "PRICELIST_TEST"
+        },
+        {
+          "name": "PRICE_LIST"
+        }
+      ]
+    }
+  }
+]

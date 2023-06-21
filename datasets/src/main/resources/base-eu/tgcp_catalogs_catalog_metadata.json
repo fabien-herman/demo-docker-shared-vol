@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {"$regex": "ITEM_ALIAS_TYPES"}
+    }
+  },
+  {
+    "name" : "ITEM_ALIAS_TYPES",
+    "valueType" : "List",
+    "value" : [
+      "Code128",
+      "Code39",
+      "EAN-13",
+      "EAN-8",
+      "ITF-14",
+      "UPC-A",
+      "UPC-E"
+    ]
+  }
+]

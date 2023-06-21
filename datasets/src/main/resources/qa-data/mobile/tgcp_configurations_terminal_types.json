@@ -1,0 +1,94 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_MOBILE_WEBVIEW[A-Z,_]*$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_TABLET_WEBVIEW[A-Z,_]*$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_MOBILE_WEBVIEW",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueMobileWebView"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueMobileWebView"
+      },
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_MOBILE_WEBVIEW_MOCK",
+    "parentName": "TGCP_VUE_MOBILE_WEBVIEW",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueMobileWebViewMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueMobileWebViewMock"
+      },
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_TABLET_WEBVIEW",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueMobileWebView"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueMobileWebView"
+      },
+      {
+        "name": "HIDE_UI_KEYPAD",
+        "value": true
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_LANDSCAPE",
+        "value": "Specialty"
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_PORTRAIT",
+        "value": "Mobile"
+      },
+      {
+        "name": "POS_STYLE_NAME",
+        "value": "Specialty"
+      },
+      {
+        "name": "REMOVE_VIRTUAL_KEYBOARD",
+        "value": true
+      },
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  }
+]

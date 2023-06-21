@@ -1,0 +1,184 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "promotionsSet": "RI"
+        },
+        {
+          "promotionsSet": "RI_LEAF_NODE"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_2"
+        },
+        {
+          "promotionsSet": "RI_RALEIGH_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_NO_EXTEND_SET"
+        },
+        {
+          "promotionsSet": "ELECTIVE_PROMOTION_SET"
+        },
+        {
+          "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET"
+        },
+        {
+          "promotionsSet": "ADMIN_UI_TEST_CASES_SET"
+        },
+        {
+          "promotionsSet": "TURKEY_PROMOTIONS_SET"
+        },
+        {
+          "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+        }
+      ]
+    }
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155501"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155502"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155503"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155504"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155505"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155506"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155507"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155508"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "5_DOLLARS_OFF_COUPON",
+    "barcode": "1155509"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_WITH_1",
+    "barcode": "1122201"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_WITH_1",
+    "barcode": "1122202"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_WITH_1",
+    "barcode": "1122203"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "20_PERCENT_OFF_COUPON",
+    "barcode": "1120201"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "20_PERCENT_OFF_COUPON",
+    "barcode": "1120202"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "20_PERCENT_OFF_COUPON",
+    "barcode": "1120203"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "RABATT_KLEBETIKETTEN_PCT",
+    "barcode": "3197709"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "RABATT_KLEBETIKETTEN_AMT",
+    "barcode": "3197708"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "RABATT_KLEBETIKETTEN_5PCT",
+    "barcode": "3197705"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "RABATT_KLEBETIKETTEN_10PCT",
+    "barcode": "3197703"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "RABATT_KLEBETIKETTEN_20PCT",
+    "barcode": "3197701"
+  },
+  {
+    "barcode": "1112345",
+    "promotionsSet": "RI",
+    "promotionId": "BUY2_GET20PCT",
+    "symbology": "Code39"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_WITH_0",
+    "barcode": "1155510"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "Buy0_Get2Free",
+    "barcode": "1155511"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_WITH_1_SEP092020",
+    "barcode": "1122204"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "25_PERCENT_OFF_IN_FLOWERS_MANUFACTURER_COUPON",
+    "barcode": "1122206"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "25_PERCENT_OFF_IN_FLOWERS_STORE_COUPON",
+    "barcode": "1122205"
+  },
+  {
+    "promotionsSet": "RI",
+    "promotionId": "2_DOLLARS_OFF_COUPON",
+    "barcode": "1122207"
+  },
+  {
+    "promotionsSet": "ADMIN_UI_TEST_CASES_SET",
+    "promotionId": "NOT_DISTRIBUTED_2_DOLLARS_OFF_COUPON",
+    "barcode": "1122210"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": { "_id": "5c1017a0f02de94df9150ac3" }
+  },
+  {
+    "_id" : "5c1017a0f02de94df9150ac3",
+    "notes" : "1 - 1 : user has manager-level privileges for admin-ui and webpos",
+    "username" : "1",
+    "firstName" : "1",
+    "lastName" : "1",
+    "password" : "$2a$10$.eSpG/or3EpimqX5yGRp6ehDJJqcekgtYmM8sjsToqpoxyCPaR.Su",
+    "authorities" : {
+      "*" : "rw"
+    },
+    "no_locale_on_purpose" : "",
+    "usernameLowercase" : "1"
+  }
+]

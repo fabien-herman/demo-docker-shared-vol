@@ -1,0 +1,65 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_EU_QSR"
+    }
+  },
+  {
+    "description": "Set at least tax = NONE",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_QSR",
+      "$or": [
+        {
+          "productTaxCodes": null
+        },
+        {
+          "productTaxCodes": []
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "productTaxCodes": [
+          "NONE"
+        ]
+      }
+    }
+  },
+  {
+    "description": "Set notForSale=false",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_QSR",
+      "$or": [
+        {
+          "notForSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "notForSale": false
+      }
+    }
+  },
+  {
+    "description": "Set allowableTimesOfSale=[]",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_QSR",
+      "$or": [
+        {
+          "allowableTimesOfSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "allowableTimesOfSale": []
+      }
+    }
+  }
+]

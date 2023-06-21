@@ -1,0 +1,23 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "nodeId": {
+            "$regex": "^STORES_US$"
+          }
+        },
+        {
+          "nodeId": {
+            "$regex": "^STORE_US_[0-9]+$"
+          }
+        },
+        {
+          "nodeId": "STORE_EU_99"
+        }
+      ]
+    }
+  }
+]

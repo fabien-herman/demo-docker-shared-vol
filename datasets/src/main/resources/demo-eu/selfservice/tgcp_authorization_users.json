@@ -1,0 +1,54 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "username": {
+            "$regex": "[A-Z0-9_]*SELF_SERVICE_USER"
+          }
+        },
+        {
+          "username": "2"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "DEFAULT_SELF_SERVICE_USER",
+    "notes": "default self service user",
+    "username": "DEFAULT_SELF_SERVICE_USER",
+    "usernameLowercase": "default_self_service_user",
+    "firstName": "Self Service",
+    "lastName": "Lane Device",
+    "password": "$2a$10$kUJzmKxgGzclmah1vwVRduAcDpjVc6FrKFww.knmqIucxXhmgbzLO",
+    "authorities": {
+      "*": "r",
+      "pos": "rw",
+      "orders": "rw",
+      "transactions": "rw",
+      "receipts": "rw",
+      "audits": "rw",
+      "business-days": "rw",
+      "print": "rw",
+      "endpoint-status": "rw"
+    },
+    "locale": "en-US",
+    "sessionTimeout": 120
+  },
+  {
+    "_id": "5e43f127f3030e1bc2e1147a",
+    "notes": "Currently used by quick lookup",
+    "username": "2",
+    "firstName": "2",
+    "lastName": "Quick lookup user",
+    "birthdate": "1984-01-01",
+    "password": "$2a$10$0LS.nmFqUHrHh0BjR/cLXOanIPwvSzdLKWFQw/bo2oE4ZOeXmkUm6",
+    "authorities": {
+      "*": "rw"
+    },
+    "no_locale_on_purpose": "",
+    "usernameLowercase": "2"
+  }
+]

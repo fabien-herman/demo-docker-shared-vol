@@ -1,0 +1,486 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "ORDER_VOID_REASON_CODE"
+        },
+        {
+          "name": "ORDER_VOID_APPROVAL"
+        },
+        {
+          "name": "VOID_ITEM_APPROVAL"
+        },
+        {
+          "name": "AGE_TO_SELL_TOO_YOUNG_EU"
+        }
+      ]
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "AGE_TO_SELL_TOO_YOUNG"
+    },
+    "update": {
+      "$set": {
+        "enabled": false
+      }
+    }
+  },
+  {
+    "name": "ORDER_VOID_REASON_CODE",
+    "validationSet": "ELERA_VALIDATIONS_EU",
+    "approvable": false,
+    "captureValue": true,
+    "constraints": [
+    {
+        "className": "Order",
+        "alias": "$order",
+        "triggers": [
+          {
+            "field": "this",
+            "operator": "EQUAL_TO",
+            "value": "$targetObject"
+          },
+          {
+            "alias": "$targetObjectId",
+            "field": "id"
+          },
+          {
+            "alias": "$targetObjectValue",
+            "field": "totalItemCount"
+          }
+        ]
+      },
+      {
+        "from": "$targetObject.reasonCodes",
+        "className": "ReasonCode",
+        "triggers": [
+          {
+            "value": "\"ORDER_VOID_REASON_CODE\"",
+            "field": "id",
+            "operator": "EQUAL_TO"
+          }
+        ],
+        "not": true,
+        "alias": "$reasonCode"
+      }
+    ],
+    "contextMatch": [
+      {
+        "from": "$context.reasonCodes",
+        "className": "ReasonCode",
+        "triggers": [
+          {
+            "value": "\"ORDER_VOID_REASON_CODE\"",
+            "field": "id",
+            "operator": "EQUAL_TO"
+          },
+          {
+            "field": "code",
+            "alias": "code"
+          }
+        ],
+        "not": false
+      }
+    ],
+    "createTimestamp": {
+      "$date": {
+        "$numberLong": "1680013016723"
+      }
+    },
+    "deferred": false,
+    "enabled": true,
+    "lastModifiedTimestamp": {
+      "$date": {
+        "$numberLong": "1680015096964"
+      }
+    },
+    "lastModifiedUserId": "admin",
+    "prompt": {
+      "default": "Please select the reason for the void of order"
+    },
+    "reasonCodeType": "ORDER_VOID_REASON_CODE",
+    "required": false,
+    "status": "PUBLISHED",
+    "target": [
+      {
+        "className": "Order",
+        "triggers": [
+          {
+            "value": "Action.VOID",
+            "field": "action",
+            "operator": "EQUAL_TO"
+          }
+        ],
+        "not": false,
+        "alias": "$targetObject"
+      }
+    ],
+    "targetObjectType": "Order",
+    "title": {
+      "default": "Order Void Reason Code"
+    },
+    "validationRuleId": "ORDER_VOID_REASON_CODE",
+    "version": 2
+  },
+  {
+    "name": "ORDER_VOID_APPROVAL",
+    "validationSet": "ELERA_VALIDATIONS_EU",
+    "approvable": true,
+    "captureValue": false,
+    "constraints": [],
+    "contextMatch": [
+      {
+        "triggers": [],
+        "not": false,
+        "from": "$context.validationApproval",
+        "className": "ValidationApprovalRequest",
+        "alias": "$validationApproval"
+      },
+      {
+        "triggers": [
+          {
+            "operator": "EQUAL_TO",
+            "field": "id",
+            "value": "\"ORDER_VOID_APPROVAL\""
+          }
+        ],
+        "not": false,
+        "from": "$validationApproval.validations",
+        "className": "Validation"
+      },
+      {
+        "triggers": [
+          {
+            "operator": "EQUAL_TO",
+            "field": "name",
+            "value": "\"VALIDATION_APPROVAL_ORDER_VOID\""
+          }
+        ],
+        "not": false,
+        "className": "PermissionObject",
+        "alias": "$userPermission"
+      }
+    ],
+    "createTimestamp": {
+      "$date": {
+        "$numberLong": "1680013016723"
+      }
+    },
+    "deferred": false,
+    "enabled": true,
+    "lastModifiedTimestamp": {
+      "$date": {
+        "$numberLong": "1680242075230"
+      }
+    },
+    "lastModifiedUserId": "admin",
+    "permission": "VALIDATION_APPROVAL_ORDER_VOID",
+    "prompt": {
+      "default": "Voiding of order requires approval"
+    },
+    "required": false,
+    "status": "PUBLISHED",
+    "target": [
+      {
+        "triggers": [
+          {
+            "operator": "EQUAL_TO",
+            "field": "action",
+            "value": "Action.VOID"
+          }
+        ],
+        "not": false,
+        "className": "Order",
+        "alias": "$targetObject"
+      }
+    ],
+    "targetObjectType": "Order",
+    "title": {
+      "default": "Manager override required"
+    },
+    "validationRuleId": "ORDER_VOID_APPROVAL",
+    "version": 3
+  },
+  {
+  
+  "name": "VOID_ITEM_APPROVAL",
+  "validationSet": "ELERA_VALIDATIONS_EU",
+  "approvable": true,
+  "captureValue": true,
+  "constraints": [
+    {
+      "className": "OrderItem",
+      "triggers": [
+        {
+          "field": "this",
+          "operator": "EQUAL_TO",
+          "value": "$targetObject"
+        },
+        {
+          "alias": "$targetObjectId",
+          "field": "id"
+        },
+        {
+          "alias": "$skuId",
+          "field": "item!.skuId"
+        },
+        {
+          "field": "prices",
+          "operator": "NOT_EQUAL_TO",
+          "value": "null"
+        },
+        {
+          "alias": "$targetObjectValue",
+          "field": "quantity"
+        }
+      ],
+      "not": false,
+      "alias": "$orderItem"
+    },
+    {
+      "className": "ItemPrice",
+      "triggers": [
+        {
+          "field": "voided",
+          "operator": "EQUAL_TO",
+          "value": "true"
+        }
+      ],
+      "not": false,
+      "alias": "$itemPrice",
+      "from": "$targetObject.prices"
+    }
+  ],
+  "contextMatch": [
+    {
+      "className": "ValidationApprovalRequest",
+      "triggers": [],
+      "not": false,
+      "alias": "$validationApproval",
+      "from": "$context.validationApproval"
+    },
+    {
+      "className": "Validation",
+      "triggers": [
+        {
+          "field": "id",
+          "operator": "EQUAL_TO",
+          "value": "\"VOID_ITEM_APPROVAL\""
+        }
+      ],
+      "not": false,
+      "from": "$validationApproval.validations"
+    },
+    {
+      "className": "PermissionObject",
+      "triggers": [
+        {
+          "field": "name",
+          "operator": "EQUAL_TO",
+          "value": "\"VALIDATION_APPROVAL_VOID_ITEM\""
+        }
+      ],
+      "not": false,
+      "alias": "$userPermission"
+    }
+  ],
+  "createTimestamp": {
+    "$date": {
+      "$numberLong": "1679991309163"
+    }
+  },
+  "deferred": false,
+  "enabled": true,
+  "lastModifiedTimestamp": {
+    "$date": {
+      "$numberLong": "1680077564562"
+    }
+  },
+  "lastModifiedUserId": "admin",
+  "permission": "VALIDATION_APPROVAL_VOID_ITEM",
+  "prompt": {
+    "default": "Voiding of item {skuId} requires approval"
+  },
+  "required": false,
+  "status": "PUBLISHED",
+  "target": [
+    {
+      "className": "OrderItem",
+      "triggers": [
+        {
+          "field": "action",
+          "operator": "EQUAL_TO",
+          "value": "Action.VOID"
+        }
+      ],
+      "not": false,
+      "alias": "$targetObject"
+    }
+  ],
+  "targetObjectType": "OrderItem",
+  "title": {
+    "default": "Manager override required"
+  },
+  "validationRuleId": "VOID_ITEM_APPROVAL",
+  "version": 3
+  },
+  {
+    "name": "AGE_TO_SELL_TOO_YOUNG_EU",
+    "validationSet": "ELERA_VALIDATIONS_EU",
+    "approvable": true,
+    "captureValue": true,
+    "constraints": [
+      {
+        "className": "OrderItem",
+        "triggers": [
+          {
+            "field": "this",
+            "operator": "EQUAL_TO",
+            "value": "$targetObject"
+          },
+          {
+            "alias": "$targetObjectId",
+            "field": "id"
+          },
+          {
+            "alias": "$skuId",
+            "field": "item!.skuId"
+          },
+          {
+            "value": "0",
+            "field": "quantity",
+            "operator": "NOT_EQUAL_TO"
+          },
+          {
+            "value": "OrderItemType.RETURN",
+            "field": "type",
+            "operator": "NOT_EQUAL_TO"
+          },
+          {
+            "value": "null",
+            "field": "item.ageToSell",
+            "operator": "NOT_EQUAL_TO",
+            "alias": "$minAge"
+          }
+        ],
+        "not": false,
+        "alias": "$orderItem"
+      },
+      {
+        "className": "Order",
+        "not": false,
+        "alias": "$order"
+      },
+      {
+        "className": "OrderAssociate",
+        "not": false,
+        "triggers": [
+          {
+            "value": "$order!.currentAssociateId",
+            "field": "id",
+            "operator": "EQUAL_TO"
+          },
+          {
+            "value": "null",
+            "field": "age",
+            "operator": "NOT_EQUAL_TO",
+            "alias": "associateAge"
+          },
+          {
+            "value": "$minAge",
+            "field": "$associateAge",
+            "operator": "LESS_THAN"
+          }
+        ],
+        "from": "$order.associates",
+        "alias": "$associate"
+      }
+    ],
+    "contextMatch": [
+      {
+        "className": "ValidationApprovalRequest",
+        "triggers": [],
+        "not": false,
+        "alias": "$validationApproval",
+        "from": "$context.validationApproval"
+      },
+      {
+        "className": "Validation",
+        "triggers": [
+          {
+            "field": "id",
+            "operator": "EQUAL_TO",
+            "value": "\"AGE_TO_SELL_TOO_YOUNG_EU\""
+          }
+        ],
+        "not": false,
+        "from": "$validationApproval.validations"
+      },
+      {
+        "className": "PermissionObject",
+        "triggers": [
+          {
+            "field": "name",
+            "operator": "EQUAL_TO",
+            "value": "\"VALIDATION_APPROVAL_AGE_TO_SELL\""
+          }
+        ],
+        "not": false,
+        "alias": "$userPermission"
+      }
+    ],
+    "createTimestamp": {
+      "$date": {
+        "$numberLong": "1679991309163"
+      }
+    },
+    "deferred": false,
+    "enabled": true,
+    "lastModifiedTimestamp": {
+      "$date": {
+        "$numberLong": "1680077564562"
+      }
+    },
+    "lastModifiedUserId": "admin",
+    "permission": "VALIDATION_APPROVAL_AGE_TO_SELL",
+    "prompt": {
+      "default": "Associate must be {minAge} to sell item {skuId}"
+    },
+    "required": false,
+    "status": "PUBLISHED",
+    "target": [
+      {
+        "className": "OrderItem",
+        "triggers": [
+          {
+            "composite": [
+              {
+                "value": "Action.CREATE",
+                "field": "action",
+                "operator": "EQUAL_TO"
+              },
+              {
+                "value": "Action.UPDATE",
+                "field": "action",
+                "operator": "EQUAL_TO"
+              }
+            ]
+          }
+        ],
+        "not": false,
+        "alias": "$targetObject"
+      }
+    ],
+    "targetObjectType": "OrderItem",
+    "title": {
+      "default": "Age restricted item"
+    },
+    "validationRuleId": "AGE_TO_SELL_TOO_YOUNG_EU",
+    "version": 3
+  }
+]

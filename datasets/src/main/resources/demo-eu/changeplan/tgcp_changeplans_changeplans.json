@@ -1,0 +1,87 @@
+[
+  {
+    "description": "Delete all changeplans",
+    "operation": "delete",
+    "filter": {}
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_01"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_02"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_03"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_04"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_05"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_06"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_07"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_08"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_09"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_10"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_11"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_12"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_13"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_14"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_15"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_16"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_17"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_18"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_19"
+  },
+  {
+    "status": "Draft",
+    "name": "CHANGEPLAN_20"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PRICELIST_EU_PHARMACY"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_PHARMACY",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU Pharmacy"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  }
+]

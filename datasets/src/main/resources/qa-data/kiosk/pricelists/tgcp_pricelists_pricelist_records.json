@@ -1,0 +1,230 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICE_LIST_KIOSK"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 2.99,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4023900545507",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 4.98,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4023900261704",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.95,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "8076800315097",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.79,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4011800524210",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 4.00,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4002239422604",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 2.00,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4018077620003",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.50,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4304218128416",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 0.99,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4008100168039",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 2.29,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4009300005230",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 2.29,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "5000112547726",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 7.00,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "8437003223068",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.25,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "5410041001204",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.79,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "5053990138722",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 2.00,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4017100114717",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4104420229761",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 1.39,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "4104420021921",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2099-12-31T23:00:00.000Z"
+    },
+    "price": 0.25,
+    "priceList": "PRICE_LIST_KIOSK",
+    "skuId": "100001",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  }
+]

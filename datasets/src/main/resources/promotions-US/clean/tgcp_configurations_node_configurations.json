@@ -1,0 +1,30 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$pull": {
+        "configurations.PROMOTION_SETS.value.list": {
+          "promotionSetName": {
+            "$in": [
+              "RI",
+              "RI_LEAF_NODE",
+              "RI_ZONE_SET_1",
+              "RI_ZONE_SET_2",
+              "RI_RALEIGH_ZONE_SET_1",
+              "RI_ZONE_NO_EXTEND_SET",
+              "BAD_DATA_REBUILD",
+              "ELECTIVE_PROMOTION_SET",
+              "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+              "ADMIN_UI_TEST_CASES_SET",
+              "TURKEY_PROMOTIONS_SET",
+              "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

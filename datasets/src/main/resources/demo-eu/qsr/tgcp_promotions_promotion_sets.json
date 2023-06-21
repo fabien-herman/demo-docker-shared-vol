@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "869a80a6-c8f7-4ca8-83f3-4717ac8dd2f2"
+        },
+        {
+          "name": "PROMOTION_SET_EU_QSR"
+        }
+      ]
+    }
+  },
+  {
+    "name": "PROMOTION_SET_EU_QSR",
+    "displayName": {
+      "default": "EU Promotions QSR"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "edd580d2-6aeb-40a1-ac75-5dca855a4130"
+        },
+        {
+          "name": "PROMOTION_SET_EU_FASHION"
+        }
+      ]
+    }
+  },
+  {
+    "name": "PROMOTION_SET_EU_FASHION",
+    "displayName": {
+      "default": "EU Promotions Fashion"
+    }
+  }
+]

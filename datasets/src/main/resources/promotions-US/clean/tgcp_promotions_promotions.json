@@ -1,0 +1,46 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "promotionsSet": "RI"
+        },
+        {
+          "promotionsSet": "RI_LEAF_NODE"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_SET_2"
+        },
+        {
+          "promotionsSet": "RI_RALEIGH_ZONE_SET_1"
+        },
+        {
+          "promotionsSet": "RI_ZONE_NO_EXTEND_SET"
+        },
+        {
+          "promotionsSet": "BAD_DATA_REBUILD"
+        },
+        {
+          "promotionsSet": "ELECTIVE_PROMOTION_SET"
+        },
+        {
+          "promotionsSet": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET"
+        },
+        {
+          "promotionsSet": "ADMIN_UI_TEST_CASES_SET"
+        },
+        {
+          "promotionsSet": "TURKEY_PROMOTIONS_SET"
+        },
+        {
+          "promotionsSet": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+        }
+      ]
+    }
+  }
+]

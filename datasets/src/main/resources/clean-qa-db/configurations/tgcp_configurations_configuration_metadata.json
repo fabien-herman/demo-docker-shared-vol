@@ -1,0 +1,13 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": "CATALOG_QA"},
+        {"name": "PRICE_LISTS_QA"},
+        {"name": "TARE_001"}
+      ]
+    }
+  }
+]

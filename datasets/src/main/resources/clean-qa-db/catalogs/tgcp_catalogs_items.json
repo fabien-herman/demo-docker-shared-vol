@@ -1,0 +1,16 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "catalogName":  "CATALOG_QA"
+        },
+        {
+          "catalogName":  "CATALOG_KIOSK"
+        }
+      ]
+    }
+  }
+]

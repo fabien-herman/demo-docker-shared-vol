@@ -1,0 +1,137 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "TAX_SET_ID"
+        },
+        {
+          "name": "CASH_EUR"
+        },
+        {
+          "name": "CASH_GBP"
+        },
+        {
+          "name": "CASH_SEK"
+        },
+        {
+          "name": "ELERAPAY_ENABLED"
+        },
+        {
+          "name": "ORDER_VOID_REASON_CODE"
+        },
+        {
+          "name": "ORDER_VOID_REASON_CODE_VALUES"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TAX_SET_ID",
+    "type": "Key",
+    "group": "STORE_OPERATIONS",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines which tax set is active in the tax-vat and tax services."
+    }
+  },
+  {
+    "name": "CASH_EUR",
+    "type": "Map",
+    "group": "PAYMENT",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines the configuration settings for EUR cash payment type."
+    }
+  },
+  {
+    "name": "CASH_GBP",
+    "type": "Map",
+    "group": "PAYMENT",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines the configuration settings for GBP cash payment type."
+    }
+  },
+  {
+    "name": "CASH_SEK",
+    "type": "Map",
+    "group": "PAYMENT",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Defines the configuration settings for SEK cash payment type."
+    }
+  },
+  {
+    "name": "ELERAPAY_ENABLED",
+    "type": "Boolean",
+    "group": "PAYMENT",
+    "subGroup": "EXTERNAL",
+    "description": {
+      "default": "If true, ELERA Pay is enabled."
+    }
+  },
+  {
+    "name": "ORDER_VOID_REASON_CODE",
+    "type": "Boolean",
+    "group": "RULES",
+    "subGroup": "ORDER",
+    "description": {
+      "default": "If true, a reason code is required when voiding an order"
+    }
+  },
+  {
+    "name": "ORDER_VOID_REASON_CODE_VALUES",
+    "type": "Table",
+    "group": "Reason Codes",
+    "subGroup": "Entries",
+    "description": {
+      "default": "A table with the reason codes shown while voiding an order"
+    },
+    "value": {
+      "headers": [{
+        "name": "SHORT_NAME",
+        "type": "Key",
+        "description": "The reason code"
+      }, {
+        "name": "Description",
+        "type": "Text",
+        "description": "The display value"
+      }
+      ]
+    }
+  },
+   {
+         
+        "name" : "ORDER_VOID_APPROVAL",
+        "type" : "Boolean",
+        "group" : "RULES",
+        "subGroup" : "ORDER",
+        "description": {
+           "default": "If true, supervisor intervention is requested when voiding an order."
+         }
+      
+      },
+      {
+       
+        "name" : "VOID_ITEM_APPROVAL",
+        "type" : "Boolean",
+        "group" : "RULES",
+        "subGroup" : "ITEM",
+        "description": {
+           "default": "If true, supervisor intervention is requested when voiding an item."
+         }
+      },
+      {
+       
+        "name" : "AGE_TO_SELL_TOO_YOUNG_EU",
+        "type" : "Boolean",
+        "group" : "RULES",
+        "subGroup" : "ITEM",
+        "description": {
+           "default": "If true, age of associate is validated to sell the age restricted item"
+         }
+      }
+]

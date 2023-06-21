@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PROMOTION_SET_TEST"
+    }
+  },
+  {
+    "name": "PROMOTION_SET_TEST",
+    "displayName": {
+      "default": "EU Promotions TEST"
+    }
+  }
+]

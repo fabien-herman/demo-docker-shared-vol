@@ -1,0 +1,145 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_[A-Z,_]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_DESKTOP",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktop"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_DESKTOP_NO_DRW",
+    "parentName": "TGCP_VUE_DESKTOP",
+    "configurations": [
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_DESKTOP_MOCK",
+    "parentName": "TGCP_VUE_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktopMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopMock"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_FIXED_LANE_DESKTOP",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "POS_STYLE_NAME",
+        "value": "Modern"
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_LANDSCAPE",
+        "value": "Modern"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_FIXED_LANE_DESKTOP_NO_DRW",
+    "parentName": "TGCP_VUE_FIXED_LANE_DESKTOP",
+    "configurations": [
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_FIXED_LANE_DESKTOP_MOCK",
+    "parentName": "TGCP_VUE_FIXED_LANE_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktopMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopMock"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SPECIALTY_DESKTOP",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "POS_STYLE_NAME",
+        "value": "Specialty"
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_LANDSCAPE",
+        "value": "Specialty"
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SPECIALTY_DESKTOP_NO_DRW",
+    "parentName": "TGCP_VUE_SPECIALTY_DESKTOP",    
+    "configurations": [
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SPECIALTY_DESKTOP_MOCK",
+    "parentName": "TGCP_VUE_SPECIALTY_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpVueDesktopMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopMock"
+      }
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^TGCP_VUE_SELF_SERVICE[A-Z,_]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "TGCP_VUE_SELF_SERVICE_DESKTOP",
+    "parentName": "DEFAULT",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpSelfService"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktop"
+      },
+      {
+        "name": "POS_STYLE_NAME",
+        "value": "Modern"
+      },
+      {
+        "name": "POS_COMPONENT_LAYOUT_LANDSCAPE",
+        "value": "Modern"
+      },
+      {
+        "name": "USE_MOCK_LIGHT",
+        "value": false
+      },
+      {
+        "name": "USE_MOCK_AUDIO",
+        "value": false
+      },
+      {
+        "name" : "ACTIVE_QLU_USER",
+        "value" : "DEFAULT_QLU_USER"
+      },
+      {
+        "name" : "ACTIVE_QLU_THEME",
+        "value" : "elera_ss"
+      },
+      {
+        "name" : "ACTIVE_QLU_PACKAGE",
+        "value" : "DEFAULT"
+      },
+      {
+        "name" : "CASH_TRACKING_ENABLED",
+        "value" : false
+      },
+      {
+        "name" : "CLIENT_PAYMENTS_ENABLED",
+        "value" : false
+      },
+      {
+        "name" : "SA_INACTIVITY_TIMEOUT",
+        "value" : 30
+      },
+      {
+        "name": "ALLOW_VISUAL_VERIFICATION",
+        "value": true
+      },
+      {
+        "name" : "LANE_REQUEST_THE_SHOPPER_PUT_COUPONS_IN_A_BOX_POPUP_TIMEOUT",
+        "value" : 5
+      },
+      {
+        "name": "AGE_FOR_VISUALLY_VERIFY",
+        "value": 18
+      },
+      {
+        "name" : "LANE_USER_INACTIVITY_TIMEOUT",
+        "value" : 30
+      },
+      {
+        "name" : "CLOSED_LANE_OPTIONS_INACTIVITY_TIMEOUT",
+        "value" : 30
+      },
+      {
+        "name": "HIDE_UI_KEYPAD",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SELF_SERVICE_DESKTOP_NO_DRW",
+    "parentName": "TGCP_VUE_SELF_SERVICE_DESKTOP",
+    "configurations": [
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "parentName": "TGCP_VUE_SELF_SERVICE_DESKTOP",
+    "configurations": [
+      {
+        "name": "UI_THEME",
+        "value": "tgcpSelfServiceMock"
+      },
+      {
+        "name": "PRIMARY_IFRAME_CONFIG",
+        "value": "tgcpVueDesktopMock"
+      },
+      {
+        "name": "USE_MOCK_LIGHT",
+        "value": true
+      },
+      {
+        "name": "USE_MOCK_AUDIO",
+        "value": true
+      },
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ]
+  }
+]

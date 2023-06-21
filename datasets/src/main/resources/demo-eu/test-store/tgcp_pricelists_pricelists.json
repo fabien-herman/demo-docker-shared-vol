@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": {
+        "$regex": "PRICELIST_TEST.*"
+      }
+    }
+  },
+  {
+    "displayName": {
+      "default": "Price List EU Test"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    },    "name": "PRICELIST_TEST",
+    "currencyCode": "EUR"
+  }
+]

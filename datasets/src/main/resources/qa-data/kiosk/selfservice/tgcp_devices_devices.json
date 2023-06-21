@@ -1,0 +1,67 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP"},
+        {"terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK"},
+        {"terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_NO_DRW"}
+      ]
+    }
+  },
+  {
+    "nodeId": "STORE_QA_RALUCA",
+    "name": "POS_QA_KIOSK_RALUCA",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9008"
+  },
+  {
+    "nodeId": "STORE_QA_JO",
+    "name": "POS_QA_KIOSK_JO",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9009"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREEA",
+    "name": "POS_QA_KIOSK_ANDREEA",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9011"
+  },
+  {
+    "name": "DEV_KIOSK_NELSON",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9012"
+  },
+  {
+    "name": "DEV_KIOSK_ADRIAN",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9013"
+  },
+  {
+    "name": "DEV_KIOSK_MARISKA",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9014"
+  },
+  {
+    "nodeId": "STORE_QA_JO",
+    "name": "POS_QA_KIOSK_REAL_JO",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_NO_DRW",
+    "endpointId": "9015"
+  },
+  {
+    "nodeId": "STORE_QA_ANDREEA",
+    "name": "POS_QA_KIOSK_REAL_ANDREEA",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_NO_DRW",
+    "endpointId": "9016"
+  },
+  {
+    "nodeId": "STORE_QA_1",
+    "name": "POS_QA_KIOSK_1_1",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK",
+    "endpointId": "9020"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "promotionsSet": {
+        "$regex": "PROMOTION_SET_EU_PHARMACY.*"
+      }
+    }
+  },
+  {
+    "name": "TOOTHPASTE_2X_25PCT_OFF",
+    "promotionsSet": "PROMOTION_SET_EU_PHARMACY",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2022-10-06T23:59:59.910Z"
+    },
+    "intervalEndDate": {
+      "$date": "2022-10-06T23:59:00.978Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-09-29T00:00:00.978Z"
+    },
+    "modification": {
+      "receiptFooters": [],
+      "amountThresholdType": "SALE_PRICE",
+      "electiveRedemption": false,
+      "contributesToOrderTotalTrigger": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "customerMessage": {
+        "default": "Toothpaste 2x = -25%",
+        "sv-SE": "Tandkräm 2x = -25%"
+      },
+      "type": "PERCENT_OFF",
+      "offerId": "TOOTHPASTE_2X_25PCT_OFF",
+      "adjustmentAmount": 25,
+      "distributed": false,
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-09-29T00:00:00.909Z"
+    },
+    "triggerItems": [
+      {
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 2,
+        "skuId": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAIR_COLORING_2X_150SEK",
+    "promotionsSet": "PROMOTION_SET_EU_PHARMACY",
+    "customerConstraint": false,
+    "enabled": true,
+    "endDate": {
+      "$date": "2022-10-06T23:59:59.637Z"
+    },
+    "intervalEndDate": {
+      "$date": "2022-10-06T23:59:00.000Z"
+    },
+    "intervalStartDate": {
+      "$date": "2022-09-29T00:00:00.000Z"
+    },
+    "modification": {
+      "receiptFooters": [],
+      "amountThresholdType": "SALE_PRICE",
+      "electiveRedemption": false,
+      "contributesToOrderTotalTrigger": false,
+      "groups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "exclusiveGroups": [
+        "BRR_MULTI_ITEM_PROMOTIONS_GROUP"
+      ],
+      "continuityOffer": false,
+      "promotionSupplierData": {},
+      "customerMessage": {
+        "default": "Hair coloring 2x=150SEK",
+        "sv-SE": "Hårfärg 2x=150SEK"
+      },
+      "type": "BUNDLE_PRICE",
+      "tiers": [],
+      "offerId": "HAIR_COLORING_2X_150SEK",
+      "adjustmentAmount": 150,
+      "distributed": true,
+      "orderLevelPromotion": false,
+      "immediate": true,
+      "perCombination": true
+    },
+    "startDate": {
+      "$date": "2022-09-29T00:00:00.635Z"
+    },
+    "triggerItems": [
+      {
+        "requiredQuantity": 2,
+        "isTarget": true
+      }
+    ],
+    "triggers": [
+      {
+        "triggerType": "ITEM_QUANTITY",
+        "quantity": 2,
+        "skuId": [
+          "11"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Disable name required for returns",
+    "operation": "updateOne",
+    "filter": {
+      "validationRuleId": "RETURN_NAME_REQUIRED",
+      "validationSet": "ELERA_VALIDATIONS"
+    },
+    "update": {
+      "$set": {
+        "enabled": false
+      }
+    }
+  }
+]

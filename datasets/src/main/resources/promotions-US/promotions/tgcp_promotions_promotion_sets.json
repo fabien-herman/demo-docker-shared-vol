@@ -1,0 +1,118 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": "RI"
+        },
+        {
+          "name": "RI_LEAF_NODE"
+        },
+        {
+          "name": "RI_ZONE_SET_1"
+        },
+        {
+          "name": "RI_ZONE_SET_2"
+        },
+        {
+          "name": "RI_RALEIGH_ZONE_SET_1"
+        },
+        {
+          "name": "RI_ZONE_NO_EXTEND_SET"
+        },
+        {
+          "name": "BAD_DATA_REBUILD"
+        },
+        {
+          "name": "ELECTIVE_PROMOTION_SET"
+        },
+        {
+          "name": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET"
+        },
+        {
+          "name": "ADMIN_UI_TEST_CASES_SET"
+        },
+        {
+          "name": "TURKEY_PROMOTIONS_SET"
+        },
+        {
+          "name": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+        }
+      ]
+    }
+  },
+  {
+    "name": "RI",
+    "displayName": {
+      "default": "RI"
+    }
+  },
+  {
+    "name": "BAD_DATA_REBUILD",
+    "displayName": {
+      "default": "BAD_DATA_REBUILD"
+    }
+  },
+  {
+    "name": "RI_LEAF_NODE",
+    "displayName": {
+      "default": "RI_LEAF_NODE"
+    }
+  },
+  {
+    "name": "RI_ZONE_SET_1",
+    "displayName": {
+      "default": "RI_ZONE_SET_1"
+    }
+  },
+  {
+    "name": "RI_ZONE_SET_2",
+    "displayName": {
+      "default": "RI_ZONE_SET_2"
+    }
+  },
+  {
+    "name": "RI_RALEIGH_ZONE_SET_1",
+    "displayName": {
+      "default": "RI_RALEIGH_ZONE_SET_1"
+    }
+  },
+  {
+    "name": "RI_ZONE_NO_EXTEND_SET",
+    "displayName": {
+      "default": "RI_ZONE_NO_EXTEND_SET"
+    }
+  },
+  {
+    "name": "ELECTIVE_PROMOTION_SET",
+    "displayName": {
+      "default": "ELECTIVE_PROMOTION_SET"
+    }
+  },
+  {
+    "name": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET",
+    "displayName": {
+      "default": "RETURN_ORDER_SEARCH_LIMIT_OFFERS_SET"
+    }
+  },
+  {
+    "name": "ADMIN_UI_TEST_CASES_SET",
+    "displayName": {
+      "default": "ADMIN_UI_TEST_CASES_SET"
+    }
+  },
+  {
+    "name": "TURKEY_PROMOTIONS_SET",
+    "displayName": {
+      "default": "TURKEY_PROMOTIONS_SET"
+    }
+  },
+  {
+    "name": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET",
+    "displayName": {
+      "default": "WIC_ELIGIBLE_ITEMS_PROMOTION_SET"
+    }
+  }
+]

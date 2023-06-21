@@ -1,0 +1,728 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "STORES_QA"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_QA_[0-9]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_QA_[A-Z]+$"
+          }
+        },
+        {
+          "name": "STORE_DEV"
+        }
+      ]
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+        "configurations.CATALOG": {
+          "name": "CATALOG",
+          "value": [
+            {
+              "value": "CATALOG_QA",
+              "order": 0
+            },
+            {
+              "order": 1,
+              "value": "CATALOG_EU_HVR"
+            },
+            {
+              "order": 2,
+              "value": "CATALOG_KIOSK"
+            }
+          ]
+        },
+        "configurations.PRICE_LISTS": {
+          "name": "PRICE_LISTS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "priceListName": "PRICE_LIST_QA_1",
+                "order": 1
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_2",
+                "order": 2
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_3",
+                "order": 3
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_4",
+                "order": 4
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_5",
+                "order": 5
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_6",
+                "order": 6
+              },
+              {
+                "priceListName": "PRICE_LIST_QA_PERMISSIONS",
+                "order": 7
+              },
+              {
+                "priceListName": "PRICELIST_EU_PHARMACY",
+                "order": 8
+              },
+              {
+                "priceListName": "PRICELIST_TEST",
+                "order": 9
+              },
+              {
+                "priceListName": "PRICE_LIST_KIOSK",
+                "order": 10
+              },
+              {
+                "priceListName": "PRICELIST_EU_HVR",
+                "order": 10
+              },
+              {
+                "priceListName": "PRICELIST_EU_HVR_SEK",
+                "order": 11
+              }
+            ]
+          }
+        },
+        "configurations.PROMOTION_SETS": {
+          "name": "PROMOTION_SETS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "promotionSetName": "PROMOTION_SET_EU_PHARMACY",
+                "order": 1
+              },
+              {
+                "promotionSetName": "PROMOTION_SET_TEST",
+                "order": 2
+              },
+              {
+                "promotionSetName": "PROMOTION_SET_KIOSK",
+                "order": 3
+              },
+              {
+                "promotionSetName": "PROMOTION_SET_EU_HVR",
+                "order": 4
+              },
+              {
+                "promotionSetName": "PROMOTION_SET_EU_HVR_2",
+                "order": 5
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "STORES_QA",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores QA"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Bucharest"
+      },
+      
+      {
+        "name": "ITEM_BARCODE_TYPES",
+        "value": {
+          "headers": [
+            {
+              "name": "NAME",
+              "type": "Key",
+              "description": "The name will be the unique identifier of the entry"
+            },
+            {
+              "name": "SYMBOLOGY",
+              "type": "Key",
+              "description": "The symbology format to be used when scanned"
+            },
+            {
+              "name": "ACTIVE",
+              "type": "Boolean",
+              "description": "Flag that determines if the translation is active for the node"
+            },
+            {
+              "name": "BARCODE",
+              "type": "Key",
+              "description": "The barcode pattern"
+            },
+            {
+              "name": "LOOKUP",
+              "type": "Key",
+              "description": "The lookup pattern"
+            },
+            {
+              "name": "ALIAS",
+              "type": "Key",
+              "description": "The lookup alias, if blank use the SkuID"
+            },
+            {
+              "name": "CURRENCYCODE",
+              "type": "Key",
+              "description": "The currency code in the barcode"
+            }
+          ],
+          "rows": {
+            "UPC-E": {
+              "row": [
+                "UPC-E CD",
+                "UPC-E",
+                true,
+                "0IIIIII",
+                "0IIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-E CD": {
+              "row": [
+                "UPC-E CD",
+                "UPC-E",
+                true,
+                "0IIIIIIc",
+                "0IIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-8": {
+              "row": [
+                "EAN-8",
+                "EAN-8",
+                true,
+                "IIIIIIIc",
+                "IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GTIN-12": {
+              "row": [
+                "GTIN-12",
+                "UPC-A",
+                true,
+                "MMMMMIIIIIIc",
+                "MMMMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A2": {
+              "row": [
+                "UPC-A2",
+                "UPC-A",
+                true,
+                "2MMMMMpPPPP",
+                "2MMMMM00000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A2 with CD": {
+              "row": [
+                "UPC-A2 with CD",
+                "UPC-A",
+                true,
+                "2MMMMMpPPPPc",
+                "2MMMMM00000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-02": {
+              "row": [
+                "EAN-02",
+                "EAN-13",
+                true,
+                "02IIIIpPPPPPc",
+                "02IIII000000",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC30 (NDC)": {
+              "row": [
+                "UPC30 (NDC)",
+                "UPC-A",
+                true,
+                "30MMMIIIIII",
+                "30MMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC38 (NDC)": {
+              "row": [
+                "UPC38 (NDC)",
+                "UPC-A",
+                true,
+                "3MMMMIIIIII",
+                "3MMMMIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A0": {
+              "row": [
+                "UPC-A0",
+                "UPC-A",
+                true,
+                "MMMMMIIIII",
+                "0MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A no MFR": {
+              "row": [
+                "UPC-A no MFR",
+                "UPC-A",
+                true,
+                "A000IIIIIII",
+                "A000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A no number system in lookup": {
+              "row": [
+                "UPC-A no number system in lookup",
+                "UPC-A",
+                true,
+                "AMMMMMIIIII",
+                "MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 2
+            },
+            "UPC-A with CD no number system in lookup": {
+              "row": [
+                "UPC-A with CD no number system in lookup",
+                "UPC-A",
+                true,
+                "AMMMMMIIIIIc",
+                "MMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 2
+            },
+            "UPC-A no MFR CD": {
+              "row": [
+                "UPC-A no MFR CD",
+                "UPC-A",
+                true,
+                "A000IIIIIIIc",
+                "A000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A": {
+              "row": [
+                "UPC-A with CD",
+                "UPC-A",
+                true,
+                "AMMMMMIIIII",
+                "AMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "UPC-A with CD": {
+              "row": [
+                "UPC-A with CD",
+                "UPC-A",
+                true,
+                "AMMMMMIIIIIc",
+                "AMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-20": {
+              "row": [
+                "EAN-20",
+                "EAN-13",
+                true,
+                "20000IIIIIIIc",
+                "20000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-21": {
+              "row": [
+                "EAN-21",
+                "EAN-13",
+                true,
+                "21000IIIIIIIc",
+                "21000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-22": {
+              "row": [
+                "EAN-22",
+                "EAN-13",
+                true,
+                "22000IIIIIIc",
+                "22000IIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GS1 DataBar-14": {
+              "row": [
+                "GS1 DataBar-14",
+                "GS1_DATABAR",
+                true,
+                "01AAAMMMMMIIIII",
+                "AAAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "GS1 DataBar-14 With CD": {
+              "row": [
+                "GS1 DataBar-14 With CD",
+                "GS1_DATABAR",
+                true,
+                "01AAAMMMMMIIIIIc",
+                "AAAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-DEF": {
+              "row": [
+                "EAN-DEF",
+                "EAN-13",
+                true,
+                "AAMMMMMIIIII",
+                "AAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-DEF With CD": {
+              "row": [
+                "EAN-DEF With CD",
+                "EAN-13",
+                true,
+                "AAMMMMMIIIIIc",
+                "AAMMMMMIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-24 Quantity": {
+              "row": [
+                "EAN-24 Q",
+                "Code128",
+                true,
+                "0000IIIIIIIIIIIIAAAAQQQQ",
+                "IIIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "EAN-24 Weight": {
+              "row": [
+                "EAN-24 W",
+                "Code128",
+                true,
+                "1000IIIIIIIIIIIIWWWW0000",
+                "IIIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "Code128": {
+              "row": [
+                "Code128 30 digits",
+                "Code128",
+                true,
+                "IIIIIIIIIIICCCCCCCCCCCCCCCCCCC",
+                "IIIIIIIIIII",
+                ""
+              ],
+              "order": 1
+            },
+            "Code-39": {
+              "row": [
+                "Code-39",
+                "Code39",
+                true,
+                "AAAAAAAAAAA",
+                "AAAAAAAAAAA",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "CASE CODE": {
+              "row": [
+                "CASE CODE",
+                "EAN-13",
+                true,
+                "IIIIIIIIIIIIIc",
+                "IIIIIIIIIIII",
+                "POSItemID"
+              ],
+              "order": 1
+            },
+            "EAN-13_prefix20": {
+              "row": [
+                "EAN-13_prefix20",
+                "EAN-13",
+                true,
+                "20IIIIIPPPPPc",
+                "20IIIII00000",
+                "EAN-13"
+              ],
+              "order": 1
+            },
+            "EAN-13_prefix21": {
+              "row": [
+                "EAN-13_prefix21",
+                "EAN-13",
+                true,
+                "21IIIIIPPPPPc",
+                "21IIIII00000",
+                "EAN-13"
+              ],
+              "order": 1
+            },
+            "EAN-13_prefix22": {
+              "row": [
+                "EAN-13_prefix22",
+                "EAN-13",
+                true,
+                "22IIIIIPPPPPc",
+                "22IIIII00000",
+                "EAN-13"
+              ],
+              "order": 1
+            },
+            "EAN-13_prefix24": {
+              "row": [
+                "EAN-13_prefix24",
+                "EAN-13",
+                true,
+                "24IIIIIPPPPPc",
+                "24IIIII00000",
+                "EAN-13",
+                "FRF"
+              ],
+              "order": 1
+            }
+          }
+        },
+        "type": "Table"
+      },
+      {
+        "name": "TARE_001",
+        "value": {
+          "UOM": "KG",
+          "weight": "0.1",
+          "id": "TARE_001"
+        }
+      }
+    ]
+  },
+  {
+    "name": "STORE_QA_1",
+    "parentName": "STORES_QA",
+    "displayName": {
+      "default": "QA store 1"
+    },
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORE_QA_RALUCA",
+    "parentName": "STORES_QA",
+    "displayName": {
+      "default": "QA store RALUCA"
+    },
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 2"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORE_QA_JO",
+    "parentName": "STORES_QA",
+    "displayName": {
+      "default": "QA store JO"
+    },
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 3"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORE_QA_ANDREI",
+    "parentName": "STORES_QA",
+    "displayName": {
+      "default": "QA store ANDREI"
+    },
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 4"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORE_QA_ANDREEA",
+    "parentName": "STORES_QA",
+    "displayName": {
+      "default": "QA store ANDREEA"
+    },
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 5"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORE_DEV",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "STORE DEV"
+    },
+    "configurations": [
+    ],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "dev"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  }
+]

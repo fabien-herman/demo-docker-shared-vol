@@ -1,0 +1,13 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "userId": "5c1017a0f02de94df9150ac3"
+        }
+      ]
+    }
+  }
+]

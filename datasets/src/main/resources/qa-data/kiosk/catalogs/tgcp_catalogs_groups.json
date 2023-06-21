@@ -1,0 +1,66 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_KIOSK"
+    }
+  },
+  {
+    "name" : "ALL_ITEMS",
+    "displayName" : {
+      "default" : "ALL_ITEMS"
+    },
+    "catalogName" : "CATALOG_KIOSK",
+    "namedAttributes": {
+      "productTaxCodes":["HIGH"]
+    }
+  },
+  {
+    "name" : "DRINKS",
+    "displayName" : {
+      "default" : "DRINKS"
+    },
+    "parentName" : "ALL_ITEMS",
+    "catalogName" : "CATALOG_KIOSK",
+    "attributes" : {
+      "softDrink" : "DRINKS"
+    },
+    "namedAttributes": {
+      "productTaxCodes":["LOW"]
+    }
+  },
+  {
+    "name" : "GROCERIES",
+    "displayName" : {
+      "default" : "GROCERIES"
+    },
+    "parentName" : "ALL_ITEMS",
+    "catalogName" : "CATALOG_KIOSK",
+    "namedAttributes": {
+      "productTaxCodes":["LOW"]
+    }
+  },
+  {
+    "name" : "SNACKS",
+    "displayName" : {
+      "default" : "SNACKS"
+    },
+    "parentName" : "ALL_ITEMS",
+    "catalogName" : "CATALOG_KIOSK",
+    "namedAttributes": {
+      "productTaxCodes":["HIGH"]
+    }
+  },
+  {
+    "name" : "OTHER",
+    "displayName" : {
+      "default" : "OTHER"
+    },
+    "parentName" : "ALL_ITEMS",
+    "catalogName" : "CATALOG_KIOSK",
+    "namedAttributes": {
+      "productTaxCodes":["HIGH"]
+    }
+  }
+]

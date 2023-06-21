@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^POS_[A-Z]+_[0-9]+_[0-9]$"
+          }
+        }
+      ]
+    }
+  }
+]

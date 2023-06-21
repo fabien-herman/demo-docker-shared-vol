@@ -1,0 +1,722 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4104420229761"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Alnatura Hummus Natur",
+        "displayName.de-DE": "Alnatura Hummus Natur",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/alnatura-hummus-natur.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/alnatura-hummus-natur.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/alnatura-hummus-natur.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.18,
+          "kg_co2_e_per_kg": 1.6,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "B",
+          "kcal_per_100g": 230
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4104420010642"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Alnatura Rote Linsen",
+        "displayName.de-DE": "Alnatura Rote Linsen",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/alnatura-rote-linsen.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/alnatura-rote-linsen.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/alnatura-rote-linsen.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.5,
+          "kg_co2_e_per_kg": 1.1,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "A",
+          "kcal_per_100g": 362
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4104420021921"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Alnatura Haferflocken Feinblatt",
+        "displayName.de-DE": "Alnatura Haferflocken Feinblatt",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/alnatura-haferflocken-feinblatt.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/alnatura-haferflocken-feinblatt.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/alnatura-haferflocken-feinblatt.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 1,
+          "kg_co2_e_per_kg": 0.7,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "A",
+          "nutrition_score": "A",
+          "kcal_per_100g": 351
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "3073781106336"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Babybel",
+        "displayName.de-DE": "Babybel",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/babybel.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/babybel.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/babybel.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.1,
+          "kg_co2_e_per_kg": 7.4,
+          "climate_score": "D",
+          "animal_welfare_score": "B",
+          "social_score": "A",
+          "nutrition_score": "D",
+          "kcal_per_100g": 295
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "5410041001204"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Tuc Original",
+        "displayName.de-DE": "Tuc Original",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/tuc-original.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/tuc-original.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/tuc-original.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.1,
+          "kg_co2_e_per_kg": 1.9,
+          "climate_score": "B",
+          "animal_welfare_score": "B",
+          "social_score": "B",
+          "nutrition_score": "D",
+          "kcal_per_100g": 479
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "5000112547726"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Coca-cola 1.5l",
+        "displayName.de-DE": "Coca-cola 1.5l",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/coca-cola.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/coca-cola.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/coca-cola.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 1.5,
+          "kg_co2_e_per_kg": 0.8,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "E",
+          "kcal_per_100g": 38
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "5053990138722"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Pringles Original",
+        "displayName.de-DE": "Pringles Original",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/pringles.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/pringles.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/pringles.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.2,
+          "kg_co2_e_per_kg": 2.44,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "D",
+          "kcal_per_100g": 534
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "8076809523509"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Pasta",
+        "displayName.de-DE": "Pasta",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/spaghetti.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/spaghetti.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/spaghetti.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.5,
+          "kg_co2_e_per_kg": 2.1,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "A",
+          "kcal_per_100g": 359
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4017100114717"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Butterkeks",
+        "displayName.de-DE": "Butterkeks",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/butterkeks.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/butterkeks.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/butterkeks.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.19,
+          "kg_co2_e_per_kg": 3.5,
+          "climate_score": "C",
+          "animal_welfare_score": "D",
+          "social_score": "B",
+          "nutrition_score": "C",
+          "kcal_per_100g": 445
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4023900545507"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Bamboo Garden coconut milk",
+        "displayName.de-DE": "Bamboo Garden coconut milk",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/kokos-milk.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/kokos-milk.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/kokos-milk.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.4,
+          "kg_co2_e_per_kg": 1.2,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "C",
+          "nutrition_score": "D",
+          "kcal_per_100g": 179
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "0000040737393"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Himbeer",
+        "displayName.de-DE": "Himbeer",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/himbeer.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/himbeer.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/himbeer.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.25,
+          "kg_co2_e_per_kg": 0.9,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "X",
+          "kcal_per_100g": 66
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4022269201352"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Killepitsch",
+        "displayName.de-DE": "Killepitsch",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/killepitsch.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/killepitsch.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/killepitsch.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.35,
+          "kg_co2_e_per_kg": 1.2,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "A",
+          "nutrition_score": "X",
+          "kcal_per_100g": 248
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "8437003223068"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Wine",
+        "displayName.de-DE": "Wine",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/wine.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/wine.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/wine.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.75,
+          "kg_co2_e_per_kg": 1.12,
+          "climate_score": "A",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "X",
+          "kcal_per_100g": 85
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4023900261704"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Bamboo Garden Wok-Oil",
+        "displayName.de-DE": "Bamboo Garden Wok-Oil",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/wok-oil.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/wok-oil.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/wok-oil.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.25,
+          "kg_co2_e_per_kg": 3.3,
+          "climate_score": "C",
+          "animal_welfare_score": "X",
+          "social_score": "C",
+          "nutrition_score": "D",
+          "kcal_per_100g": 828
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "8076800315097"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Barilla noodles",
+        "displayName.de-DE": "Barilla noodles",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/barilla-noodles.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/barilla-noodles.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/barilla-noodles.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.5,
+          "kg_co2_e_per_kg": 2.1,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "A",
+          "kcal_per_100g": 355
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4011800524210"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Corny Muesli Bars",
+        "displayName.de-DE": "Corny Muesli Bars",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/corny-muesli-bars.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/corny-muesli-bars.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/corny-muesli-bars.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.15,
+          "kg_co2_e_per_kg": 3.5,
+          "climate_score": "C",
+          "animal_welfare_score": "D",
+          "social_score": "B",
+          "nutrition_score": "D",
+          "kcal_per_100g": 438
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4002239422604"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Dittmann Olives",
+        "displayName.de-DE": "Dittmann Olives",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/oliven.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/oliven.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/oliven.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.085,
+          "kg_co2_e_per_kg": 1.9,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "D",
+          "kcal_per_100g": 131
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4018077620003"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Lorentz Party Cracker",
+        "displayName.de-DE": "Lorentz Party Cracker",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/lorentz-party-cracker.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/lorentz-party-cracker.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/lorentz-party-cracker.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.2,
+          "kg_co2_e_per_kg": 0.8,
+          "climate_score": "A",
+          "animal_welfare_score": "D",
+          "social_score": "B",
+          "nutrition_score": "D",
+          "kcal_per_100g": 481
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4008100168039"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "ORO tomatoes",
+        "displayName.de-DE": "ORO tomatoes",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/tomaten-stuckig.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/tomaten-stuckig.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/tomaten-stuckig.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.4,
+          "kg_co2_e_per_kg": 3,
+          "climate_score": "B",
+          "animal_welfare_score": "X",
+          "social_score": "A",
+          "nutrition_score": "B",
+          "kcal_per_100g": 23
+        }
+      }
+    }
+  },
+  {
+    "operation": "updateOne",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR",
+      "skuId": "4009300005230"
+    },
+    "update": {
+      "$set": {
+        "description.de-DE": "Teekann Tea Sweet Kiss",
+        "displayName.de-DE": "Teekann Tea Sweet Kiss",
+        "images": [
+          {
+            "sizeCategory": "DEFAULT",
+            "url": "/images/product/teekanne-tea-sweet-kiss.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE",
+            "url": "/images/inoqo/small/teekanne-tea-sweet-kiss.png"
+          },
+          {
+            "sizeCategory": "ECO-SCORE-MEDIUM",
+            "url": "/images/inoqo/medium/teekanne-tea-sweet-kiss.png"
+          }
+        ],
+        "attributes": {
+          "weight_in_kq": 0.1,
+          "kg_co2_e_per_kg": 4.2,
+          "climate_score": "C",
+          "animal_welfare_score": "X",
+          "social_score": "B",
+          "nutrition_score": "X",
+          "kcal_per_100g": 2
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "promotionsSet": "11719536-8ece-4beb-9d2a-0adc150e5ee3"
+        },
+        {
+          "promotionsSet": "PROMOTION_SET_EU"
+        },
+        {
+          "promotionsSet": "PROMOTION_SET"
+        },
+        {
+          "promotionsSet": "PROMOTION_TEST"
+        },
+        {
+          "promotionsSet": "PROMOTION_SET_TEST"
+        }
+      ]
+    }
+  }
+]

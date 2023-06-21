@@ -1,0 +1,232 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {"templateSet": "RECEIPT"}
+  },
+  {
+    "file": "receipt/PRINT_GLOBALS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_GLOBALS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_FUNCTIONS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_FUNCTIONS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/SALE_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "SALE_PRINT",
+      "templateSet": "RECEIPT",
+      "type": "SALE",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_HEADER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_HEADER",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_ITEMS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_ITEMS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_SINGLE_ITEM.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_SINGLE_ITEM",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_ITEM_TAXES.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_ITEM_TAXES",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_TOTALS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_TOTALS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_PAYMENTS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_PAYMENTS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_CHANGEDUE.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_CHANGEDUE",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_TAXES.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_TAXES",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_NUMBER_OF_ITEMS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_NUMBER_OF_ITEMS",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_TRANSACTION.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_TRANSACTION",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_FISCAL_SIGNATURE.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_FISCAL_SIGNATURE",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_BARCODE.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_BARCODE",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_FOOTER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_FOOTER",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/TILL_OPENCLOSE_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "TILL_OPENCLOSE_PRINT",
+      "templateSet": "RECEIPT",
+      "type": "TILL_OPENCLOSE",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/TILL_PICKUP_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "TILL_PICKUP_PRINT",
+      "templateSet": "RECEIPT",
+      "type": "TILL_PICKUP",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/SUSPEND_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "SUSPEND_PRINT",
+      "templateSet": "RECEIPT",
+      "type": "SUSPEND",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/LOYALTY_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "LOYALTY_PRINT",
+      "templateSet": "RECEIPT",
+      "type": "SUSPEND",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "receipt/PRINT_DEPOSIT_REFUND_VOUCHER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_DEPOSIT_REFUND_VOUCHER",
+      "templateSet": "RECEIPT",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "description": "Add a common stylesheet for RECEIPT",
+    "operation": "updateMany",
+    "filter": {
+      "templateSet": { "$in": [ "RECEIPT" ] },
+      "type": { "$ne": "COMMON" }
+    },
+    "update": {
+      "$set": {
+        "stylesheet": {
+          "value": "#bold {\n    font-weight: bold;\n}\n\n#title {\n    font-weight: bold;\n    font-size: 200%;\n    text-align: center;\n}\n\n#transInfo {\n    text-align: left;\n}\n\n#payment {\n    font-weight: bold;\n}\n\n[id^=barcode] {\n    width: 250px;\n    height: 90px;\n    text-align: center;\n    vertical-align: sub;\n}\n\n[id^=barcode_CODE128] {\n    width: 300px;\n}\n\n[id=qrcode] img {\n    width: 120px;\n    height: 120px;\n    padding: 10px;\n}\n\n.print-image {\n    width: 250px;\n    padding: 5px;\n}\n\n.barcode {\n    width: 250px;\n    height: 90px;\n    text-align: center;\n    vertical-align: sub;\n}\n.depositRefundVoucherTitle {\n    font-weight: bold;\n    font-size: 130%;\n    text-align: center;\n}\n\n.eftPrintDataTitle {\n    text-align: center;\n    font-weight: bold;\n    font-size: 120%\n}\n\n.eftPrintVoidedPaymentsTitle {\n    font-weight: bold;\n    text-align: center;\n    font-size: 130%\n}"
+        }
+      }
+    }
+  }
+]

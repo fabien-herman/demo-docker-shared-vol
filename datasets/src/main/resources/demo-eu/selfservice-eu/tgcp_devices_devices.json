@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_EU"},
+        {"terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK_EU"}
+      ]
+    }
+  },
+  {
+    "nodeId": "STORE_EU_1",
+    "name": "POS_EU_1_5",
+    "terminalType": "TGCP_VUE_SELF_SERVICE_DESKTOP_MOCK_EU",
+    "endpointId": "1015"
+  }  
+]

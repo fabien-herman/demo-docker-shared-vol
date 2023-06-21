@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "name": "PRICELIST_EU_FASHION"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_FASHION",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU Fashion"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  }
+]

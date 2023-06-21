@@ -1,0 +1,21 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"userId": "DEFAULT_SELF_SERVICE_USER"},
+        {"userId": "5e43f127f3030e1bc2e1147a"}
+      ]
+    }
+  },
+  {
+    "_id": "DEFAULT_SELF_SERVICE_USER",
+    "userId": "DEFAULT_SELF_SERVICE_USER",
+    "nodeId": "ENTERPRISE_EU",
+    "homeStore": true,
+    "roles": [
+      "SELF_SERVICE_USER"
+    ]
+  }
+]

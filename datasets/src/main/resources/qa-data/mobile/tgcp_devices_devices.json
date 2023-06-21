@@ -1,0 +1,84 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {"name": "DEV_DEMO_MOBILE"},
+        {"name": "DEV_DEMO_TABLET"},
+        {"name": "DEV_MOCK_MOBILE"},
+        {
+          "name": {
+            "$regex": "^DEV_MOBILE_[A-Z]+$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "DEV_DEMO_MOBILE",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6004"
+  },
+  {
+    "name": "DEV_MOCK_MOBILE",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW_MOCK",
+    "endpointId": "6005"
+  },
+  {
+    "name": "DEV_MOBILE_ANDY",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6006"
+  },
+  {
+    "name": "DEV_MOBILE_ADAM",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6007"
+  },
+  {
+    "name": "DEV_MOBILE_CHARLIE",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6008"
+  },
+  {
+    "name": "DEV_MOBILE_JOEL",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6009"
+  },
+  {
+    "name": "DEV_MOBILE_KIBLA",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6010"
+  },
+  {
+    "name": "DEV_MOBILE_ROBI",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6011"
+  },
+  {
+    "name": "DEV_MOBILE_VALI",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6012"
+  },
+  {
+    "name": "DEV_MOBILE_NELSON",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_MOBILE_WEBVIEW",
+    "endpointId": "6013"
+  },
+  {
+    "name": "DEV_DEMO_TABLET",
+    "nodeId": "STORE_DEV",
+    "terminalType": "TGCP_VUE_TABLET_WEBVIEW",
+    "endpointId": "6014"
+  }
+]

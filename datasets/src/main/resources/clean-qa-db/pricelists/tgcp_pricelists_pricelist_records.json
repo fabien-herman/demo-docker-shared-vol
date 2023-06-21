@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "priceList": {
+            "$regex": "^PRICE_LIST_QA_[A-Z0-9]+$"
+          }
+        },
+        {
+          "priceList": {
+            "$regex": "PRICELIST_EU_*"
+          }
+        },
+        {
+          "priceList": "PRICELIST_TEST"
+        },
+        {
+          "priceList": "PRICE_LIST_KIOSK"
+        }
+      ]
+    }
+  }
+]

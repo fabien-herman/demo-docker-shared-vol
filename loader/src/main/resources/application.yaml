@@ -1,8 +1,27 @@
-loader:
-  data-path: /home/linuxbox/tgcs/projects/sandbox/src/demo-docker-shared-vol/datasets/src/main/resources
-  datasets: [base-eu, qa-demo, qa]
+elera:
+  cache.refresh: true
+  clear:
+    db: false
+    transactions: false
+  loader:
+    data-path: /home/linuxbox/tgcs/projects/sandbox/src/demo-docker-shared-vol/datasets/src/main/resources
+    datasets: [ base-eu, demo, qa ]
+  mongodb:
+    seed:
+      include: ''
+      exclude: ''
+  sample:
+    order: true
 
 logging:
   level:
-    root: error
-    com.example.demodockersharedvol: INFO
+    root: ERROR
+    app: DEBUG
+    org.springframework.integration:
+          handler.LoggingHandler: INFO
+          channel.DirectChannel: INFO
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/poc

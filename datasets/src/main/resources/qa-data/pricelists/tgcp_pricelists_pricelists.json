@@ -1,0 +1,170 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^PRICE_LIST_QA_[A-Z0-9]+$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "PRICELIST_EU_*"
+          }
+        },
+        {
+          "name": "PRICELIST_TEST"
+        },
+        {
+          "name": {
+            "$regex": "^PRICELIST_EU_HVR.*$"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_1",
+    "displayName": {
+      "default": "PRICE_LIST_QA_1"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_2",
+    "displayName": {
+      "default": "PRICE_LIST_QA_2"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_3",
+    "displayName": {
+      "default": "PRICE_LIST_QA_3"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_4",
+    "displayName": {
+      "default": "PRICE_LIST_QA_4"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_5",
+    "displayName": {
+      "default": "PRICE_LIST_QA_5"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_6",
+    "displayName": {
+      "default": "PRICE_LIST_QA_6"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICE_LIST_QA_PERMISSIONS",
+    "displayName": {
+      "default": "PRICE_LIST_QA_PERMISSIONS"
+    },
+    "active": true,
+    "currencyCode": "EUR",
+    "startDate": {
+      "$date": "2017-01-01T04:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2099-12-31T15:59:59.000Z"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_PHARMACY",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU Pharmacy"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "name": "PRICELIST_TEST",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU Test"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_HVR",
+    "active": true,
+    "currencyCode": "EUR",
+    "displayName": {
+      "default": "Price List EU HVR"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "name": "PRICELIST_EU_HVR_SEK",
+    "active": true,
+    "currencyCode": "SEK",
+    "displayName": {
+      "default": "Price List EU HVR (SEK)"
+    },
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  }
+]

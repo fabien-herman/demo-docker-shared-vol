@@ -1,0 +1,603 @@
+[
+  {
+    "name": "STORES_EU",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "address1": {
+        "default": ""
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": ""
+      }
+    },
+    "configurations": [],
+    "displayName": {
+      "default": "Stores EU"
+    },
+    "isSystemNode": false,
+    "parentName": "ENTERPRISE_EU",
+    "notFirstClass": false
+  },
+  {
+    "name": "STORE_EU_1",
+    "displayName": {
+      "default": "EU Store 1"
+    },
+    "parentName": "STORES_EU",
+    "configurations": [],
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    },
+    "phone": "01/234.56.78",
+    "notFirstClass": false
+  },
+  {
+    "address": {
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "country": {
+        "default": ""
+      },
+      "postalCode": {
+        "default": 1234
+      },
+      "state": {
+        "default": ""
+      }
+    },
+    "configurations": [
+      {
+        "name": "NO_CASH_DRAWER_REQUIRED",
+        "value": true
+      }
+    ],
+    "displayName": {
+      "default": "EU Store 2 (Henri)"
+    },
+    "isSystemNode": false,
+    "name": "STORE_EU_2",
+    "notFirstClass": false,
+    "parentName": "STORES_EU",
+    "phone": "01/234.56.78"
+  },
+  {
+    "name": "STORES_BE",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Belgium"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Brussels"
+      },
+      {
+        "name": "LOCALE",
+        "value": "nl-BE"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "BE"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "BE",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_BE_1",
+    "parentName": "STORES_BE",
+    "displayName": {
+      "default": "Belgian store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_FR",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores France"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Paris"
+      },
+      {
+        "name": "LOCALE",
+        "value": "fr-FR"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "FR"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "FR",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_FR_1",
+    "parentName": "STORES_FR",
+    "displayName": {
+      "default": "French store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_DE",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Germany"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Berlin"
+      },
+      {
+        "name": "LOCALE",
+        "value": "de-DE"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "DE"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "DE",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_DE_1",
+    "parentName": "STORES_DE",
+    "displayName": {
+      "default": "German store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_NL",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Netherlands"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Amsterdam"
+      },
+      {
+        "name": "LOCALE",
+        "value": "nl-NL"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "NL"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "NL",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_NL_1",
+    "parentName": "STORES_NL",
+    "displayName": {
+      "default": "Dutch store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_IT",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Italy"
+    },
+    "configurations": [
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Rome"
+      },
+      {
+        "name": "LOCALE",
+        "value": "it-IT"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "IT"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "IT",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_IT_1",
+    "parentName": "STORES_IT",
+    "displayName": {
+      "default": "Italian store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_UK",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores UK"
+    },
+    "configurations": [
+      {
+        "name": "CURRENCY",
+        "value": "GBP"
+      },
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/London"
+      },
+      {
+        "name": "LOCALE",
+        "value": "en-GB"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "UK"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "UK",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STORE_UK_1",
+    "parentName": "STORES_UK",
+    "displayName": {
+      "default": "UK store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  },
+  {
+    "name": "STORES_SE",
+    "parentName": "ENTERPRISE_EU",
+    "displayName": {
+      "default": "Stores Sweden"
+    },
+    "configurations": [
+      {
+        "name": "CURRENCY",
+        "value": "SEK"
+      },
+      {
+        "name": "TIMEZONE",
+        "value": "Europe/Stockholm"
+      },
+      {
+        "name": "LOCALE",
+        "value": "sv-SE"
+      },
+      {
+        "name": "TAX_SET_ID",
+        "value": "SE"
+      },
+      {
+        "name": "TAX_SETS",
+        "value": [
+          {
+            "value": "SE",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "name" : "MANUFACTURER_COUPON",
+        "value" : {
+          "name" : "MANUFACTURER_COUPON",
+          "displayName" : {
+            "default" : "Manufacturer Coupon",
+            "en-US" : "Manufacturer Coupon"
+          },
+          "group" : "OTHER",
+          "currencyCode" : "SEK",
+          "voidable" : true,
+          "tillAmountReconcilable" : false,
+          "tillQuantityReconcilable" : true,
+          "canBePickedUp" : true,
+          "validForSales" : false,
+          "validForReturns" : false,
+          "paymentHostUsed" : false,
+          "allowFractionalAmount" : true
+        }
+      },
+      {
+        "name" : "DEFAULT_TILL_CONTENTS",
+        "value" : [
+          {
+            "type" : "CASH_SEK",
+            "currencyCode" : "SEK",
+            "amount" : "2000.00"
+          }
+        ]
+      },
+      {
+        "name" : "DEFAULT_SAFE_CONTENTS",
+        "value" : [
+          {
+            "type" : "CASH_SEK",
+            "currencyCode" : "SEK",
+            "amount" : "5000.00"
+          }
+        ]
+      },
+      {
+        "name" : "TILL_WARNING_THRESHOLD",
+        "value" : [
+          {
+            "type" : "CASH_SEK",
+            "currencyCode" : "SEK",
+            "amount" : "10000.00"
+          },
+          {
+            "type" : "MANUFACTURER_COUPON",
+            "currencyCode" : "SEK",
+            "quantity" : 999
+          }
+        ]
+      },
+      {
+        "name" : "SAFE_CONTENTS_OPERATING_FUND",
+        "value" : [
+          {
+            "type" : "CASH_SEK",
+            "currencyCode" : "SEK",
+            "amount" : "1000.00"
+          }
+        ]
+      },
+      {
+        "name" : "TILL_PICKUP_THRESHOLD",
+        "value" : [
+          {
+            "type" : "CASH_SEK",
+            "currencyCode" : "SEK",
+            "amount" : 5000
+          },
+          {
+            "type" : "MANUFACTURER_COUPON",
+            "currencyCode" : "SEK",
+            "quantity" : 999
+          }
+        ]
+      },
+      {
+        "name" : "NON_RECEIPTED_RETURN_REFUND_PAYMENT_TYPE",
+        "value" : "CASH_SEK"
+      }
+    ]
+  },
+  {
+    "name": "STORE_SE_1",
+    "parentName": "STORES_SE",
+    "displayName": {
+      "default": "Swedish store 1"
+    },
+    "configurations": [],
+    "phone": "01/234.56.78",
+    "address": {
+      "state": {
+        "default": ""
+      },
+      "country": {
+        "default": ""
+      },
+      "address1": {
+        "default": "Address 1"
+      },
+      "address2": {
+        "default": ""
+      },
+      "city": {
+        "default": "City"
+      },
+      "postalCode": {
+        "default": "1234"
+      }
+    }
+  }
+]

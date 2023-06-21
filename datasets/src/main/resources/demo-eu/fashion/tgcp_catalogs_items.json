@@ -1,0 +1,1187 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_EU_FASHION"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Dress"
+    },
+    "skuId": "1",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Dress",
+      "zh-CN": "荷叶边棉质连衣裙"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "8712566133987",
+        "type": "EAN-13"
+      },
+      {
+        "value": "8712566133987",
+        "type": "JAN-13"
+      },
+      {
+        "value": "1035229",
+        "type": "POSItemID"
+      }
+    ],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "8-11Y",
+      "color": "Beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "T-shirt"
+    },
+    "skuId": "2",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "T-shirt"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": false,
+    "aliases": [
+      {
+        "value": "5010251569183",
+        "type": "EAN-13"
+      },
+      {
+        "value": "5010251569183",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "NONE"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "8-11Y",
+      "color": "Blue"
+    },
+    "discountable": false,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": false,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Shirt"
+    },
+    "description": {
+      "default": "Shirt"
+    },
+    "extends": false,
+    "UOM": "KGS",
+    "skuId": "5011",
+    "priceRequired": false,
+    "quantityRequired": true,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "groupName": "GROUP_1",
+    "catalogName": "CATALOG_EU_FASHION",
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "050110000001",
+        "type": "UPC-A"
+      },
+      {
+        "value": "20501100000",
+        "type": "POSItemID"
+      }
+    ],
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "attributes": {
+      "size": "10-12Y",
+      "color": "Blue"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Blouse"
+    },
+    "skuId": "22",
+    "extends": false,
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "quantityRequired": true,
+    "UOM": "EACH",
+    "description": {
+      "default": "Blouse"
+    },
+    "priceRequired": false,
+    "serialRequired": false,
+    "priceOverrideAllowed": true,
+    "notForSale": false,
+    "aliases": [
+      {
+        "value": "123456789227",
+        "type": "UPC-A"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "size": "S",
+      "color": "Beige"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Top"
+    },
+    "skuId": "3",
+    "priceRequired": true,
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Top"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "89852309",
+        "type": "EAN-8"
+      },
+      {
+        "value": "89852309",
+        "type": "JAN-8"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "L",
+      "color": "Black"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Trousers"
+    },
+    "skuId": "4",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Trousers"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "50213085",
+        "type": "EAN-8"
+      },
+      {
+        "value": "50213085",
+        "type": "JAN-8"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "M",
+      "color": "Beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "ageToSell": 18,
+    "ageToBuy": 18
+  },
+  {
+    "displayName": {
+      "default": "Jeans"
+    },
+    "skuId": "5",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Jeans"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "5051892211383",
+        "type": "EAN-13"
+      },
+      {
+        "value": "5051892211383",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "XL",
+      "color": "Blue"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "ageToSell": 18,
+    "ageToBuy": 16
+  },
+  {
+    "displayName": {
+      "default": "Skirt"
+    },
+    "skuId": "6",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Skirt"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "5050582953589",
+        "type": "EAN-13"
+      },
+      {
+        "value": "5050582953589",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "M",
+      "color": "Beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "managerRequired": true
+  },
+  {
+    "displayName": {
+      "default": "Hoodie"
+    },
+    "skuId": "7",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Hoodie"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "8010471006755",
+        "type": "EAN-13"
+      },
+      {
+        "value": "8010471006755",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "XXL",
+      "color": "Black"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "ageToSell": 18
+  },
+  {
+    "displayName": {
+      "default": "Shoes"
+    },
+    "skuId": "8",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Shoes"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "521771",
+        "type": "SKU"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "size": "46",
+      "color": "Black"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "allowableTimeOfSale": {
+      "intervalType": "DAILY",
+      "intervalStartDate": "2022-05-04T17:00:00.000Z",
+      "intervalEndDate": "2022-05-04T19:59:59.000Z"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Bikini"
+    },
+    "skuId": "9",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Bikini"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "5000309007750",
+        "type": "EAN-13"
+      },
+      {
+        "value": "5000309007750",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "6",
+      "color": "Light green"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Socks"
+    },
+    "skuId": "19",
+    "extends": false,
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Socks"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "attributes": {
+      "size": "000",
+      "color": "Pistachio"
+    }
+  },
+  {
+    "displayName": {
+      "default": "Underwear"
+    },
+    "skuId": "2001",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "BACON_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Underwear"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "S",
+      "color": "Pink"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Legging"
+    },
+    "skuId": "2002",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "EGGS_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Legging"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "XL",
+      "color": "Cream/Floral"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Jumpsuit"
+    },
+    "skuId": "2003",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "BACON_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Jumpsuit"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "M",
+      "color": "Black"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Playsuit"
+    },
+    "skuId": "2004",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "EGGS_DEPT_GROUP",
+    "UOM": "EACH",
+    "description": {
+      "default": "Playsuit"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "S",
+      "color": "Orange"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Blazer"
+    },
+    "skuId": "10",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Blazer"
+    },
+    "notForSale": true,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "5000171055316",
+        "type": "EAN-13"
+      },
+      {
+        "value": "5000171055316",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "L",
+      "color": "Blue"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Sunglasses"
+    },
+    "skuId": "1001",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Sunglasses"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "8-14Y+",
+      "color": "Turquoise"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "childItemIds": [
+      "1002"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Leather belt"
+    },
+    "skuId": "1002",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "leather belt"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "XS",
+      "color": "Beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "childItemIds": [
+      "1003"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Straw hat"
+    },
+    "skuId": "1003",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Straw hat"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "M/56",
+      "color": "Light beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Sports cap"
+    },
+    "skuId": "11",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Sports cap"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "ONESIZE",
+      "color": "Grey"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "openCashDrawer": true
+  },
+  {
+    "displayName": {
+      "default": "Weekend bag"
+    },
+    "skuId": "12",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Weekend bag"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "89852323",
+        "type": "EAN-8"
+      },
+      {
+        "value": "89852323",
+        "type": "JAN-8"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "NOSIZE",
+      "color": "Black"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "childItemIds": [
+      "13"
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Shoulder bag"
+    },
+    "skuId": "13",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Shoulder bag"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "89852424",
+        "type": "EAN-8"
+      },
+      {
+        "value": "89852424",
+        "type": "JAN-8"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "NOSIZE",
+      "color": "White"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": [],
+    "isDepositItem": true
+  },
+  {
+    "displayName": {
+      "default": "Romper"
+    },
+    "skuId": "14",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Romper"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+      {
+        "value": "8715700421681",
+        "type": "EAN-13"
+      },
+      {
+        "value": "8715700421681",
+        "type": "JAN-13"
+      }
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "3-4Y",
+      "color": "Beige/Lions"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Gift Card"
+    },
+    "description": {
+      "default": "Gift Card"
+    },
+    "UOM": "EACH",
+    "skuId": "svc",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "ACTIVATION_REQUIRED_GROUP",
+    "priceRequired": true,
+    "quantityRequired": false,
+    "quantityAllowed": false,
+    "serialRequired": true,
+    "priceOverrideAllowed": true,
+    "extends": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_TRACKED",
+    "aliases": [
+    ]
+  },
+  {
+    "displayName": {
+      "default": "Gift Card"
+    },
+    "description": {
+      "default": "Gift Card"
+    },
+    "UOM": "EACH",
+    "skuId": "svc_client",
+    "pricingAlias": "svc",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "CLIENT_BASED_ACTIVATION_GROUP",
+    "priceRequired": true,
+    "quantityRequired": false,
+    "quantityAllowed": false,
+    "serialRequired": true,
+    "priceOverrideAllowed": true,
+    "extends": false,
+    "notForSale": false,
+    "itemInventoryMethod": "NOT_TRACKED"
+  },
+  {
+    "displayName": {
+      "default": "Nail polish"
+    },
+    "skuId": "15",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Nail polish"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "NOSIZE",
+      "color": "Vienna"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Superhero costume"
+    },
+    "skuId": "16",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Superhero costume"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "2-4Y",
+      "color": "Black/Batman"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Pyjamas"
+    },
+    "skuId": "17",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Pyjama"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "S",
+      "color": "Light Beige"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "displayName": {
+      "default": "Sandals"
+    },
+    "skuId": "18",
+    "catalogName": "CATALOG_EU_FASHION",
+    "groupName": "GROUP_1",
+    "UOM": "EACH",
+    "description": {
+      "default": "Sandals"
+    },
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "aliases": [
+    ],
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "allowableTimeOfSale": {
+    },
+    "attributes": {
+      "size": "4",
+      "color": "Dark brown"
+    },
+    "discountable": true,
+    "extends": false,
+    "isBundle": false,
+    "nonMerchandiseAccount": {
+    },
+    "quantityAllowed": true,
+    "referenceItemIds": []
+  },
+  {
+    "catalogName": "CATALOG_EU_FASHION",
+    "skuId": "20",
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5054267004894"
+      },
+      {
+        "type": "JAN-13",
+        "value": "5054267004894"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "description": {
+      "default": "Polo shirt"
+    },
+    "displayName": {
+      "default": "Polo shirt"
+    },
+    "extends": false,
+    "groupName": "GROUP_1",
+    "isBundle": false,
+    "lastModifiedUserId": "admin",
+    "nonMerchandiseAccount": {},
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "referenceItemIds": [],
+    "attributes": {
+      "size": "8-10Y",
+      "color": "Red"
+    }
+  },
+  {
+    "catalogName": "CATALOG_EU_FASHION",
+    "skuId": "21",
+    "UOM": "EACH",
+    "aliases": [
+    ],
+    "allowableTimeOfSale": {},
+    "attributes": {
+      "size": "7.5-9",
+      "color": "Dark grey"
+    },
+    "description": {
+      "default": "Short socks"
+    },
+    "displayName": {
+      "default": "Short socks"
+    },
+    "extends": false,
+    "groupName": "GROUP_1",
+    "isBundle": false,
+    "lastModifiedUserId": "admin",
+    "nonMerchandiseAccount": {},
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "referenceItemIds": []
+  },
+  {
+    "description": "Set at least tax = NONE",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_FASHION",
+      "$or": [
+        {
+          "productTaxCodes": null
+        },
+        {
+          "productTaxCodes": []
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "productTaxCodes": [
+          "NONE"
+        ]
+      }
+    }
+  },
+  {
+    "description": "Set notForSale=false",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_FASHION",
+      "$or": [
+        {
+          "notForSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "notForSale": false
+      }
+    }
+  },
+  {
+    "description": "Set allowableTimesOfSale=[]",
+    "operation": "updateMany",
+    "filter": {
+      "catalogName": "CATALOG_EU_FASHION",
+      "$or": [
+        {
+          "allowableTimesOfSale": null
+        }
+      ]
+    },
+    "update": {
+      "$set": {
+        "allowableTimesOfSale": []
+      }
+    }
+  }
+]

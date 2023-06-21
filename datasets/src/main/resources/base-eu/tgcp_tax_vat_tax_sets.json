@@ -1,0 +1,49 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {}
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for Belgium"
+    },
+    "taxSetId" : "BE"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for Germany"
+    },
+    "taxSetId" : "DE"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for Netherlands"
+    },
+    "taxSetId" : "NL"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for France"
+    },
+    "taxSetId" : "FR"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for United Kingdom"
+    },
+    "taxSetId" : "UK"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for Italy"
+    },
+    "taxSetId" : "IT"
+  },
+  {
+    "displayName" : {
+      "default" : "Tax definitions for Sweden"
+    },
+    "taxSetId" : "SE"
+  }
+]

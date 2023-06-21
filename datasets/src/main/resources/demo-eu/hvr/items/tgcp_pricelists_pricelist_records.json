@@ -1,0 +1,500 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "priceList": "PRICELIST_EU_HVR"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-03-03T23:00:00.000Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "5000112547726",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-11-23T23:00:00.000Z"
+    },
+    "price": 0.25,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "100001",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "SEK",
+    "endDate": {
+      "$date": "2029-11-23T23:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR_SEK",
+    "skuId": "100001",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-11-10T23:00:00.000Z"
+    },
+    "price": 7,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "8437003223068",
+    "startDate": {
+      "$date": "2022-08-01T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-05-09T22:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "101",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-03-07T23:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "102",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-12-06T23:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "103",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-11-08T23:00:00.000Z"
+    },
+    "price": 4.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "104",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-08-09T22:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "105",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-06T23:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "106",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-07-13T22:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "107",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-06-07T22:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "108",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "endDate": {
+      "$date": "2029-01-18T23:00:00.000Z"
+    },
+    "price": 4.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "150",
+    "startDate": {
+      "$date": "2022-08-09T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 4.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "200",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 3,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "201",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 3,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "202",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "203",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 2.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "204",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 2.49,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "205",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "206",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "207",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-30T23:00:00.000Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "208",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "endDate": {
+      "$date": "2029-12-31T23:59:59.999Z"
+    },
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "209",
+    "startDate": {
+      "$date": "2022-08-29T22:00:00.000Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "pricingTierMethod": "TOTAL",
+    "pricingTierType": "BUCKET",
+    "skuId": "109",
+    "startDate": {
+      "$date": "2022-10-10T09:51:39.206Z"
+    },
+    "tiers": [
+      {
+        "id": 0,
+        "price": 5,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "500",
+    "startDate": {
+      "$date": "2022-10-13T12:23:49.997Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 1.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "501",
+    "startDate": {
+      "$date": "2022-10-13T16:10:36.851Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.5,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "502",
+    "startDate": {
+      "$date": "2022-10-14T12:07:45.404Z"
+    }
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 1.55,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "503",
+    "startDate": {
+      "$date": "2022-10-14T12:53:24.489Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 1.25,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "5410041001204",
+    "startDate": {
+      "$date": "2022-10-06T14:10:47.040Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 1.79,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "5053990138722",
+    "startDate": {
+      "$date": "2022-10-06T14:11:39.895Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.85,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "8076809523509",
+    "startDate": {
+      "$date": "2022-10-06T14:12:12.733Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "4017100114717",
+    "startDate": {
+      "$date": "2022-10-06T14:12:44.051Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.5,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "3073781106336",
+    "startDate": {
+      "$date": "2022-10-06T14:13:06.921Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "4023900545507",
+    "startDate": {
+      "$date": "2022-10-06T14:13:32.425Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 4.25,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "40737393",
+    "startDate": {
+      "$date": "2022-10-06T14:14:04.111Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 7.5,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "4022269201352",
+    "startDate": {
+      "$date": "2022-10-06T14:14:23.691Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 1.49,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "4304218128416",
+    "startDate": {
+      "$date": "2022-10-06T14:14:48.970Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 18.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "2",
+    "startDate": {
+      "$date": "2022-10-06T14:15:17.359Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 2.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "250",
+    "startDate": {
+      "$date": "2022-10-06T14:15:17.359Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 4.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "251",
+    "startDate": {
+      "$date": "2022-10-06T14:15:17.359Z"
+    },
+    "tiers": []
+  },
+  {
+    "active": true,
+    "currencyCode": "EUR",
+    "price": 6.99,
+    "priceList": "PRICELIST_EU_HVR",
+    "skuId": "252",
+    "startDate": {
+      "$date": "2022-10-06T14:15:17.359Z"
+    },
+    "tiers": []
+  }
+]

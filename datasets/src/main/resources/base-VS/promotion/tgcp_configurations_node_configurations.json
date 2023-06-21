@@ -1,0 +1,24 @@
+[
+  {
+    "operation": "updateOne",
+    "filter": {
+      "name": "ENTERPRISE_EU"
+    },
+    "update": {
+      "$set": {
+          "configurations.PROMOTION_SETS": {
+          "name": "PROMOTION_SETS",
+          "value": {
+            "extends": true,
+            "list": [
+              {
+                "promotionSetName": "PROMOTION_SET_VS",
+                "order": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

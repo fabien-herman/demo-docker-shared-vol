@@ -1,0 +1,805 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_KIOSK"
+    }
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4023900545507"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Cremige Kokosmilch"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Cremige Kokosmilch"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4023900545507",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/QK8kBh6/kokosmilch.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4023900261704"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Wok Öl - Soja Öl"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Wok Öl - Soja Öl"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4023900261704",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/ZXvXHTh/Wok-Ol-Soja-Ol.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "8076800315097"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Bucatini n.9"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Bucatini n.9"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "8076800315097",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/hF6zpX6/bucatini.webp"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4011800524210"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Corny Erdbeer-Joghurt"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Corny Erdbeer-Joghurt"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4011800524210",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/4K6SvLr/corny-erdbeer-joghurt.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4002239422604"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Oliven Pikant Chili"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Oliven Pikant Chili"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4002239422604",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/4JSJhfy/Oliven.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4018077620003"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Clubs Party Crackers"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Clubs Party Crackers"
+    },
+    "extends": false,
+    "groupName": "SNACKS",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4018077620003",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/3RSphBC/Clubs.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4304218128416"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Servietten"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Servietten"
+    },
+    "extends": false,
+    "groupName": "OTHER",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4304218128416",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/XFrmJG5/servietten.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4008100168039"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Tomaten Stücke"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Tomaten Stücke"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4008100168039",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/xDzQxsk/Tomaten-Stucke.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4009300005230"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Tee Sweet Kiss"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Tee Sweet Kiss"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4009300005230",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/YpQNVrf/tee.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5000112547726"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "childItemIds": [
+      "100001"
+    ],
+    "description": {
+      "default": "Cola 1.5 Lt"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Cola 1.5 Liter"
+    },
+    "extends": false,
+    "groupName": "DRINKS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5000112547726",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/sKn0bQh/Coca-Cola.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "8437003223068"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Rasgón Wein"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Rasgón Wein"
+    },
+    "extends": false,
+    "groupName": "DRINKS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "8437003223068",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/vmsjQ6S/wine.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5410041001204"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "TUC Original"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "TUC Original"
+    },
+    "extends": false,
+    "groupName": "SNACKS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5410041001204",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/S5PYRT5/tuc.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5053990138722"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Pringles Original"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Pringles Original"
+    },
+    "extends": false,
+    "groupName": "SNACKS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5053990138722",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/wyNC2t6/pringles-original-large.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4017100114717"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Butterkeks"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Butterkeks"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4017100114717",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/F5dzpgC/butterkeks.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4104420229761"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Alnatura Hummus Natur"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Alnatura Hummus Natur"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4104420229761",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/2YxmxzD/hummus.jpg"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4104420021921"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_KIOSK",
+    "description": {
+      "default": "Alnatura Haferflocken Feinblatt"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Alnatura Haferflocken Feinblatt"
+    },
+    "extends": false,
+    "groupName": "GROCERIES",
+    "productTaxCodes": [
+      "LOW"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4104420021921",
+    "taxExempt": false,
+    "voidOnSuspend": false,
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "https://i.ibb.co/CVcRp3D/oatmeal.webp"
+      }
+    ]
+  },
+  {
+    "catalogName": "CATALOG_KIOSK",
+    "skuId": "100001",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "displayName": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "extends": false,
+    "groupName": "OTHER",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "NONE"
+    ]
+  }
+]

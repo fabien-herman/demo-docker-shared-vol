@@ -1,0 +1,200 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "templateSet": "EUROPE"
+    }
+  },
+  {
+    "file": "ftl/PRINT_GLOBALS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_GLOBALS",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_FUNCTIONS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_FUNCTIONS",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/SALE_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "SALE_PRINT",
+      "templateSet": "EUROPE",
+      "type": "SALE",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_HEADER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_HEADER",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_ITEMS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_ITEMS",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_SINGLE_ITEM.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_SINGLE_ITEM",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_TOTALS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_TOTALS",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_PAYMENTS.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_PAYMENTS",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_TAXES.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_TAXES",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_CUSTOMER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_CUSTOMER",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/PRINT_FOOTER.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "PRINT_FOOTER",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/TILL_OPENCLOSE_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "TILL_OPENCLOSE_PRINT",
+      "templateSet": "EUROPE",
+      "type": "TILL_OPENCLOSE",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/TILL_PICKUP_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "TILL_PICKUP_PRINT",
+      "templateSet": "EUROPE",
+      "type": "TILL_PICKUP",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/TILL_CONTENTS_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "TILL_CONTENTS_PRINT",
+      "templateSet": "EUROPE",
+      "type": "COMMON",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/SUSPEND_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "SUSPEND_PRINT",
+      "templateSet": "EUROPE",
+      "type": "SUSPEND",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/LOYALTY_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "LOYALTY_PRINT",
+      "templateSet": "EUROPE",
+      "type": "SUSPEND",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "file": "ftl/VOID_PRINT.ftl",
+    "operation": "import-ftl",
+    "insert": {
+      "name": "VOID_PRINT",
+      "templateSet": "EUROPE",
+      "type": "VOID",
+      "endpoint": "PRINT"
+    }
+  },
+  {
+    "description": "Add a common stylesheet for RECEIPT",
+    "operation": "updateMany",
+    "filter": {
+      "templateSet": {
+        "$in": [
+          "EUROPE"
+        ]
+      },
+      "type": {
+        "$ne": "COMMON"
+      }
+    },
+    "update": {
+      "$set": {
+        "stylesheet": {
+          "value": "#bold {\n    font-weight: bold;\n}\n\n#title {\n    font-weight: bold;\n    font-size: 200%;\n    text-align: center;\n}\n\n#transInfo {\n    text-align: left;\n}\n\n#payment {\n    font-weight: bold;\n}\n\n[id^=barcode] {\n    width: 250px;\n    height: 90px;\n    text-align: center;\n    vertical-align: sub;\n}\n\n[id^=barcode_CODE128] {\n    width: 300px;\n}\n\n[id=qrcode] img {\n    width: 120px;\n    height: 120px;\n    padding: 10px;\n}\n\n.print-image {\n    width: 250px;\n    padding: 5px;\n}\n\n.barcode {\n    width: 250px;\n    height: 90px;\n    text-align: center;\n    vertical-align: sub;\n}\n.depositRefundVoucherTitle {\n    font-weight: bold;\n    font-size: 130%;\n    text-align: center;\n}\n\n.eftPrintDataTitle {\n    text-align: center;\n    font-weight: bold;\n    font-size: 120%\n}\n\n.eftPrintVoidedPaymentsTitle {\n    font-weight: bold;\n    text-align: center;\n    font-size: 130%\n}"
+        }
+      }
+    }
+  }
+]

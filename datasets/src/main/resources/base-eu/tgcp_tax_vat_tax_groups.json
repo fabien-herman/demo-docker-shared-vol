@@ -1,0 +1,307 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+    }
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 0%"
+    },
+    "taxSetId": "BE",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 6%"
+    },
+    "taxSetId": "BE",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 12%"
+    },
+    "taxSetId": "BE",
+    "taxGroupId": "REDUCED",
+    "indicator": "R",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 21%"
+    },
+    "taxSetId": "BE",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "None 0%",
+      "de-DE": "0 %"
+    },
+    "taxSetId": "DE",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT",
+    "attributes": {
+      "fiscalTaxBracket": 5
+    }
+  },
+  {
+    "displayName": {
+      "default": "Low 7%",
+      "de-DE": "Ermäßigter Steuersatz"
+    },
+    "taxSetId": "DE",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT",
+    "attributes": {
+      "fiscalTaxBracket": 2
+    }
+  },
+  {
+    "displayName": {
+      "default": "Reduced 10.7%",
+      "de-DE": "Durchschnittsatz nr3"
+    },
+    "taxSetId": "DE",
+    "taxGroupId": "REDUCED-HIGH",
+    "indicator": "RH",
+    "taxType": "VAT",
+    "attributes": {
+      "fiscalTaxBracket": 3
+    }
+  },
+  {
+    "displayName": {
+      "default": "Reduced 5.5%",
+      "de-DE": "Durchschnittsatz nr1"
+    },
+    "taxSetId": "DE",
+    "taxGroupId": "REDUCED-LOW",
+    "indicator": "RL",
+    "taxType": "VAT",
+    "attributes": {
+      "fiscalTaxBracket": 4
+    }
+  },
+  {
+    "displayName": {
+      "default": "High 19%",
+      "de-DE": "Regelsteuersatz"
+    },
+    "taxSetId": "DE",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT",
+    "attributes": {
+      "fiscalTaxBracket": 1
+    }
+  },
+  {
+    "displayName": {
+      "default": "Geen BTW"
+    },
+    "taxSetId": "NL",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW Laag"
+    },
+    "taxSetId": "NL",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW Hoog"
+    },
+    "taxSetId": "NL",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "TVA 0%"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "TVA 2.1%"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "TVA 5.5%"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "REDUCED 1",
+    "indicator": "R1",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "TVA 10%"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "REDUCED 2",
+    "indicator": "R2",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "TVA 20%"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "Eco-mobilier 0.50"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "ECO.5",
+    "indicator": "A",
+    "taxType": "ECO"
+  },
+  {
+    "displayName": {
+      "default": "Eco-mobilier 0.25"
+    },
+    "taxSetId": "FR",
+    "taxGroupId": "ECO.25",
+    "indicator": "B",
+    "taxType": "ECO"
+  },
+  {
+    "displayName": {
+      "default": "No VAT"
+    },
+    "taxSetId": "UK",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT Low"
+    },
+    "taxSetId": "UK",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT High"
+    },
+    "taxSetId": "UK",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "No VAT"
+    },
+    "taxSetId": "IT",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT Low"
+    },
+    "taxSetId": "IT",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT Reduced 1"
+    },
+    "taxSetId": "IT",
+    "taxGroupId": "REDUCED 1",
+    "indicator": "R1",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT Reduced 2"
+    },
+    "taxSetId": "IT",
+    "taxGroupId": "REDUCED 2",
+    "indicator": "R2",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "VAT High"
+    },
+    "taxSetId": "IT",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 0%"
+    },
+    "taxSetId": "SE",
+    "taxGroupId": "NONE",
+    "indicator": "0",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 6%"
+    },
+    "taxSetId": "SE",
+    "taxGroupId": "LOW",
+    "indicator": "L",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 12%"
+    },
+    "taxSetId": "SE",
+    "taxGroupId": "REDUCED",
+    "indicator": "R",
+    "taxType": "VAT"
+  },
+  {
+    "displayName": {
+      "default": "BTW/TVA 25%"
+    },
+    "taxSetId": "SE",
+    "taxGroupId": "HIGH",
+    "indicator": "H",
+    "taxType": "VAT"
+  }
+]

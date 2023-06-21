@@ -1,0 +1,116 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "group": "SELF_SERVICE"
+        },
+        {
+          "subGroup": "QUICK_LOOKUP"
+        }
+      ]
+    }
+  },
+  {
+    "name": "AVAILABLE_USER_LANGUAGES",
+    "type": "List",
+    "entryType": "Key",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Lists available languages for shopper to use."
+    }
+  },
+  {
+    "name": "USE_MOCK_LIGHT",
+    "type": "Boolean",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Determines whether or not to show the on-screen lane/tal light."
+    }
+  },
+  {
+    "name": "USE_MOCK_AUDIO",
+    "type": "Boolean",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Determines whether or not to show the audio that should be played on-screen."
+    }
+  },
+  {
+    "name": "SA_INACTIVITY_TIMEOUT",
+    "type": "Integer",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Timeout for how long in seconds an SA can leave the lane inactive before signing out."
+    }
+  },
+  {
+    "name": "ALLOW_VISUAL_VERIFICATION",
+    "type": "Boolean",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Allow the shopper assistant to visually verify the shopper's age"
+    }
+  },
+  {
+    "name": "LANE_REQUEST_THE_SHOPPER_PUT_COUPONS_IN_A_BOX_POPUP_TIMEOUT",
+    "type": "Integer",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Lane request the shopper put coupons in a box popup timeout"
+    }
+  },
+  {
+    "name": "AGE_FOR_VISUALLY_VERIFY",
+    "type": "Integer",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Minimum age of the customer that can be visually verified"
+    }
+  },
+  {
+    "name": "LANE_USER_INACTIVITY_TIMEOUT",
+    "type": "Integer",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Timeout for how long in seconds pop-up should display"
+    }
+  },
+  {
+    "name": "CLOSED_LANE_OPTIONS_INACTIVITY_TIMEOUT",
+    "type": "Integer",
+    "group": "SELF_SERVICE",
+    "subGroup": "CONFIG",
+    "description": {
+      "default": "Timeout for how long in seconds closed lane options should stay on screen"
+    }
+  },
+  {
+    "name": "ACTIVE_QLU_USER",
+    "type": "Key",
+    "group": "QUICK_LOOKUP",
+    "subGroup": "QUICK_LOOKUP",
+    "description": {
+      "default": "Defines the active quick lookup user."
+    }
+  },
+  {
+    "name": "QLU_LOCALES",
+    "type": "List",
+    "group": "QUICK_LOOKUP",
+    "subGroup": "QUICK_LOOKUP",
+    "description": {
+      "default": "Defines the locales that have been deployed for the legacy package files."
+    }
+  }
+]

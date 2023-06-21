@@ -1,0 +1,23 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "$or": [
+        {
+          "name": {
+            "$regex": "^STORES_US$"
+          }
+        },
+        {
+          "name": {
+            "$regex": "^STORE_US_[0-9]+$"
+          }
+        },
+        {
+          "name": "STORE_EU_99"
+        }
+      ]
+    }
+  }
+]

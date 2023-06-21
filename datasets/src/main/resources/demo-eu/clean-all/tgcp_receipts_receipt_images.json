@@ -1,0 +1,11 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "nodeId": {
+        "$ne": "SYSTEM"
+      }
+    }
+  }
+]

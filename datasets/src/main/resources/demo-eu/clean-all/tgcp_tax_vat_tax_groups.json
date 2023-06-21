@@ -1,0 +1,8 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+    }
+  }
+]

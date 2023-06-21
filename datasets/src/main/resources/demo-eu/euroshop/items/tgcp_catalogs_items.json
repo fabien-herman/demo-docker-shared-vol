@@ -1,0 +1,823 @@
+[
+  {
+    "description": "Cleanup",
+    "operation": "delete",
+    "filter": {
+      "catalogName": "CATALOG_EU_HVR"
+    }
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5000112547726"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "childItemIds": [
+      "100001"
+    ],
+    "description": {
+      "default": "Cola 1.5 Lt"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Cola 1.5 Liter"
+    },
+    "extends": false,
+    "groupName": "SODA",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5000112547726",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "catalogName": "CATALOG_EU_HVR",
+    "skuId": "100001",
+    "UOM": "EACH",
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "description": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "displayName": {
+      "default": "Bottle Deposit",
+      "nl-BE": "Leeggoed",
+      "sv-SE": "Pant"
+    },
+    "extends": false,
+    "groupName": "BOTTLEDEPOSIT",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": [
+      {
+        "sizeCategory": "DEFAULT",
+        "url": "/images/product/bottle-deposit.png"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "ageToBuy": 18,
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "8437003223068"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Rasgón Temprannillo"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Rasgón Temprannillo"
+    },
+    "extends": false,
+    "groupName": "LIKOR",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "8437003223068",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5410041001204"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "TUC Original"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "TUC Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5410041001204",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "5053990138722"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pringles Original"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Pringles Original"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "5053990138722",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4017100114717"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Butterkeks"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Butterkeks"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4017100114717",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4023900545507"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Bamboo Garden Cremige Kokosmilch"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Cremige Kokosmilch"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4023900545507",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4304218128416"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Servetten Tissue Qualitat"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Servetten Tissue Qualitat"
+    },
+    "extends": false,
+    "groupName": "NONFOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4304218128416",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4023900261704"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Bamboo Garden Wok öl"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Wok öl"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4023900261704",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "8076800315097"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Barilla noodles"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Barilla noodles"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "8076800315097",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4011800524210"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Corny Erdbeer-Joghurt"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Corny Erdbeer-Joghurt"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4011800524210",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4002239422604"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Dittmann Olives"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Dittmann Olives"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4002239422604",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4018077620003"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Clubs Party Crackers"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Clubs Party Crackers"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4018077620003",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4008100168039"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "ORO Tomatoes"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "ORO Tomatoes"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4008100168039",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4009300005230"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Sweer Kiss Tee"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Sweer Kiss Tee"
+    },
+    "extends": false,
+    "groupName": "DRINKS",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4009300005230",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4104420229761"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {},
+    "discountable": true,
+    "displayName": {
+      "default": "Alnatura Hummus Natur"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4104420229761",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "aliases": [
+      {
+        "type": "EAN-13",
+        "value": "4104420021921"
+      }
+    ],
+    "allowableTimeOfSale": {},
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "canBeReturned": true,
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Alnatura oatmeal fine sheet"
+    },
+    "discountable": true,
+    "displayName": {
+      "default": "Alnatura oatmeal fine sheet"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "isBundle": false,
+    "isDepartmentItem": false,
+    "isDepositItem": false,
+    "isSurchargeEligible": true,
+    "itemInventoryMethod": "NOT_REQUIRED",
+    "nonMerchandiseAccount": {},
+    "notForSale": false,
+    "priceOverrideAllowed": true,
+    "priceRequired": false,
+    "quantityAllowed": true,
+    "quantityRequired": false,
+    "referenceItemIds": [],
+    "serialRequired": false,
+    "skuId": "4104420021921",
+    "taxExempt": false,
+    "voidOnSuspend": false
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {},
+    "displayName": {
+      "default": "Alnatura Red Lentils"
+    },
+    "extends": false,
+    "groupName": "FOOD",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "skuId": "4104420010642"
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Babybel"
+    },
+    "displayName": {
+      "default": "Babybel"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "3073781106336",
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Pasta"
+    },
+    "displayName": {
+      "default": "Pasta"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "8076809523509",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "images": []
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Himbeer"
+    },
+    "displayName": {
+      "default": "Himbeer"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "0000040737393",
+    "productTaxCodes": [
+      "HIGH"
+    ],
+    "aliases": [
+      {
+        "type": "EAN-8",
+        "value": "40737393"
+      }
+    ]
+  },
+  {
+    "UOM": "EACH",
+    "allowableTimesOfSale": [],
+    "attributes": {},
+    "catalogName": "CATALOG_EU_HVR",
+    "description": {
+      "default": "Killepitsch"
+    },
+    "displayName": {
+      "default": "Killepitsch"
+    },
+    "extends": false,
+    "groupName": "OTHERS",
+    "isBundle": false,
+    "nonMerchandiseAccount": {},
+    "referenceItemIds": [],
+    "skuId": "4022269201352",
+    "productTaxCodes": [
+      "HIGH"
+    ]
+  }
+]
